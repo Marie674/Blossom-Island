@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80daf0e12868004d94df964f3e4c44a, type: 3}
+  m_Name: TreePalm_Shake
+  m_EditorClassIdentifier: 
+  Items:
+  - Item: {fileID: 680927530247469183, guid: 662a191a335c4e9428a7aee210400b41, type: 3}
+    Chance: 30
+  MinDraws: 1
+  MaxDraws: 1
+  MinSpawn: -1

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061217e53220ace46ac1e7ad02c4fcaa, type: 3}
+  m_Name: Wheat_Template
+  m_EditorClassIdentifier: 
+  Name: Wheat
+  Regrows: 0
+  SickleHarvest: 1
+  MaxWilt: 4
+  ActiveSeasons:
+  - Spring
+  - Summer
+  - Fall
+  Stages:
+  - {fileID: 11400000, guid: 0f0cf5b33e5badc4197b2c4d85cfcfa6, type: 2}
+  - {fileID: 11400000, guid: f7f1b72c02b6024428ae7feb83f1ad32, type: 2}
+  - {fileID: 11400000, guid: b88affeb062ea43488802ac712764bdc, type: 2}
+  - {fileID: 11400000, guid: b2d80a7746675844da71073a64f68692, type: 2}
+  QualityPerStage: 0
+  Outputs:
+  - {fileID: 11400000, guid: 64cd4c8a29d206047bd92d7e165a902d, type: 2}
+  - {fileID: 11400000, guid: 3edfe05cc65aa8547917354df0c7ca4f, type: 2}

@@ -1,0 +1,314 @@
+{ "frames": [
+   {
+    "filename": "Blossom_Baby_Brown 0.ase",
+    "frame": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 1.ase",
+    "frame": { "x": 36, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 2.ase",
+    "frame": { "x": 72, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 3.ase",
+    "frame": { "x": 108, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 4.ase",
+    "frame": { "x": 144, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 5.ase",
+    "frame": { "x": 180, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 6.ase",
+    "frame": { "x": 216, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 7.ase",
+    "frame": { "x": 252, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 8.ase",
+    "frame": { "x": 0, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 9.ase",
+    "frame": { "x": 36, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 10.ase",
+    "frame": { "x": 72, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 11.ase",
+    "frame": { "x": 108, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 12.ase",
+    "frame": { "x": 144, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 13.ase",
+    "frame": { "x": 180, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 14.ase",
+    "frame": { "x": 216, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 15.ase",
+    "frame": { "x": 252, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 16.ase",
+    "frame": { "x": 0, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 17.ase",
+    "frame": { "x": 36, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 18.ase",
+    "frame": { "x": 72, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 19.ase",
+    "frame": { "x": 108, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 20.ase",
+    "frame": { "x": 144, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 21.ase",
+    "frame": { "x": 180, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 22.ase",
+    "frame": { "x": 216, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 23.ase",
+    "frame": { "x": 252, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 24.ase",
+    "frame": { "x": 0, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 25.ase",
+    "frame": { "x": 36, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 26.ase",
+    "frame": { "x": 72, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 27.ase",
+    "frame": { "x": 108, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 28.ase",
+    "frame": { "x": 144, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 29.ase",
+    "frame": { "x": 180, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 30.ase",
+    "frame": { "x": 216, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Baby_Brown 31.ase",
+    "frame": { "x": 252, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.12.1-x64",
+  "image": "Blossom_Baby_Brown.png",
+  "format": "RGBA8888",
+  "size": { "w": 288, "h": 160 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Walk Down", "from": 0, "to": 7, "direction": "forward" },
+   { "name": "Idle Down", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "Walk Left", "from": 8, "to": 15, "direction": "forward" },
+   { "name": "Idle Left", "from": 8, "to": 8, "direction": "forward" },
+   { "name": "Walk Right", "from": 16, "to": 23, "direction": "forward" },
+   { "name": "Idle Right", "from": 16, "to": 16, "direction": "forward" },
+   { "name": "Walk Up", "from": 24, "to": 31, "direction": "forward" },
+   { "name": "Idle Up", "from": 24, "to": 24, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer 2", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80daf0e12868004d94df964f3e4c44a, type: 3}
+  m_Name: Bush_Leaves
+  m_EditorClassIdentifier: 
+  Items:
+  - Item: {fileID: 114155358331233234, guid: 7839aebffe82b904885b789d23c83392, type: 3}
+    Chance: 50
+  MinDraws: 2
+  MaxDraws: 4
+  MinSpawn: 2

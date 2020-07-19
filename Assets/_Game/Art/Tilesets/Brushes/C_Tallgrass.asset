@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c1de61e39cb5d488fe0684e723aceb, type: 3}
+  m_Name: C_Tallgrass
+  m_EditorClassIdentifier: 
+  Tileset: {fileID: 11400000, guid: e5049f5c92ba05b428341b955a3f8787, type: 2}
+  Params:
+    m_paramList:
+    - name: Terrain
+      _paramType: 5
+      _boolValue: 0
+      _intValue: 0
+      _floatValue: 0
+      _stringValue: TallGrass
+      _objectValue: {fileID: 0}
+  m_group: 0
+  m_autotilingMode: 17
+  m_showInPalette: 1
+  TileIds: 06002d0006002d0006002d008800000006002d0006002d00080000004800000006002d008a00000006002d00890000000a0000004a0000000900000006002d00
+  InteriorCornerTileIds: 86000000870000004600000047000000

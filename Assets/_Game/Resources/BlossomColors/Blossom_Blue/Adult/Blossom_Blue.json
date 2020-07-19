@@ -1,0 +1,892 @@
+{ "frames": [
+   {
+    "filename": "Blossom_Blue 0.ase",
+    "frame": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 1.ase",
+    "frame": { "x": 36, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 2.ase",
+    "frame": { "x": 72, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 3.ase",
+    "frame": { "x": 108, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 4.ase",
+    "frame": { "x": 144, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 5.ase",
+    "frame": { "x": 180, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 6.ase",
+    "frame": { "x": 216, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 7.ase",
+    "frame": { "x": 252, "y": 0, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 8.ase",
+    "frame": { "x": 0, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 9.ase",
+    "frame": { "x": 36, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 10.ase",
+    "frame": { "x": 72, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 11.ase",
+    "frame": { "x": 108, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 12.ase",
+    "frame": { "x": 144, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 13.ase",
+    "frame": { "x": 180, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 14.ase",
+    "frame": { "x": 216, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 15.ase",
+    "frame": { "x": 252, "y": 40, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 16.ase",
+    "frame": { "x": 0, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 17.ase",
+    "frame": { "x": 36, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 18.ase",
+    "frame": { "x": 72, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 19.ase",
+    "frame": { "x": 108, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 20.ase",
+    "frame": { "x": 144, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 21.ase",
+    "frame": { "x": 180, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 22.ase",
+    "frame": { "x": 216, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 23.ase",
+    "frame": { "x": 252, "y": 80, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 24.ase",
+    "frame": { "x": 0, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 25.ase",
+    "frame": { "x": 36, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 26.ase",
+    "frame": { "x": 72, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 27.ase",
+    "frame": { "x": 108, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 28.ase",
+    "frame": { "x": 144, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 29.ase",
+    "frame": { "x": 180, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 30.ase",
+    "frame": { "x": 216, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 31.ase",
+    "frame": { "x": 252, "y": 120, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 32.ase",
+    "frame": { "x": 0, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 33.ase",
+    "frame": { "x": 36, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 34.ase",
+    "frame": { "x": 72, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 35.ase",
+    "frame": { "x": 108, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 36.ase",
+    "frame": { "x": 144, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 37.ase",
+    "frame": { "x": 180, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 38.ase",
+    "frame": { "x": 216, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 39.ase",
+    "frame": { "x": 252, "y": 160, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 40.ase",
+    "frame": { "x": 0, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 41.ase",
+    "frame": { "x": 36, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 42.ase",
+    "frame": { "x": 72, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 43.ase",
+    "frame": { "x": 108, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 44.ase",
+    "frame": { "x": 144, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 45.ase",
+    "frame": { "x": 180, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 46.ase",
+    "frame": { "x": 216, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 47.ase",
+    "frame": { "x": 252, "y": 200, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 48.ase",
+    "frame": { "x": 0, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 49.ase",
+    "frame": { "x": 36, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 50.ase",
+    "frame": { "x": 72, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 51.ase",
+    "frame": { "x": 108, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 52.ase",
+    "frame": { "x": 144, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 53.ase",
+    "frame": { "x": 180, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 54.ase",
+    "frame": { "x": 216, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 55.ase",
+    "frame": { "x": 252, "y": 240, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 56.ase",
+    "frame": { "x": 0, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 57.ase",
+    "frame": { "x": 36, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 58.ase",
+    "frame": { "x": 72, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 59.ase",
+    "frame": { "x": 108, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 60.ase",
+    "frame": { "x": 144, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 61.ase",
+    "frame": { "x": 180, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 62.ase",
+    "frame": { "x": 216, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 63.ase",
+    "frame": { "x": 252, "y": 280, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 64.ase",
+    "frame": { "x": 0, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 65.ase",
+    "frame": { "x": 36, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 66.ase",
+    "frame": { "x": 72, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 67.ase",
+    "frame": { "x": 108, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 68.ase",
+    "frame": { "x": 144, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 69.ase",
+    "frame": { "x": 180, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 70.ase",
+    "frame": { "x": 216, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 71.ase",
+    "frame": { "x": 252, "y": 320, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 72.ase",
+    "frame": { "x": 0, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 73.ase",
+    "frame": { "x": 36, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 74.ase",
+    "frame": { "x": 72, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 75.ase",
+    "frame": { "x": 108, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 76.ase",
+    "frame": { "x": 144, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 77.ase",
+    "frame": { "x": 180, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 78.ase",
+    "frame": { "x": 216, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 79.ase",
+    "frame": { "x": 252, "y": 360, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 80.ase",
+    "frame": { "x": 0, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 81.ase",
+    "frame": { "x": 36, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 82.ase",
+    "frame": { "x": 72, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 83.ase",
+    "frame": { "x": 108, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 84.ase",
+    "frame": { "x": 144, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 85.ase",
+    "frame": { "x": 180, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 86.ase",
+    "frame": { "x": 216, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 87.ase",
+    "frame": { "x": 252, "y": 400, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 88.ase",
+    "frame": { "x": 0, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 89.ase",
+    "frame": { "x": 36, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 90.ase",
+    "frame": { "x": 72, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 91.ase",
+    "frame": { "x": 108, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 92.ase",
+    "frame": { "x": 144, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 93.ase",
+    "frame": { "x": 180, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   },
+   {
+    "filename": "Blossom_Blue 94.ase",
+    "frame": { "x": 216, "y": 440, "w": 36, "h": 40 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
+    "sourceSize": { "w": 36, "h": 40 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.12.1-x64",
+  "image": "Blossom_Blue.png",
+  "format": "RGBA8888",
+  "size": { "w": 288, "h": 480 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "walk_down", "from": 0, "to": 7, "direction": "forward" },
+   { "name": "walk_left", "from": 8, "to": 15, "direction": "forward" },
+   { "name": "walk_right", "from": 16, "to": 23, "direction": "forward" },
+   { "name": "walk_up", "from": 24, "to": 31, "direction": "forward" },
+   { "name": "breathe_down", "from": 32, "to": 36, "direction": "forward" },
+   { "name": "blink_down", "from": 36, "to": 37, "direction": "forward" },
+   { "name": "ear_down", "from": 38, "to": 39, "direction": "forward" },
+   { "name": "breathe_left", "from": 40, "to": 44, "direction": "forward" },
+   { "name": "blink_left", "from": 44, "to": 45, "direction": "forward" },
+   { "name": "ear_left", "from": 46, "to": 47, "direction": "forward" },
+   { "name": "breathe_right", "from": 48, "to": 52, "direction": "forward" },
+   { "name": "blink_right", "from": 52, "to": 53, "direction": "forward" },
+   { "name": "ear_right", "from": 54, "to": 55, "direction": "forward" },
+   { "name": "breathe_up", "from": 56, "to": 60, "direction": "forward" },
+   { "name": "blink_up", "from": 60, "to": 61, "direction": "forward" },
+   { "name": "ear_up", "from": 62, "to": 63, "direction": "forward" },
+   { "name": "sleep_left", "from": 64, "to": 70, "direction": "forward" },
+   { "name": "sleep_right", "from": 72, "to": 78, "direction": "forward" },
+   { "name": "tippytap", "from": 80, "to": 94, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Blue_Adult", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

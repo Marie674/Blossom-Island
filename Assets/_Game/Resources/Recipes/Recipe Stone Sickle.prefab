@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5182345807910703141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5181028353944320703}
+  - component: {fileID: 5079801893039723175}
+  m_Layer: 0
+  m_Name: Recipe Stone Sickle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5181028353944320703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182345807910703141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.3964996, y: 4.4606977, z: 84.06268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5079801893039723175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182345807910703141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00825cd2f1a6010469120f6826a54e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Recipe:
+    Ingredients:
+    - Item: {fileID: 114302268368332418, guid: 10eaaabd01137d045af21298a2bd7108, type: 3}
+      Amount: 3
+      Used: 1
+    - Item: {fileID: 35862611050672781, guid: 683c7ed4a5a9d29488796b5907cd7666, type: 3}
+      Amount: 1
+      Used: 1
+    - Item: {fileID: 4223898186130658100, guid: 5a02cb64aa6f24a4b916bc64c2cbdf65,
+        type: 3}
+      Amount: 1
+      Used: 1
+    Outputs:
+    - Item: {fileID: 4961864624209194837, guid: eee87ea13a726d145b6d240c76da1c07,
+        type: 3}
+      Amount: 1
+      Chance: 100
+      ByProduct: 0
+    CraftingTime: 10
+    NeedsToBeLearned: 0
+  Amount: 1
+  UniqueName: Stone Sickle

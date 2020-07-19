@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c1de61e39cb5d488fe0684e723aceb, type: 3}
+  m_Name: C_Deep_Water
+  m_EditorClassIdentifier: 
+  Tileset: {fileID: 11400000, guid: e5049f5c92ba05b428341b955a3f8787, type: 2}
+  Params:
+    m_paramList: []
+  m_group: 4
+  m_autotilingMode: 21
+  m_showInPalette: 1
+  TileIds: c3040000c3040000c304000002050000c3040000c304000082040000c2040000c304000004050000c30400000305000084040000c404000083040000c3040000
+  InteriorCornerTileIds: 0005000001050000c0040000c1040000

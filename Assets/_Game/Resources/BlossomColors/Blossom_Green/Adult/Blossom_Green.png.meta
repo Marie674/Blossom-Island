@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 6ddc2ec699d1e57429089ed93b285f6b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Blossom_Green_0
+  - first:
+      213: 21300002
+    second: Blossom_Green_1
+  - first:
+      213: 21300004
+    second: Blossom_Green_2
+  - first:
+      213: 21300006
+    second: Blossom_Green_3
+  - first:
+      213: 21300008
+    second: Blossom_Green_4
+  - first:
+      213: 21300010
+    second: Blossom_Green_5
+  - first:
+      213: 21300012
+    second: Blossom_Green_6
+  - first:
+      213: 21300014
+    second: Blossom_Green_7
+  - first:
+      213: 21300016
+    second: Blossom_Green_8
+  - first:
+      213: 21300018
+    second: Blossom_Green_9
+  - first:
+      213: 21300020
+    second: Blossom_Green_10
+  - first:
+      213: 21300022
+    second: Blossom_Green_11
+  - first:
+      213: 21300024
+    second: Blossom_Green_12
+  - first:
+      213: 21300026
+    second: Blossom_Green_13
+  - first:
+      213: 21300028
+    second: Blossom_Green_14
+  - first:
+      213: 21300030
+    second: Blossom_Green_15
+  - first:
+      213: 21300032
+    second: Blossom_Green_16
+  - first:
+      213: 21300034
+    second: Blossom_Green_17
+  - first:
+      213: 21300036
+    second: Blossom_Green_18
+  - first:
+      213: 21300038
+    second: Blossom_Green_19
+  - first:
+      213: 21300040
+    second: Blossom_Green_20
+  - first:
+      213: 21300042
+    second: Blossom_Green_21
+  - first:
+      213: 21300044
+    second: Blossom_Green_22
+  - first:
+      213: 21300046
+    second: Blossom_Green_23
+  - first:
+      213: 21300048
+    second: Blossom_Green_24
+  - first:
+      213: 21300050
+    second: Blossom_Green_25
+  - first:
+      213: 21300052
+    second: Blossom_Green_26
+  - first:
+      213: 21300054
+    second: Blossom_Green_27
+  - first:
+      213: 21300056
+    second: Blossom_Green_28
+  - first:
+      213: 21300058
+    second: Blossom_Green_29
+  - first:
+      213: 21300060
+    second: Blossom_Green_30
+  - first:
+      213: 21300062
+    second: Blossom_Green_31
+  - first:
+      213: 8127833778327913590
+    second: Blossom_GreenIdle Down_0
+  - first:
+      213: -2065659246660768849
+    second: Blossom_GreenWalk Down_1
+  - first:
+      213: -7000999141712667940
+    second: Blossom_GreenWalk Down_2
+  - first:
+      213: 4786079220371157565
+    second: Blossom_GreenWalk Down_3
+  - first:
+      213: 5042230049751067149
+    second: Blossom_GreenWalk Down_4
+  - first:
+      213: 978823441576305979
+    second: Blossom_GreenWalk Down_5
+  - first:
+      213: -7990745990433791957
+    second: Blossom_GreenWalk Down_6
+  - first:
+      213: 5104961599162631190
+    second: Blossom_GreenWalk Down_7
+  - first:
+      213: -6071081735686673414
+    second: Blossom_GreenIdle Left_0
+  - first:
+      213: -6035646671139328441
+    second: Blossom_GreenWalk Left_1
+  - first:
+      213: 2643210246350483213
+    second: Blossom_GreenWalk Left_2
+  - first:
+      213: 7268122028253506396
+    second: Blossom_GreenWalk Left_3
+  - first:
+      213: -526180980165965995
+    second: Blossom_GreenWalk Left_4
+  - first:
+      213: -6992929075859476425
+    second: Blossom_GreenWalk Left_5
+  - first:
+      213: -7658741581510197223
+    second: Blossom_GreenWalk Left_6
+  - first:
+      213: -2631971996554353558
+    second: Blossom_GreenWalk Left_7
+  - first:
+      213: 6061235925582857286
+    second: Blossom_GreenIdle Right_0
+  - first:
+      213: 7326412410142128104
+    second: Blossom_GreenWalk Right_1
+  - first:
+      213: 7206292807029459870
+    second: Blossom_GreenWalk Right_2
+  - first:
+      213: -2786931306034239728
+    second: Blossom_GreenWalk Right_3
+  - first:
+      213: 3307218075694088998
+    second: Blossom_GreenWalk Right_4
+  - first:
+      213: -3783703929619231824
+    second: Blossom_GreenWalk Right_5
+  - first:
+      213: -2560793059037084066
+    second: Blossom_GreenWalk Right_6
+  - first:
+      213: -7362514479071685723
+    second: Blossom_GreenWalk Right_7
+  - first:
+      213: -8304903717796739894
+    second: Blossom_GreenIdle Up_0
+  - first:
+      213: -8180012828321671166
+    second: Blossom_GreenWalk Up_1
+  - first:
+      213: -5526512983070816392
+    second: Blossom_GreenWalk Up_2
+  - first:
+      213: -4673071862613981028
+    second: Blossom_GreenWalk Up_3
+  - first:
+      213: -1326388391099439685
+    second: Blossom_GreenWalk Up_4
+  - first:
+      213: -7307071493994821065
+    second: Blossom_GreenWalk Up_5
+  - first:
+      213: 83429767976599758
+    second: Blossom_GreenWalk Up_6
+  - first:
+      213: 3691719326523504697
+    second: Blossom_GreenWalk Up_7
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blossom_GreenIdle Down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67408ae12cddbc070800000000000000
+      internalID: 8127833778327913590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faba8c70cdd4553e0800000000000000
+      internalID: -2065659246660768849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdad66d9f5477de90800000000000000
+      internalID: -7000999141712667940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32f91571b19b6240800000000000000
+      internalID: 4786079220371157565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a663fe38999f540800000000000000
+      internalID: 5042230049751067149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b352bfcebba759d00800000000000000
+      internalID: 978823441576305979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2021d5cbda2b1190800000000000000
+      internalID: -7990745990433791957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Down_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6144916f68778d640800000000000000
+      internalID: 5104961599162631190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenIdle Left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afba80ec35f2fbba0800000000000000
+      internalID: -6071081735686673414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ea8f0b4531d3ca0800000000000000
+      internalID: -6035646671139328441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fa468f6b19ea420800000000000000
+      internalID: 2643210246350483213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bed3ef97e8dd460800000000000000
+      internalID: 7268122028253506396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55704a5bf21a2b8f0800000000000000
+      internalID: -526180980165965995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73035ed3e0024fe90800000000000000
+      internalID: -6992929075859476425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910429ffb1fa6b590800000000000000
+      internalID: -7658741581510197223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Left_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a642a96f96b597bd0800000000000000
+      internalID: -2631971996554353558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenIdle Right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644c334e5f5dd1450800000000000000
+      internalID: 6061235925582857286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7f8802545aca560800000000000000
+      internalID: 7326412410142128104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b817e9025e10460800000000000000
+      internalID: 7206292807029459870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017e9623eb4d259d0800000000000000
+      internalID: -2786931306034239728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6234f74415995ed20800000000000000
+      internalID: 3307218075694088998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbcbcba2559d7bc0800000000000000
+      internalID: -3783703929619231824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e560fccc74c367cd0800000000000000
+      internalID: -2560793059037084066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Right_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3134de61813d990800000000000000
+      internalID: -7362514479071685723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenIdle Up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac487e6e11e0fbc80800000000000000
+      internalID: -8304903717796739894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2089fb51ca1ca7e80800000000000000
+      internalID: -8180012828321671166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877ca7df8b1ed43b0800000000000000
+      internalID: -5526512983070816392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98450366e9e52fb0800000000000000
+      internalID: -4673071862613981028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5e05a29c8b79de0800000000000000
+      internalID: -1326388391099439685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a4e04d031189a90800000000000000
+      internalID: -7307071493994821065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec040f39ee6682100800000000000000
+      internalID: 83429767976599758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_GreenWalk Up_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938b0ebfa2f9b3330800000000000000
+      internalID: 3691719326523504697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e5cdb8e33e489a8438b4dca2332a303c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

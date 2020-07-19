@@ -1,0 +1,4201 @@
+{
+  "frames": [
+    {
+      "filename": "Body4_Anims 0.ase",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 1.ase",
+      "frame": {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 2.ase",
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 3.ase",
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 4.ase",
+      "frame": {
+        "x": 128,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 5.ase",
+      "frame": {
+        "x": 160,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 6.ase",
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 7.ase",
+      "frame": {
+        "x": 224,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 8.ase",
+      "frame": {
+        "x": 0,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 9.ase",
+      "frame": {
+        "x": 32,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 10.ase",
+      "frame": {
+        "x": 64,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 11.ase",
+      "frame": {
+        "x": 96,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 12.ase",
+      "frame": {
+        "x": 128,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 13.ase",
+      "frame": {
+        "x": 160,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 14.ase",
+      "frame": {
+        "x": 192,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 15.ase",
+      "frame": {
+        "x": 224,
+        "y": 64,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 16.ase",
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 17.ase",
+      "frame": {
+        "x": 32,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 18.ase",
+      "frame": {
+        "x": 64,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 19.ase",
+      "frame": {
+        "x": 96,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 20.ase",
+      "frame": {
+        "x": 128,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 21.ase",
+      "frame": {
+        "x": 160,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 22.ase",
+      "frame": {
+        "x": 192,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 23.ase",
+      "frame": {
+        "x": 224,
+        "y": 128,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 24.ase",
+      "frame": {
+        "x": 0,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 25.ase",
+      "frame": {
+        "x": 32,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 26.ase",
+      "frame": {
+        "x": 64,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 27.ase",
+      "frame": {
+        "x": 96,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 28.ase",
+      "frame": {
+        "x": 128,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 29.ase",
+      "frame": {
+        "x": 160,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 30.ase",
+      "frame": {
+        "x": 192,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 31.ase",
+      "frame": {
+        "x": 224,
+        "y": 192,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 32.ase",
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 33.ase",
+      "frame": {
+        "x": 32,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 34.ase",
+      "frame": {
+        "x": 64,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 35.ase",
+      "frame": {
+        "x": 96,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 36.ase",
+      "frame": {
+        "x": 128,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 37.ase",
+      "frame": {
+        "x": 160,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 38.ase",
+      "frame": {
+        "x": 192,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 39.ase",
+      "frame": {
+        "x": 224,
+        "y": 256,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 40.ase",
+      "frame": {
+        "x": 0,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 41.ase",
+      "frame": {
+        "x": 32,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 42.ase",
+      "frame": {
+        "x": 64,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 43.ase",
+      "frame": {
+        "x": 96,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 44.ase",
+      "frame": {
+        "x": 128,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 45.ase",
+      "frame": {
+        "x": 160,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 46.ase",
+      "frame": {
+        "x": 192,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 47.ase",
+      "frame": {
+        "x": 224,
+        "y": 320,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 48.ase",
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 49.ase",
+      "frame": {
+        "x": 32,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 50.ase",
+      "frame": {
+        "x": 64,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 51.ase",
+      "frame": {
+        "x": 96,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 52.ase",
+      "frame": {
+        "x": 128,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 53.ase",
+      "frame": {
+        "x": 160,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 54.ase",
+      "frame": {
+        "x": 192,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 55.ase",
+      "frame": {
+        "x": 224,
+        "y": 384,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 56.ase",
+      "frame": {
+        "x": 0,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 57.ase",
+      "frame": {
+        "x": 32,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 58.ase",
+      "frame": {
+        "x": 64,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 59.ase",
+      "frame": {
+        "x": 96,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 60.ase",
+      "frame": {
+        "x": 128,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 61.ase",
+      "frame": {
+        "x": 160,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 62.ase",
+      "frame": {
+        "x": 192,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 63.ase",
+      "frame": {
+        "x": 224,
+        "y": 448,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 64.ase",
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 65.ase",
+      "frame": {
+        "x": 32,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 66.ase",
+      "frame": {
+        "x": 64,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 67.ase",
+      "frame": {
+        "x": 96,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 68.ase",
+      "frame": {
+        "x": 128,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 69.ase",
+      "frame": {
+        "x": 160,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 70.ase",
+      "frame": {
+        "x": 192,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 71.ase",
+      "frame": {
+        "x": 224,
+        "y": 512,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 72.ase",
+      "frame": {
+        "x": 0,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 73.ase",
+      "frame": {
+        "x": 32,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 74.ase",
+      "frame": {
+        "x": 64,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 75.ase",
+      "frame": {
+        "x": 96,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 76.ase",
+      "frame": {
+        "x": 128,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 77.ase",
+      "frame": {
+        "x": 160,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 78.ase",
+      "frame": {
+        "x": 192,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 79.ase",
+      "frame": {
+        "x": 224,
+        "y": 576,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 80.ase",
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 81.ase",
+      "frame": {
+        "x": 32,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 82.ase",
+      "frame": {
+        "x": 64,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 83.ase",
+      "frame": {
+        "x": 96,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 84.ase",
+      "frame": {
+        "x": 128,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 85.ase",
+      "frame": {
+        "x": 160,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 86.ase",
+      "frame": {
+        "x": 192,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 87.ase",
+      "frame": {
+        "x": 224,
+        "y": 640,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 88.ase",
+      "frame": {
+        "x": 0,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 89.ase",
+      "frame": {
+        "x": 32,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 90.ase",
+      "frame": {
+        "x": 64,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 91.ase",
+      "frame": {
+        "x": 96,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 92.ase",
+      "frame": {
+        "x": 128,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 93.ase",
+      "frame": {
+        "x": 160,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 94.ase",
+      "frame": {
+        "x": 192,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 95.ase",
+      "frame": {
+        "x": 224,
+        "y": 704,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 96.ase",
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 97.ase",
+      "frame": {
+        "x": 32,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 98.ase",
+      "frame": {
+        "x": 64,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 99.ase",
+      "frame": {
+        "x": 96,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 100.ase",
+      "frame": {
+        "x": 128,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 101.ase",
+      "frame": {
+        "x": 160,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 102.ase",
+      "frame": {
+        "x": 192,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 103.ase",
+      "frame": {
+        "x": 224,
+        "y": 768,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 104.ase",
+      "frame": {
+        "x": 0,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 105.ase",
+      "frame": {
+        "x": 32,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 106.ase",
+      "frame": {
+        "x": 64,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 107.ase",
+      "frame": {
+        "x": 96,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 108.ase",
+      "frame": {
+        "x": 128,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 109.ase",
+      "frame": {
+        "x": 160,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 110.ase",
+      "frame": {
+        "x": 192,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 111.ase",
+      "frame": {
+        "x": 224,
+        "y": 832,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 112.ase",
+      "frame": {
+        "x": 0,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 113.ase",
+      "frame": {
+        "x": 32,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 114.ase",
+      "frame": {
+        "x": 64,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 115.ase",
+      "frame": {
+        "x": 96,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 116.ase",
+      "frame": {
+        "x": 128,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 117.ase",
+      "frame": {
+        "x": 160,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 118.ase",
+      "frame": {
+        "x": 192,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 119.ase",
+      "frame": {
+        "x": 224,
+        "y": 896,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 120.ase",
+      "frame": {
+        "x": 0,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 121.ase",
+      "frame": {
+        "x": 32,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 122.ase",
+      "frame": {
+        "x": 64,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 123.ase",
+      "frame": {
+        "x": 96,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 124.ase",
+      "frame": {
+        "x": 128,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 125.ase",
+      "frame": {
+        "x": 160,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 126.ase",
+      "frame": {
+        "x": 192,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 127.ase",
+      "frame": {
+        "x": 224,
+        "y": 960,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 128.ase",
+      "frame": {
+        "x": 0,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 129.ase",
+      "frame": {
+        "x": 32,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 130.ase",
+      "frame": {
+        "x": 64,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 131.ase",
+      "frame": {
+        "x": 96,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 132.ase",
+      "frame": {
+        "x": 128,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 133.ase",
+      "frame": {
+        "x": 160,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 134.ase",
+      "frame": {
+        "x": 192,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 135.ase",
+      "frame": {
+        "x": 224,
+        "y": 1024,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 136.ase",
+      "frame": {
+        "x": 0,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 137.ase",
+      "frame": {
+        "x": 32,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 138.ase",
+      "frame": {
+        "x": 64,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 139.ase",
+      "frame": {
+        "x": 96,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 140.ase",
+      "frame": {
+        "x": 128,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 141.ase",
+      "frame": {
+        "x": 160,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 142.ase",
+      "frame": {
+        "x": 192,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 143.ase",
+      "frame": {
+        "x": 224,
+        "y": 1088,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 144.ase",
+      "frame": {
+        "x": 0,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 145.ase",
+      "frame": {
+        "x": 32,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 146.ase",
+      "frame": {
+        "x": 64,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 147.ase",
+      "frame": {
+        "x": 96,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 148.ase",
+      "frame": {
+        "x": 128,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 149.ase",
+      "frame": {
+        "x": 160,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 150.ase",
+      "frame": {
+        "x": 192,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 151.ase",
+      "frame": {
+        "x": 224,
+        "y": 1152,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 152.ase",
+      "frame": {
+        "x": 0,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 153.ase",
+      "frame": {
+        "x": 32,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 154.ase",
+      "frame": {
+        "x": 64,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 155.ase",
+      "frame": {
+        "x": 96,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 156.ase",
+      "frame": {
+        "x": 128,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 157.ase",
+      "frame": {
+        "x": 160,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 158.ase",
+      "frame": {
+        "x": 192,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 159.ase",
+      "frame": {
+        "x": 224,
+        "y": 1216,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 160.ase",
+      "frame": {
+        "x": 0,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 161.ase",
+      "frame": {
+        "x": 32,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 162.ase",
+      "frame": {
+        "x": 64,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 163.ase",
+      "frame": {
+        "x": 96,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 164.ase",
+      "frame": {
+        "x": 128,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 165.ase",
+      "frame": {
+        "x": 160,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 166.ase",
+      "frame": {
+        "x": 192,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 167.ase",
+      "frame": {
+        "x": 224,
+        "y": 1280,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 168.ase",
+      "frame": {
+        "x": 0,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 169.ase",
+      "frame": {
+        "x": 32,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 170.ase",
+      "frame": {
+        "x": 64,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 171.ase",
+      "frame": {
+        "x": 96,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 172.ase",
+      "frame": {
+        "x": 128,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 173.ase",
+      "frame": {
+        "x": 160,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 174.ase",
+      "frame": {
+        "x": 192,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 175.ase",
+      "frame": {
+        "x": 224,
+        "y": 1344,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 176.ase",
+      "frame": {
+        "x": 0,
+        "y": 1408,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 177.ase",
+      "frame": {
+        "x": 32,
+        "y": 1408,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 178.ase",
+      "frame": {
+        "x": 64,
+        "y": 1408,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Body4_Anims 179.ase",
+      "frame": {
+        "x": 96,
+        "y": 1408,
+        "w": 32,
+        "h": 64
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 64
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 64
+      },
+      "duration": 100
+    }
+  ],
+  "meta": {
+    "app": "http://www.aseprite.org/",
+    "version": "1.2.12.1-x64",
+    "image": "Body4_Anims.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 256,
+      "h": 1472
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "Down",
+        "from": 0,
+        "to": 7,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Down",
+        "from": 0,
+        "to": 0,
+        "direction": "forward"
+      },
+      {
+        "name": "Left",
+        "from": 8,
+        "to": 15,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Left",
+        "from": 8,
+        "to": 8,
+        "direction": "forward"
+      },
+      {
+        "name": "Right",
+        "from": 16,
+        "to": 23,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Right",
+        "from": 16,
+        "to": 16,
+        "direction": "forward"
+      },
+      {
+        "name": "Up",
+        "from": 24,
+        "to": 31,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Up",
+        "from": 24,
+        "to": 24,
+        "direction": "forward"
+      },
+      {
+        "name": "Carry Down",
+        "from": 32,
+        "to": 39,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Carry Down",
+        "from": 32,
+        "to": 32,
+        "direction": "forward"
+      },
+      {
+        "name": "Carry Left",
+        "from": 40,
+        "to": 47,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Carry Left",
+        "from": 40,
+        "to": 40,
+        "direction": "forward"
+      },
+      {
+        "name": "Carry Right",
+        "from": 48,
+        "to": 55,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Carry Right",
+        "from": 48,
+        "to": 48,
+        "direction": "forward"
+      },
+      {
+        "name": "Carry Up",
+        "from": 56,
+        "to": 63,
+        "direction": "forward"
+      },
+      {
+        "name": "Idle Carry Up",
+        "from": 56,
+        "to": 56,
+        "direction": "forward"
+      },
+      {
+        "name": "Grab Down",
+        "from": 64,
+        "to": 66,
+        "direction": "forward"
+      },
+      {
+        "name": "Grab Left",
+        "from": 67,
+        "to": 69,
+        "direction": "forward"
+      },
+      {
+        "name": "Grab Right",
+        "from": 70,
+        "to": 72,
+        "direction": "forward"
+      },
+      {
+        "name": "Grab Up",
+        "from": 73,
+        "to": 75,
+        "direction": "forward"
+      },
+      {
+        "name": "Hit Down",
+        "from": 76,
+        "to": 81,
+        "direction": "forward"
+      },
+      {
+        "name": "Hit Left",
+        "from": 82,
+        "to": 87,
+        "direction": "forward"
+      },
+      {
+        "name": "Hit Right",
+        "from": 88,
+        "to": 93,
+        "direction": "forward"
+      },
+      {
+        "name": "Hit Up",
+        "from": 94,
+        "to": 99,
+        "direction": "forward"
+      },
+      {
+        "name": "Pet Down",
+        "from": 100,
+        "to": 106,
+        "direction": "forward"
+      },
+      {
+        "name": "Pet Left",
+        "from": 107,
+        "to": 113,
+        "direction": "forward"
+      },
+      {
+        "name": "Pet Right",
+        "from": 114,
+        "to": 120,
+        "direction": "forward"
+      },
+      {
+        "name": "Pet Up",
+        "from": 121,
+        "to": 127,
+        "direction": "forward"
+      },
+      {
+        "name": "Sickle Down",
+        "from": 128,
+        "to": 132,
+        "direction": "forward"
+      },
+      {
+        "name": "Sickle Left",
+        "from": 133,
+        "to": 137,
+        "direction": "forward"
+      },
+      {
+        "name": "Sickle Right",
+        "from": 138,
+        "to": 142,
+        "direction": "forward"
+      },
+      {
+        "name": "Sickle Up",
+        "from": 143,
+        "to": 147,
+        "direction": "forward"
+      },
+      {
+        "name": "Water Down",
+        "from": 148,
+        "to": 155,
+        "direction": "forward"
+      },
+      {
+        "name": "Water Left",
+        "from": 156,
+        "to": 163,
+        "direction": "forward"
+      },
+      {
+        "name": "Water Right",
+        "from": 164,
+        "to": 171,
+        "direction": "forward"
+      },
+      {
+        "name": "Water Up",
+        "from": 172,
+        "to": 179,
+        "direction": "forward"
+      }
+    ],
+    "layers": [
+      {
+        "name": "Sprite Sheet",
+        "opacity": 255,
+        "blendMode": "normal"
+      }
+    ],
+    "slices": []
+  }
+}

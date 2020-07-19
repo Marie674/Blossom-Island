@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c1de61e39cb5d488fe0684e723aceb, type: 3}
+  m_Name: C_DarkSand
+  m_EditorClassIdentifier: 
+  Tileset: {fileID: 11400000, guid: e5049f5c92ba05b428341b955a3f8787, type: 2}
+  Params:
+    m_paramList:
+    - name: Terrain
+      _paramType: 5
+      _boolValue: 0
+      _intValue: 0
+      _floatValue: 0
+      _stringValue: DarkSand
+      _objectValue: {fileID: 0}
+  m_group: 0
+  m_autotilingMode: 17
+  m_showInPalette: 1
+  TileIds: 09013e0009013e0009013e004801000009013e0009013e00c80000000801000009013e004a01000009013e0049010000ca0000000a010000c900000009013e00
+  InteriorCornerTileIds: 46010000470100000601000007010000

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5857854973478966943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5857854973478966936}
+  - component: {fileID: 5857854973478966937}
+  - component: {fileID: 5857854973478966942}
+  m_Layer: 0
+  m_Name: ObjectSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5857854973478966936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857854973478966943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.404442, y: 11.93, z: -4.9435086}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &5857854973478966937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857854973478966943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2, y: 3.2}
+  m_EdgeRadius: 0
+--- !u!114 &5857854973478966942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857854973478966943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8f2e62408e48b4f82af44c17995173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmallObjects:
+  - {fileID: 1178371870142674, guid: 9b34def4e1034aa449acccd47b23e85d, type: 3}
+  - {fileID: 1480485574450744, guid: cff75f2ec32866549b2e90b3290964c9, type: 3}
+  - {fileID: 1762064532956170, guid: 4bf6b2f0db15a0a4d86b9a5fd7c40730, type: 3}
+  - {fileID: 1116255858128782, guid: 051cc5107a29b0443aed56c1ba4c68be, type: 3}
+  LargeObjects:
+  - {fileID: 1498830104766116, guid: e4540ef47998c5a40b1787718c4ce4ff, type: 3}
+  - {fileID: 6999630083852033770, guid: 7ad2239d45ad3a1448237546f2c317ce, type: 3}
+  - {fileID: 1988820328526698, guid: 214744a14e87b184ab35f1f987f9f265, type: 3}
+  SmallObjectsAmount: 2
+  LargeObjectAmount: 1
+  TryAmount: 5

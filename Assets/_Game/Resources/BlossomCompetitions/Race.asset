@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65fef348e0920034c8a150add7f49dc6, type: 3}
+  m_Name: Race
+  m_EditorClassIdentifier: 
+  Name: 1
+  Stat1: 2
+  Stat2: 0
+  Stat3: 0
+  Stat4: 0
+  StartingText:
+  - '[Blossom] is stretching their leg muscles, ready to zoom away.'
+  - '[Blossom] is staring intently at the racetrack.'
+  BadResultText:
+  - It's a go! [Blossom] is running at full speed... Oh no! [Blossom] tumbled down!
+  - It's a go! ...Oh no! [Blossom] decided to nap!
+  GoodResultText:
+  - It's a go! [Blossom] starts running and zooms past other runners!
+  - It's a go! [Blossom]'s little paws are going as fast as they can!
+  EndText:
+  - That's it for the [Competition]!
+  - What a [Competition]!

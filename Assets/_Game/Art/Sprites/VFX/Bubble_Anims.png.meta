@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: 2dead819b4592f843b66a6ed764b5d0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Bubble_AnimsBubble Heart_0
+  - first:
+      213: 21300002
+    second: Bubble_AnimsBubble Heart_1
+  - first:
+      213: 21300004
+    second: Bubble_AnimsBubble Heart_2
+  - first:
+      213: 21300006
+    second: Bubble_AnimsBubble Heart_3
+  - first:
+      213: 21300008
+    second: Bubble_AnimsBubble Heart_4
+  - first:
+      213: 21300010
+    second: Bubble_AnimsBubble Heart_5
+  - first:
+      213: 21300012
+    second: Bubble_AnimsBubble Heart_6
+  - first:
+      213: 21300014
+    second: Bubble_AnimsBubble Heart_7
+  - first:
+      213: 21300016
+    second: Bubble_AnimsBubble Heart_8
+  - first:
+      213: 21300018
+    second: Bubble_AnimsBubble Heart_9
+  - first:
+      213: 21300020
+    second: Bubble_AnimsBubble Heart_10
+  - first:
+      213: 21300022
+    second: Bubble_AnimsBubble Heart_11
+  - first:
+      213: 21300024
+    second: Bubble_AnimsBubble Heart_12
+  - first:
+      213: 21300026
+    second: Bubble_AnimsBubble Heart_13
+  - first:
+      213: 21300028
+    second: Bubble_AnimsBubble Heart_14
+  - first:
+      213: 21300030
+    second: Bubble_AnimsBubble Heart_15
+  - first:
+      213: 21300032
+    second: Bubble_AnimsBubble Heart_16
+  - first:
+      213: 21300034
+    second: Bubble_AnimsBubble Heart_17
+  - first:
+      213: 21300036
+    second: Bubble_AnimsBubble Heart_18
+  - first:
+      213: 21300038
+    second: Bubble_AnimsBubble Heart_19
+  - first:
+      213: 21300040
+    second: Bubble_AnimsBubble Heart_20
+  - first:
+      213: 21300042
+    second: Bubble_AnimsBubble Heart_21
+  - first:
+      213: 21300044
+    second: Bubble_AnimsBubble Heart_22
+  - first:
+      213: 21300046
+    second: Bubble_AnimsBubble Heart_23
+  - first:
+      213: 21300048
+    second: Bubble_AnimsBubble Heart_24
+  - first:
+      213: 21300050
+    second: Bubble_AnimsBubble Heart_25
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c7d9423baa7624a94b0ba8d9766df3
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedafa428798c8c4d9395ec45b783bdc
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ae9829661e14d44abd57957ad02d65
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc20cee4fc6c60343b86a97e6b0b7704
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3dada111e580d7408c03efb1ecf3ae1
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4baa254b1bf9b5d48b439f69ee9c4dac
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_6
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a69074c2525e24887f3cd0cfc2bcd2
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 227
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04208e717614c4643b59cd7c707cece5
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b39b0e041b23c429006c5e64254bfa
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd132673c08644b47a957cfb46e995a1
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebea61e3bf780be4a8601f51f27db9c5
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_11
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98d300a6961e6240b4309ba39314548
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_12
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20feddc440a78dd4fbd2fa2d53d14814
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3569cd7fcfdfba45b1cbeb874eecd22
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_14
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b04f73c935fd247acad8e867312d02
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 198
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d294d90fe84a33c49a9eb483ce1cbb6a
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd5ece6e0dc54046a4c7c41048907b5
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_17
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0a0f9f4b7eb964f9b38198c5f4d54f
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8893b46f2087c43983365a6e14faa9
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_19
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ecd2407909c20478157e2c804b2ad0
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e454ee20a5440f48be3e8bfde9b63a3
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426c8726ce73cd04597d13216a5b56ad
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_22
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f39a71533e54547b4b14dfaf49830c
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_23
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 169
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f6bf63a302dd745867b3a620f55b00
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8b92706e89b2549a4e075518621f92
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bubble_AnimsBubble Heart_25
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 140
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee494c5d55f66ce428642abcd04bc881
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c68d28d9eebfe6b4fa7b40b4e569913d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

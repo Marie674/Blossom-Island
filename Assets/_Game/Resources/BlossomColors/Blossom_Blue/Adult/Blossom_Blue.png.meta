@@ -1,0 +1,2575 @@
+fileFormatVersion: 2
+guid: 16f29d6b7a0ae8e48aa83c38c4dc72fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8287741395729036672
+    second: Blossom_Blue_0
+  - first:
+      213: -1445359522245222146
+    second: Blossom_Blue_1
+  - first:
+      213: 3973757849903679039
+    second: Blossom_Blue_2
+  - first:
+      213: 6657103311924896551
+    second: Blossom_Blue_3
+  - first:
+      213: -7045291244222420737
+    second: Blossom_Blue_4
+  - first:
+      213: 2866331020663989861
+    second: Blossom_Blue_5
+  - first:
+      213: 909921152102797940
+    second: Blossom_Blue_6
+  - first:
+      213: -6720690909195446352
+    second: Blossom_Blue_7
+  - first:
+      213: -7634509286788927192
+    second: Blossom_Blue_8
+  - first:
+      213: -7060371208726152345
+    second: Blossom_Blue_9
+  - first:
+      213: -8142075456953794155
+    second: Blossom_Blue_10
+  - first:
+      213: 5117475472816071806
+    second: Blossom_Blue_11
+  - first:
+      213: 8745174372374000125
+    second: Blossom_Blue_12
+  - first:
+      213: -4681928191318831078
+    second: Blossom_Blue_13
+  - first:
+      213: 6628050869400303352
+    second: Blossom_Blue_14
+  - first:
+      213: -5669546833039147975
+    second: Blossom_Blue_15
+  - first:
+      213: 2897757560022987606
+    second: Blossom_Blue_16
+  - first:
+      213: -7138177908998806241
+    second: Blossom_Blue_17
+  - first:
+      213: 2927498484283595856
+    second: Blossom_Blue_18
+  - first:
+      213: 6883332177305432070
+    second: Blossom_Blue_19
+  - first:
+      213: 3828883264453891874
+    second: Blossom_Blue_20
+  - first:
+      213: -4736053114345967204
+    second: Blossom_Blue_21
+  - first:
+      213: 8586094555775917030
+    second: Blossom_Blue_22
+  - first:
+      213: -2001604513279339769
+    second: Blossom_Blue_23
+  - first:
+      213: 3064331040037015328
+    second: Blossom_Blue_24
+  - first:
+      213: 63105035309810414
+    second: Blossom_Blue_25
+  - first:
+      213: -5034035568450096154
+    second: Blossom_Blue_26
+  - first:
+      213: 5561847192086260750
+    second: Blossom_Blue_27
+  - first:
+      213: 5125692006859664878
+    second: Blossom_Blue_28
+  - first:
+      213: -5501850508585740802
+    second: Blossom_Blue_29
+  - first:
+      213: 8148302288700769995
+    second: Blossom_Blue_30
+  - first:
+      213: -768494608604627585
+    second: Blossom_Blue_31
+  - first:
+      213: 292798998438784087
+    second: Blossom_BlueIdle Down_0
+  - first:
+      213: -7177476872833424621
+    second: Blossom_BlueWalk Down_1
+  - first:
+      213: -4470750632264503976
+    second: Blossom_BlueWalk Down_2
+  - first:
+      213: -3078948278805551978
+    second: Blossom_BlueWalk Down_3
+  - first:
+      213: -6842302862834965313
+    second: Blossom_BlueWalk Down_4
+  - first:
+      213: -7122896490561179464
+    second: Blossom_BlueWalk Down_5
+  - first:
+      213: 8956380948168766367
+    second: Blossom_BlueWalk Down_6
+  - first:
+      213: -3750278439878532756
+    second: Blossom_BlueWalk Down_7
+  - first:
+      213: 4445966219585257968
+    second: Blossom_BlueIdle Left_0
+  - first:
+      213: 2199604207238639870
+    second: Blossom_BlueWalk Left_1
+  - first:
+      213: -1948032241610583803
+    second: Blossom_BlueWalk Left_2
+  - first:
+      213: -3493644148498532193
+    second: Blossom_BlueWalk Left_3
+  - first:
+      213: -154689015000192439
+    second: Blossom_BlueWalk Left_4
+  - first:
+      213: -7388258337119818957
+    second: Blossom_BlueWalk Left_5
+  - first:
+      213: 6560345542928325991
+    second: Blossom_BlueWalk Left_6
+  - first:
+      213: 7317031748613379765
+    second: Blossom_BlueWalk Left_7
+  - first:
+      213: 8169581630759148709
+    second: Blossom_BlueIdle Right_0
+  - first:
+      213: -6037444261201743808
+    second: Blossom_BlueWalk Right_1
+  - first:
+      213: -5254046426048353955
+    second: Blossom_BlueWalk Right_2
+  - first:
+      213: -6315014644679396950
+    second: Blossom_BlueWalk Right_3
+  - first:
+      213: 6575628826335565209
+    second: Blossom_BlueWalk Right_4
+  - first:
+      213: 3694501340343814493
+    second: Blossom_BlueWalk Right_5
+  - first:
+      213: -1874056685457822691
+    second: Blossom_BlueWalk Right_6
+  - first:
+      213: -2890252379883476191
+    second: Blossom_BlueWalk Right_7
+  - first:
+      213: 2556325810700450478
+    second: Blossom_BlueIdle Up_0
+  - first:
+      213: 6645743090567430548
+    second: Blossom_BlueWalk Up_1
+  - first:
+      213: 7568282539253705747
+    second: Blossom_BlueWalk Up_2
+  - first:
+      213: 3907136958330197068
+    second: Blossom_BlueWalk Up_3
+  - first:
+      213: 6646314824504249577
+    second: Blossom_BlueWalk Up_4
+  - first:
+      213: -2359026246246503183
+    second: Blossom_BlueWalk Up_5
+  - first:
+      213: 2876678325990159795
+    second: Blossom_BlueWalk Up_6
+  - first:
+      213: -5277704545525240564
+    second: Blossom_BlueWalk Up_7
+  - first:
+      213: 8865720353720406909
+    second: Blossom_BlueWalk_down_0
+  - first:
+      213: 855224967796335244
+    second: Blossom_BlueWalk_down_1
+  - first:
+      213: 999677369906419080
+    second: Blossom_BlueWalk_down_2
+  - first:
+      213: 1163233904104938284
+    second: Blossom_BlueWalk_down_3
+  - first:
+      213: -8854292050524915996
+    second: Blossom_BlueWalk_down_4
+  - first:
+      213: -3979666407872398648
+    second: Blossom_BlueWalk_down_5
+  - first:
+      213: -6087119155297586825
+    second: Blossom_BlueWalk_down_6
+  - first:
+      213: -7589437784891206954
+    second: Blossom_BlueWalk_down_7
+  - first:
+      213: 8753328497595717614
+    second: Blossom_BlueWalk_left_0
+  - first:
+      213: -6218926474779884423
+    second: Blossom_BlueWalk_left_1
+  - first:
+      213: 5214014334178839629
+    second: Blossom_BlueWalk_left_2
+  - first:
+      213: 6614336052588583811
+    second: Blossom_BlueWalk_left_3
+  - first:
+      213: 320459589014849663
+    second: Blossom_BlueWalk_left_4
+  - first:
+      213: -5424853424647255612
+    second: Blossom_BlueWalk_left_5
+  - first:
+      213: 4948918784246246058
+    second: Blossom_BlueWalk_left_6
+  - first:
+      213: 1247646272022926643
+    second: Blossom_BlueWalk_left_7
+  - first:
+      213: -10825294571884449
+    second: Blossom_BlueWalk_right_0
+  - first:
+      213: 7539415069235918823
+    second: Blossom_BlueWalk_right_1
+  - first:
+      213: 7480754187871057509
+    second: Blossom_BlueWalk_right_2
+  - first:
+      213: 6871964214339798640
+    second: Blossom_BlueWalk_right_3
+  - first:
+      213: -811016380468348301
+    second: Blossom_BlueWalk_right_4
+  - first:
+      213: -2988005437231863230
+    second: Blossom_BlueWalk_right_5
+  - first:
+      213: -8513451953108507530
+    second: Blossom_BlueWalk_right_6
+  - first:
+      213: 1130914939894145399
+    second: Blossom_BlueWalk_right_7
+  - first:
+      213: 9035009583349515110
+    second: Blossom_BlueWalk_up_0
+  - first:
+      213: -1177388666579481350
+    second: Blossom_BlueWalk_up_1
+  - first:
+      213: 1857920210216043891
+    second: Blossom_BlueWalk_up_2
+  - first:
+      213: 237967252531195463
+    second: Blossom_BlueWalk_up_3
+  - first:
+      213: 6329480310349591848
+    second: Blossom_BlueWalk_up_4
+  - first:
+      213: -6962124224408697834
+    second: Blossom_BlueWalk_up_5
+  - first:
+      213: -948338435912341346
+    second: Blossom_BlueWalk_up_6
+  - first:
+      213: 3812989706501287208
+    second: Blossom_BlueWalk_up_7
+  - first:
+      213: 5605100558332308159
+    second: Blossom_BlueBreathe_down_0
+  - first:
+      213: 1721973997010258551
+    second: Blossom_BlueBreathe_down_1
+  - first:
+      213: 3621120117201533490
+    second: Blossom_BlueBreathe_down_2
+  - first:
+      213: -3417259238095679805
+    second: Blossom_BlueBreathe_down_3
+  - first:
+      213: -4280496115742506979
+    second: Blossom_BlueBlink_down_0
+  - first:
+      213: 7606589212479570852
+    second: Blossom_BlueBlink_down_1
+  - first:
+      213: 1321579850129448059
+    second: Blossom_BlueEar_down_0
+  - first:
+      213: 293783940653282081
+    second: Blossom_BlueEar_down_1
+  - first:
+      213: -3708203738266095501
+    second: Blossom_BlueBreathe_left_0
+  - first:
+      213: 3861114847838749751
+    second: Blossom_BlueBreathe_left_1
+  - first:
+      213: 1265321761486409244
+    second: Blossom_BlueBreathe_left_2
+  - first:
+      213: -6621700308199257116
+    second: Blossom_BlueBreathe_left_3
+  - first:
+      213: 7320436584876932535
+    second: Blossom_BlueBlink_left_0
+  - first:
+      213: -6157878740347535498
+    second: Blossom_BlueBlink_left_1
+  - first:
+      213: -81876234235619724
+    second: Blossom_BlueEar_left_0
+  - first:
+      213: 6788906344084699962
+    second: Blossom_BlueEar_left_1
+  - first:
+      213: 2790255173292867647
+    second: Blossom_BlueBreathe_right_0
+  - first:
+      213: 6403122566859665270
+    second: Blossom_BlueBreathe_right_1
+  - first:
+      213: 1041677958375711089
+    second: Blossom_BlueBreathe_right_2
+  - first:
+      213: -3509921466662616884
+    second: Blossom_BlueBreathe_right_3
+  - first:
+      213: 6323637882092282990
+    second: Blossom_BlueBlink_right_0
+  - first:
+      213: -9110585077291929962
+    second: Blossom_BlueBlink_right_1
+  - first:
+      213: -5594719406903178636
+    second: Blossom_BlueEar_right_0
+  - first:
+      213: 8976757812945111015
+    second: Blossom_BlueEar_right_1
+  - first:
+      213: 7245923045058525418
+    second: Blossom_BlueBreathe_up_0
+  - first:
+      213: 653295914648284484
+    second: Blossom_BlueBreathe_up_1
+  - first:
+      213: -3367384109261209878
+    second: Blossom_BlueBreathe_up_2
+  - first:
+      213: 7667171624665955674
+    second: Blossom_BlueBreathe_up_3
+  - first:
+      213: -1372691827587436470
+    second: Blossom_BlueBlink_up_0
+  - first:
+      213: 9178899699091773193
+    second: Blossom_BlueBlink_up_1
+  - first:
+      213: -6066899927084502573
+    second: Blossom_BlueEar_up_0
+  - first:
+      213: -3978446200459310121
+    second: Blossom_BlueEar_up_1
+  - first:
+      213: -7969726549402962398
+    second: Blossom_BlueSleep_left_0
+  - first:
+      213: -9209114423009241323
+    second: Blossom_BlueSleep_left_1
+  - first:
+      213: -2984789402962198902
+    second: Blossom_BlueSleep_left_2
+  - first:
+      213: 4437117029462836235
+    second: Blossom_BlueSleep_left_3
+  - first:
+      213: -6636804504855532645
+    second: Blossom_BlueSleep_left_4
+  - first:
+      213: 1835190663575122588
+    second: Blossom_BlueSleep_left_5
+  - first:
+      213: 1174832734877507899
+    second: Blossom_BlueSleep_left_6
+  - first:
+      213: 1954306637335789209
+    second: Blossom_BlueOthers_0
+  - first:
+      213: -2863110201666239912
+    second: Blossom_BlueSleep_right_0
+  - first:
+      213: 3182863211458281086
+    second: Blossom_BlueSleep_right_1
+  - first:
+      213: -2514419960985931502
+    second: Blossom_BlueSleep_right_2
+  - first:
+      213: -6460508586242417189
+    second: Blossom_BlueSleep_right_3
+  - first:
+      213: -6460168956085737613
+    second: Blossom_BlueSleep_right_4
+  - first:
+      213: 8367347863485828606
+    second: Blossom_BlueSleep_right_5
+  - first:
+      213: 5530930121288651976
+    second: Blossom_BlueSleep_right_6
+  - first:
+      213: -2136504084385128406
+    second: Blossom_BlueOthers_1
+  - first:
+      213: -2424170000559316140
+    second: Blossom_BlueTippytap_0
+  - first:
+      213: -3809754926369886289
+    second: Blossom_BlueTippytap_1
+  - first:
+      213: -6632656467889198261
+    second: Blossom_BlueTippytap_2
+  - first:
+      213: 7069460022220305002
+    second: Blossom_BlueTippytap_3
+  - first:
+      213: -4394415346655812962
+    second: Blossom_BlueTippytap_4
+  - first:
+      213: 7496556734592948978
+    second: Blossom_BlueTippytap_5
+  - first:
+      213: 5557882855985115273
+    second: Blossom_BlueTippytap_6
+  - first:
+      213: -1924527176811688114
+    second: Blossom_BlueTippytap_7
+  - first:
+      213: 9044360889964675354
+    second: Blossom_BlueTippytap_8
+  - first:
+      213: -8732802215878743168
+    second: Blossom_BlueTippytap_9
+  - first:
+      213: 3132183556693224749
+    second: Blossom_BlueTippytap_10
+  - first:
+      213: 3823134915177515639
+    second: Blossom_BlueTippytap_11
+  - first:
+      213: 1115547940192334008
+    second: Blossom_BlueTippytap_12
+  - first:
+      213: 4222204619134545019
+    second: Blossom_BlueTippytap_13
+  - first:
+      213: 3988182516101106541
+    second: Blossom_BlueTippytap_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73947960bd590b70800000000000000
+      internalID: 8865720353720406909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82ab88b39e5edb00800000000000000
+      internalID: 855224967796335244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885d44b75419fdd00800000000000000
+      internalID: 999677369906419080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b9ddc9213a42010800000000000000
+      internalID: 1163233904104938284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6b5e6ca4c3f1580800000000000000
+      internalID: -8854292050524915996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8caf53abc7265c8c0800000000000000
+      internalID: -3979666407872398648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771f2031165368ba0800000000000000
+      internalID: -6087119155297586825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_down_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2d1a29b86eca690800000000000000
+      internalID: -7589437784891206954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee71f7534e11a7970800000000000000
+      internalID: 8753328497595717614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974097a025fe1b9a0800000000000000
+      internalID: -6218926474779884423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c46827966eb5840800000000000000
+      internalID: 5214014334178839629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b1a977897dacb50800000000000000
+      internalID: 6614336052588583811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7809106c40827400800000000000000
+      internalID: 320459589014849663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9c6596d8c07b4b0800000000000000
+      internalID: -5424853424647255612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa614de9671ea440800000000000000
+      internalID: 4948918784246246058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_left_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33554419ca7805110800000000000000
+      internalID: 1247646272022926643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f503472b37a89dff0800000000000000
+      internalID: -10825294571884449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7b8085f0261a860800000000000000
+      internalID: 7539415069235918823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566f1149c4af0d760800000000000000
+      internalID: 7480754187871057509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0768be03b0f1e5f50800000000000000
+      internalID: 6871964214339798640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a392f16e0beb4f0800000000000000
+      internalID: -811016380468348301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24aebdec2e87886d0800000000000000
+      internalID: -2988005437231863230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674ac9a0e842ad980800000000000000
+      internalID: -8513451953108507530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_right_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771a29f5521d1bf00800000000000000
+      internalID: 1130914939894145399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6634cc5b85dc26d70800000000000000
+      internalID: 9035009583349515110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc85fdee3319afe0800000000000000
+      internalID: -1177388666579481350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37542f66698a8c910800000000000000
+      internalID: 1857920210216043891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e2c4394fd6d4300800000000000000
+      internalID: 237967252531195463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8257737aec4d6d750800000000000000
+      internalID: 6329480310349591848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6144af1a7e0916f90800000000000000
+      internalID: -6962124224408697834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9868909733d6d2f0800000000000000
+      internalID: -948338435912341346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueWalk_up_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dea3c9fe57ae430800000000000000
+      internalID: 3812989706501287208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaadbdb24159cd40800000000000000
+      internalID: 5605100558332308159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_down_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a81441a3ea5e710800000000000000
+      internalID: 1721973997010258551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_down_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a71d2af8dc04230800000000000000
+      internalID: 3621120117201533490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_down_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce82ef04d47390d0800000000000000
+      internalID: -3417259238095679805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_down_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d108ab6367f9894c0800000000000000
+      internalID: -4280496115742506979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_down_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3c92a5698009960800000000000000
+      internalID: 7606589212479570852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_down_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c97452fd1375210800000000000000
+      internalID: 1321579850129448059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_down_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1237a5fffeab31400800000000000000
+      internalID: 293783940653282081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370bfd1d850d98cc0800000000000000
+      internalID: -3708203738266095501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7344a6e3f7f659530800000000000000
+      internalID: 3861114847838749751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e08f720735f8110800000000000000
+      internalID: 1265321761486409244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb40b827aefa14a0800000000000000
+      internalID: -6621700308199257116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_left_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdfc52e94a679560800000000000000
+      internalID: 7320436584876932535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_left_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fb7a759e1da8aa0800000000000000
+      internalID: -6157878740347535498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_left_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476d6deaffd1ddef0800000000000000
+      internalID: -81876234235619724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_left_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b709cc95a073e50800000000000000
+      internalID: 6788906344084699962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3041d4fb4af8b620800000000000000
+      internalID: 2790255173292867647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f25f2ac067cd850800000000000000
+      internalID: 6403122566859665270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171a6578598c47e00800000000000000
+      internalID: 1041677958375711089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc08e0eb5014a4fc0800000000000000
+      internalID: -3509921466662616884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_right_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e646052562312c750800000000000000
+      internalID: 6323637882092282990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_right_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e2a046423b09180800000000000000
+      internalID: -9110585077291929962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_right_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a4d8d67509b52b0800000000000000
+      internalID: -5594719406903178636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_right_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e74e438ba9d39c70800000000000000
+      internalID: 8976757812945111015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8b7827e90be8460800000000000000
+      internalID: 7245923045058525418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_up_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d23dd4c29f01900800000000000000
+      internalID: 653295914648284484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_up_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeeb0396ef5a441d0800000000000000
+      internalID: -3367384109261209878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBreathe_up_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3b2068f3476a60800000000000000
+      internalID: 7667171624665955674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_up_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40b19e3e0833fce0800000000000000
+      internalID: -1372691827587436470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueBlink_up_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9071e49f4a0026f70800000000000000
+      internalID: 9178899699091773193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_up_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1f84ef8aa0ecba0800000000000000
+      internalID: -6066899927084502573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueEar_up_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbce976248b9c8c0800000000000000
+      internalID: -3978446200459310121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22636d1cde7d56190800000000000000
+      internalID: -7969726549402962398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5179b986937a23080800000000000000
+      internalID: -9209114423009241323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e76132ad5e396d0800000000000000
+      internalID: -2984789402962198902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0408ffed6ec39d30800000000000000
+      internalID: 4437117029462836235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9baf54577555e3a0800000000000000
+      internalID: -6636804504855532645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92328d6f28e77910800000000000000
+      internalID: 1835190663575122588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_left_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31efd8d528dd4010800000000000000
+      internalID: 1174832734877507899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueOthers_0
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e769448871f1b10800000000000000
+      internalID: 1954306637335789209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85203e4e0703448d0800000000000000
+      internalID: -2863110201666239912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e31af2a3dcb2c20800000000000000
+      internalID: 3182863211458281086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21138411e5cfa1dd0800000000000000
+      internalID: -2514419960985931502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddd8a88ba9a756a0800000000000000
+      internalID: -6460508586242417189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377e087df8ed856a0800000000000000
+      internalID: -6460168956085737613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd423bbc8ace1470800000000000000
+      internalID: 8367347863485828606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueSleep_right_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c41be424afc1cc40800000000000000
+      internalID: 5530930121288651976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueOthers_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20ad0ddadc9952e0800000000000000
+      internalID: -2136504084385128406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453e0817a3e9b5ed0800000000000000
+      internalID: -2424170000559316140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafad645418012bc0800000000000000
+      internalID: -3809754926369886289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b6442751214f3a0800000000000000
+      internalID: -6632656467889198261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6234424f64cb1260800000000000000
+      internalID: 7069460022220305002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e922e0b5686e303c0800000000000000
+      internalID: -4394415346655812962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa99f3b1ae190860800000000000000
+      internalID: 7496556734592948978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980f936b201912d40800000000000000
+      internalID: 5557882855985115273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fcd81bab4ba45e0800000000000000
+      internalID: -1924527176811688114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11c7c27f46048d70800000000000000
+      internalID: 9044360889964675354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08badcc27aadec680800000000000000
+      internalID: -8732802215878743168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2de40c8950c77b20800000000000000
+      internalID: 3132183556693224749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a8c8313f08e0530800000000000000
+      internalID: 3823134915177515639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b03511f0f83b7f00800000000000000
+      internalID: 1115547940192334008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c278c1bb8489a30800000000000000
+      internalID: 4222204619134545019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_BlueTippytap_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b41ab3eded85730800000000000000
+      internalID: 3988182516101106541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5182345807910703141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5181028353944320703}
+  - component: {fileID: 5079801893039723175}
+  m_Layer: 0
+  m_Name: Recipe Plank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5181028353944320703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182345807910703141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.3964996, y: 4.4606977, z: 84.06268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5079801893039723175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5182345807910703141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00825cd2f1a6010469120f6826a54e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Recipe:
+    Ingredients:
+    - Item: {fileID: 114794672590353198, guid: 1514e8f8cf83fc24daf29f3433fd8b5a, type: 3}
+      Amount: 1
+      Used: 1
+    Outputs:
+    - Item: {fileID: 114177153107961662, guid: cf438ab6def81694fb22f1315c2770b5, type: 3}
+      Amount: 3
+      Chance: 100
+      ByProduct: 0
+    - Item: {fileID: 5786469319123668187, guid: c0386505ff314d24a86106fe832db286,
+        type: 3}
+      Amount: 1
+      Chance: 20
+      ByProduct: 1
+    CraftingTime: 3
+    NeedsToBeLearned: 0
+  Amount: 1
+  UniqueName: Plank

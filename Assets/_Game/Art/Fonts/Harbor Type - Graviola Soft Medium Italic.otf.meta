@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8df25dcf5e626ed4a98e92b8794b399b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Graviola Soft
+  fontNames:
+  - Graviola Soft
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 508c4a4550d9bd7489397169d29f3168, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

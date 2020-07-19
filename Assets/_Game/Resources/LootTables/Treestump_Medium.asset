@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80daf0e12868004d94df964f3e4c44a, type: 3}
+  m_Name: Treestump_Medium
+  m_EditorClassIdentifier: 
+  Items:
+  - Item: {fileID: 114794672590353198, guid: 1514e8f8cf83fc24daf29f3433fd8b5a, type: 3}
+    Chance: 100
+  MinTries: 1
+  MaxTries: 1
+  MinSpawn: -1

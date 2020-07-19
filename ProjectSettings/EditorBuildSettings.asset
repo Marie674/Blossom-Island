@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Preload.unity
+    guid: 977a45e0a16fdc947a83613f7bdb7a25
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Title.unity
+    guid: a8e5bb321798106479fa0d8e678d4cd3
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Loading.unity
+    guid: de901c0d01460374e9e9eade4af025e3
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Home.unity
+    guid: 82cf889e0e344d047aa2ca13b460c59c
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Farmhouse.unity
+    guid: 6fe7c5e69d4f74d4c98613059e3bf11e
+  - enabled: 1
+    path: Assets/_Game/_Scenes/GeneralStore.unity
+    guid: 405f5e186f6902344aa4765c87aa9e5e
+  - enabled: 0
+    path: Assets/_Game/_Scenes/Town.unity
+    guid: c5b93544ae16451489f0a5ba9247eacf
+  - enabled: 1
+    path: Assets/_Game/_Scenes/NewGame.unity
+    guid: 8d0f5a60c5df88943b99756c775f48c8
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Road1.unity
+    guid: c152cc3c01a8b18439426dc112edfab7
+  - enabled: 0
+    path: Assets/_Game/_Scenes/Beach.unity
+    guid: 4a28b05fce6062b49b91f199bff3c4d5
+  - enabled: 1
+    path: Assets/_Game/_Scenes/Restaurant.unity
+    guid: f404b53c644280941beb6c6fb4ecf4bd
+  - enabled: 1
+    path: Assets/_Game/_Scenes/BlossomStore.unity
+    guid: cc44edd40c3e06641b7c2ae7ca63ffeb
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 359fdb41470ea6c4cb0f96573165e4f1,
+      type: 2}

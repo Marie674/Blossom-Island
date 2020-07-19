@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 9b38914524e04c04d9dd296875fe8ae0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Blossom_Baby_Brown_0
+  - first:
+      213: 21300002
+    second: Blossom_Baby_Brown_1
+  - first:
+      213: 21300004
+    second: Blossom_Baby_Brown_2
+  - first:
+      213: 21300006
+    second: Blossom_Baby_Brown_3
+  - first:
+      213: 21300008
+    second: Blossom_Baby_Brown_4
+  - first:
+      213: 21300010
+    second: Blossom_Baby_Brown_5
+  - first:
+      213: 21300012
+    second: Blossom_Baby_Brown_6
+  - first:
+      213: 21300014
+    second: Blossom_Baby_Brown_7
+  - first:
+      213: 21300016
+    second: Blossom_Baby_Brown_8
+  - first:
+      213: 21300018
+    second: Blossom_Baby_Brown_9
+  - first:
+      213: 21300020
+    second: Blossom_Baby_Brown_10
+  - first:
+      213: 21300022
+    second: Blossom_Baby_Brown_11
+  - first:
+      213: 21300024
+    second: Blossom_Baby_Brown_12
+  - first:
+      213: 21300026
+    second: Blossom_Baby_Brown_13
+  - first:
+      213: 21300028
+    second: Blossom_Baby_Brown_14
+  - first:
+      213: 21300030
+    second: Blossom_Baby_Brown_15
+  - first:
+      213: 21300032
+    second: Blossom_Baby_Brown_16
+  - first:
+      213: 21300034
+    second: Blossom_Baby_Brown_17
+  - first:
+      213: 21300036
+    second: Blossom_Baby_Brown_18
+  - first:
+      213: 21300038
+    second: Blossom_Baby_Brown_19
+  - first:
+      213: 21300040
+    second: Blossom_Baby_Brown_20
+  - first:
+      213: 21300042
+    second: Blossom_Baby_Brown_21
+  - first:
+      213: 21300044
+    second: Blossom_Baby_Brown_22
+  - first:
+      213: 21300046
+    second: Blossom_Baby_Brown_23
+  - first:
+      213: 21300048
+    second: Blossom_Baby_Brown_24
+  - first:
+      213: 21300050
+    second: Blossom_Baby_Brown_25
+  - first:
+      213: 21300052
+    second: Blossom_Baby_Brown_26
+  - first:
+      213: 21300054
+    second: Blossom_Baby_Brown_27
+  - first:
+      213: 21300056
+    second: Blossom_Baby_Brown_28
+  - first:
+      213: 21300058
+    second: Blossom_Baby_Brown_29
+  - first:
+      213: 21300060
+    second: Blossom_Baby_Brown_30
+  - first:
+      213: 21300062
+    second: Blossom_Baby_Brown_31
+  - first:
+      213: -6247085497655482142
+    second: Blossom_Baby_BrownIdle Down_0
+  - first:
+      213: -3803857972520988305
+    second: Blossom_Baby_BrownWalk Down_1
+  - first:
+      213: -1608431072651975378
+    second: Blossom_Baby_BrownWalk Down_2
+  - first:
+      213: -2702925084932818195
+    second: Blossom_Baby_BrownWalk Down_3
+  - first:
+      213: -2048133257537665149
+    second: Blossom_Baby_BrownWalk Down_4
+  - first:
+      213: 8206166508090532251
+    second: Blossom_Baby_BrownWalk Down_5
+  - first:
+      213: -2810351480382922529
+    second: Blossom_Baby_BrownWalk Down_6
+  - first:
+      213: 178415802435541897
+    second: Blossom_Baby_BrownWalk Down_7
+  - first:
+      213: 6550490865698232935
+    second: Blossom_Baby_BrownIdle Left_0
+  - first:
+      213: -7447668837518755254
+    second: Blossom_Baby_BrownWalk Left_1
+  - first:
+      213: -2768161192907086227
+    second: Blossom_Baby_BrownWalk Left_2
+  - first:
+      213: -4130964028400557332
+    second: Blossom_Baby_BrownWalk Left_3
+  - first:
+      213: 8293782510898502073
+    second: Blossom_Baby_BrownWalk Left_4
+  - first:
+      213: -2869116292131446487
+    second: Blossom_Baby_BrownWalk Left_5
+  - first:
+      213: -6292403830448851184
+    second: Blossom_Baby_BrownWalk Left_6
+  - first:
+      213: 5723566582800715039
+    second: Blossom_Baby_BrownWalk Left_7
+  - first:
+      213: 450823035039826802
+    second: Blossom_Baby_BrownIdle Right_0
+  - first:
+      213: 540325098660416501
+    second: Blossom_Baby_BrownWalk Right_1
+  - first:
+      213: -8080027202014044691
+    second: Blossom_Baby_BrownWalk Right_2
+  - first:
+      213: 6736316223476614776
+    second: Blossom_Baby_BrownWalk Right_3
+  - first:
+      213: -2339626091951559927
+    second: Blossom_Baby_BrownWalk Right_4
+  - first:
+      213: 621624986495225249
+    second: Blossom_Baby_BrownWalk Right_5
+  - first:
+      213: -3423027590820348898
+    second: Blossom_Baby_BrownWalk Right_6
+  - first:
+      213: 2162116061250708290
+    second: Blossom_Baby_BrownWalk Right_7
+  - first:
+      213: 2991256662158952690
+    second: Blossom_Baby_BrownIdle Up_0
+  - first:
+      213: 248978766886566328
+    second: Blossom_Baby_BrownWalk Up_1
+  - first:
+      213: 1408475262829956463
+    second: Blossom_Baby_BrownWalk Up_2
+  - first:
+      213: 1786313701085636484
+    second: Blossom_Baby_BrownWalk Up_3
+  - first:
+      213: 6492690091152729179
+    second: Blossom_Baby_BrownWalk Up_4
+  - first:
+      213: -8497800948522229939
+    second: Blossom_Baby_BrownWalk Up_5
+  - first:
+      213: 3390325950285924212
+    second: Blossom_Baby_BrownWalk Up_6
+  - first:
+      213: 4549990081704841282
+    second: Blossom_Baby_BrownWalk Up_7
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownIdle Down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e820ce96d4ed49a0800000000000000
+      internalID: -6247085497655482142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6159d3e35bf53bc0800000000000000
+      internalID: -3803857972520988305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25e0e41674bda9e0800000000000000
+      internalID: -1608431072651975378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea361ab4f74d7ad0800000000000000
+      internalID: -2702925084932818195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387cdcb57a19393e0800000000000000
+      internalID: -2048133257537665149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91a17206f822e170800000000000000
+      internalID: 8206166508090532251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd068cde730aff8d0800000000000000
+      internalID: -2810351480382922529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Down_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 120
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b9c7e1a3cd97200800000000000000
+      internalID: 178415802435541897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownIdle Left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a52628cb408ea50800000000000000
+      internalID: 6550490865698232935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ab2f6d6a094a890800000000000000
+      internalID: -7447668837518755254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6660c7bf048599d0800000000000000
+      internalID: -2768161192907086227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2a44b5a1edba6c0800000000000000
+      internalID: -4130964028400557332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9d376504f691370800000000000000
+      internalID: 8293782510898502073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921283cfee9de28d0800000000000000
+      internalID: -2869116292131446487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017f9c60e04eca8a0800000000000000
+      internalID: -6292403830448851184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Left_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 80
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d02287b713e6f40800000000000000
+      internalID: 5723566582800715039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownIdle Right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273cc1c6925a14600800000000000000
+      internalID: 450823035039826802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbc1e080de9f7700800000000000000
+      internalID: 540325098660416501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded9570d11afddf80800000000000000
+      internalID: -8080027202014044691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876460b2ae33c7d50800000000000000
+      internalID: 6736316223476614776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bedf9177af78fd0800000000000000
+      internalID: -2339626091951559927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad0e87b1a470a800800000000000000
+      internalID: 621624986495225249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cbac8ca86fe70d0800000000000000
+      internalID: -3423027590820348898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Right_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 40
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243e3023a11610e10800000000000000
+      internalID: 2162116061250708290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownIdle Up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8410cf514138920800000000000000
+      internalID: 2991256662158952690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b973ec8edc847300800000000000000
+      internalID: 248978766886566328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d87e30ac8eb8310800000000000000
+      internalID: 1408475262829956463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4876f9ac8d24ac810800000000000000
+      internalID: 1786313701085636484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b546bd7fc3baa1a50800000000000000
+      internalID: 6492690091152729179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fda538f0fb11a80800000000000000
+      internalID: -8497800948522229939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477c4933d7bdc0f20800000000000000
+      internalID: 3390325950285924212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_Baby_BrownWalk Up_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24051975fdfc42f30800000000000000
+      internalID: 4549990081704841282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b09afdabdd8070244b9f4bb5d950f206
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
