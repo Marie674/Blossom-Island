@@ -43,6 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfc48417937445438f5b4a4fd25879a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowCursor: 1
+  AffectsObjects: 0
+  AffectsTilemap: 1
   AllowedTags: []
   CurrentTool:
     itemName: 
@@ -88,6 +91,13 @@ MonoBehaviour:
     Output:
       Item: {fileID: 6369227739873283540, guid: f532eed374749a24b8a9b65843ed4a5d,
         type: 3}
+      Amount: 1
+      Chance: 70
+      ByProduct: 0
+    Input: {fileID: 0}
+  - Name: Dark Sand
+    Output:
+      Item: {fileID: 114293296045674366, guid: 07179f60b42e8954e980a395d12fa735, type: 3}
       Amount: 1
       Chance: 70
       ByProduct: 0

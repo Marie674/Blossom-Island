@@ -14,6 +14,7 @@ TagManager:
   - Tree
   - PlayerInventoryUI
   - Prop
+  - Debris Layer
   layers:
   - Default
   - TransparentFX

@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
-public class EventManager : MonoBehaviour
+using System.Linq;
+public class EventManager : Singleton<EventManager>
 {
 
+    [SerializeField]
     GameEvent[] Events = new GameEvent[0];
     public List<GameEvent> EligibleEvents = new List<GameEvent>();
-    List<GameEvent> PlayedEvents = new List<GameEvent>();
-    string CurrentScene;
-    string PreviousScene;
+    public List<GameEvent> PlayedEvents = new List<GameEvent>();
+    Vector2 InitialPos;
 
+    public bool Playing = false;
     void OnEnable()
     {
         Events = Resources.LoadAll<GameEvent>("GameEvents");
@@ -25,96 +27,41 @@ public class EventManager : MonoBehaviour
 
     void SceneChange()
     {
-        if (GameManager.Instance.LevelInfo != null)
-        {
-            CurrentScene = GameManager.Instance.LevelInfo.Name;
-
-        }
-        else
-        {
-            CurrentScene = string.Empty;
-        }
-        if (GameManager.Instance.PreviousLevelInfo != null)
-        {
-            PreviousScene = GameManager.Instance.PreviousLevelInfo.Name;
-
-        }
-        else
-        {
-            PreviousScene = string.Empty;
-        }
         GetEvents();
-        StartCoroutine("Play");
-    }
-
-    private IEnumerator Play()
-    {
-        yield return new WaitForSeconds(0.1f);
         PlayEvent();
     }
 
     void PlayEvent()
     {
-        if (EligibleEvents.Count <= 0)
+        if (EligibleEvents.Count < 1)
         {
             return;
         }
+        Playing = true;
         GameEvent currentEvent = EligibleEvents[0];
-        DialogueManager.StopConversation();
-        //        print("Playing event: " + currentEvent.Name);
-
-        DialogueManager.StartConversation(currentEvent.ConversationTitle);
-        if (!PlayedEvents.Contains(currentEvent))
+        GameManager.Instance.StartCutscene(currentEvent.PlayerPos, currentEvent.PlayerFacing, currentEvent.ConversationTitle, currentEvent.NPCLocations, currentEvent.EventTriggers);
+        if (!PlayedEvents.Contains(currentEvent) && currentEvent.Replayable == false)
         {
             PlayedEvents.Add(currentEvent);
         }
         EligibleEvents.Remove(currentEvent);
+    }
+
+    public void EventDone()
+    {
+        GameManager.Instance.EndCutscene();
+        EligibleEvents = EligibleEvents.Where(x => x != null).ToList();
         PlayEvent();
     }
-
-    void EventDone()
-    {
-
-    }
-
-    bool CheckIfPlayed(GameEvent pEvent)
-    {
-        if (PlayedEvents.Contains(pEvent))
-        {
-            return true;
-        }
-        return false;
-    }
-
     void GetEvents()
     {
-
+        EligibleEvents.Clear();
         foreach (GameEvent gameEvent in Events)
         {
-            //print(gameEvent.Name);
-            if (gameEvent.Location != string.Empty && gameEvent.Location != CurrentScene)
+            if (gameEvent.CheckValidity() == true)
             {
-                //    print("wrong location");
-                continue;
-            }
-            if (gameEvent.FromLocation != string.Empty && gameEvent.FromLocation != PreviousScene)
-            {
-                //     print("wrong previous location");
-                continue;
-            }
-            if (CheckIfPlayed(gameEvent) == true && gameEvent.Replayable == false)
-            {
-                //                print("already played");
-
-                continue;
-            }
-            //           print("Checking " + gameEvent.Name);
-            if (DialogueManager.ConversationHasValidEntry(gameEvent.ConversationTitle))
-            {
-                //                print("Checked " + gameEvent.Name);
                 EligibleEvents.Add(gameEvent);
             }
-
         }
     }
 }

@@ -14,8 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Intro 2
   ConversationTitle: Intro 2
+  PlayerPos: {x: 44, y: 93}
+  PlayerFacing: 0
+  NPCLocations:
+  - NPCID: Robin
+    Position: {x: 44, y: 92}
+    Facing: 3
+  EventTriggers:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000}
+        m_MethodName: GiveStarterBlossom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  HourSpan:
+    StartHour: 6
+    StartMinute: 0
+    EndHour: 21
+    EndMinute: 0
+  AllowedWeekdays: 
+  AllowedWeathers: []
+  AllowedMonths: 
   Location: Home
-  FromLocation: 
+  FromLocation: Farmhouse
   FestivalAllowed: 1
   CanQueue: 0
   Replayable: 0
+  MinimumDays: 2
+  PreRequisites: []

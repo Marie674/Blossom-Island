@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ItemSystem;
 using UnityEngine.SceneManagement;
-
+using Game.NPCs.Blossoms;
 public class PlaceObjectCursor : MonoBehaviour
 {
     protected SpriteRenderer Sprite;
@@ -70,13 +70,13 @@ public class PlaceObjectCursor : MonoBehaviour
         {
             validPlacement = false;
         }
-        if (Item.ValidLevels.Count>0 && !Item.ValidLevels.Contains(SceneManager.GetActiveScene().name))
+        if (Item.ValidLevels.Count > 0 && !Item.ValidLevels.Contains(SceneManager.GetActiveScene().name))
         {
             validPlacement = false;
         }
-        if (referencedObject.GetComponent<Game.Blossoms.Hut>() != null)
+        if (referencedObject.GetComponent<Hut>() != null)
         {
-            if(Game.Blossoms.BlossomManager.Instance.HutAmount>= Game.Blossoms.BlossomManager.Instance.MaxHuts)
+            if (BlossomManager.Instance.HutAmount >= BlossomManager.Instance.MaxHuts)
             {
                 validPlacement = false;
             }

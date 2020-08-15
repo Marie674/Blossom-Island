@@ -4,7 +4,7 @@ using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
 

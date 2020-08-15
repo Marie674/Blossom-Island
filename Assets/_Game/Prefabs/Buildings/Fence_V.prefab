@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8929970974067625417
 Transform:
@@ -47,10 +47,11 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  - {fileID: 2100000, guid: 8fcbf5ec1127b4f4684824ee5f4d5789, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -96,6 +98,7 @@ MonoBehaviour:
   AdjustXY: 0
   AdjustZ: 1
   FixedZ: 0
+  Units: 1
   AdjustOnUpdate: 0
 --- !u!61 &8929970974067625422
 BoxCollider2D:
@@ -112,9 +115,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.06}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0.71999997, z: 0, w: 0.24}
+    border: {x: 0, y: 2.25, z: 0, w: 0.75}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 1.28}
+    oldSize: {x: 1, y: 4}
     newSize: {x: 0.32, y: 4.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 2

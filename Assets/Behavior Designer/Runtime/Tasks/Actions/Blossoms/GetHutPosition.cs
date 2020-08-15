@@ -1,5 +1,5 @@
 using UnityEngine;
-using Game.Blossoms;
+using Game.NPCs.Blossoms;
 namespace BehaviorDesigner.Runtime.Tasks.Blossoms
 {
     [TaskCategory("Blossoms")]
@@ -18,7 +18,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Blossoms
         public override void OnStart()
         {
             var currentGameObject = GetDefaultGameObject(targetGameObject.Value);
-            if (currentGameObject != prevGameObject) {
+            if (currentGameObject != prevGameObject)
+            {
                 targetPosition = currentGameObject.GetComponent<BlossomData>().HutPosition;
                 prevGameObject = currentGameObject;
             }
@@ -26,7 +27,8 @@ namespace BehaviorDesigner.Runtime.Tasks.Blossoms
 
         public override TaskStatus OnUpdate()
         {
-            if (targetPosition == null) {
+            if (targetPosition == null)
+            {
                 Debug.LogWarning("Position is null");
                 return TaskStatus.Failure;
             }

@@ -1,9 +1,8 @@
 ﻿using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     [CreateAssetMenu(menuName = "Blossoms/Competition")]
     public class BlossomCompetition : ScriptableObject

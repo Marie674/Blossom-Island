@@ -9,7 +9,7 @@ public class DialogueEventsScriptableObject : ScriptableObject
     public void SelectTier()
     {
         DialogueManager.StopConversation();
-        Game.Blossoms.BlossomCompetitionManager.Instance.ShowTierSelect();
+        Game.NPCs.Blossoms.BlossomCompetitionManager.Instance.ShowTierSelect();
     }
 
     public void SkipCompetition()

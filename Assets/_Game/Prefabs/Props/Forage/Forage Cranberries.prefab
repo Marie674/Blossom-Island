@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &1323814224850501757
 RectTransform:
@@ -172,7 +172,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!224 &2586398664307231091
 RectTransform:
@@ -270,7 +270,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6287723572677537596
 Transform:
@@ -345,7 +345,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2041550627316153260
 Transform:
@@ -420,7 +420,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3918073305242034240
 Transform:
@@ -495,7 +495,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5383601711129006141
 Transform:
@@ -572,12 +572,13 @@ GameObject:
   - component: {fileID: 3731942786631221039}
   - component: {fileID: 31840100328885200}
   - component: {fileID: 3119350316375833546}
+  - component: {fileID: -6359401995513355}
   m_Layer: 12
   m_Name: Forage Cranberries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9192620171455553587
 Transform:
@@ -616,7 +617,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  - {fileID: 2100000, guid: 8fcbf5ec1127b4f4684824ee5f4d5789, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -727,7 +728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OccupiedTileId: 0
   TileCollisions:
-  - Collisions: 01
+  - Collisions: 00000000
   Init: 1
   Width: 1
   Height: 1
@@ -736,6 +737,7 @@ MonoBehaviour:
   OccupyOnStart: 1
   OccupiedLayer: {fileID: 0}
   AllowedTerrains: []
+  AllowedValues: ffff000003000000
   CheckTerrain: 0
 --- !u!114 &3731942786631221039
 MonoBehaviour:
@@ -782,3 +784,15 @@ MonoBehaviour:
   Outputs:
   - {fileID: 11400000, guid: 1b15ff2ba8a1ba341be016593fd57297, type: 2}
   Particle: 2
+--- !u!114 &-6359401995513355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9194255416341169107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

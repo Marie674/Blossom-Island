@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8504577958375365903
 Transform:
@@ -91,7 +91,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &788124755385871730
 Transform:
@@ -168,12 +168,13 @@ GameObject:
   - component: {fileID: 8328026801516102240}
   - component: {fileID: 4623085851801794207}
   - component: {fileID: 7715711678979344005}
+  - component: {fileID: -5273564991460892093}
   m_Layer: 12
   m_Name: Plant Clivia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4596804295608900988
 Transform:
@@ -212,7 +213,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  - {fileID: 2100000, guid: 8fcbf5ec1127b4f4684824ee5f4d5789, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OccupiedTileId: 0
   TileCollisions:
-  - Collisions: 01
+  - Collisions: 00000000
   Init: 1
   Width: 1
   Height: 1
@@ -332,6 +333,7 @@ MonoBehaviour:
   OccupyOnStart: 1
   OccupiedLayer: {fileID: 0}
   AllowedTerrains: []
+  AllowedValues: ffff000003000000
   CheckTerrain: 0
 --- !u!114 &8328026801516102240
 MonoBehaviour:
@@ -378,6 +380,18 @@ MonoBehaviour:
   Outputs:
   - {fileID: 11400000, guid: be7148d6128354e408ea6f0cfa1b26c1, type: 2}
   Particle: 2
+--- !u!114 &-5273564991460892093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4593971679323684508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4981789150460551404
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +408,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &5910618782600150322
 RectTransform:
@@ -550,7 +564,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!224 &7186941881947993148
 RectTransform:
@@ -648,7 +662,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1665176511834722931
 Transform:
@@ -723,7 +737,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6632840226145781475
 Transform:

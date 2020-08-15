@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
 

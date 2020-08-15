@@ -18,12 +18,13 @@ GameObject:
   - component: {fileID: 114468218350442564}
   - component: {fileID: 114867610296961988}
   - component: {fileID: 44410615514990723}
+  - component: {fileID: 1395346596049061393}
   m_Layer: 12
   m_Name: Small Stone 2
   m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4414857117478294
 Transform:
@@ -57,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  - {fileID: 2100000, guid: 8fcbf5ec1127b4f4684824ee5f4d5789, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OccupiedTileId: 0
   TileCollisions:
-  - Collisions: 01
+  - Collisions: 00000000
   Init: 1
   Width: 1
   Height: 1
@@ -212,6 +213,7 @@ MonoBehaviour:
   OccupyOnStart: 1
   OccupiedLayer: {fileID: 0}
   AllowedTerrains: []
+  AllowedValues: ffff000003000000
   CheckTerrain: 0
 --- !u!114 &44410615514990723
 MonoBehaviour:
@@ -226,3 +228,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KeyName: 
+--- !u!114 &1395346596049061393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480485574450744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

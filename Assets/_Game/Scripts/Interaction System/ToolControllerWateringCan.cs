@@ -6,7 +6,7 @@ public class ToolControllerWateringCan : ToolControllerTileBased
 {
     protected override IEnumerator UseCountdown()
     {
-        Vector2 pos = ToolCursorManager.Instance.CurrentCursor.transform.position;
+        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
         List<Vector2> tiles = ToolCursorManager.Instance.GetTiles();
 
@@ -15,7 +15,6 @@ public class ToolControllerWateringCan : ToolControllerTileBased
     }
     protected override void ProceedUse(List<Vector2> pTiles)
     {
-
         NeedBase energyNeed = PlayerNeedManager.Instance.GetNeed("Energy");
         energyNeed.Change(-CurrentTool.energyCost * (ToolCursorManager.Instance.CursorIndex + 1));
 
@@ -27,12 +26,14 @@ public class ToolControllerWateringCan : ToolControllerTileBased
             {
                 FarmPlot plot = GetPlot(tile);
                 plot.Water();
+                CurrentTool.CurrentCharge = Mathf.Clamp(CurrentTool.CurrentCharge - 1, 0, CurrentTool.MaxCharge);
+
                 if (plot.Crop != null)
                 {
+
                     plot.Crop.Water();
                 }
             }
-            CurrentTool.CurrentCharge = Mathf.Clamp(CurrentTool.CurrentCharge - 1, 0, CurrentTool.MaxCharge);
         }
 
     }

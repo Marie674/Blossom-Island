@@ -26,6 +26,10 @@ public class RegisterLuaFunctions : MonoBehaviour
         Lua.RegisterFunction("GiveStarterBlossom", this, typeof(RegisterLuaFunctions).GetMethod("GiveStarterBlossom"));
         Lua.RegisterFunction("TeachRecipe", this, typeof(RegisterLuaFunctions).GetMethod("TeachRecipe"));
         Lua.RegisterFunction("SetQuestActive", this, typeof(RegisterLuaFunctions).GetMethod("SetQuestActive"));
+        Lua.RegisterFunction("EventDone", this, typeof(RegisterLuaFunctions).GetMethod("EventDone"));
+        Lua.RegisterFunction("FadeIn", this, typeof(RegisterLuaFunctions).GetMethod("FadeIn"));
+        Lua.RegisterFunction("FadeOut", this, typeof(RegisterLuaFunctions).GetMethod("FadeOut"));
+
 
     }
 
@@ -49,21 +53,36 @@ public class RegisterLuaFunctions : MonoBehaviour
         Lua.UnregisterFunction("GiveStarterBlossom");
         Lua.UnregisterFunction("ReachRecipe");
         Lua.UnregisterFunction("SetQuestActive");
+        Lua.UnregisterFunction("EventDone");
+        Lua.UnregisterFunction("FadeIn");
+        Lua.UnregisterFunction("FadeOut");
     }
 
+    public void FadeIn(float pTime)
+    {
+        GameManager.Instance.FadeIn(pTime);
+    }
+    public void FadeOut(float pTime)
+    {
+        GameManager.Instance.FadeOut(pTime);
+    }
+    public void EventDone()
+    {
+        EventManager.Instance.EventDone();
+    }
     public void SetQuestActive(string pQuest)
     {
         PixelCrushers.MessageSystem.SendMessage(this, "StartQuest", pQuest);
     }
-    public void SpawnNPC(string pNPCID, double pX, double pY)
+    public void SpawnNPC(string pNPCID, double pX, double pY, string pFacing)
     {
         Vector2 position = new Vector2((float)pX, (float)pY);
-        BlossomIsland.NPCManager.Instance.SpawnNPCInLevel(pNPCID, position);
+        Game.NPCs.NPCManager.Instance.SpawnDummyNPC(pNPCID, position, pFacing);
     }
 
     public void GiveStarterBlossom()
     {
-        Game.Blossoms.BlossomManager.Instance.GiveStarterBlossom();
+        Game.NPCs.Blossoms.BlossomManager.Instance.GiveStarterBlossom();
     }
 
     public void TeachRecipe(string pRecipeName)
@@ -74,17 +93,17 @@ public class RegisterLuaFunctions : MonoBehaviour
     public void RemoveNPC(string pNPCID)
     {
 
-        BlossomIsland.NPCManager.Instance.RemoveSpawnedNPC(pNPCID);
+        Game.NPCs.NPCManager.Instance.RemoveSpawnedDummyNPC(pNPCID);
     }
 
     public void ChangeNPCAffection(float pAmount, string pNPCID)
     {
-        BlossomIsland.NPCManager.Instance.ChangeNPCAffection(pAmount, pNPCID);
+        Game.NPCs.NPCManager.Instance.ChangeNPCAffection(pAmount, pNPCID);
 
     }
     public void ChangeNPCAcquaintance(float pAmount, string pNPCID)
     {
-        BlossomIsland.NPCManager.Instance.ChangeNPCAcquaintance(pAmount, pNPCID);
+        Game.NPCs.NPCManager.Instance.ChangeNPCAcquaintance(pAmount, pNPCID);
 
     }
     public string GetCurrentLevel()

@@ -103,7 +103,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
+    - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
+    - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
+    - {fileID: 5080452368203878514, guid: 5df067d6d40b0384faea230c4d0f8029, type: 3}
     CursorColor: {r: 0.47685987, g: 0.5127849, b: 0.61764705, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -280,8 +280,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
-    - {fileID: 1890948438809494605, guid: 52fbe44f8cc08a34398c5d23f256d691, type: 3}
+    - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -352,8 +351,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
-    - {fileID: 1890948438809494605, guid: 52fbe44f8cc08a34398c5d23f256d691, type: 3}
+    - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -388,8 +386,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
-    - {fileID: 1890948438809494605, guid: 52fbe44f8cc08a34398c5d23f256d691, type: 3}
+    - {fileID: 8062456437375452386, guid: 02f12b4dcc0cd4b4693c21b854f3bf8f, type: 3}
     CursorColor: {r: 0.47685987, g: 0.5127849, b: 0.61764705, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -461,9 +458,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 3481870149600791538, guid: 36a2ec8246b865144a61bf6641e4854c, type: 3}
-    - {fileID: 1890948438809494605, guid: 52fbe44f8cc08a34398c5d23f256d691, type: 3}
-    - {fileID: 2977419822138536405, guid: 1e4dc99561fcc52489bb2e9c1cc54bf2, type: 3}
+    - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -500,7 +495,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: aea83855c814d9b449677c6a046fcc31, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -536,8 +531,6 @@ MonoBehaviour:
     ItemsUsed: []
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
-    - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
     CursorColor: {r: 0.47843137, g: 0.5137255, b: 0.61960787, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -573,9 +566,7 @@ MonoBehaviour:
       type: 3}
     ItemsUsed: []
     Cursors:
-    - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
-    - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8062456437375452386, guid: 35245962e3b0ed34b9d06f77d92a3a58, type: 3}
     CursorColor: {r: 0.47685987, g: 0.5127849, b: 0.61764705, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -613,7 +604,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: aea83855c814d9b449677c6a046fcc31, type: 3}
     CursorColor: {r: 0.2703287, g: 0.6506531, b: 0.9191176, a: 1}
     AffectsObjects: 0
     AffectsTiles: 1
@@ -651,7 +642,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: 3f411f7bd6ec0b644adf0d6c70110de6, type: 3}
     CursorColor: {r: 0.18425605, g: 0.52205884, b: 0.38227838, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -689,7 +680,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: 3f411f7bd6ec0b644adf0d6c70110de6, type: 3}
     CursorColor: {r: 1, g: 0.922249, b: 0.6444096, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -727,7 +718,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: 3f411f7bd6ec0b644adf0d6c70110de6, type: 3}
     CursorColor: {r: 0.47794116, g: 0.25137958, b: 0.077314, a: 1}
     AffectsObjects: 0
     AffectsTiles: 0
@@ -764,7 +755,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: 3f411f7bd6ec0b644adf0d6c70110de6, type: 3}
     CursorColor: {r: 0.024870224, g: 0.6764706, b: 0.19114056, a: 1}
     AffectsObjects: 0
     AffectsTiles: 1
@@ -801,7 +792,7 @@ MonoBehaviour:
     Cursors:
     - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
     - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
-    - {fileID: 8042650342003996106, guid: 0c0b1602310398347bb9d513758ddf0a, type: 3}
+    - {fileID: 8475898944109948264, guid: 3f411f7bd6ec0b644adf0d6c70110de6, type: 3}
     CursorColor: {r: 0.024870224, g: 0.6764706, b: 0.19114056, a: 1}
     AffectsObjects: 0
     AffectsTiles: 1
@@ -936,6 +927,24 @@ MonoBehaviour:
     energyRegen: 8
     Edible: 0
     BlossomFeed: 0
+  - itemName: Wild Garlic
+    itemDescription: Grows in the springtime on Blossom Island.
+    itemID: -1965774456
+    consumable: 1
+    sellable: 1
+    value: 1
+    shopMarkupPercentage: 50
+    weight: 0.25
+    itemSprite: {fileID: 21300000, guid: bfa7a7d6fa8f32f48b998f52505c10e3, type: 3}
+    itemIcon: {fileID: 21300000, guid: bfa7a7d6fa8f32f48b998f52505c10e3, type: 3}
+    UsableFromToolbar: 1
+    itemType: 1
+    ItemTags: 
+    Ingredients: []
+    Traits: []
+    energyRegen: 10
+    Edible: 1
+    BlossomFeed: 1
   - itemName: Cranberries
     itemDescription: Tart berries that grow in the springtime on Blossom Island.
     itemID: -1307152578
@@ -1066,6 +1075,26 @@ MonoBehaviour:
     - {fileID: 8950470880121337171, guid: f142bc54862ae4b4ea7b4fb3652acb95, type: 3}
     - {fileID: 5813030957272061879, guid: cc60f4785fa36634d9734daebdd143c5, type: 3}
     - {fileID: 1754866403408347053, guid: 133ca588cbcd9cd49a551e5a5f7abd68, type: 3}
+    CanRotate: 0
+    ValidLevels: []
+  - itemName: Wooden Fence
+    itemDescription: 
+    itemID: -891074242
+    consumable: 1
+    sellable: 1
+    value: 2
+    shopMarkupPercentage: 400
+    weight: 1
+    itemSprite: {fileID: 8268450233139531935, guid: e3b24e296c6fc374fbb10060423e96be,
+      type: 3}
+    itemIcon: {fileID: 21300000, guid: 4b6826e9b7ad1cc4d9874b1f2a7202a7, type: 3}
+    UsableFromToolbar: 1
+    itemType: 4
+    ItemTags: 
+    Ingredients: []
+    Traits: []
+    ObjectPrefabs:
+    - {fileID: 7902312176211695484, guid: e8912357ddd9bb3458dd98c2e17cfeba, type: 3}
     CanRotate: 0
     ValidLevels: []
   - itemName: Fire Pit
@@ -1716,8 +1745,8 @@ MonoBehaviour:
     Ingredients: []
     Traits: []
     Recipe: {fileID: 0}
-  usedIDs: 68c6b218b9fb34dff7373f75c731654953dd458f8b6a815b02d3bca34e107c4baf40c65db9c609ff26378fc8ef0f7c366a2bd6e37492b2f0ec56b22ef6b2242ee9a12805c5ce3171176109fa1de4bab2bc19fd0cabf8dda945cec1268ffd27a6df5aaec51e951ba511de8ccb14481f9b17c3e506a5ab8a7573fa8a95483f0675255e9dfb670c018ee89d8d5be91c299afa528fc1db2a3fcd1d06fc2c35b886585d39a5630062f7bc2053ed2e97787af10cc45a9145433a16e377b2b2f59c4fc8ee648d43d812c175bccd8c95774246f5b21e806428872a999c48b8eadfef8af7935795e02d9d5ce8e51a88a07c81aed507ed9051532d87754b29878953c0e89f3e6f16b24f007aa8c065d91cea2ea215722de7539a9cb6d7012d8ca5238d2fe2124f7d08da5192dc27dbb38f
-  typesOfUsedIDs: 040000000100000002000000020000000400000003000000030000000400000002000000020000000400000006000000060000000600000001000000050000000500000005000000050000000500000004000000070000000400000000000000020000000200000002000000020000000200000004000000010000000500000002000000010000000400000004000000020000000200000002000000020000000200000002000000020000000200000002000000020000000000000000000000050000000500000005000000050000000500000005000000050000000500000005000000030000000500000005000000040000000100000008000000000000000100000004000000040000000400000004000000040000000400000004000000040000000400000004000000
+  usedIDs: 68c6b218b9fb34dff7373f75c731654953dd458f8b6a815b02d3bca34e107c4baf40c65db9c609ff26378fc8ef0f7c366a2bd6e37492b2f0ec56b22ef6b2242ee9a12805c5ce3171176109fa1de4bab2bc19fd0cabf8dda945cec1268ffd27a6df5aaec51e951ba511de8ccb14481f9b17c3e506a5ab8a7573fa8a95483f0675255e9dfb670c018ee89d8d5be91c299afa528fc1db2a3fcd1d06fc2c35b886585d39a5630062f7bc2053ed2e97787af10cc45a9145433a16e377b2b2f59c4fc8ee648d43d812c175bccd8c95774246f5b21e806428872a999c48b8eadfef8af7935795e02d9d5ce8e51a88a07c81aed507ed9051532d87754b29878953c0e89f3e6f16b24f007aa8c065d91cea2ea215722de7539a9cb6d7012d8ca5238d2fe2124f7d08da5192dc27dbb38f3e49e3ca88a9d48a
+  typesOfUsedIDs: 0400000001000000020000000200000004000000030000000300000004000000020000000200000004000000060000000600000006000000010000000500000005000000050000000500000005000000040000000700000004000000000000000200000002000000020000000200000002000000040000000100000005000000020000000100000004000000040000000200000002000000020000000200000002000000020000000200000002000000020000000200000000000000000000000500000005000000050000000500000005000000050000000500000005000000050000000300000005000000050000000400000001000000080000000000000001000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000001000000
   subtypes:
   - name: Liquid
     type: 0

@@ -16,17 +16,21 @@ MonoBehaviour:
   - Hour: 0
     Minute: 0
     Level: Restaurant
-    Position: {x: 16, y: 11}
+    Position: {x: 41, y: 30}
+    Facing: 0
   - Hour: 2
     Minute: 0
     Level: None
     Position: {x: 0, y: 0}
+    Facing: 0
   - Hour: 9
     Minute: 0
     Level: Road1
     Position: {x: 42, y: 22}
+    Facing: 0
   - Hour: 11
     Minute: 0
     Level: Restaurant
-    Position: {x: 16, y: 11}
+    Position: {x: 41, y: 30}
+    Facing: 0
   ActiveDays: 010000000200000003000000040000000500000006000000

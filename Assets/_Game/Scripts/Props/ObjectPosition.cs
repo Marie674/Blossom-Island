@@ -47,9 +47,10 @@ public class ObjectPosition : MonoBehaviour
         }
         else
         {
-            Vector3 newPos = transform.position;
-            newPos.z = FixedZ;
-            transform.position = newPos;
+            // Vector3 newPos = transform.position;
+            // newPos.x = Mathf.Round(newPos.x * 10f) / 10f;
+            // newPos.y = Mathf.Round(newPos.y * 10f) / 10f;
+            // transform.position = newPos;
         }
     }
     //
@@ -72,6 +73,7 @@ public class ObjectPosition : MonoBehaviour
         Vector3 posDifference = spriteTopLeft - snapPos;
         // Apply the calculated difference
         Vector3 newPos = transform.position - posDifference;
+
         // Apply the new position
         transform.position = newPos;
     }
@@ -82,6 +84,7 @@ public class ObjectPosition : MonoBehaviour
         float zPos = ((transform.position.y / 100) - (transform.position.x / 1000)) - 5f;
         Vector3 newPos = new Vector3(transform.position.x, transform.position.y, zPos);
         transform.position = newPos;
+
     }
 
 }

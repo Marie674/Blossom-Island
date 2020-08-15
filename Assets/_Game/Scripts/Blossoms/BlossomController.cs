@@ -4,7 +4,7 @@ using UnityEngine;
 using ItemSystem;
 using PixelCrushers.DialogueSystem;
 using BehaviorDesigner.Runtime;
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     public class BlossomController : MonoBehaviour
     {
@@ -20,6 +20,9 @@ namespace Game.Blossoms
                 Data.HutName = DialogueLua.GetVariable(Data.ID + "HutName").asString;
                 Data.Hut = BlossomManager.Instance.GetHutObject(Data.HutName);
             }
+
+
+            GetComponent<BlossomAppearance>().SetAppearance(Data.Growth, Data.Color);
 
         }
 
@@ -94,15 +97,15 @@ namespace Game.Blossoms
             if (currentDayPhase == DayPhaseManager.DayPhaseNames.Morning && prevDayPhase.ToString() != DayPhaseManager.DayPhaseNames.Morning.ToString())
             {
                 Data.Hungry = true;
-                if(Behavior!=null)
-                Behavior.SetVariableValue("IsHungry", true);
+                if (Behavior != null)
+                    Behavior.SetVariableValue("IsHungry", true);
 
             }
             else if (currentDayPhase == DayPhaseManager.DayPhaseNames.Afternoon && prevDayPhase.ToString() != DayPhaseManager.DayPhaseNames.Afternoon.ToString())
             {
                 Data.Hungry = true;
-                if(Behavior!=null)
-                Behavior.SetVariableValue("IsHungry", true);
+                if (Behavior != null)
+                    Behavior.SetVariableValue("IsHungry", true);
             }
         }
 
@@ -145,8 +148,8 @@ namespace Game.Blossoms
             Data.Happiness += 1;
             Data.FedToday = true;
             Data.Hungry = false;
-            if(Behavior!=null)
-            Behavior.SetVariableValue("IsHungry", false);
+            if (Behavior != null)
+                Behavior.SetVariableValue("IsHungry", false);
 
         }
 

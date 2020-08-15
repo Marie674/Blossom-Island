@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
     public class CompetitionTierUI : MonoBehaviour

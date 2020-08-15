@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2384608425919697717}
   - component: {fileID: 2384419134327772719}
   - component: {fileID: 2342475828081890109}
+  - component: {fileID: -1951185258564306384}
   m_Layer: 12
   m_Name: Dummy Pine Tree
   m_TagString: Tree
@@ -133,3 +134,15 @@ MonoBehaviour:
   Tint: {r: 1, g: 1, b: 1, a: 1}
   Amplitude: 0
   Speed: 0
+--- !u!114 &-1951185258564306384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343918132754076369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

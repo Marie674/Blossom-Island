@@ -194,6 +194,291 @@ TextureImporter:
   - first:
       213: -4708398404131834466
     second: Blossom_YellowWalk Up_7
+  - first:
+      213: -4506760860818395902
+    second: Blossom_YellowWalk_down_0
+  - first:
+      213: -2834639168837922413
+    second: Blossom_YellowWalk_down_1
+  - first:
+      213: -456676838254009302
+    second: Blossom_YellowWalk_down_2
+  - first:
+      213: -7338915926670827118
+    second: Blossom_YellowWalk_down_3
+  - first:
+      213: -4250034367689868458
+    second: Blossom_YellowWalk_down_4
+  - first:
+      213: -1620198342647824904
+    second: Blossom_YellowWalk_down_5
+  - first:
+      213: 2285072778859246422
+    second: Blossom_YellowWalk_down_6
+  - first:
+      213: -618837354965858388
+    second: Blossom_YellowWalk_down_7
+  - first:
+      213: 4674255666591484129
+    second: Blossom_YellowWalk_left_0
+  - first:
+      213: 365870689749592269
+    second: Blossom_YellowWalk_left_1
+  - first:
+      213: 8380296790427834394
+    second: Blossom_YellowWalk_left_2
+  - first:
+      213: 5888566877750927598
+    second: Blossom_YellowWalk_left_3
+  - first:
+      213: -2240294469770896626
+    second: Blossom_YellowWalk_left_4
+  - first:
+      213: 9012291308281605029
+    second: Blossom_YellowWalk_left_5
+  - first:
+      213: 3504802608682928982
+    second: Blossom_YellowWalk_left_6
+  - first:
+      213: 1721181042433092170
+    second: Blossom_YellowWalk_left_7
+  - first:
+      213: 6757680567525058660
+    second: Blossom_YellowWalk_right_0
+  - first:
+      213: -8071620010144071327
+    second: Blossom_YellowWalk_right_1
+  - first:
+      213: 9106712188755894360
+    second: Blossom_YellowWalk_right_2
+  - first:
+      213: -4566754975577824294
+    second: Blossom_YellowWalk_right_3
+  - first:
+      213: -1051821914215173565
+    second: Blossom_YellowWalk_right_4
+  - first:
+      213: -4882527554571562385
+    second: Blossom_YellowWalk_right_5
+  - first:
+      213: -8916733613371851656
+    second: Blossom_YellowWalk_right_6
+  - first:
+      213: 2118156734550480125
+    second: Blossom_YellowWalk_right_7
+  - first:
+      213: -2285383951719530979
+    second: Blossom_YellowWalk_up_0
+  - first:
+      213: 855250293457442367
+    second: Blossom_YellowWalk_up_1
+  - first:
+      213: -1048642303974791093
+    second: Blossom_YellowWalk_up_2
+  - first:
+      213: 7077283368767421001
+    second: Blossom_YellowWalk_up_3
+  - first:
+      213: 4172284156936715576
+    second: Blossom_YellowWalk_up_4
+  - first:
+      213: 5748937884912714490
+    second: Blossom_YellowWalk_up_5
+  - first:
+      213: -3321280484161273668
+    second: Blossom_YellowWalk_up_6
+  - first:
+      213: 8730584822659564786
+    second: Blossom_YellowWalk_up_7
+  - first:
+      213: -4534328992112354394
+    second: Blossom_YellowBreathe_down_0
+  - first:
+      213: -1023230868564685469
+    second: Blossom_YellowBreathe_down_1
+  - first:
+      213: -1439494011782997645
+    second: Blossom_YellowBreathe_down_2
+  - first:
+      213: -645861737526481586
+    second: Blossom_YellowBreathe_down_3
+  - first:
+      213: 2976725602152783937
+    second: Blossom_YellowBlink_down_0
+  - first:
+      213: 6198985808520779654
+    second: Blossom_YellowBlink_down_1
+  - first:
+      213: -2935470121740647933
+    second: Blossom_YellowEar_down_0
+  - first:
+      213: 3669479283782921087
+    second: Blossom_YellowEar_down_1
+  - first:
+      213: 9029699091321859980
+    second: Blossom_YellowBreathe_left_0
+  - first:
+      213: 7599390585293877677
+    second: Blossom_YellowBreathe_left_1
+  - first:
+      213: 3947744646178936585
+    second: Blossom_YellowBreathe_left_2
+  - first:
+      213: -6373735007674247324
+    second: Blossom_YellowBreathe_left_3
+  - first:
+      213: -1630769024595032956
+    second: Blossom_YellowBlink_left_0
+  - first:
+      213: 9121381619669993734
+    second: Blossom_YellowBlink_left_1
+  - first:
+      213: 6796112001231201136
+    second: Blossom_YellowEar_left_0
+  - first:
+      213: 7306276049585894397
+    second: Blossom_YellowEar_left_1
+  - first:
+      213: 8540289265976292513
+    second: Blossom_YellowBreathe_right_0
+  - first:
+      213: 9049179927218667360
+    second: Blossom_YellowBreathe_right_1
+  - first:
+      213: 5965613046811942121
+    second: Blossom_YellowBreathe_right_2
+  - first:
+      213: -8690842400455583749
+    second: Blossom_YellowBreathe_right_3
+  - first:
+      213: -280937569304517593
+    second: Blossom_YellowBlink_right_0
+  - first:
+      213: 5835117311397827421
+    second: Blossom_YellowBlink_right_1
+  - first:
+      213: -1699584908150102122
+    second: Blossom_YellowEar_right_0
+  - first:
+      213: 8324164778373505786
+    second: Blossom_YellowEar_right_1
+  - first:
+      213: 4034259937641046419
+    second: Blossom_YellowBreathe_up_0
+  - first:
+      213: 1402064790180537001
+    second: Blossom_YellowBreathe_up_1
+  - first:
+      213: -2843583111792348325
+    second: Blossom_YellowBreathe_up_2
+  - first:
+      213: -4749529770862713130
+    second: Blossom_YellowBreathe_up_3
+  - first:
+      213: -20219565590768225
+    second: Blossom_YellowBlink_up_0
+  - first:
+      213: -4441157289838434618
+    second: Blossom_YellowBlink_up_1
+  - first:
+      213: -6839695766586860321
+    second: Blossom_YellowEar_up_0
+  - first:
+      213: -6242279183850667797
+    second: Blossom_YellowEar_up_1
+  - first:
+      213: 8600789253497787124
+    second: Blossom_YellowSleep_left_0
+  - first:
+      213: 3399950342870194732
+    second: Blossom_YellowSleep_left_1
+  - first:
+      213: 7050624248059785539
+    second: Blossom_YellowSleep_left_2
+  - first:
+      213: -393659769664730032
+    second: Blossom_YellowSleep_left_3
+  - first:
+      213: -7342002589040247316
+    second: Blossom_YellowSleep_left_4
+  - first:
+      213: -5070792312569605150
+    second: Blossom_YellowSleep_left_5
+  - first:
+      213: 4471075096140633521
+    second: Blossom_YellowSleep_left_6
+  - first:
+      213: -5443869786943964663
+    second: Blossom_YellowOthers_0
+  - first:
+      213: 9147667936319634360
+    second: Blossom_YellowSleep_right_0
+  - first:
+      213: -8304437252194162146
+    second: Blossom_YellowSleep_right_1
+  - first:
+      213: -7207829575942274255
+    second: Blossom_YellowSleep_right_2
+  - first:
+      213: 9209840905896161498
+    second: Blossom_YellowSleep_right_3
+  - first:
+      213: 6254592153041713865
+    second: Blossom_YellowSleep_right_4
+  - first:
+      213: -356672171057531612
+    second: Blossom_YellowSleep_right_5
+  - first:
+      213: 8514387294347529517
+    second: Blossom_YellowSleep_right_6
+  - first:
+      213: 2182689686650783235
+    second: Blossom_YellowOthers_1
+  - first:
+      213: 180418704221749728
+    second: Blossom_YellowTippytap_0
+  - first:
+      213: 6461694493451572405
+    second: Blossom_YellowTippytap_1
+  - first:
+      213: -299662816000283463
+    second: Blossom_YellowTippytap_2
+  - first:
+      213: -1252618191935386978
+    second: Blossom_YellowTippytap_3
+  - first:
+      213: -4254819994954212552
+    second: Blossom_YellowTippytap_4
+  - first:
+      213: 5349195067909159912
+    second: Blossom_YellowTippytap_5
+  - first:
+      213: -613234775287780143
+    second: Blossom_YellowTippytap_6
+  - first:
+      213: 3056643722534582718
+    second: Blossom_YellowTippytap_7
+  - first:
+      213: -5040671090722362166
+    second: Blossom_YellowTippytap_8
+  - first:
+      213: 5346049481185542436
+    second: Blossom_YellowTippytap_9
+  - first:
+      213: -2703849773081470790
+    second: Blossom_YellowTippytap_10
+  - first:
+      213: 2880919206398418340
+    second: Blossom_YellowTippytap_11
+  - first:
+      213: 1912116995853079013
+    second: Blossom_YellowTippytap_12
+  - first:
+      213: -9219916747027410938
+    second: Blossom_YellowTippytap_13
+  - first:
+      213: -476463831060342238
+    second: Blossom_YellowTippytap_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -278,7 +563,1351 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blossom_YellowIdle Down_0
+      name: Blossom_YellowWalk_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d294bffd4c471c0800000000000000
+      internalID: -4506760860818395902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391d10bc1b659a8d0800000000000000
+      internalID: -2834639168837922413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24a8bec5de89a9f0800000000000000
+      internalID: -456676838254009302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291245219dee62a90800000000000000
+      internalID: -7338915926670827118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bb4ae9248d405c0800000000000000
+      internalID: -4250034367689868458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdbcc80136e389e0800000000000000
+      internalID: -1620198342647824904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653f1d5e59536bf10800000000000000
+      internalID: 2285072778859246422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_down_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 440
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca7848354b27967f0800000000000000
+      internalID: -618837354965858388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8ca8473ca4ed040800000000000000
+      internalID: 4674255666591484129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc860403475d31500800000000000000
+      internalID: 365870689749592269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a181cc9b78bcc4470800000000000000
+      internalID: 8380296790427834394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0a978506468b150800000000000000
+      internalID: 5888566877750927598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b9801ac00e8e0e0800000000000000
+      internalID: -2240294469770896626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab277a1237121d70800000000000000
+      internalID: 9012291308281605029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b8862476f83a030800000000000000
+      internalID: 3504802608682928982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_left_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 400
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a6c54f90dd2e710800000000000000
+      internalID: 1721181042433092170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46824e42caa18cd50800000000000000
+      internalID: 6757680567525058660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1618d65bd58dbff80800000000000000
+      internalID: -8071620010144071327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850e38a7c7a816e70800000000000000
+      internalID: 9106712188755894360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3af60ab80af90c0800000000000000
+      internalID: -4566754975577824294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342bb34ba8d2761f0800000000000000
+      internalID: -1051821914215173565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6294bfce07cd3cb0800000000000000
+      internalID: -4882527554571562385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c7f228506614480800000000000000
+      internalID: -8916733613371851656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_right_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 360
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df49b7dd354356d10800000000000000
+      internalID: 2118156734550480125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ef066876fa840e0800000000000000
+      internalID: -2285383951719530979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36549f4c957edb00800000000000000
+      internalID: 855250293457442367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48a22761697271f0800000000000000
+      internalID: -1048642303974791093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a79221abf873260800000000000000
+      internalID: 7077283368767421001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83df334c55ee6e930800000000000000
+      internalID: 4172284156936715576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af202021c8458cf40800000000000000
+      internalID: 5748937884912714490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0412e1ff078e1d0800000000000000
+      internalID: -3321280484161273668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowWalk_up_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 320
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f44a0cb3a4492970800000000000000
+      internalID: 8730584822659564786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab536a3ec3d211c0800000000000000
+      internalID: -4534328992112354394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_down_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dccf342f0ccc1f0800000000000000
+      internalID: -1023230868564685469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_down_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3795f53b2d3e50ce0800000000000000
+      internalID: -1439494011782997645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_down_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4da7b0fb207907f0800000000000000
+      internalID: -645861737526481586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_down_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140a02ee9247f4920800000000000000
+      internalID: 2976725602152783937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_down_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687919ccfb8370650800000000000000
+      internalID: 6198985808520779654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_down_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30240e02a7d1347d0800000000000000
+      internalID: -2935470121740647933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_down_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 280
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b298487fb9ce230800000000000000
+      internalID: 3669479283782921087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f28ee6b7fef4d70800000000000000
+      internalID: 9029699091321859980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_left_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1b3e95975767960800000000000000
+      internalID: 7599390585293877677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_left_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9071273f6d439c630800000000000000
+      internalID: 3947744646178936585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_left_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467da1fa7c1fb87a0800000000000000
+      internalID: -6373735007674247324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_left_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4848d4a56385e59e0800000000000000
+      internalID: -1630769024595032956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_left_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60905358148a59e70800000000000000
+      internalID: 9121381619669993734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_left_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073a7279bd3a05e50800000000000000
+      internalID: 6796112001231201136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_left_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 240
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3f2865b5b156560800000000000000
+      internalID: 7306276049585894397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a43999c6d3358670800000000000000
+      internalID: 8540289265976292513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_right_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fb67ef235259d70800000000000000
+      internalID: 9049179927218667360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_right_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec59aa757d1ac250800000000000000
+      internalID: 5965613046811942121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_right_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf711f102ece36780800000000000000
+      internalID: -8690842400455583749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_right_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724ea89e4c8e91cf0800000000000000
+      internalID: -280937569304517593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_right_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53999867408af050800000000000000
+      internalID: 5835117311397827421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_right_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6972914e78cd968e0800000000000000
+      internalID: -1699584908150102122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_right_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 200
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af265ca33cf558370800000000000000
+      internalID: 8324164778373505786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3912fa2f9029cf730800000000000000
+      internalID: 4034259937641046419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_up_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a22bca8f72257310800000000000000
+      internalID: 1402064790180537001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_up_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53315cc9309988d0800000000000000
+      internalID: -2843583111792348325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBreathe_up_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6e59566d7461eb0800000000000000
+      internalID: -4749529770862713130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_up_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f951377896a28bff0800000000000000
+      internalID: -20219565590768225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowBlink_up_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c62b83a9f6dd52c0800000000000000
+      internalID: -4441157289838434618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_up_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcd8d440f48411a0800000000000000
+      internalID: -6839695766586860321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowEar_up_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 160
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be004c1c728fe59a0800000000000000
+      internalID: -6242279183850667797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blossom_YellowSleep_left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -292,14 +1921,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56a9929a758f41d80800000000000000
-      internalID: -8280720759443580315
+      spriteID: 4f29bb2d1442c5770800000000000000
+      internalID: 8600789253497787124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_1
+      name: Blossom_YellowSleep_left_1
       rect:
         serializedVersion: 2
         x: 36
@@ -313,14 +1942,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 450362fc9626a12b0800000000000000
-      internalID: -5613065778977427372
+      spriteID: c2adeb8b2dc0f2f20800000000000000
+      internalID: 3399950342870194732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_2
+      name: Blossom_YellowSleep_left_2
       rect:
         serializedVersion: 2
         x: 72
@@ -334,14 +1963,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57e44d9f4991357e0800000000000000
-      internalID: -1778049300243919243
+      spriteID: 341fb56d569d8d160800000000000000
+      internalID: 7050624248059785539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_3
+      name: Blossom_YellowSleep_left_3
       rect:
         serializedVersion: 2
         x: 108
@@ -355,14 +1984,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f59fba0bdb697200800000000000000
-      internalID: 178292248780183031
+      spriteID: 05c85c27680798af0800000000000000
+      internalID: -393659769664730032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_4
+      name: Blossom_YellowSleep_left_4
       rect:
         serializedVersion: 2
         x: 144
@@ -376,14 +2005,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5725b13141d981b0800000000000000
-      internalID: -5653757779249911970
+      spriteID: cedf14c7b87fb1a90800000000000000
+      internalID: -7342002589040247316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_5
+      name: Blossom_YellowSleep_left_5
       rect:
         serializedVersion: 2
         x: 180
@@ -397,14 +2026,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ce8b7521ea378d00800000000000000
-      internalID: 974812583019908805
+      spriteID: 2e3d187024de0a9b0800000000000000
+      internalID: -5070792312569605150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_6
+      name: Blossom_YellowSleep_left_6
       rect:
         serializedVersion: 2
         x: 216
@@ -418,14 +2047,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 885adcb30a3f80e60800000000000000
-      internalID: 7928855013509408136
+      spriteID: 1b5de857c137c0e30800000000000000
+      internalID: 4471075096140633521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Down_7
+      name: Blossom_YellowOthers_0
       rect:
         serializedVersion: 2
         x: 252
@@ -439,14 +2068,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fc2aa2dcc5d2b1a0800000000000000
-      internalID: -6795133812064244492
+      spriteID: 90a39b9854d7374b0800000000000000
+      internalID: -5443869786943964663
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowIdle Left_0
+      name: Blossom_YellowSleep_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -460,14 +2089,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb387767d4b275cb0800000000000000
-      internalID: -4875380459905252420
+      spriteID: 8bbff8b858b03fe70800000000000000
+      internalID: 9147667936319634360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_1
+      name: Blossom_YellowSleep_right_1
       rect:
         serializedVersion: 2
         x: 36
@@ -481,14 +2110,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29d70b39ad83a2650800000000000000
-      internalID: 6208837547715493266
+      spriteID: e1a22736156b0cc80800000000000000
+      internalID: -8304437252194162146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_2
+      name: Blossom_YellowSleep_right_2
       rect:
         serializedVersion: 2
         x: 72
@@ -502,14 +2131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52f531ffa83bc9c20800000000000000
-      internalID: 3214641643602009893
+      spriteID: 133086c7035a8fb90800000000000000
+      internalID: -7207829575942274255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_3
+      name: Blossom_YellowSleep_right_3
       rect:
         serializedVersion: 2
         x: 108
@@ -523,14 +2152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29805804d6d744560800000000000000
-      internalID: 7297095204434413714
+      spriteID: ad07dc1128defcf70800000000000000
+      internalID: 9209840905896161498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_4
+      name: Blossom_YellowSleep_right_4
       rect:
         serializedVersion: 2
         x: 144
@@ -544,14 +2173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00c881cc910b25160800000000000000
-      internalID: 7012861194614115328
+      spriteID: 9ca3ff8cc66ccc650800000000000000
+      internalID: 6254592153041713865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_5
+      name: Blossom_YellowSleep_right_5
       rect:
         serializedVersion: 2
         x: 180
@@ -565,14 +2194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65bb94b75530f7610800000000000000
-      internalID: 1621018056552201046
+      spriteID: 42539d6dc88dc0bf0800000000000000
+      internalID: -356672171057531612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_6
+      name: Blossom_YellowSleep_right_6
       rect:
         serializedVersion: 2
         x: 216
@@ -586,14 +2215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e6b81c37e7137f00800000000000000
-      internalID: 1113259814803781349
+      spriteID: d2d0faf022e292670800000000000000
+      internalID: 8514387294347529517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Left_7
+      name: Blossom_YellowOthers_1
       rect:
         serializedVersion: 2
         x: 252
@@ -607,14 +2236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0399ed8d528d66cd0800000000000000
-      internalID: -2565125280677062352
+      spriteID: 3068ab3a4b87a4e10800000000000000
+      internalID: 2182689686650783235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowIdle Right_0
+      name: Blossom_YellowTippytap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -628,14 +2257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 573f14779c7de8e30800000000000000
-      internalID: 4507777537333654389
+      spriteID: 0e149f70bd9f08200800000000000000
+      internalID: 180418704221749728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_1
+      name: Blossom_YellowTippytap_1
       rect:
         serializedVersion: 2
         x: 36
@@ -649,14 +2278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10f3c12c8cd6e4d00800000000000000
-      internalID: 958824479694012161
+      spriteID: 5b4574108ec8ca950800000000000000
+      internalID: 6461694493451572405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_2
+      name: Blossom_YellowTippytap_2
       rect:
         serializedVersion: 2
         x: 72
@@ -670,14 +2299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81ffd79482398c610800000000000000
-      internalID: 1641723865417514776
+      spriteID: 9bce8eba14267dbf0800000000000000
+      internalID: -299662816000283463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_3
+      name: Blossom_YellowTippytap_3
       rect:
         serializedVersion: 2
         x: 108
@@ -691,14 +2320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ca864c5d1d2dd8d0800000000000000
-      internalID: -2820048187538634040
+      spriteID: e9acf7e146ecd9ee0800000000000000
+      internalID: -1252618191935386978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_4
+      name: Blossom_YellowTippytap_4
       rect:
         serializedVersion: 2
         x: 144
@@ -712,14 +2341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebde450cb67e97ff0800000000000000
-      internalID: -37744671881630274
+      spriteID: 83b5681f1c7d3f4c0800000000000000
+      internalID: -4254819994954212552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_5
+      name: Blossom_YellowTippytap_5
       rect:
         serializedVersion: 2
         x: 180
@@ -733,14 +2362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 215c2c5a569c2fc80800000000000000
-      internalID: -8290342525625776878
+      spriteID: 8eb3ff0b2982c3a40800000000000000
+      internalID: 5349195067909159912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_6
+      name: Blossom_YellowTippytap_6
       rect:
         serializedVersion: 2
         x: 216
@@ -754,14 +2383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e08c9a2d55b5a7940800000000000000
-      internalID: 5294644736092129294
+      spriteID: 1dc2e0f883a5d77f0800000000000000
+      internalID: -613234775287780143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Right_7
+      name: Blossom_YellowTippytap_7
       rect:
         serializedVersion: 2
         x: 252
@@ -775,14 +2404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ec636fc777f935f0800000000000000
-      internalID: -776317366792131352
+      spriteID: eb9f99655416b6a20800000000000000
+      internalID: 3056643722534582718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowIdle Up_0
+      name: Blossom_YellowTippytap_8
       rect:
         serializedVersion: 2
         x: 0
@@ -796,14 +2425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1046f63eaedbe3b40800000000000000
-      internalID: 5421979817936380929
+      spriteID: acca9ef7950fb0ab0800000000000000
+      internalID: -5040671090722362166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Up_1
+      name: Blossom_YellowTippytap_9
       rect:
         serializedVersion: 2
         x: 36
@@ -817,14 +2446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3edc088fb1fe37150800000000000000
-      internalID: 5869297642806234595
+      spriteID: 421c9b5bdabf03a40800000000000000
+      internalID: 5346049481185542436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Up_2
+      name: Blossom_YellowTippytap_10
       rect:
         serializedVersion: 2
         x: 72
@@ -838,14 +2467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55ffd44c5197bfd40800000000000000
-      internalID: 5619218094469545813
+      spriteID: ab8557df4fef97ad0800000000000000
+      internalID: -2703849773081470790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Up_3
+      name: Blossom_YellowTippytap_11
       rect:
         serializedVersion: 2
         x: 108
@@ -859,14 +2488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3dba462bf843c350800000000000000
-      internalID: 6035748169123020092
+      spriteID: 4ad5af321c41bf720800000000000000
+      internalID: 2880919206398418340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Up_4
+      name: Blossom_YellowTippytap_12
       rect:
         serializedVersion: 2
         x: 144
@@ -880,14 +2509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6a66218b259c2bf0800000000000000
-      internalID: -347739057131459990
+      spriteID: 5e15fc2e644398a10800000000000000
+      internalID: 1912116995853079013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Up_5
+      name: Blossom_YellowTippytap_13
       rect:
         serializedVersion: 2
         x: 180
@@ -901,14 +2530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d56854f2c25f38f0800000000000000
-      internalID: -558636831494085164
+      spriteID: 60091ca51964c0080800000000000000
+      internalID: -9219916747027410938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blossom_YellowWalk Up_6
+      name: Blossom_YellowTippytap_14
       rect:
         serializedVersion: 2
         x: 216
@@ -922,29 +2551,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9eab5a47abd7b520800000000000000
-      internalID: 2717882411694927517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blossom_YellowWalk Up_7
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 0
-        width: 36
-        height: 40
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e95b4bcf89868aeb0800000000000000
-      internalID: -4708398404131834466
+      spriteID: 22a93598ba24369f0800000000000000
+      internalID: -476463831060342238
       vertices: []
       indices: 
       edges: []

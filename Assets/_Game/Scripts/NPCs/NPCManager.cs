@@ -4,19 +4,33 @@ using UnityEngine;
 using PixelCrushers.DialogueSystem;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using Game.NPCs.Blossoms;
 
-namespace BlossomIsland
+namespace Game.NPCs
 {
 
+    public enum CharacterDirection
+    {
+        Down,
+        Left,
+        Right,
+        Up
+
+    }
     public class NPCManager : Singleton<NPCManager>
     {
 
         NPCData[] NPCs = new NPCData[0];
 
+        NPCData[] NPCDummies = new NPCData[0];
+
         public List<NPCData> SpawnedNPCs = new List<NPCData>();
+
+        public List<NPCData> SpawnedDummyNPCs = new List<NPCData>();
         void OnEnable()
         {
-            NPCs = Resources.LoadAll<NPCData>("NPCs");
+            NPCs = Resources.LoadAll<NPCData>("NPCs/NPCs");
+            NPCDummies = Resources.LoadAll<NPCData>("NPCs/Dummies");
             GameManager.OnSceneChanged += SpawnLevelNPCs;
             TimeManager.OnHourChanged += SpawnLevelNPCs;
         }
@@ -48,17 +62,38 @@ namespace BlossomIsland
 
             foreach (NPCData NPC in NPCs)
             {
-                print(NPC.NPCID);
+                //                print(NPC.NPCID);
                 NPC.GetCurrentPosition();
 
                 if (SceneManager.GetActiveScene().name == NPC.CurrentLevel)
                 {
-                    SpawnNPCInLevel(NPC.NPCID, NPC.CurrentPosition, true);
+                    SpawnNPCInLevel(NPC.NPCID, NPC.CurrentPosition, NPC.CurrentFacing.ToString(), true);
                 }
             }
         }
 
+        List<GameObject> EventNPCs = new List<GameObject>();
 
+        public void SpawnEventNPCs(List<EventNPCLocation> pNPCs)
+        {
+            EventNPCs.Clear();
+
+            foreach (EventNPCLocation npc in pNPCs)
+            {
+                NPCData newNPC = Instantiate(GetNPCDummy(npc.NPCID), npc.Position, transform.rotation);
+                newNPC.GetComponent<AnimationController>().ChangeFacing(npc.Facing);
+                EventNPCs.Add(newNPC.gameObject);
+            }
+
+        }
+        public void DeSpawnEventNPCSs()
+        {
+            for (int i = 0; i < EventNPCs.Count; i++)
+            {
+                Destroy(EventNPCs[i]);
+            }
+            EventNPCs.Clear();
+        }
         public void ChangeNPCAffection(float pAmount, string pNPCID)
         {
             GetNPC(pNPCID).GetComponent<NPC>().ChangeAffection(pAmount);
@@ -80,9 +115,34 @@ namespace BlossomIsland
             return null;
         }
 
+        NPCData GetNPCDummy(string pNPCID)
+        {
+            foreach (NPCData NPC in NPCDummies)
+            {
+                if (NPC.NPCID == pNPCID)
+                {
+                    return NPC;
+                }
+            }
+            return null;
+        }
+
         NPCData GetSpawnedNPC(string pNPCID)
         {
             foreach (NPCData NPC in SpawnedNPCs)
+            {
+                if (NPC.NPCID == pNPCID)
+                {
+                    return NPC;
+                }
+            }
+            return null;
+        }
+
+
+        NPCData GetSpawnedDummyNPC(string pNPCID)
+        {
+            foreach (NPCData NPC in SpawnedDummyNPCs)
             {
                 if (NPC.NPCID == pNPCID)
                 {
@@ -101,10 +161,26 @@ namespace BlossomIsland
             }
             //            print("removing: " + pNPCID);
             SpawnedNPCs.Remove(NPC);
+            SpawnedNPCs = SpawnedNPCs.Where(x => x != null).ToList();
+
+            DestroyImmediate(NPC.gameObject, true);
+
+        }
+
+        public void RemoveSpawnedDummyNPC(string pNPCID)
+        {
+            NPCData NPC = GetSpawnedDummyNPC(pNPCID);
+            if (NPC == null)
+            {
+                return;
+            }
+            //            print("removing: " + pNPCID);
+            SpawnedDummyNPCs.Remove(NPC);
+            SpawnedDummyNPCs = SpawnedDummyNPCs.Where(x => x != null).ToList();
             Destroy(NPC.gameObject);
 
         }
-        public void SpawnNPCInLevel(string pNPCID, Vector2 pPosition, bool UpdateDataLocation = false)
+        public void SpawnNPCInLevel(string pNPCID, Vector2 pPosition, string pFacing, bool UpdateDataLocation = false)
         {
             NPCData NPC = GetNPC(pNPCID);
 
@@ -117,7 +193,8 @@ namespace BlossomIsland
             }
             NPCData newNPC = Instantiate<NPCData>(NPC, pPosition, transform.rotation);
 
-
+            CharacterDirection facing = (CharacterDirection)System.Enum.Parse(typeof(CharacterDirection), pFacing);
+            newNPC.GetComponent<AnimationController>().ChangeFacing(facing);
             SpawnedNPCs.Add(newNPC);
             //            print("Spawning: " + newNPC.NPCID);
 
@@ -126,6 +203,17 @@ namespace BlossomIsland
                 ChangeNPCDataLocation(pNPCID, SceneManager.GetActiveScene().name, pPosition);
 
             }
+        }
+
+        public void SpawnDummyNPC(string pNPCID, Vector2 pPosition, string pFacing)
+        {
+            NPCDummies = Resources.LoadAll<NPCData>("NPCs/Dummies");
+            NPCData NPC = GetNPCDummy(pNPCID);
+            print(NPC.NPCID);
+            NPCData newNPC = Instantiate<NPCData>(NPC, pPosition, transform.rotation);
+            CharacterDirection facing = (CharacterDirection)System.Enum.Parse(typeof(CharacterDirection), pFacing);
+            newNPC.GetComponent<AnimationController>().ChangeFacing(facing);
+            SpawnedDummyNPCs.Add(newNPC);
         }
 
         void ChangeNPCDataLocation(string pNPCID, string pLevel, Vector2 pPosition)

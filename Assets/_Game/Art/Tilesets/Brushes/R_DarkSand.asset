@@ -20,11 +20,11 @@ MonoBehaviour:
   m_showInPalette: 1
   RandomTiles: 
   RandomTileList:
-  - tileData: 265
+  - tileData: 777
     probabilityFactor: 1
-  - tileData: 198
-    probabilityFactor: 0.238
-  - tileData: 199
-    probabilityFactor: 0.234
+  - tileData: 710
+    probabilityFactor: 0.25
+  - tileData: 711
+    probabilityFactor: 0.25
   RandomizeFlagMask: 0
   RemoveBrushIdAfterRefresh: 0

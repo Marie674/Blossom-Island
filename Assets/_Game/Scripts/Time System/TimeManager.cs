@@ -12,6 +12,15 @@ public struct Month
     public int AverageTemperature;
     public Texture2D TerrainTexture;
 }
+[System.Serializable]
+
+public struct HourSpan
+{
+    public int StartHour;
+    public int StartMinute;
+    public int EndHour;
+    public int EndMinute;
+}
 
 public class TimeManager : Singleton<TimeManager>
 {
@@ -183,7 +192,7 @@ public class TimeManager : Singleton<TimeManager>
     }
 
 
-    //Called once per second
+    //Called once per second (default)
     private void TimePass()
     {
         IncreaseMinutes();
@@ -346,6 +355,42 @@ public class TimeManager : Singleton<TimeManager>
     {
         PassedYears++;
         CurrentYear++;
+    }
+
+
+    public bool CheckWithinHourSpan(HourSpan pSpan, int pHour, int pMinutes = 0)
+    {
+        int totalMinutes;
+        int minMinutes;
+        int maxMinutes;
+        totalMinutes = pHour * 60 + pMinutes;
+
+        if (pSpan.StartHour <= pSpan.EndHour)
+        {
+            minMinutes = pSpan.StartHour * 60 + pSpan.StartMinute;
+            maxMinutes = pSpan.EndHour * 60 + pSpan.EndMinute;
+            if (totalMinutes >= minMinutes && totalMinutes < maxMinutes)
+            {
+                return true;
+            }
+        }
+        else
+        {
+            minMinutes = pSpan.StartHour * 60 + pSpan.StartMinute;
+            maxMinutes = (23 * 60) + 59;
+            if (totalMinutes >= minMinutes && totalMinutes < maxMinutes)
+            {
+                return true;
+            }
+            minMinutes = 0;
+            maxMinutes = pSpan.EndHour * 60 + pSpan.EndMinute;
+            if (totalMinutes >= minMinutes && totalMinutes < maxMinutes)
+            {
+                return true;
+            }
+
+        }
+        return false;
     }
 
 }

@@ -127,7 +127,7 @@ public class TreeBase : HarvestObject
             return false;
         }
         ParticleSpawner.Instance.SpawnOneShot(ParticleSpawner.ParticleTypes.Wood, transform.position);
-
+        Shake();
         if (RequiredToolLevel > tool.level)
         {
             return false;

@@ -4,7 +4,7 @@ using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     public class BlossomDataSaver : MonoBehaviour
     {
@@ -190,8 +190,12 @@ namespace Game.Blossoms
 
             TargetData.ForSale = DialogueLua.GetVariable(VariableName + "ForSale").asBool;
 
+            if (DialogueLua.DoesVariableExist(VariableName + "Color"))
+            {
+                GetComponent<BlossomAppearance>().SetAppearance(TargetData.Growth, TargetData.Color);
 
-            GetComponent<BlossomAppearance>().SetAppearance(TargetData.Growth, TargetData.Color);
+            }
+
 
             if (DialogueLua.DoesVariableExist(VariableName + "HutName"))
             {

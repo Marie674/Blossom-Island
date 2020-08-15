@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
+using Cinemachine;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 
 {
 
@@ -76,9 +77,10 @@ namespace Game.Blossoms
 
         public List<BlossomCompetition> Competitions = new List<BlossomCompetition>();
 
-        string Blossom = string.Empty;
+        public string Blossom = string.Empty;
 
-        Dictionary<string, float> CurrentResults = new Dictionary<string, float>();
+        [SerializeField]
+        public Dictionary<string, float> CurrentResults = new Dictionary<string, float>();
         float BlossomResult = 0;
 
         float maxAffectionLuckMultiplier = 0.2f;
@@ -89,6 +91,9 @@ namespace Game.Blossoms
         public Transform CompetitionPresenter;
 
         public bool CompetitionDone = false;
+
+        string PreviousScene;
+        Vector2 PreviousPosition;
 
         void OnEnable()
         {
@@ -341,7 +346,6 @@ namespace Game.Blossoms
         {
             if (pCompetitionName != CompetitionNames.Null)
             {
-
                 SelectCompetition(pCompetitionName, pPresenter);
             }
             if (pTier != -1)
@@ -478,9 +482,17 @@ namespace Game.Blossoms
             }
             CompetitionText = (GenerateText(place));
 
-            FindObjectOfType<CompetitionProcessWindow>().Open(CompetitionText);
+            GameManager.Instance.StartCompetitionCutscene("Blossom" + CurrentCompetition.Name);
+
         }
 
+        public void LoadPreviousScene()
+        {
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene(PreviousScene);
+            GameManager.Instance.Player.transform.position = PreviousPosition;
+
+        }
         public void ShowResultsScreen()
         {
 
@@ -526,7 +538,7 @@ namespace Game.Blossoms
             return a.CompareTo(b);
         }
 
-        float GetCompetitionMaxScore()
+        public float GetCompetitionMaxScore()
         {
             float score = 0;
             float maxLuckMultiplier = maxAffectionLuckMultiplier + maxGenericLuckMultiplier;

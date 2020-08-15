@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
 
-public class CompetitionTierSelectUI : MonoBehaviour
-{
-    public CompetitionTierUI TierUIPrefab;
-        public Transform TierContainer;
-    public void Open(List<CompetitioniTier> pTiers,BlossomCompetition pCompetition)
+    public class CompetitionTierSelectUI : MonoBehaviour
     {
+        public CompetitionTierUI TierUIPrefab;
+        public Transform TierContainer;
+        public void Open(List<CompetitioniTier> pTiers, BlossomCompetition pCompetition)
+        {
             print("pls open");
 
             CompetitionTierUI[] children = TierContainer.GetComponentsInChildren<CompetitionTierUI>();
@@ -62,7 +62,7 @@ public class CompetitionTierSelectUI : MonoBehaviour
 
                 foreach (Stat.StatName stat in stats)
                 {
-                    minStat += getMinStat(stat,tier);
+                    minStat += getMinStat(stat, tier);
                     switch (stat)
                     {
                         case Stat.StatName.Null:
@@ -118,8 +118,8 @@ public class CompetitionTierSelectUI : MonoBehaviour
                     {
                         BlossomCompetitionManager.Instance.CurrentTier = tier;
                         GetComponent<WindowToggle>().Close();
-                        FindObjectOfType<CompetitionBlossomPickerUI>().Open(minAgility,maxAgility,minStrength,maxStrength,minIntellect,maxIntellect,minCharm,maxCharm,this,pTiers,pCompetition);
-                        
+                        FindObjectOfType<CompetitionBlossomPickerUI>().Open(minAgility, maxAgility, minStrength, maxStrength, minIntellect, maxIntellect, minCharm, maxCharm, this, pTiers, pCompetition);
+
                     }
 
                     );
@@ -127,10 +127,10 @@ public class CompetitionTierSelectUI : MonoBehaviour
             }
 
             GetComponent<WindowToggle>().Open();
-    }
+        }
 
 
-        public float getMinStat(Stat.StatName pStat,CompetitioniTier pTier)
+        public float getMinStat(Stat.StatName pStat, CompetitioniTier pTier)
         {
             float min = 0;
             switch (pStat)
@@ -138,7 +138,7 @@ public class CompetitionTierSelectUI : MonoBehaviour
                 case Stat.StatName.Null:
                     break;
                 case Stat.StatName.Strength:
-                    min += pTier.MinStrength; 
+                    min += pTier.MinStrength;
                     break;
                 case Stat.StatName.Agility:
                     min += pTier.MinAgility;

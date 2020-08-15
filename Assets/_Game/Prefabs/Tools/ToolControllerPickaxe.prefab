@@ -43,6 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c20f170ef7625449a39ae574a606131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowCursor: 0
+  AffectsObjects: 1
+  AffectsTilemap: 0
   AllowedTags:
   - Stone
   - Prop

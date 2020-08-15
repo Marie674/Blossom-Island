@@ -63,6 +63,7 @@ namespace ItemSystem
 		None = 0,
 		Shelter = 1266421838,
 		Bed = -1891246765,
+		WoodenFence = -891074242,
 		FirePit = 217913788,
 		Campfire = -930138330,
 		CommunityCenterBlueprint = 650235461,
@@ -116,6 +117,7 @@ namespace ItemSystem
 	{
 		None = 0,
 		Wheat = -1912533913,
+		WildGarlic = -1965774456,
 		Cranberries = -1307152578,
 		Strawberry = 783439596,
 		Coconut = -550175815,

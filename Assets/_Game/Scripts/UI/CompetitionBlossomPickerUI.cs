@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using PixelCrushers.DialogueSystem;
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
 
@@ -202,7 +202,8 @@ namespace Game.Blossoms
             }
 
             BackBtn.onClick.AddListener(
-                delegate () {
+                delegate ()
+                {
                     Close();
                     prevWindow.Open(pTiers, pCompetition);
                 }

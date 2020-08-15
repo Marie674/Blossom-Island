@@ -20,7 +20,7 @@ public class Festival : ScriptableObject
 
     [SerializeField]
     public List<FestivalProp> Props;
-    public Game.Blossoms.BlossomCompetition Competition = null;
-    public Game.Blossoms.CompetitionStarter Presenter = null;
+    public Game.NPCs.Blossoms.BlossomCompetition Competition = null;
+    public Game.NPCs.Blossoms.CompetitionStarter Presenter = null;
 
 }

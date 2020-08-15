@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/_Scenes/BlossomStore.unity
     guid: cc44edd40c3e06641b7c2ae7ca63ffeb
+  - enabled: 1
+    path: Assets/_Game/_Scenes/BlossomRace.unity
+    guid: b73645c1a4ebc8245b79a65923b8f5aa
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 359fdb41470ea6c4cb0f96573165e4f1,
       type: 2}

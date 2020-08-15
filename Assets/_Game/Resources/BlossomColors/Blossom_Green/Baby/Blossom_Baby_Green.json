@@ -1,314 +1,2229 @@
-{ "frames": [
-   {
-    "filename": "Blossom_Baby_Green 0.ase",
-    "frame": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 1.ase",
-    "frame": { "x": 36, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 2.ase",
-    "frame": { "x": 72, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 3.ase",
-    "frame": { "x": 108, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 4.ase",
-    "frame": { "x": 144, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 5.ase",
-    "frame": { "x": 180, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 6.ase",
-    "frame": { "x": 216, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 7.ase",
-    "frame": { "x": 252, "y": 0, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 8.ase",
-    "frame": { "x": 0, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 9.ase",
-    "frame": { "x": 36, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 10.ase",
-    "frame": { "x": 72, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 11.ase",
-    "frame": { "x": 108, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 12.ase",
-    "frame": { "x": 144, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 13.ase",
-    "frame": { "x": 180, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 14.ase",
-    "frame": { "x": 216, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 15.ase",
-    "frame": { "x": 252, "y": 40, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 16.ase",
-    "frame": { "x": 0, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 17.ase",
-    "frame": { "x": 36, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 18.ase",
-    "frame": { "x": 72, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 19.ase",
-    "frame": { "x": 108, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 20.ase",
-    "frame": { "x": 144, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 21.ase",
-    "frame": { "x": 180, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 22.ase",
-    "frame": { "x": 216, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 23.ase",
-    "frame": { "x": 252, "y": 80, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 24.ase",
-    "frame": { "x": 0, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 25.ase",
-    "frame": { "x": 36, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 26.ase",
-    "frame": { "x": 72, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 27.ase",
-    "frame": { "x": 108, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 28.ase",
-    "frame": { "x": 144, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 29.ase",
-    "frame": { "x": 180, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 30.ase",
-    "frame": { "x": 216, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   },
-   {
-    "filename": "Blossom_Baby_Green 31.ase",
-    "frame": { "x": 252, "y": 120, "w": 36, "h": 40 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 36, "h": 40 },
-    "sourceSize": { "w": 36, "h": 40 },
-    "duration": 100
-   }
- ],
- "meta": {
-  "app": "http://www.aseprite.org/",
-  "version": "1.2.12.1-x64",
-  "image": "Blossom_Baby_Green.png",
-  "format": "RGBA8888",
-  "size": { "w": 288, "h": 160 },
-  "scale": "1",
-  "frameTags": [
-   { "name": "Walk Down", "from": 0, "to": 7, "direction": "forward" },
-   { "name": "Idle Down", "from": 0, "to": 0, "direction": "forward" },
-   { "name": "Walk Left", "from": 8, "to": 15, "direction": "forward" },
-   { "name": "Idle Left", "from": 8, "to": 8, "direction": "forward" },
-   { "name": "Walk Right", "from": 16, "to": 23, "direction": "forward" },
-   { "name": "Idle Right", "from": 16, "to": 16, "direction": "forward" },
-   { "name": "Walk Up", "from": 24, "to": 31, "direction": "forward" },
-   { "name": "Idle Up", "from": 24, "to": 24, "direction": "forward" }
+{
+  "frames": [
+    {
+      "filename": "Blossom_Baby_Green 0.ase",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 1.ase",
+      "frame": {
+        "x": 36,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 2.ase",
+      "frame": {
+        "x": 72,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 3.ase",
+      "frame": {
+        "x": 108,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 4.ase",
+      "frame": {
+        "x": 144,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 5.ase",
+      "frame": {
+        "x": 180,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 6.ase",
+      "frame": {
+        "x": 216,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 7.ase",
+      "frame": {
+        "x": 252,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 8.ase",
+      "frame": {
+        "x": 0,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 9.ase",
+      "frame": {
+        "x": 36,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 10.ase",
+      "frame": {
+        "x": 72,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 11.ase",
+      "frame": {
+        "x": 108,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 12.ase",
+      "frame": {
+        "x": 144,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 13.ase",
+      "frame": {
+        "x": 180,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 14.ase",
+      "frame": {
+        "x": 216,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 15.ase",
+      "frame": {
+        "x": 252,
+        "y": 40,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 16.ase",
+      "frame": {
+        "x": 0,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 17.ase",
+      "frame": {
+        "x": 36,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 18.ase",
+      "frame": {
+        "x": 72,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 19.ase",
+      "frame": {
+        "x": 108,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 20.ase",
+      "frame": {
+        "x": 144,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 21.ase",
+      "frame": {
+        "x": 180,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 22.ase",
+      "frame": {
+        "x": 216,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 23.ase",
+      "frame": {
+        "x": 252,
+        "y": 80,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 24.ase",
+      "frame": {
+        "x": 0,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 25.ase",
+      "frame": {
+        "x": 36,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 26.ase",
+      "frame": {
+        "x": 72,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 27.ase",
+      "frame": {
+        "x": 108,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 28.ase",
+      "frame": {
+        "x": 144,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 29.ase",
+      "frame": {
+        "x": 180,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 30.ase",
+      "frame": {
+        "x": 216,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 31.ase",
+      "frame": {
+        "x": 252,
+        "y": 120,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 32.ase",
+      "frame": {
+        "x": 0,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 33.ase",
+      "frame": {
+        "x": 36,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 34.ase",
+      "frame": {
+        "x": 72,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 35.ase",
+      "frame": {
+        "x": 108,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 36.ase",
+      "frame": {
+        "x": 144,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 37.ase",
+      "frame": {
+        "x": 180,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 38.ase",
+      "frame": {
+        "x": 216,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 39.ase",
+      "frame": {
+        "x": 252,
+        "y": 160,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 40.ase",
+      "frame": {
+        "x": 0,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 41.ase",
+      "frame": {
+        "x": 36,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 42.ase",
+      "frame": {
+        "x": 72,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 43.ase",
+      "frame": {
+        "x": 108,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 44.ase",
+      "frame": {
+        "x": 144,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 45.ase",
+      "frame": {
+        "x": 180,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 46.ase",
+      "frame": {
+        "x": 216,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 47.ase",
+      "frame": {
+        "x": 252,
+        "y": 200,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 48.ase",
+      "frame": {
+        "x": 0,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 49.ase",
+      "frame": {
+        "x": 36,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 50.ase",
+      "frame": {
+        "x": 72,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 51.ase",
+      "frame": {
+        "x": 108,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 52.ase",
+      "frame": {
+        "x": 144,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 53.ase",
+      "frame": {
+        "x": 180,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 54.ase",
+      "frame": {
+        "x": 216,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 55.ase",
+      "frame": {
+        "x": 252,
+        "y": 240,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 56.ase",
+      "frame": {
+        "x": 0,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 57.ase",
+      "frame": {
+        "x": 36,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 58.ase",
+      "frame": {
+        "x": 72,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 59.ase",
+      "frame": {
+        "x": 108,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 60.ase",
+      "frame": {
+        "x": 144,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 61.ase",
+      "frame": {
+        "x": 180,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 62.ase",
+      "frame": {
+        "x": 216,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 63.ase",
+      "frame": {
+        "x": 252,
+        "y": 280,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 64.ase",
+      "frame": {
+        "x": 0,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 65.ase",
+      "frame": {
+        "x": 36,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 66.ase",
+      "frame": {
+        "x": 72,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 67.ase",
+      "frame": {
+        "x": 108,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 68.ase",
+      "frame": {
+        "x": 144,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 69.ase",
+      "frame": {
+        "x": 180,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 70.ase",
+      "frame": {
+        "x": 216,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 71.ase",
+      "frame": {
+        "x": 252,
+        "y": 320,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 72.ase",
+      "frame": {
+        "x": 0,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 73.ase",
+      "frame": {
+        "x": 36,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 74.ase",
+      "frame": {
+        "x": 72,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 75.ase",
+      "frame": {
+        "x": 108,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 76.ase",
+      "frame": {
+        "x": 144,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 77.ase",
+      "frame": {
+        "x": 180,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 78.ase",
+      "frame": {
+        "x": 216,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 79.ase",
+      "frame": {
+        "x": 252,
+        "y": 360,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 80.ase",
+      "frame": {
+        "x": 0,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 81.ase",
+      "frame": {
+        "x": 36,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 82.ase",
+      "frame": {
+        "x": 72,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 83.ase",
+      "frame": {
+        "x": 108,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 84.ase",
+      "frame": {
+        "x": 144,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 85.ase",
+      "frame": {
+        "x": 180,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 86.ase",
+      "frame": {
+        "x": 216,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 87.ase",
+      "frame": {
+        "x": 252,
+        "y": 400,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 88.ase",
+      "frame": {
+        "x": 0,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 89.ase",
+      "frame": {
+        "x": 36,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 90.ase",
+      "frame": {
+        "x": 72,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 91.ase",
+      "frame": {
+        "x": 108,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 92.ase",
+      "frame": {
+        "x": 144,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 93.ase",
+      "frame": {
+        "x": 180,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    },
+    {
+      "filename": "Blossom_Baby_Green 94.ase",
+      "frame": {
+        "x": 216,
+        "y": 440,
+        "w": 36,
+        "h": 40
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 36,
+        "h": 40
+      },
+      "sourceSize": {
+        "w": 36,
+        "h": 40
+      },
+      "duration": 100
+    }
   ],
-  "layers": [
-   { "name": "Layer 4", "opacity": 255, "blendMode": "normal" }
-  ],
-  "slices": [
-  ]
- }
+  "meta": {
+    "app": "http://www.aseprite.org/",
+    "version": "1.2.12.1-x64",
+    "image": "Blossom_Baby_Green.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 288,
+      "h": 480
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "walk_down",
+        "from": 0,
+        "to": 7,
+        "direction": "forward"
+      },
+      {
+        "name": "walk_left",
+        "from": 8,
+        "to": 15,
+        "direction": "forward"
+      },
+      {
+        "name": "walk_right",
+        "from": 16,
+        "to": 23,
+        "direction": "forward"
+      },
+      {
+        "name": "walk_up",
+        "from": 24,
+        "to": 31,
+        "direction": "forward"
+      },
+      {
+        "name": "breathe_down",
+        "from": 32,
+        "to": 36,
+        "direction": "forward"
+      },
+      {
+        "name": "blink_down",
+        "from": 36,
+        "to": 37,
+        "direction": "forward"
+      },
+      {
+        "name": "ear_down",
+        "from": 38,
+        "to": 39,
+        "direction": "forward"
+      },
+      {
+        "name": "breathe_left",
+        "from": 40,
+        "to": 44,
+        "direction": "forward"
+      },
+      {
+        "name": "blink_left",
+        "from": 44,
+        "to": 45,
+        "direction": "forward"
+      },
+      {
+        "name": "ear_left",
+        "from": 46,
+        "to": 47,
+        "direction": "forward"
+      },
+      {
+        "name": "breathe_right",
+        "from": 48,
+        "to": 52,
+        "direction": "forward"
+      },
+      {
+        "name": "blink_right",
+        "from": 52,
+        "to": 53,
+        "direction": "forward"
+      },
+      {
+        "name": "ear_right",
+        "from": 54,
+        "to": 55,
+        "direction": "forward"
+      },
+      {
+        "name": "breathe_up",
+        "from": 56,
+        "to": 60,
+        "direction": "forward"
+      },
+      {
+        "name": "blink_up",
+        "from": 60,
+        "to": 61,
+        "direction": "forward"
+      },
+      {
+        "name": "ear_up",
+        "from": 62,
+        "to": 63,
+        "direction": "forward"
+      },
+      {
+        "name": "sleep_left",
+        "from": 64,
+        "to": 70,
+        "direction": "forward"
+      },
+      {
+        "name": "sleep_right",
+        "from": 72,
+        "to": 78,
+        "direction": "forward"
+      },
+      {
+        "name": "tippytap",
+        "from": 80,
+        "to": 94,
+        "direction": "forward"
+      }
+    ],
+    "layers": [
+      {
+        "name": "Blue_Adult",
+        "opacity": 255,
+        "blendMode": "normal"
+      }
+    ],
+    "slices": []
+  }
 }

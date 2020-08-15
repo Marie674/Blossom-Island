@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     public class BlossomManagerSaver : MonoBehaviour
     {
@@ -56,15 +56,15 @@ namespace Game.Blossoms
                 i++;
             }
 
-            DialogueLua.SetVariable(VariableName + "HutAmount", TargetManager.HutAmount);
-            i = 0;
-            foreach (string hut in TargetManager.BlossomHuts)
-            {
-                DialogueLua.SetVariable(VariableName + "Hut" + i, hut);
-                i++;
-            }
+            // DialogueLua.SetVariable(VariableName + "HutAmount", TargetManager.HutAmount);
+            // i = 0;
+            // foreach (string hut in TargetManager.BlossomHuts)
+            // {
+            //     DialogueLua.SetVariable(VariableName + "Hut" + i, hut);
+            //     i++;
+            // }
 
-            DialogueLua.SetVariable(VariableName + "CompetitionDone", GetComponent<BlossomCompetitionManager>().CompetitionDone);
+            // DialogueLua.SetVariable(VariableName + "CompetitionDone", GetComponent<BlossomCompetitionManager>().CompetitionDone);
         }
 
         public void OnApplyPersistentData()
@@ -72,6 +72,10 @@ namespace Game.Blossoms
             TargetManager = GetComponent<BlossomManager>();
             VariableName = "BlossomManager";
 
+            if (DialogueLua.DoesVariableExist(VariableName + "OwnedBlossomAmount") == false)
+            {
+                return;
+            }
             TargetManager.CurrentBlossomID = DialogueLua.GetVariable(VariableName + "CurrentBlossomID").asInt;
             TargetManager.OwnedBlossomAmount = DialogueLua.GetVariable(VariableName + "OwnedBlossomAmount").asInt;
             TargetManager.ExistingBlossomAmount = DialogueLua.GetVariable(VariableName + "ExistingBlossomAmount").asInt;
@@ -87,11 +91,11 @@ namespace Game.Blossoms
                 TargetManager.ExistingBlossoms.Add(DialogueLua.GetVariable(VariableName + "ExistingBlossom" + i).asString);
             }
 
-            TargetManager.BlossomHuts.Clear();
-            for (int i = 0; i < TargetManager.HutAmount; i++)
-            {
-                TargetManager.BlossomHuts.Add(DialogueLua.GetVariable(VariableName + "Hut" + i).asString);
-            }
+            // TargetManager.BlossomHuts.Clear();
+            // for (int i = 0; i < TargetManager.HutAmount; i++)
+            // {
+            //     TargetManager.BlossomHuts.Add(DialogueLua.GetVariable(VariableName + "Hut" + i).asString);
+            // }
 
             GetComponent<BlossomCompetitionManager>().CompetitionDone = DialogueLua.GetVariable(VariableName + "CompetitionDone").asBool;
 

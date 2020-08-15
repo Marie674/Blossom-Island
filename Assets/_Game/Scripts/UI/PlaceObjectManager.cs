@@ -4,6 +4,7 @@ using UnityEngine;
 using ItemSystem;
 using CreativeSpore.SuperTilemapEditor;
 using PixelCrushers.DialogueSystem;
+using Game.NPCs.Blossoms;
 public class PlaceObjectManager : Singleton<PlaceObjectManager>
 {
 
@@ -170,13 +171,16 @@ public class PlaceObjectManager : Singleton<PlaceObjectManager>
                 spawnObj.GetComponent<OccupySpace>().OccupyTiles();
         }
         PlayerInventory.RemoveItem(CurrentItem);
-        if (spawnObj.GetComponent<Game.Blossoms.Hut>() != null)
+        if (spawnObj.GetComponent<Hut>() != null)
         {
-            Game.Blossoms.BlossomManager.Instance.AddHut(spawnObj.GetComponent<Game.Blossoms.Hut>().Name);
+            Hut hut = spawnObj.GetComponent<Hut>();
+            hut.Init();
+            BlossomManager.Instance.AddHut(hut.Name);
         }
 
-        if(spawnObj.GetComponent<PixelCrushers.SpawnedObject>() != null){
-        PixelCrushers.SpawnedObject spawnedObject = spawnObj.GetComponent<PixelCrushers.SpawnedObject>();
+        if (spawnObj.GetComponent<PixelCrushers.SpawnedObject>() != null)
+        {
+            PixelCrushers.SpawnedObject spawnedObject = spawnObj.GetComponent<PixelCrushers.SpawnedObject>();
             spawnedObject.key += " PlayerPlaced";
         }
         AstarPath.active.Scan();

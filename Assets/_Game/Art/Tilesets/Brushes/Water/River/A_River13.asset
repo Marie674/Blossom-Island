@@ -21,7 +21,7 @@ MonoBehaviour:
   AnimFPS: 2
   AnimDelay: 0
   AnimFrames:
-  - tileId: 1668
+  - tileId: 1537
     UVOffset: {x: 0, y: 0}
-  - tileId: 1673
+  - tileId: 1542
     UVOffset: {x: 0, y: 0}

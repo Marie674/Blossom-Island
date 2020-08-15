@@ -19,12 +19,13 @@ GameObject:
   - component: {fileID: 9159821858307798916}
   - component: {fileID: 1471348230647519126}
   - component: {fileID: -1611372660550221059}
+  - component: {fileID: 6539854241413926831}
   m_Layer: 12
   m_Name: Pine Tree Stump
   m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3386470332091812176
 Transform:
@@ -188,15 +189,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OccupiedTileId: 0
   TileCollisions:
-  - Collisions: 000100
+  - Collisions: 00000000
   Init: 1
-  Width: 3
+  Width: 1
   Height: 1
   Tiles: []
   Units: 1
   OccupyOnStart: 1
   OccupiedLayer: {fileID: 0}
   AllowedTerrains: []
+  AllowedValues: ffff000003000000
   CheckTerrain: 0
 --- !u!114 &9159821858307798916
 MonoBehaviour:
@@ -262,3 +264,15 @@ MonoBehaviour:
   m_saveAcrossSceneChanges: 0
   m_restoreStateOnStart: 0
   m_mode: 1
+--- !u!114 &6539854241413926831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380728980853984432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

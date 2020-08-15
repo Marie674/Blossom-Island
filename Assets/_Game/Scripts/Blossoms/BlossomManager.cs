@@ -4,7 +4,7 @@ using UnityEngine;
 using PixelCrushers.DialogueSystem;
 using UnityEngine.SceneManagement;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
     public class BlossomManager : Singleton<BlossomManager>
@@ -28,11 +28,14 @@ namespace Game.Blossoms
 
         public List<string> BlossomHuts = new List<string>();
 
-        void Start()
+        public void GiveStarterHut()
         {
-            string hut = "Hut25.588.0";
-            DialogueLua.SetVariable(hut + "X", 25.48631);
-            DialogueLua.SetVariable(hut + "Y", 89.13724);
+            string hut = "Hut47.589.0";
+            DialogueLua.SetVariable(hut + "X", 47.46875f);
+            float hutX = DialogueLua.GetVariable(hut + "X").asFloat;
+            print(hut + "X " + hutX);
+
+            DialogueLua.SetVariable(hut + "Y", 89f);
             AddHut(hut);
         }
 
@@ -44,13 +47,13 @@ namespace Game.Blossoms
             DialogueLua.SetVariable(starter + "Name", "Crogne");
             DialogueLua.SetVariable(starter + "CurrentLevel", "Home");
             DialogueLua.SetVariable(starter + "Age", 7);
-            DialogueLua.SetVariable(starter + "CurrentX", 17);
-            DialogueLua.SetVariable(starter + "CurrentY", 82);
+            DialogueLua.SetVariable(starter + "CurrentX", 45);
+            DialogueLua.SetVariable(starter + "CurrentY", 92);
             DialogueLua.SetVariable(starter + "Growth", BlossomData.BlossomGrowth.Baby);
             string hut = "Hut25.588.0";
             DialogueLua.SetVariable(hut + "Blossom", starter);
-            DialogueLua.SetVariable(starter + "HutX", 25.48631);
-            DialogueLua.SetVariable(starter + "HutY", 89.13724);
+            DialogueLua.SetVariable(starter + "HutX", 54.48631);
+            DialogueLua.SetVariable(starter + "HutY", 88.13724);
             DialogueLua.SetVariable(starter + "HutName", hut);
             SpawnLevelBlossoms();
         }
@@ -94,9 +97,10 @@ namespace Game.Blossoms
                 {
                     float hutX = DialogueLua.GetVariable(hut + "X").asFloat;
                     float hutY = DialogueLua.GetVariable(hut + "Y").asFloat;
+                    print(hut + "X " + hutX);
                     Vector2 hutPosition = new Vector2(hutX, hutY);
-                    Instantiate(HutPrefab, hutPosition, transform.rotation);
-
+                    Hut newHut = Instantiate(HutPrefab, hutPosition, transform.rotation);
+                    newHut.Init();
                 }
                 //if (AstarPath.active != null)
                 //{
@@ -109,6 +113,7 @@ namespace Game.Blossoms
 
         public void AddHut(string pName)
         {
+            print("Add hut " + pName);
             if (!BlossomHuts.Contains(pName))
             {
                 BlossomHuts.Add(pName);

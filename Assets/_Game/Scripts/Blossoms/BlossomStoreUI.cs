@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using PixelCrushers.DialogueSystem;
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
     public class BlossomStoreUI : MonoBehaviour

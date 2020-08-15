@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     public class HutSaver : MonoBehaviour
     {
@@ -42,7 +42,7 @@ namespace Game.Blossoms
         {
             TargetHut = GetComponent<Hut>();
             VariableName = TargetHut.Name;
-          //  print(TargetHut.Name);
+            //  print(TargetHut.Name);
             TargetHut.ContainedBlossom = DialogueLua.GetVariable(VariableName + "Blossom").AsString;
             DialogueLua.SetVariable(TargetHut.ContainedBlossom + "HutX", transform.position.x);
             DialogueLua.SetVariable(TargetHut.ContainedBlossom + "HutY", transform.position.y);

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using PixelCrushers.DialogueSystem;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
     public class BlossomCompetitionResultsUI : UIWindowBase
@@ -19,13 +19,13 @@ namespace Game.Blossoms
         public TextMeshProUGUI ThirdText;
         public Image ThirdImage;
 
-        public void Open(List<string> pResults,List<string> pBlossoms, int pRank, string pTitle = "", string pPrompt = "")
+        public void Open(List<string> pResults, List<string> pBlossoms, int pRank, string pTitle = "", string pPrompt = "")
         {
 
             BlossomCompetition currentCompetition = BlossomCompetitionManager.Instance.CurrentCompetition;
             CompetitioniTier currentTier = BlossomCompetitionManager.Instance.CurrentTier;
 
-           // BlossomColor[] allColors = Resources.LoadAll<BlossomColor>("BlossomColors");
+            // BlossomColor[] allColors = Resources.LoadAll<BlossomColor>("BlossomColors");
 
 
             WinnerText.text = pResults[0];
@@ -76,7 +76,7 @@ namespace Game.Blossoms
             }
 
 
-            for (int i = 3; i <pResults.Count; i++)
+            for (int i = 3; i < pResults.Count; i++)
             {
                 GameObject result = Instantiate(ResultsPrefab, Content);
 
@@ -92,7 +92,7 @@ namespace Game.Blossoms
                     portrait = Resources.Load<BlossomColor>("BlossomColors/" + color).BabyPortrait;
                 }
 
-                result.GetComponentInChildren<TextMeshProUGUI>().text = (i+1) + ": " + pResults[i];
+                result.GetComponentInChildren<TextMeshProUGUI>().text = (i + 1) + ": " + pResults[i];
             }
 
             base.Open(pTitle, pPrompt);

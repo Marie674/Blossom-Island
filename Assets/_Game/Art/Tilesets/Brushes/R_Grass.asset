@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -19,13 +20,13 @@ MonoBehaviour:
   m_showInPalette: 1
   RandomTiles: 
   RandomTileList:
-  - tileData: 5
-    probabilityFactor: 0.051
+  - tileData: 128
+    probabilityFactor: 0.25
   - tileData: 67
     probabilityFactor: 1
-  - tileData: 0
+  - tileData: 129
     probabilityFactor: 0.25
-  - tileData: 1
-    probabilityFactor: 0.25
+  - tileData: 192
+    probabilityFactor: 0.05
   RandomizeFlagMask: 0
   RemoveBrushIdAfterRefresh: 0

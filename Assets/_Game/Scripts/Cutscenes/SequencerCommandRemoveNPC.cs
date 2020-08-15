@@ -14,7 +14,7 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
         {
             string npc = GetParameter(0);
             //            print(npc);
-            BlossomIsland.NPCManager.Instance.RemoveSpawnedNPC(npc);
+            Game.NPCs.NPCManager.Instance.RemoveSpawnedNPC(npc);
             Stop();
         }
 

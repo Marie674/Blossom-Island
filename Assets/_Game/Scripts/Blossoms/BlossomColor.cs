@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "Blossoms/BlossomColor")]
 
-public class BlossomColor : ScriptableObject
+namespace Game.NPCs.Blossoms
 {
-    public string Name;
-    public int Probability;
-    public Sprite AdultPortrait;
-    public Sprite BabyPortrait;
+
+    [CreateAssetMenu(menuName = "Blossoms/BlossomColor")]
+
+    public class BlossomColor : ScriptableObject
+    {
+        public string Name;
+        public int Probability;
+        public Sprite AdultPortrait;
+        public Sprite BabyPortrait;
+    }
 }

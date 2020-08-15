@@ -1,5 +1,5 @@
 using UnityEngine;
-using Game.Blossoms;
+using Game.NPCs.Blossoms;
 namespace BehaviorDesigner.Runtime.Tasks.Blossoms
 {
     [TaskCategory("NPCs")]

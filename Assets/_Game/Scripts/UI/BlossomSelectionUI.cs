@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     public class BlossomSelectionUI : MonoBehaviour
     {

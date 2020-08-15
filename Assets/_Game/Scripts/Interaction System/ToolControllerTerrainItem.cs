@@ -16,7 +16,8 @@ public class ToolControllerTerrainItem : ToolControllerTileBased
 
     protected override IEnumerator UseCountdown()
     {
-        Vector2 pos = ToolCursorManager.Instance.CurrentCursor.transform.position;
+        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
         List<Vector2> tiles = ToolCursorManager.Instance.GetTiles();
 

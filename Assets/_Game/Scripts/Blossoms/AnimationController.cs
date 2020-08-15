@@ -2,18 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game.Blossoms
+namespace Game.NPCs
 {
     public class AnimationController : MonoBehaviour
     {
-        public enum CharacterDirection
-        {
-            Down,
-            Right,
-            Up,
-            Left
-        }
-
         public List<Animator> Animators = new List<Animator>();
         public CharacterDirection CurrentDirection;
         public Vector3 Dir;
@@ -138,7 +130,41 @@ namespace Game.Blossoms
                 }
             }
         }
+        public void ChangeFacing(CharacterDirection pDir)
+        {
+            bool left = false;
+            bool right = false;
+            bool down = false;
+            bool up = false;
 
+            switch (pDir)
+            {
+                case CharacterDirection.Down:
+                    down = true;
+                    break;
+                case CharacterDirection.Left:
+                    left = true;
+                    break;
+                case CharacterDirection.Right:
+                    right = true;
+                    break;
+                case CharacterDirection.Up:
+                    up = true;
+                    break;
+                default:
+                    return;
+
+            }
+            foreach (Animator anim in Animators)
+            {
+                anim.SetBool("Down", down);
+                anim.SetBool("Left", left);
+                anim.SetBool("Right", right);
+                anim.SetBool("Up", up);
+            }
+            CurrentDirection = pDir;
+
+        }
 
     }
 }

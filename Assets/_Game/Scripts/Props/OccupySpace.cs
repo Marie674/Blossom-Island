@@ -33,7 +33,6 @@ public class OccupySpace : MonoBehaviour
 
 
 
-    // Use this for initialization
     void OnEnable()
     {
         OccupiedLayer = GameObject.FindWithTag("Occupied Tiles").GetComponent<STETilemap>();
@@ -75,6 +74,9 @@ public class OccupySpace : MonoBehaviour
     }
 
     public List<string> AllowedTerrains = new List<string>();
+
+    [Tooltip("65535 = Unoccupied, 0= Anywhere, 1 = Wall, 2 = Counter , 3 = Around trees")]
+    public List<int> AllowedValues = new List<int>() { 65535, 3 };
     public bool CheckTerrain = false;
     bool ValidateTileLayer(Tile pTile)
     {
@@ -87,7 +89,7 @@ public class OccupySpace : MonoBehaviour
         {
             return false;
         }
-        print(tileTerrain);
+        //        print(tileTerrain);
         if (AllowedTerrains.Contains(tileTerrain))
         {
             return true;
@@ -112,12 +114,13 @@ public class OccupySpace : MonoBehaviour
             for (int j = 0; j < Width; j++)
             {
                 //if tile is marked as occupied
-                if (TileCollisions[i].Collisions[j] == true)
+                if (TileCollisions[i].Collisions[j] >= 0)
                 {
+                    int val = TileCollisions[i].Collisions[j];
                     Vector2 tileWorldPos = SpriteTopLeft;
                     tileWorldPos.x += (Units * j) + Units / 2f;
                     tileWorldPos.y += (Units * -i) - Units / 2f;
-                    OccupyTile(tileWorldPos);
+                    OccupyTile(tileWorldPos, val);
                 }
             }
         }
@@ -125,15 +128,18 @@ public class OccupySpace : MonoBehaviour
     }
 
 
-    void OccupyTile(Vector2 pTileWorldPos)
+    void OccupyTile(Vector2 pTileWorldPos, int pVal)
     {
-
+        if (pVal == 65535)
+        {
+            return;
+        }
         uint rawTileData = GetTileData(pTileWorldPos);
         TileData tileData = new TileData(rawTileData);
-        tileData.tileId = OccupiedTileId;
+
+        tileData.tileId = pVal;
         tileData.rot90 = false;
         SetTileData(pTileWorldPos, tileData);
-
         Tiles.Add(pTileWorldPos);
     }
 
@@ -148,7 +154,7 @@ public class OccupySpace : MonoBehaviour
             TileCollisions.Add(new TileCollisionRow());
             for (int j = 0; j < Width; j++)
             {
-                TileCollisions[i].Collisions.Add(false);
+                TileCollisions[i].Collisions.Add(-1);
             }
         }
         Init = true;
@@ -173,10 +179,12 @@ public class OccupySpace : MonoBehaviour
 
     public bool CheckTile(Vector2 pTileWorldPos)
     {
+        int val = -2;
         uint rawTileData = GetTileData(pTileWorldPos);
         TileData tileData = new TileData(rawTileData);
+        val = tileData.tileId;
         //if tile is already occupied
-        if (tileData.tileId != 65535)
+        if (AllowedValues.Contains(val) == false)
         {
             return false;
         }
@@ -244,8 +252,9 @@ public class OccupySpace : MonoBehaviour
             for (int j = 0; j < Width; j++)
             {
                 //if tile is marked as occupied
-                if (TileCollisions[i].Collisions[j] == true)
+                if (TileCollisions[i].Collisions[j] != -1)
                 {
+                    int val = TileCollisions[i].Collisions[j];
                     Vector2 tileWorldPos = pSpriteTopLeft;
                     //					print(tileWorldPos);
                     tileWorldPos.x += (Units * j) + (Units / 2f);
@@ -264,7 +273,7 @@ public class OccupySpace : MonoBehaviour
         return true;
     }
 
-    void UnOccupyTiles()
+    public void UnOccupyTiles()
     {
         foreach (Vector2 tile in Tiles)
         {

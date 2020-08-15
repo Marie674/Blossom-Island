@@ -8,11 +8,10 @@ public class ToolControllerAxe : ToolControllerBase
     protected override IEnumerator UseCountdown()
     {
 
-        Vector2 pos = ToolCursorManager.Instance.CurrentCursor.transform.position;
+        Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
-        List<GameObject> objects = ToolCursorManager.Instance.GetObjects();
+        List<GameObject> objects = ToolCursorManager.Instance.GetObjects(AllowedTags);
         objects = objects.Where(i => i != null).ToList();
-
         yield return new WaitForSeconds(CurrentTool.useInterval);
         ProceedUse(objects);
     }

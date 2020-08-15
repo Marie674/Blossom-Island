@@ -50,7 +50,11 @@ public class ToolbarSlotUI : MonoBehaviour
     {
         if (!IsQuitting)
         {
-            ReferencedItemStack.OnItemChanged -= UpdateItem;
+            if (ReferencedItemStack != null)
+            {
+                ReferencedItemStack.OnItemChanged -= UpdateItem;
+
+            }
             IsInit = false;
         }
 

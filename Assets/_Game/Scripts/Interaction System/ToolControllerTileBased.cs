@@ -39,10 +39,10 @@ public class ToolControllerTileBased : ToolControllerBase
                 affectedTileAmount += 1;
             }
         }
-        if (affectedTileAmount < 1)
-        {
-            return false;
-        }
+        // if (affectedTileAmount < 1)
+        // {
+        //     return false;
+        // }
 
         return true;
     }

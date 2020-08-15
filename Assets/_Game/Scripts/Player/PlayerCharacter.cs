@@ -26,7 +26,7 @@ public class PlayerCharacter : MonoBehaviour
 
     public CharacterDirection Direction = CharacterDirection.Down;
     public delegate void PlayerDirectionChange();
-    public static event PlayerDirectionChange OnPlayerDirectionChange;
+    public event PlayerDirectionChange OnPlayerDirectionChange;
 
     public List<PlayerTraitScriptableObject> Traits = new List<PlayerTraitScriptableObject>();
     public bool IsJumping = false;
@@ -55,6 +55,8 @@ public class PlayerCharacter : MonoBehaviour
     private bool IsRunning = false;
 
     bool IsApplicationQuitting = false;
+
+    CharacterDirection PreviousDirection = CharacterDirection.Down;
     private void CheckCarrying()
     {
 
@@ -105,6 +107,10 @@ public class PlayerCharacter : MonoBehaviour
             return Direction;
 
         }
+        Direction = (CharacterDirection)(dirIdx);
+        OnPlayerDirectionChange();
+
+
         return (CharacterDirection)(dirIdx);
     }
 
@@ -161,8 +167,8 @@ public class PlayerCharacter : MonoBehaviour
     {
 
         //Set move direction
-        Dir = new Vector3(Mathf.Round(Horizontal / 0.15f) * 0.15f, Mathf.Round(Vertical / 0.15f) * 0.15f, 0);
-        Dir.z = 0f;
+        Dir = new Vector2(Horizontal, Vertical); //new Vector3(Mathf.Round(Horizontal / 0.15f) * 0.15f, Mathf.Round(Vertical / 0.15f) * 0.15f, 0);
+                                                 //  Dir.z = 0f;
 
         //If moving input down
         if (Dir.sqrMagnitude > 0f)
@@ -289,7 +295,7 @@ public class PlayerCharacter : MonoBehaviour
     }
 
 
-    void ChangeFacing(CharacterDirection pDir)
+    public void ChangeFacing(CharacterDirection pDir)
     {
         bool left = false;
         bool right = false;
@@ -326,6 +332,10 @@ public class PlayerCharacter : MonoBehaviour
         ToolAnims.SetBool("Right", right);
         ToolAnims.SetBool("Up", up);
         Direction = pDir;
+        if (OnPlayerDirectionChange != null)
+        {
+            OnPlayerDirectionChange();
+        }
     }
     void UpdateAnimation()
     {

@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18,8 +19,9 @@ MonoBehaviour:
   m_autotilingMode: 5
   m_showInPalette: 1
   AnimFPS: 2
+  AnimDelay: 0
   AnimFrames:
-  - tileId: 706
+  - tileId: 1548
     UVOffset: {x: 0, y: 0}
-  - tileId: 711
+  - tileId: 1553
     UVOffset: {x: 0, y: 0}

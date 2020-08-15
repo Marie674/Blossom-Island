@@ -4,7 +4,7 @@ using UnityEngine;
 using Pathfinding;
 using ItemSystem;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
     public class Hut : MonoBehaviour
     {
@@ -17,13 +17,20 @@ namespace Game.Blossoms
         public Sprite EmptyBowlSprite;
         public Sprite FullBowlSprite;
 
-        private void OnEnable()
+        void Start()
+        {
+            Init();
+        }
+        public void Init()
+
         {
             Name = "Hut" + transform.position.x.ToString("F1") + transform.position.y.ToString("F1");
+            gameObject.name = Name;
+            print(Name);
         }
         void OnDestroy()
         {
-          //  Game.Blossoms.BlossomManager.Instance.RemoveHut(Name);
+            //  Game.Blossoms.BlossomManager.Instance.RemoveHut(Name);
         }
 
         public void Interact()
@@ -32,9 +39,9 @@ namespace Game.Blossoms
             if (stack != null)
             {
                 ItemBase item = stack.ContainedItem;
-                if(item.itemType == ItemType.Food && (item as ItemFood).BlossomFeed == true)
+                if (item.itemType == ItemType.Food && (item as ItemFood).BlossomFeed == true)
                 {
-                    
+
                     FillBowl(item as ItemFood);
                 }
             }
@@ -51,7 +58,7 @@ namespace Game.Blossoms
             Bowl.sprite = FullBowlSprite;
         }
 
-       public void EatFrom()
+        public void EatFrom()
         {
             EmptyBowl();
         }

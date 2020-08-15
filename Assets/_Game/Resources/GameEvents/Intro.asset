@@ -14,8 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Intro
   ConversationTitle: Intro
+  PlayerPos: {x: 44, y: 93}
+  PlayerFacing: 0
+  NPCLocations:
+  - NPCID: Robin
+    Position: {x: 44, y: 92}
+    Facing: 3
+  EventTriggers:
+    m_PersistentCalls:
+      m_Calls: []
+  HourSpan:
+    StartHour: -1
+    StartMinute: 0
+    EndHour: 0
+    EndMinute: 0
+  AllowedWeekdays: 
+  AllowedWeathers: []
+  AllowedMonths: 
   Location: Home
   FromLocation: 
-  FestivalAllowed: 0
+  FestivalAllowed: 1
   CanQueue: 0
   Replayable: 0
+  MinimumDays: 0
+  PreRequisites: []

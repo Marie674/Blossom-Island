@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
     [System.Serializable]

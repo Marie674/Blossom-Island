@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -17,5 +18,5 @@ MonoBehaviour:
   m_group: 4
   m_autotilingMode: 21
   m_showInPalette: 1
-  TileIds: c3040000c3040000c304000002050000c3040000c304000082040000c2040000c304000004050000c30400000305000084040000c404000083040000c3040000
-  InteriorCornerTileIds: 0005000001050000c0040000c1040000
+  TileIds: 920800009208000092080000d10800009208000092080000510800009108000092080000d308000092080000d208000053080000930800005208000092080000
+  InteriorCornerTileIds: cf080000d00800008f08000090080000

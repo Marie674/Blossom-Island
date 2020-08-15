@@ -36,7 +36,7 @@ public class CalendarManager : Singleton<CalendarManager>
                 {
                     if (CurrentEvent.Competition != null)
                     {
-                        Game.Blossoms.BlossomCompetitionManager.Instance.SelectCompetition(CurrentEvent.Competition.Name, CurrentEvent.Presenter.transform);
+                        Game.NPCs.Blossoms.BlossomCompetitionManager.Instance.SelectCompetition(CurrentEvent.Competition.Name, CurrentEvent.Presenter.transform);
 
                     }
 

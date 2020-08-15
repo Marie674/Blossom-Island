@@ -22,20 +22,21 @@ public class CharacterAppearance : MonoBehaviour
     }
     public void ChangeBody(int pIndex)
     {
+
         pIndex += 1;
 
         AnimatorOverrideController aoc = new AnimatorOverrideController(BodyAnim.runtimeAnimatorController);
+        aoc.name = "Player Body Override";
         AnimationClip[] clips = BodyAnim.runtimeAnimatorController.animationClips;
-        List<KeyValuePair<AnimationClip, AnimationClip>> newClips = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-
         foreach (AnimationClip clip in clips)
         {
-            string path = "Character Art/Bodies/Body" + pIndex + "/" + clip.name + ".anim";
+            string path = "Character Art/Bodies/Body" + pIndex + "/" + clip.name;
             AnimationClip newClip = Resources.Load(path) as AnimationClip;
-            newClips.Add(new KeyValuePair<AnimationClip, AnimationClip>(clip, newClip));
+            aoc[clip.name] = newClip;
         }
-        aoc.ApplyOverrides(newClips);
+
         BodyAnim.runtimeAnimatorController = aoc;
+        print("set");
     }
 
     public void ChangeEyes(int pIndex)
@@ -44,16 +45,12 @@ public class CharacterAppearance : MonoBehaviour
 
         AnimatorOverrideController aoc = new AnimatorOverrideController(EyeAnim.runtimeAnimatorController);
         AnimationClip[] clips = EyeAnim.runtimeAnimatorController.animationClips;
-        List<KeyValuePair<AnimationClip, AnimationClip>> newClips = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-
-
         foreach (AnimationClip clip in clips)
         {
             string path = "Character Art/Eyes/Eyes" + pIndex + "/" + clip.name;
             AnimationClip newClip = Resources.Load(path) as AnimationClip;
-            newClips.Add(new KeyValuePair<AnimationClip, AnimationClip>(clip, newClip));
+            aoc[clip.name] = newClip;
         }
-        aoc.ApplyOverrides(newClips);
         EyeAnim.runtimeAnimatorController = aoc;
     }
 
@@ -63,16 +60,13 @@ public class CharacterAppearance : MonoBehaviour
 
         AnimatorOverrideController aoc = new AnimatorOverrideController(HairAnim.runtimeAnimatorController);
         AnimationClip[] clips = HairAnim.runtimeAnimatorController.animationClips;
-        List<KeyValuePair<AnimationClip, AnimationClip>> newClips = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-
 
         foreach (AnimationClip clip in clips)
         {
             string path = "Character Art/Hairstyles/Hair" + pIndex + "/" + clip.name;
             AnimationClip newClip = Resources.Load(path) as AnimationClip;
-            newClips.Add(new KeyValuePair<AnimationClip, AnimationClip>(clip, newClip));
+            aoc[clip.name] = newClip;
         }
-        aoc.ApplyOverrides(newClips);
         HairAnim.runtimeAnimatorController = aoc;
     }
 
@@ -82,16 +76,13 @@ public class CharacterAppearance : MonoBehaviour
 
         AnimatorOverrideController aoc = new AnimatorOverrideController(TopAnim.runtimeAnimatorController);
         AnimationClip[] clips = TopAnim.runtimeAnimatorController.animationClips;
-        List<KeyValuePair<AnimationClip, AnimationClip>> newClips = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-
 
         foreach (AnimationClip clip in clips)
         {
             string path = "Character Art/Tops/Top" + pIndex + "/" + clip.name;
             AnimationClip newClip = Resources.Load(path) as AnimationClip;
-            newClips.Add(new KeyValuePair<AnimationClip, AnimationClip>(clip, newClip));
+            aoc[clip.name] = newClip;
         }
-        aoc.ApplyOverrides(newClips);
         TopAnim.runtimeAnimatorController = aoc;
     }
 
@@ -101,16 +92,13 @@ public class CharacterAppearance : MonoBehaviour
 
         AnimatorOverrideController aoc = new AnimatorOverrideController(BottomAnim.runtimeAnimatorController);
         AnimationClip[] clips = BottomAnim.runtimeAnimatorController.animationClips;
-        List<KeyValuePair<AnimationClip, AnimationClip>> newClips = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-
 
         foreach (AnimationClip clip in clips)
         {
             string path = "Character Art/Bottoms/Bottom" + pIndex + "/" + clip.name;
             AnimationClip newClip = Resources.Load(path) as AnimationClip;
-            newClips.Add(new KeyValuePair<AnimationClip, AnimationClip>(clip, newClip));
+            aoc[clip.name] = newClip;
         }
-        aoc.ApplyOverrides(newClips);
         BottomAnim.runtimeAnimatorController = aoc;
     }
 
@@ -120,16 +108,13 @@ public class CharacterAppearance : MonoBehaviour
         pIndex += 1;
         AnimatorOverrideController aoc = new AnimatorOverrideController(ShoesAnim.runtimeAnimatorController);
         AnimationClip[] clips = ShoesAnim.runtimeAnimatorController.animationClips;
-        List<KeyValuePair<AnimationClip, AnimationClip>> newClips = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-
 
         foreach (AnimationClip clip in clips)
         {
             string path = "Character Art/Shoes/Shoes" + pIndex + "/" + clip.name;
             AnimationClip newClip = Resources.Load(path) as AnimationClip;
-            newClips.Add(new KeyValuePair<AnimationClip, AnimationClip>(clip, newClip));
+            aoc[clip.name] = newClip;
         }
-        aoc.ApplyOverrides(newClips);
         ShoesAnim.runtimeAnimatorController = aoc;
     }
 }

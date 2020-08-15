@@ -13,6 +13,11 @@ public struct AffectedLayer
 }
 public class ToolControllerBase : MonoBehaviour
 {
+    public bool ShowCursor = true;
+    public bool AffectsObjects = false;
+    public bool AffectsTilemap = true;
+
+    //For objects
     public List<string> AllowedTags = new List<string>();
 
     public ItemTool CurrentTool;
@@ -37,6 +42,7 @@ public class ToolControllerBase : MonoBehaviour
     }
     public virtual void Use()
     {
+
         if (CheckUseValidity() == false)
         {
             return;
@@ -47,6 +53,7 @@ public class ToolControllerBase : MonoBehaviour
     protected virtual IEnumerator UseCountdown()
     {
         Vector2 pos = ToolCursorManager.Instance.CurrentCursor.transform.position;
+
         GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
         yield return new WaitForSeconds(CurrentTool.useInterval);
         ProceedUse();
@@ -67,22 +74,22 @@ public class ToolControllerBase : MonoBehaviour
     public virtual bool CheckUseValidity()
     {
 
-        if (CheckCursorDistance() == false)
-        {
-            return false;
-        }
+        // if (CheckCursorDistance() == false)
+        // {
+        //     return false;
+        // }
         if (CheckEnergy() == false)
         {
             return false;
         }
 
-        if (ToolCursorManager.Instance.GetComponent<ToolCursorPixelbased>() != null)
-        {
-            if (ToolCursorManager.Instance.GetComponent<ToolCursorPixelbased>().CanUse == false)
-            {
-                return false;
-            }
-        }
+        // if (ToolCursorManager.Instance.GetComponent<ToolCursorPixelbased>() != null)
+        // {
+        //     if (ToolCursorManager.Instance.GetComponent<ToolCursorPixelbased>().CanUse == false)
+        //     {
+        //         return false;
+        //     }
+        // }
 
         if (GameManager.Instance.Player.IsActing)
         {
@@ -91,15 +98,15 @@ public class ToolControllerBase : MonoBehaviour
         return true;
     }
 
-    protected bool CheckCursorDistance()
-    {
-        float distance = ToolCursorManager.Instance.GetDistance();
-        if (distance > ToolCursorManager.Instance.CurrentCursor.MaxDistance)
-        {
-            return false;
-        }
-        return true;
-    }
+    // protected bool CheckCursorDistance()
+    // {
+    //     float distance = ToolCursorManager.Instance.GetDistance();
+    //     if (distance > ToolCursorManager.Instance.CurrentCursor.MaxDistance)
+    //     {
+    //         return false;
+    //     }
+    //     return true;
+    // }
     protected bool CheckEnergy()
     {
 

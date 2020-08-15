@@ -7,7 +7,6 @@ public class NativeTreeSpawner : MonoBehaviour
 {
     public void SpawnTree()
     {
-        print(GameManager.Instance.NativeTree.name);
         TreeBase newTree = GameObject.Instantiate(GameManager.Instance.NativeTree, transform.position, transform.rotation);
         newTree.ProduceSeasons = new List<TimeManager.MonthNames>();
         newTree.NativeTree = true;

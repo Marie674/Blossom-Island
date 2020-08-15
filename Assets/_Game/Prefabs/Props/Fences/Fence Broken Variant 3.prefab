@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &4494803094500490696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498278421764412812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5581451460519034570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5498278421764412812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdfc7f8816f5752489a3f864da17c83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandHarvest: 0
+  DestroyOnHarvest: 1
+  MaxHealth: 2
+  RequiredToolLevel: 1
+  Outputs: []
+  Particle: 0
+--- !u!1001 &663096633457259515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 100.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.049655
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707392, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707393, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8fcbf5ec1127b4f4684824ee5f4d5789, type: 2}
+    - target: {fileID: 5007446192595707400, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: TileCollisions.Array.data[0].Collisions.Array.data[0]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707400, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: TileCollisions.Array.data[1].Collisions.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007446192595707511, guid: 123caea76068cb246a951c57c7341483,
+        type: 3}
+      propertyPath: m_Name
+      value: Fence Broken Variant 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 123caea76068cb246a951c57c7341483, type: 3}
+--- !u!1 &5498278421764412812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5007446192595707511, guid: 123caea76068cb246a951c57c7341483,
+    type: 3}
+  m_PrefabInstance: {fileID: 663096633457259515}
+  m_PrefabAsset: {fileID: 0}

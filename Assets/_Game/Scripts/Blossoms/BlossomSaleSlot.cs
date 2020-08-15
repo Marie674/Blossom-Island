@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 
-namespace Game.Blossoms
+namespace Game.NPCs.Blossoms
 {
 
     public class BlossomSaleSlot : MonoBehaviour

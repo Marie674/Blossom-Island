@@ -43,7 +43,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b522b4d4c822b264e9065ec15bd550db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowCursor: 1
+  AffectsObjects: 0
+  AffectsTilemap: 1
   AllowedTags: []
+  CurrentTool:
+    itemName: 
+    itemDescription: 
+    itemID: 0
+    consumable: 0
+    sellable: 1
+    value: 0
+    shopMarkupPercentage: 400
+    weight: 1
+    itemSprite: {fileID: 0}
+    itemIcon: {fileID: 0}
+    UsableFromToolbar: 0
+    itemType: 0
+    ItemTags: 
+    Ingredients: []
+    Traits: []
+    power: 1
+    level: 1
+    useInterval: 0.1
+    maxDistance: 1
+    energyCost: 1
+    MaxCharge: 25
+    CurrentCharge: 25
+    ToolController: {fileID: 0}
+    ItemsUsed: []
+    Cursors: []
+    CursorColor: {r: 1, g: 1, b: 1, a: 1}
+    AffectsObjects: 0
+    AffectsTiles: 0
+    cropName: 
+    trigger: 
+    toolTrigger: 
   AffectedLayerNames: []
   AffectedTerrains:
   - LowerLayerName: FarmPlot

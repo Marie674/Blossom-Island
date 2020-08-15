@@ -23,7 +23,7 @@ GameObject:
   m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4377515666989408
 Transform:
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &114885496533518010
@@ -172,6 +172,9 @@ MonoBehaviour:
   RequiredToolLevel: 1
   Outputs: []
   Particle: 2
+  ShakeTime: 0.75
+  ShakeAmplitude: 0.02
+  ShakeSpeed: 12
 --- !u!114 &114843667568018172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +247,7 @@ GameObject:
   m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4256228957795362
 Transform:
@@ -307,7 +310,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &114088152378129744
@@ -393,6 +396,9 @@ MonoBehaviour:
   RequiredToolLevel: 1
   Outputs: []
   Particle: 2
+  ShakeTime: 0.75
+  ShakeAmplitude: 0.02
+  ShakeSpeed: 12
 --- !u!114 &114245575090110974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +471,7 @@ GameObject:
   m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4430135181263624
 Transform:
@@ -528,7 +534,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &114226484371112158
@@ -614,6 +620,9 @@ MonoBehaviour:
   RequiredToolLevel: 1
   Outputs: []
   Particle: 2
+  ShakeTime: 0.75
+  ShakeAmplitude: 0.02
+  ShakeSpeed: 12
 --- !u!114 &114226712889269490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,7 +695,7 @@ GameObject:
   m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4678379059566128
 Transform:
@@ -749,7 +758,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &114134044234096962
@@ -835,6 +844,9 @@ MonoBehaviour:
   RequiredToolLevel: 1
   Outputs: []
   Particle: 2
+  ShakeTime: 0.75
+  ShakeAmplitude: 0.02
+  ShakeSpeed: 12
 --- !u!114 &114472191162171462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,7 +919,7 @@ GameObject:
   m_TagString: Bush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4515289678580416
 Transform:
@@ -970,7 +982,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &114196098532514830
@@ -1056,6 +1068,9 @@ MonoBehaviour:
   RequiredToolLevel: 1
   Outputs: []
   Particle: 2
+  ShakeTime: 0.75
+  ShakeAmplitude: 0.02
+  ShakeSpeed: 12
 --- !u!114 &114497947201646410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,7 +1138,7 @@ GameObject:
   m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4506019194430818
 Transform:
@@ -1162,7 +1177,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 8fcbf5ec1127b4f4684824ee5f4d5789, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1206,12 +1221,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519244d3882bbd341a017bf25cc5a626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GrassPatches: []
   Children:
   - {fileID: 114437495646859702}
   - {fileID: 114540583783840646}
   - {fileID: 114779570833011766}
   - {fileID: 114568569801487668}
   - {fileID: 114841894927448480}
+  GrowChance: 50
+  SpreadChance: 10
+  Pregrow: 0
 --- !u!114 &114379711331931626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,7 +1262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OccupiedTileId: 0
   TileCollisions:
-  - Collisions: 01
+  - Collisions: 00000000
   Init: 1
   Width: 1
   Height: 1
@@ -1252,4 +1271,5 @@ MonoBehaviour:
   OccupyOnStart: 1
   OccupiedLayer: {fileID: 0}
   AllowedTerrains: []
+  AllowedValues: ffff000003000000
   CheckTerrain: 0

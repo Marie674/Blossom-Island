@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 212685737278188588}
   - component: {fileID: 114344257414083760}
   - component: {fileID: 114263310178853488}
-  - component: {fileID: 114697047969825262}
-  - component: {fileID: 114492273387952294}
   - component: {fileID: 114377713371584982}
   - component: {fileID: 114012532909975402}
   - component: {fileID: 114868255759277252}
@@ -21,10 +19,11 @@ GameObject:
   - component: {fileID: 2234246145293381476}
   - component: {fileID: 6185895826508137027}
   - component: {fileID: 6961000992346011763}
-  - component: {fileID: 944406640685918603}
   - component: {fileID: 2325564677159850457}
   - component: {fileID: 8360170545619226496}
   - component: {fileID: 1800014899383553018}
+  - component: {fileID: -6797915241256925853}
+  - component: {fileID: 9140639208530433649}
   m_Layer: 12
   m_Name: Maple Tree
   m_TagString: Tree
@@ -115,8 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HandHarvest: 0
   DestroyOnHarvest: 0
-  MaxHealth: 18
-  RequiredToolLevel: 2
+  MaxHealth: 15
+  RequiredToolLevel: 1
   Outputs: []
   Particle: 0
   YieldsProduce: 0
@@ -158,109 +157,6 @@ MonoBehaviour:
   FixedZ: 0
   Units: 1
   AdjustOnUpdate: 0
---- !u!114 &114697047969825262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513224892425108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 32
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  setQuestState: 1
-  questName: 
-  questState: 0
-  setQuestEntryState: 0
-  questEntryNumber: 1
-  questEntryState: 0
-  luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
-  sequenceListener: {fileID: 0}
-  waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
-  textTable: {fileID: 0}
-  alertDuration: 0
-  sendMessages: []
-  barkSource: 0
-  barkConversation: 
-  barkText: 
-  barkTextSequence: 
-  barker: {fileID: 0}
-  barkTarget: {fileID: 0}
-  barkOrder: 0
-  allowBarksDuringConversations: 0
-  skipBarkIfNoValidEntries: 0
-  cacheBarkLines: 0
-  conversation: 
-  conversationConversant: {fileID: 0}
-  conversationActor: {fileID: 0}
-  startConversationEntryID: -1
-  exclusive: 0
-  skipIfNoValidEntries: 1
-  stopConversationOnTriggerExit: 0
-  stopConversationIfTooFar: 0
-  maxConversationDistance: 5
-  monitorConversationDistanceFrequency: 1
-  showCursorDuringConversation: 0
-  pauseGameDuringConversation: 0
-  setActiveActions: []
-  setEnabledActions: []
-  setAnimatorStateActions: []
-  onExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114344257414083760}
-        m_MethodName: Interact
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  useConversationTitlePicker: 1
-  useBarkTitlePicker: 1
-  useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 665bc1075844c0043b5277aa1bb666de, type: 2}
---- !u!114 &114492273387952294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513224892425108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overrideName: 
-  overrideUseMessage: 
-  maxUseDistance: 5
-  events:
-    onSelect:
-      m_PersistentCalls:
-        m_Calls: []
-    onDeselect:
-      m_PersistentCalls:
-        m_Calls: []
-    onUse:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!114 &114377713371584982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,11 +203,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OccupiedTileId: 0
   TileCollisions:
-  - Collisions: 000000
-  - Collisions: 000000
-  - Collisions: 000000
-  - Collisions: 000100
-  - Collisions: 010101
+  - Collisions: ffffffffffffffffffffffff
+  - Collisions: ffffffffffffffffffffffff
+  - Collisions: ffffffffffffffffffffffff
+  - Collisions: ffffffff03000000ffffffff
+  - Collisions: 030000000000000003000000
   Init: 1
   Width: 3
   Height: 5
@@ -323,7 +219,8 @@ MonoBehaviour:
   - Grass
   - TallGrass
   - Dirt
-  CheckTerrain: 1
+  AllowedValues: ffff0000
+  CheckTerrain: 0
 --- !u!114 &1854431864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,42 +273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e725a1d7559ac94448fdd46287bbc505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!60 &944406640685918603
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513224892425108}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.46875, y: 0.13125}
-    oldSize: {x: 3, y: 5}
-    newSize: {x: 0.96, y: 1.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.24674952, y: 0.37933153}
-      - {x: -0.28450048, y: 0.37933153}
-      - {x: -0.6282505, y: 0.16058153}
-      - {x: -0.6282505, y: 0.06683153}
-      - {x: -0.5657505, y: -0.30816847}
-      - {x: -0.19075048, y: -0.6206685}
-      - {x: 0.15299952, y: -0.6206685}
-      - {x: 0.27799952, y: -0.5269185}
-      - {x: 0.6217495, y: -0.43316847}
-      - {x: 0.6217495, y: -0.24566847}
-      - {x: 0.49674952, y: 0.06683153}
 --- !u!70 &2325564677159850457
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -458,6 +319,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 2939646002239004391}
+--- !u!114 &-6797915241256925853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513224892425108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &9140639208530433649
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513224892425108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.125}
+    oldSize: {x: 3, y: 5}
+    newSize: {x: 0.96, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33677626, y: 0.23390388}
+      - {x: -0.1529231, y: 0.2269783}
+      - {x: -0.33046913, y: 0.13980675}
+      - {x: -0.37548256, y: -0.012805939}
+      - {x: -0.35799646, y: -0.33587074}
+      - {x: -0.18036318, y: -0.58950615}
+      - {x: 0.15299952, y: -0.6206685}
+      - {x: 0.41303968, y: -0.5996342}
+      - {x: 0.57327366, y: -0.4331684}
+      - {x: 0.576736, y: -0.19373131}
+      - {x: 0.56946325, y: 0.0045051575}
 --- !u!1 &195306028977104016
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +383,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!224 &4360569980488102444
 RectTransform:
@@ -630,7 +539,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 0
 --- !u!224 &2939646002239004391
 RectTransform:
@@ -728,7 +637,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &142461254856175139
 Transform:
@@ -803,7 +712,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3916464593108240119
 Transform:
@@ -813,7 +722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3095908894718650430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.66, z: 0}
+  m_LocalPosition: {x: 0.09799957, y: 0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4041473032496222}
@@ -878,7 +787,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &97047850098303890
 Transform:
@@ -888,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4285022662256594167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.83, z: 0}
+  m_LocalPosition: {x: 0.098, y: -0.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4041473032496222}
@@ -953,7 +862,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &9015455825013786959
 Transform:

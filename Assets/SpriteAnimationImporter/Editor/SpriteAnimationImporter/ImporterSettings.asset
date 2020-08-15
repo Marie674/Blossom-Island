@@ -3091,46 +3091,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Brown/Adult/Blossom_Brown.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Brown/Adult/Blossom_Brown.json
     importerType: Aseprite
@@ -3145,46 +3205,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Brown/Baby/Blossom_Baby_Brown.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Brown/Baby/Blossom_Baby_Brown.json
     importerType: Aseprite
@@ -3199,46 +3319,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Green/Adult/Blossom_Green.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Green/Adult/Blossom_Green.json
     importerType: Aseprite
@@ -3253,46 +3433,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Green/Baby/Blossom_Baby_Green.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Green/Baby/Blossom_Baby_Green.json
     importerType: Aseprite
@@ -3307,46 +3547,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Red/Adult/Blossom_Red.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Red/Adult/Blossom_Red.json
     importerType: Aseprite
@@ -3361,46 +3661,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Red/Baby/Blossom_Baby_Red.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Red/Baby/Blossom_Baby_Red.json
     importerType: Aseprite
@@ -3415,46 +3775,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Yellow/Adult/Blossom_Yellow.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Yellow/Adult/Blossom_Yellow.json
     importerType: Aseprite
@@ -3469,46 +3889,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/BlossomColors/Blossom_Yellow/Baby/Blossom_Baby_Yellow.png
     animationInfo: Assets/_Game/Resources/BlossomColors/Blossom_Yellow/Baby/Blossom_Baby_Yellow.json
     importerType: Aseprite
@@ -3523,46 +4003,106 @@ MonoBehaviour:
     saveClipsToCustomDirectory: 0
     clipSaveDirectory: 
     animSettings:
-    - tagName: Walk Down
+    - tagName: walk_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Down
+    - tagName: walk_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Left
+    - tagName: walk_right
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Left
+    - tagName: walk_up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Right
+    - tagName: breathe_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Right
+    - tagName: blink_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Walk Up
+    - tagName: ear_down
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
-    - tagName: Idle Up
+    - tagName: breathe_left
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1
       generateClip: 1
+    - tagName: blink_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: breathe_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: blink_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: ear_up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: sleep_right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: tippytap
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Others
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 0
   - spritesheetPath: Assets/_Game/Resources/Character Art/Bodies/Body2/Body2_Anims.png
     animationInfo: Assets/_Game/Resources/Character Art/Bodies/Body2/Body2_Anims.json
     importerType: Aseprite
@@ -4691,6 +5231,234 @@ MonoBehaviour:
       loop: 1
       generateClip: 1
     - tagName: Idle_Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+  - spritesheetPath: Assets/_Game/Resources/Character Art/Hairstyles/Hair2/Hair2_Anims.png
+    animationInfo: Assets/_Game/Resources/Character Art/Hairstyles/Hair2/Hair2_Anims.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.125}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 0
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Carry Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Carry Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Carry Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Carry Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Carry Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Carry Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Carry Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Idle Carry Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Grab Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Grab Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Grab Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Grab Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Hit Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Hit Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Hit Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Hit Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Pet Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Pet Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Pet Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Pet Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Water Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Water Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Water Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Water Up
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+  - spritesheetPath: Assets/_Game/Resources/Character Art/Tools/Sickle_Anims.png
+    animationInfo: Assets/_Game/Resources/Character Art/Tools/Sickle_Anims.json
+    importerType: Aseprite
+    trimWidth: 0
+    trimHeight: 0
+    adjustXPivot: 1
+    adjustYPivot: 1
+    defaultPivot: {x: 0.5, y: 0.125}
+    useTagNames: 1
+    prefixClipsWithAtlasName: 0
+    defaultSampleRate: 60
+    saveClipsToCustomDirectory: 0
+    clipSaveDirectory: 
+    animSettings:
+    - tagName: Sickle Down
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Left
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Right
+      useDefaultSampleRate: 1
+      sampleRate: 60
+      loop: 1
+      generateClip: 1
+    - tagName: Sickle Up
       useDefaultSampleRate: 1
       sampleRate: 60
       loop: 1

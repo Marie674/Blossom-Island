@@ -112,10 +112,14 @@ public class InventoryUI : MonoBehaviour
         {
             CurrentStorage.OnItemChanged -= Draw;
         }
-        foreach (InventoryTabUI tab in Tabs)
+        if (Tabs != null)
         {
-            tab.GetComponent<Button>().onClick.RemoveAllListeners();
+            foreach (InventoryTabUI tab in Tabs)
+            {
+                tab.GetComponent<Button>().onClick.RemoveAllListeners();
+            }
         }
+
         IsOpen = false;
     }
 
