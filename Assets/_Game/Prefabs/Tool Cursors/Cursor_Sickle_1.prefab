@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 5334766444078337082}
   - component: {fileID: 5080452368203878514}
   m_Layer: 0
-  m_Name: Cursor_Sickle_2
+  m_Name: Cursor_Sickle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -2552,7 +2552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110869921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.75, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4219968779851122}
@@ -2826,7 +2826,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.75
-      minScalar: 0.01
+      minScalar: 0.015
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2878,7 +2878,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 6
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -2994,7 +2994,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3310,7 +3310,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 2000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -3377,7 +3377,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 25.58, y: 0, z: 13.71}
+    m_Scale: {x: 43.3, y: 0, z: 22.42}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -3575,7 +3575,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 322.4
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -12130,7 +12130,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 35
+    maxNumParticles: 50
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -12197,7 +12197,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 22.31, y: 0, z: 13.6}
+    m_Scale: {x: 43.3, y: 0, z: 25}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -12395,7 +12395,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.92
+      scalar: 3.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -22386,7 +22386,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.01
+      scalar: 0.02
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -34444,7 +34444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931397354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5000005, y: 4.25, z: -14.95}
+  m_LocalPosition: {x: -7.5000005, y: 4, z: -14.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 940394949}
@@ -65522,6 +65522,7 @@ GameObject:
   - component: {fileID: 1314808294307618}
   - component: {fileID: 1314808294307616}
   - component: {fileID: 1314808294307615}
+  - component: {fileID: 1314808294307617}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -65565,6 +65566,43 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1314808294307617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314808294307614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34f3be723b7d574b88248c5ed72fdaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  list:
+  - cam: {fileID: 1314808294307614}
+    deleteQuestion: 0
+    hotkey: 8
+  settings:
+    signatureColor: {r: 1, g: 0, b: 0.5, a: 1}
+    customFileName: 
+    includeProject: 1
+    includeCamera: 1
+    includeDate: 1
+    includeResolution: 0
+    includeCounter: 0
+    counter: 0
+    fileType: 0
+    applicationPath: 0
+    customDirectoryName: 
+    captureMethod: 0
+    singleCamera: 0
+    renderSizeMultiplier: 1
+    captureSizeMultiplier: 1
+    cutoutPosition: {x: 0, y: 0}
+    cutoutSize: {x: 0, y: 0}
+  foldoutSettings: 0
+  lastCamID: 0
+  lastCam: {fileID: 20876476748317690}
 --- !u!114 &1314808294307618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65768,7 +65806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152143767383430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5000005, y: 4.25, z: -4.95}
+  m_LocalPosition: {x: -7.5000005, y: 4, z: -4.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2995508822753619669}
@@ -70468,7 +70506,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 234292313735754566}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999238
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -81243,7 +81281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &234292313735750168
@@ -86617,7 +86655,7 @@ MonoBehaviour:
   CurrentValue: 0
   BaseMinValue: 0
   CurrentMinValue: 0
-  BaseMaxValue: 100
+  BaseMaxValue: 400
   CurrentMaxValue: 0
   BaseChangeRate: 0
   CurrentChangeRate: 0
@@ -88243,6 +88281,7 @@ MonoBehaviour:
   - {fileID: 5079801893039723175, guid: 01c50e2a570622049b018e34cc4d27a7, type: 3}
   - {fileID: 5079801893039723175, guid: 7035cd2eb5fb69941b055e4e475b8ed5, type: 3}
   - {fileID: 5079801893039723175, guid: a9d285dbeac0da64baf3de3813d96011, type: 3}
+  - {fileID: 35140214368935523, guid: ee7ce6c055eaf464f8782024f9d384a9, type: 3}
   CraftingSpeed: 1.5
   CraftingStations:
   - {fileID: 1036911433651993583, guid: 19093e7d7a1037f44990e5234b854c66, type: 3}
@@ -106289,7 +106328,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   allowOnlyOneInstance: 1
   dialogueTimeMode: 0
-  debugLevel: 3
+  debugLevel: 1
 --- !u!114 &4601465350996986361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115893,7 +115932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 76.395004, y: 0}
+  m_AnchoredPosition: {x: 43, y: 0}
   m_SizeDelta: {x: 0, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &9078040993616410821

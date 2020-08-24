@@ -26,7 +26,9 @@ public class RandomXFlip : MonoBehaviour
         }
         if (Flipped == true)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            // Vector3 scale = transform.localScale;
+            // scale.x = -scale.x;
+            // transform.localScale = scale;
         }
     }
 

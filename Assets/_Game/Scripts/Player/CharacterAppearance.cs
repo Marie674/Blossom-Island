@@ -36,7 +36,6 @@ public class CharacterAppearance : MonoBehaviour
         }
 
         BodyAnim.runtimeAnimatorController = aoc;
-        print("set");
     }
 
     public void ChangeEyes(int pIndex)

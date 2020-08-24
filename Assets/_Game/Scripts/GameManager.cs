@@ -181,16 +181,13 @@ public class GameManager : Singleton<GameManager>
     }
     public void EndCutscene()
     {
-        print("end");
         StartCoroutine(DoCutsceneEnd());
     }
 
     IEnumerator DoCutsceneEnd()
     {
-        print("end Cutscene");
         FadeOut(0.5f);
         yield return new WaitForSeconds(0.5f);
-        print(PreviousPosition);
         Player.transform.position = PreviousPosition;
         PreviousPosition.z = ((PreviousPosition.y / 100) - (PreviousPosition.x / 1000)) - 5f;
         Player.ChangeFacing(PreviousFacing);
@@ -202,7 +199,6 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(0.5f);
         EventManager.Instance.Playing = false;
         UnPauseGame();
-        print("END CUTSCENE");
 
     }
 
@@ -218,7 +214,6 @@ public class GameManager : Singleton<GameManager>
     }
     public void StartGame(string pStartingScene)
     {
-        print("start game");
 
         // SaveSystem.LoadScene(pStartingScene + "@Player Start");
 

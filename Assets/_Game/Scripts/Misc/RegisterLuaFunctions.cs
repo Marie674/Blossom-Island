@@ -7,7 +7,6 @@ public class RegisterLuaFunctions : MonoBehaviour
 
     void OnEnable()
     {
-        print("register functions");
         Lua.RegisterFunction("GetWeather", this, typeof(RegisterLuaFunctions).GetMethod("GetWeather"));
         Lua.RegisterFunction("GetCurrentLevel", this, typeof(RegisterLuaFunctions).GetMethod("GetCurrentLevel"));
         Lua.RegisterFunction("GetWeekDay", this, typeof(RegisterLuaFunctions).GetMethod("GetWeekDay"));

@@ -1094,7 +1094,7 @@ MonoBehaviour:
     Ingredients: []
     Traits: []
     ObjectPrefabs:
-    - {fileID: 7902312176211695484, guid: e8912357ddd9bb3458dd98c2e17cfeba, type: 3}
+    - {fileID: 7902312176211695484, guid: b0a4cd4b485eff64b8e6b670d92a0a8c, type: 3}
     CanRotate: 0
     ValidLevels: []
   - itemName: Fire Pit

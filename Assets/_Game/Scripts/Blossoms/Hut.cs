@@ -26,7 +26,6 @@ namespace Game.NPCs.Blossoms
         {
             Name = "Hut" + transform.position.x.ToString("F1") + transform.position.y.ToString("F1");
             gameObject.name = Name;
-            print(Name);
         }
         void OnDestroy()
         {

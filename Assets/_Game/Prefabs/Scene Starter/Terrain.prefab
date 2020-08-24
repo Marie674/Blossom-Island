@@ -398,7 +398,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -5
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -2147,7 +2147,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -13
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 0.628}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -17
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -4681,7 +4681,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -9
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -6765,7 +6765,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -7
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -7937,7 +7937,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -18
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -8532,7 +8532,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -20
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 0.6784314}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -9051,7 +9051,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -12
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 0.627451}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -9805,7 +9805,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -15
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -10112,7 +10112,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -10
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 0.627451}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -10348,7 +10348,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -19
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -10706,7 +10706,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -11
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 0.627451}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -11150,7 +11150,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -14
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -11777,7 +11777,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -8
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -12545,7 +12545,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -6
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 1
   m_isVisible: 1
@@ -13220,7 +13220,7 @@ MonoBehaviour:
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: -16
-  m_material: {fileID: 2100000, guid: b4bbec5b98a85a943a0d5fd8e6b6392a, type: 2}
+  m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 0.628}
   m_pixelSnap: 1
   m_isVisible: 1

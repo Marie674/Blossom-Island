@@ -27,7 +27,6 @@ public class LightPropSaver : MonoBehaviour
 
     public void OnRecordPersistentData()
     {
-        print("record");
         Target = GetComponent<LightProp>();
         VariableName = "Light" + transform.position.x + transform.position.y;
         DialogueLua.SetVariable(VariableName + "On", Target.On);
@@ -36,7 +35,6 @@ public class LightPropSaver : MonoBehaviour
 
     public void OnApplyPersistentData()
     {
-        print("apply");
 
         Target = GetComponent<LightProp>();
         VariableName = "Light" + transform.position.x + transform.position.y;

@@ -218,6 +218,8 @@ MonoBehaviour:
   - {fileID: 114782817160631648, guid: 8f128a7eb5b965649ab313a7e5627bb1, type: 3}
   - {fileID: 114513981917268586, guid: a1f3d8bf76d031143a0c9fa17d31ecf3, type: 3}
   - {fileID: 5079801893039723175, guid: 01c50e2a570622049b018e34cc4d27a7, type: 3}
+  - {fileID: 5079801893039723175, guid: 01c50e2a570622049b018e34cc4d27a7, type: 3}
+  - {fileID: 35140214368935523, guid: ee7ce6c055eaf464f8782024f9d384a9, type: 3}
   AutomaticProgression: 0
   RecipeSprite: {fileID: 385533445005524993}
   RecipeIndex: 0

@@ -144,6 +144,8 @@ MonoBehaviour:
     BrushAsset: {fileID: 11400000, guid: d28eda38eb42e10468926448a75df7ab, type: 2}
   - Id: 66
     BrushAsset: {fileID: 11400000, guid: 932c4153fe525e645936f24094d81120, type: 2}
+  - Id: 67
+    BrushAsset: {fileID: 11400000, guid: 332bcc209b6099c44a7076b4672591c4, type: 2}
   m_tiles:
   - uv:
       serializedVersion: 2
@@ -593,10 +595,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 3178797311193127133, guid: d894d429b71ed2044b4116da60955671,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 1
   - uv:
@@ -611,10 +614,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 2400167951870107942, guid: f2200ed552c37044da408f03ff2f010f,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 1
   - uv:
@@ -629,10 +633,11 @@ MonoBehaviour:
     paramContainer:
       m_paramList: []
     prefabData:
-      prefab: {fileID: 0}
+      prefab: {fileID: 6285597665829426673, guid: 0498102b012d7684d8f0f05c603a9b7b,
+        type: 3}
       offset: {x: 0, y: 0, z: 0}
       offsetMode: 0
-      showTileWithPrefab: 0
+      showTileWithPrefab: 1
       showPrefabPreviewInTilePalette: 0
     autilingGroup: 1
   - uv:
@@ -74718,4 +74723,4 @@ MonoBehaviour:
   - CarpetBrush
   - AnimBrush
   - RandomBrush
-  m_brushTypeMask: 1
+  m_brushTypeMask: 5

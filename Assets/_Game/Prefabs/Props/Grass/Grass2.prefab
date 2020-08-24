@@ -139,9 +139,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.29, y: -0.24}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.46
 --- !u!114 &4123909348306661696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238842759271935085}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
   m_Name: 
@@ -325,9 +325,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.11, y: 0.15}
   serializedVersion: 2
-  m_Radius: 0.43
+  m_Radius: 0.48
 --- !u!114 &2400167951445643125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2400167951445643131}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
   m_Name: 
@@ -511,9 +511,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.33, y: 0.13}
   serializedVersion: 2
-  m_Radius: 0.38
+  m_Radius: 0.46
 --- !u!114 &2400167951765827629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2400167951765827603}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
   m_Name: 
@@ -697,9 +697,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.2, y: -0.37}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.47
 --- !u!114 &2400167951792704413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2400167951792704387}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fcf5ad754f7d94247b8525a4f947b83d, type: 3}
   m_Name: 
@@ -755,8 +755,6 @@ GameObject:
   - component: {fileID: 2400167951870107967}
   - component: {fileID: 2400167951870107966}
   - component: {fileID: 2400167951870107965}
-  - component: {fileID: 2400167951870107964}
-  - component: {fileID: 2400167951870107939}
   - component: {fileID: 2400167951870107936}
   - component: {fileID: 2400167951870107960}
   - component: {fileID: 2400167951870107943}
@@ -852,38 +850,6 @@ MonoBehaviour:
   FixedZ: 0
   Units: 1
   AdjustOnUpdate: 0
---- !u!114 &2400167951870107964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2400167951870107942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf72844540b7744b895a4c85c853e30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_key: 
-  m_appendSaverTypeToKey: 0
-  m_saveAcrossSceneChanges: 0
-  m_restoreStateOnStart: 0
-  m_mode: 1
---- !u!114 &2400167951870107939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2400167951870107942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaad4ebbb882ed54e9a0d279c8e464c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  recordOn: 0
-  variableName: 
-  spawnWhenDestroyed: {fileID: 0}
 --- !u!114 &2400167951870107936
 MonoBehaviour:
   m_ObjectHideFlags: 0

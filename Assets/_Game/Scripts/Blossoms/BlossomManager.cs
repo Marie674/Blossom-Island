@@ -33,7 +33,6 @@ namespace Game.NPCs.Blossoms
             string hut = "Hut47.589.0";
             DialogueLua.SetVariable(hut + "X", 47.46875f);
             float hutX = DialogueLua.GetVariable(hut + "X").asFloat;
-            print(hut + "X " + hutX);
 
             DialogueLua.SetVariable(hut + "Y", 89f);
             AddHut(hut);
@@ -97,7 +96,6 @@ namespace Game.NPCs.Blossoms
                 {
                     float hutX = DialogueLua.GetVariable(hut + "X").asFloat;
                     float hutY = DialogueLua.GetVariable(hut + "Y").asFloat;
-                    print(hut + "X " + hutX);
                     Vector2 hutPosition = new Vector2(hutX, hutY);
                     Hut newHut = Instantiate(HutPrefab, hutPosition, transform.rotation);
                     newHut.Init();
@@ -113,7 +111,6 @@ namespace Game.NPCs.Blossoms
 
         public void AddHut(string pName)
         {
-            print("Add hut " + pName);
             if (!BlossomHuts.Contains(pName))
             {
                 BlossomHuts.Add(pName);

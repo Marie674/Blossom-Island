@@ -74,21 +74,20 @@ public class GameEvent : ScriptableObject
 
     public bool CheckValidity()
     {
-        Debug.Log(Name);
         if (CalendarManager.Instance.CurrentEvent != null && FestivalAllowed == false)
         {
             return false;
         }
         if (EventManager.Instance.PlayedEvents.Contains(this))
         {
-            Debug.Log("already played");
+            //    Debug.Log("already played");
 
             return false;
         }
         int currentDay = TimeManager.Instance.PassedDays;
         if (currentDay < MinimumDays)
         {
-            Debug.Log("Too early");
+            //   Debug.Log("Too early");
 
             return false;
         }
@@ -96,13 +95,13 @@ public class GameEvent : ScriptableObject
         string previousLocation = GameManager.Instance.PreviousLevelName;
         if (currentLocation != Location)
         {
-            Debug.Log("wrong location");
+            //    Debug.Log("wrong location");
 
             return false;
         }
         if (FromLocation != string.Empty && previousLocation != FromLocation)
         {
-            Debug.Log("from wrong location");
+            //    Debug.Log("from wrong location");
             return false;
         }
         if (PreRequisites.Count > 0)
@@ -111,7 +110,7 @@ public class GameEvent : ScriptableObject
             {
                 if (EventManager.Instance.PlayedEvents.Contains(prerequisite) == false)
                 {
-                    Debug.Log("prerequisite not seen");
+                    //       Debug.Log("prerequisite not seen");
 
                     return false;
                 }
@@ -120,21 +119,21 @@ public class GameEvent : ScriptableObject
         TimeManager.MonthNames currentMonth = TimeManager.Instance.CurrentMonth.Name;
         if (AllowedMonths.Count > 0 && AllowedMonths.Contains(currentMonth) == false)
         {
-            Debug.Log("wrong season");
+            //   Debug.Log("wrong season");
 
             return false;
         }
         TimeManager.WeekDays currentWeekday = TimeManager.Instance.CurrentWeekDayName;
         if (AllowedWeekdays.Count > 0 && AllowedWeekdays.Contains(currentWeekday) == false)
         {
-            Debug.Log("wrong week day");
+            //    Debug.Log("wrong week day");
 
             return false;
         }
         WeatherType currentWeather = WeatherManager.Instance.CurrentWeather;
         if (AllowedWeathers.Count > 0 && AllowedWeathers.Contains(currentWeather) == false)
         {
-            Debug.Log("wrong weather");
+            //    Debug.Log("wrong weather");
 
             return false;
         }
@@ -142,7 +141,7 @@ public class GameEvent : ScriptableObject
         int currentMinute = TimeManager.Instance.CurrentMinute;
         if (HourSpan.StartHour != -1 && TimeManager.Instance.CheckWithinHourSpan(HourSpan, currentHour, currentMinute) == false)
         {
-            Debug.Log("not within timespan");
+            //   Debug.Log("not within timespan");
 
             return false;
         }

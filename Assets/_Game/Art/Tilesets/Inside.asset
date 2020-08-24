@@ -40,6 +40,8 @@ MonoBehaviour:
     BrushAsset: {fileID: 11400000, guid: 6e077118124d3224d879b1d1a5234985, type: 2}
   - Id: 8
     BrushAsset: {fileID: 11400000, guid: f088e0b3129f61e468ca8db0e095e99c, type: 2}
+  - Id: 9
+    BrushAsset: {fileID: 11400000, guid: 456c3f9eb5da0de4bb1cebb865a47d2c, type: 2}
   m_tiles:
   - uv:
       serializedVersion: 2
@@ -12778,11 +12780,7 @@ MonoBehaviour:
       width: 0.015625
       height: 0.015625
     collData:
-      vertices:
-      - {x: 0.6875, y: 0}
-      - {x: 0.6875, y: 0.40625}
-      - {x: 1, y: 0.40625}
-      - {x: 1, y: 0}
+      vertices: []
       type: 1
     paramContainer:
       m_paramList: []
@@ -13989,7 +13987,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -15087,7 +15085,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -15105,7 +15103,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -20919,7 +20917,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -20937,7 +20935,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -20955,7 +20953,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -20973,7 +20971,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -20991,7 +20989,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -21009,7 +21007,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -21027,7 +21025,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -21045,7 +21043,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22071,7 +22069,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22089,7 +22087,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22107,7 +22105,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22125,7 +22123,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22143,7 +22141,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22161,7 +22159,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22179,7 +22177,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:
@@ -22197,7 +22195,7 @@ MonoBehaviour:
       height: 0.015625
     collData:
       vertices: []
-      type: 0
+      type: 1
     paramContainer:
       m_paramList: []
     prefabData:

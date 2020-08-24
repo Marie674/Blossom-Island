@@ -84,15 +84,15 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
                 break;
             case PlayerCharacter.CharacterDirection.Left:
                 this.transform.localPosition = LeftPosition;
-                this.transform.rotation = Quaternion.Euler(0, 0, 90);
+                this.transform.rotation = Quaternion.Euler(0, 0, -90);
                 break;
             case PlayerCharacter.CharacterDirection.Right:
                 this.transform.localPosition = RightPosition;
-                this.transform.rotation = Quaternion.Euler(0, 0, -90);
+                this.transform.rotation = Quaternion.Euler(0, 0, 90);
                 break;
             case PlayerCharacter.CharacterDirection.Up:
                 this.transform.localPosition = UpPosition;
-                //this.transform.rotation = Quaternion.Euler(0, 0, 180);
+                this.transform.rotation = Quaternion.Euler(0, 0, 180);
                 break;
             default:
                 this.transform.localPosition = DownPosition;
