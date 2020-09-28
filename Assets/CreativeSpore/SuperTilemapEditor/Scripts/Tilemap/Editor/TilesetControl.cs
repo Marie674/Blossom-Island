@@ -11,6 +11,9 @@ namespace CreativeSpore.SuperTilemapEditor
     [Serializable]
     public class TilesetControl
     {
+        public delegate void OnSelectedDelegate(int id);
+        public OnSelectedDelegate OnTileSelected = delegate { };
+        public OnSelectedDelegate OnBrushSelected = delegate { };
 
         private class Styles
         {
@@ -325,6 +328,7 @@ namespace CreativeSpore.SuperTilemapEditor
                                 && m_rTileScrollSize.Contains(e.mousePosition - m_sharedData.tilesScrollPos))// and it's inside the scroll area
                             {
                                 Tileset.SelectedTileId = tileId;
+                                OnTileSelected(tileId);
 
                                 //Give focus to SceneView to get key events
                                 FocusSceneView();
@@ -441,6 +445,7 @@ namespace CreativeSpore.SuperTilemapEditor
                             if ((isLeftMouseReleased || isRightMouseReleased || m_dblClick.IsDblClick) && isInsideBrushScrollArea && rVisualTile.Contains(Event.current.mousePosition))
                             {
                                 Tileset.SelectedBrushId = brushCont.Id;
+                                OnBrushSelected(brushCont.Id);
                                 RemoveTileSelection();
                                 if (m_dblClick.IsDblClick)
                                 {

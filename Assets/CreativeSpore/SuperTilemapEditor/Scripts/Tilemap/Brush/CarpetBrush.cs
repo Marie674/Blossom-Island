@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
@@ -122,12 +122,43 @@ namespace CreativeSpore.SuperTilemapEditor
                 {
                     aSubTileData = new uint[] { TileIds[9], TileIds[9], TileIds[12], TileIds[12] };
                 }
+                else if (s_neighIdx == 7)//╠
+                {
+                    aSubTileData = new uint[] { TileIds[s_neighIdx], TileIds[6], TileIds[s_neighIdx], TileIds[3] };
+                }
+                else if (s_neighIdx == 13)//╣
+                {
+                    aSubTileData = new uint[] { TileIds[12], TileIds[s_neighIdx], TileIds[9], TileIds[s_neighIdx] };
+                }
+                else if (s_neighIdx == 11)//╩
+                {
+                    aSubTileData = new uint[] { TileIds[s_neighIdx], TileIds[s_neighIdx], TileIds[9], TileIds[3] };
+                }
+                else if (s_neighIdx == 14)//╦
+                {
+                    aSubTileData = new uint[] { TileIds[12], TileIds[6], TileIds[s_neighIdx], TileIds[s_neighIdx] };
+                }
                 // NOTE: this case '╬' cut the tiles different (using corner tiles). 
                 // If it is commented, and default case is used, instead or corner tiles, it will use the center tile '╬'
                 // Depending on the graphics it could be interesting add a check box to choose between using this or not.
                 else if (s_neighIdx == 15)// ╬
                 {
-                    aSubTileData = new uint[] { InteriorCornerTileIds[0], InteriorCornerTileIds[1], InteriorCornerTileIds[2], InteriorCornerTileIds[3] };
+                    int diagonalIdx = 0;
+                    if (s_showDiagonal[0]) diagonalIdx |= 1;
+                    if (s_showDiagonal[1]) diagonalIdx |= 2;
+                    if (s_showDiagonal[2]) diagonalIdx |= 4;
+                    if (s_showDiagonal[3]) diagonalIdx |= 8;
+                    // Special Case when a side shows corners and the other side don't
+                    if (diagonalIdx == 3)
+                        aSubTileData = new uint[] { TileIds[12], TileIds[6], TileIds[11], TileIds[11] };
+                    else if (diagonalIdx == 12)
+                        aSubTileData = new uint[] { TileIds[14], TileIds[14], TileIds[9], TileIds[3] };
+                    else if(diagonalIdx == 5)
+                        aSubTileData = new uint[] { TileIds[12], TileIds[7], TileIds[9], TileIds[7] };
+                    else if (diagonalIdx == 10)
+                        aSubTileData = new uint[] { TileIds[13], TileIds[6], TileIds[13], TileIds[3] };
+                    else
+                        aSubTileData = new uint[] { TileIds[12], TileIds[6], TileIds[9], TileIds[3] };
                 }
                 else
                 {
@@ -165,19 +196,17 @@ namespace CreativeSpore.SuperTilemapEditor
             return null;
         }
 
-        //TODO: add cache for each subTile combination?
-        static List<Vector2> s_mergedColliderVertexList = new List<Vector2>();
-        public override Vector2[] GetMergedSubtileColliderVertices(STETilemap tilemap, int gridX, int gridY, uint tileData)
+        public override void GetMergedSubtileColliderVertices(STETilemap tilemap, int gridX, int gridY, uint tileData, List<Vector2> results)
         {
             uint[] subTiles = GetSubtiles(tilemap, gridX, gridY, tileData);
+            results.Clear();
             if (subTiles != null)
             {
-                s_mergedColliderVertexList.Clear();
-                for(int i = 0; i < subTiles.Length; ++i)
+                for (int i = 0; i < subTiles.Length; ++i)
                 {
                     uint subTileData = subTiles[i];
                     Tile tile = tilemap.Tileset.GetTile(Tileset.GetTileIdFromTileData(subTiles[i]));
-                    if(tile != null && tile.collData.type != eTileCollider.None)
+                    if (tile != null && tile.collData.type != eTileCollider.None)
                     {
                         TileColliderData tileCollData = tile.collData;
                         if ((subTileData & (Tileset.k_TileFlag_FlipH | Tileset.k_TileFlag_FlipV | Tileset.k_TileFlag_Rot90)) != 0)
@@ -202,7 +231,7 @@ namespace CreativeSpore.SuperTilemapEditor
                                     v1 = vertices[0];
                                 }
 
-                                if(i == 0 || i == 2) //left side
+                                if (i == 0 || i == 2) //left side
                                 {
                                     if (v0.x >= .5f && v1.x >= .5f) continue;
                                     float newY = v0.y + (.5f - v0.x) * (v1.y - v0.y) / (v1.x - v0.x);
@@ -211,7 +240,7 @@ namespace CreativeSpore.SuperTilemapEditor
                                         v0.y = newY;
                                         v0.x = .5f;
                                     }
-                                    else if(v1.x > .5f)
+                                    else if (v1.x > .5f)
                                     {
                                         v1.y = newY;
                                         v1.x = .5f;
@@ -263,16 +292,14 @@ namespace CreativeSpore.SuperTilemapEditor
                                         v1.y = .5f;
                                     }
                                 }
-                                
-                                s_mergedColliderVertexList.Add(v0);
-                                s_mergedColliderVertexList.Add(v1);
+
+                                results.Add(v0);
+                                results.Add(v1);
                             }
                         }
                     }
                 }
-                return s_mergedColliderVertexList.ToArray();
             }
-            return null;
         }
 
         #endregion

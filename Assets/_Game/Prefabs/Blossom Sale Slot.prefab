@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 930438334289910181}
   - component: {fileID: 930438334289910187}
   - component: {fileID: 3404187554259172921}
+  - component: {fileID: 4124278372332769478}
   m_Layer: 0
   m_Name: Blossom Sale Slot
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930438334289910180}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.27, y: 21.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -205,6 +206,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 4442239539593793882}
+--- !u!114 &4124278372332769478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930438334289910180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b756eb4c95e5ed548868273134ca7ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdjustXY: 1
+  AdjustZ: 1
+  FixedZ: 0
+  Units: 1
+  AdjustOnUpdate: 0
 --- !u!1 &1064827035012684980
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3419571465568981081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: -0.68, z: 0}
+  m_LocalPosition: {x: 0.875, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 930438334289910183}
@@ -592,13 +610,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1992780234262545553}
-    characterCount: 7
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0

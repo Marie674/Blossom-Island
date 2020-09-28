@@ -77,6 +77,17 @@ namespace CreativeSpore.SuperTilemapEditor
                 m_brush.AnimFrames[index].UVOffset = uvOffset;
 
             };
+
+            m_frameList.onAddCallback += (ReorderableList list) =>
+            {
+                if (list.index >= 0)
+                    list.serializedProperty.InsertArrayElementAtIndex(list.index);
+                else
+                    list.serializedProperty.InsertArrayElementAtIndex(0);
+                list.index = Mathf.Max(0, list.index + 1);
+                list.serializedProperty.serializedObject.ApplyModifiedProperties();
+            };
+
             m_frameList.onSelectCallback += (ReorderableList list) =>
             {
                 TileSelectionWindow.Show(m_brush.Tileset);
@@ -127,7 +138,8 @@ namespace CreativeSpore.SuperTilemapEditor
             Vector2 visualTileSize = m_brush.Tileset.VisualTileSize;
 
             EditorGUILayout.PropertyField(serializedObject.FindProperty("AnimFPS"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("AnimDelay"));            
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("AnimDelay"));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("LoopFrameDelay"));
 
             TileSelection tileSelection = ((TilesetBrush)target).Tileset.TileSelection;
             if (tileSelection != null)

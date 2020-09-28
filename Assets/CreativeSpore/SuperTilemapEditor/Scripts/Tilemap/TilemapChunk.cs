@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.Rendering;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -11,10 +12,14 @@ namespace CreativeSpore.SuperTilemapEditor
     [RequireComponent(typeof(MeshRenderer))]
     [RequireComponent(typeof(MeshFilter))]
     [AddComponentMenu("")] // Disable attaching it to a gameobject
+#if UNITY_2018_3_OR_NEWER
+    [ExecuteAlways]
+#else
     [ExecuteInEditMode] //NOTE: this is needed so OnDestroy is called and there is no memory leaks
+#endif
     public partial class TilemapChunk : MonoBehaviour
     {
-        #region Public Properties
+#region Public Properties
         public Tileset Tileset
         {
             get { return ParentTilemap.Tileset; }
@@ -59,9 +64,9 @@ namespace CreativeSpore.SuperTilemapEditor
         /// Most of the time a value of 0.5 pixels will be fine, but in case of a big zoom-out level, a higher value will be necessary
         /// </summary>
         public float InnerPadding { get { return ParentTilemap.InnerPadding; } }
-        #endregion
+#endregion
 
-        #region Private Fields
+#region Private Fields
 
         [SerializeField, HideInInspector]
         private int m_width = -1;
@@ -71,6 +76,29 @@ namespace CreativeSpore.SuperTilemapEditor
         private List<uint> m_tileDataList = new List<uint>();        
         [SerializeField, HideInInspector]
         private List<TileColor32> m_tileColorList = null;
+
+        //+++ MeshCollider
+        [SerializeField, HideInInspector]
+        private MeshCollider m_meshCollider;
+        private static List<Vector3> s_meshCollVertices;
+        private static List<int> s_meshCollTriangles;
+        //---
+
+        //+++ 2D Edge colliders
+        [SerializeField]
+        private bool m_has2DColliders;
+        //---
+
+        //+++ Renderer
+        [SerializeField, HideInInspector]
+        private MeshFilter m_meshFilter;
+        [SerializeField, HideInInspector]
+        private MeshRenderer m_meshRenderer;
+        //---
+
+        [SerializeField, HideInInspector]
+        private List<TileObjData> m_tileObjList = new List<TileObjData>();
+        private List<GameObject> m_tileObjToBeRemoved = new List<GameObject>();
 
         private static List<Vector3> s_vertices;
         private List<Vector2> m_uv; //NOTE: this is the only one not static because it's needed to update the animated tiles
@@ -84,9 +112,9 @@ namespace CreativeSpore.SuperTilemapEditor
             public IBrush Brush;
         }
         private List<AnimTileData> m_animatedTiles = new List<AnimTileData>();
-        #endregion
+#endregion
 
-        #region Monobehaviour Methods
+#region Monobehaviour Methods
 
         private MaterialPropertyBlock m_matPropBlock;
         void UpdateMaterialPropertyBlock()
@@ -125,40 +153,143 @@ namespace CreativeSpore.SuperTilemapEditor
             m_meshRenderer.SetPropertyBlock(m_matPropBlock);
         }
 
+        static Dictionary<Material, Material[]> s_materialsLookup = new Dictionary<Material, Material[]>();
+        static Shader s_spritesStencilDefault = null;
+        static Shader s_spritesStencilDiffuse = null;
+        private static System.Func<Material, int, Material[]> _FindSharedMaterialArray =
+        delegate (Material material, int materialHash)
+        {
+            Material[] matArr;
+            if (!s_materialsLookup.TryGetValue(material, out matArr))
+            {
+                Shader stencilShader = null;
+                if (material.shader.name == "Sprites/Default")
+                {
+                    stencilShader = s_spritesStencilDefault ?? (s_spritesStencilDefault = Shader.Find("Sprites/Stencil-Default"));                    
+                    Debug.Assert(stencilShader, "Could not find Sprites/Stencil-Default shader!");
+                }
+                else if (material.shader.name == "Sprites/Diffuse")
+                {
+                    stencilShader = s_spritesStencilDiffuse ?? (s_spritesStencilDiffuse = Shader.Find("Sprites/Stencil-Diffuse"));
+                    Debug.Assert(stencilShader, "Could not find Sprites/Stencil-Diffuse shader!");
+                }
+                matArr = new Material[6];
+                matArr[0] = material;
+                // Pixel Snap = false //
+                if (stencilShader)
+                {
+                    matArr[1] = new Material(stencilShader);
+                    matArr[1].CopyPropertiesFromMaterial(material);
+                    matArr[1].SetFloat("_Stencil", 1f);
+                    matArr[2] = new Material(matArr[1]);
+                    matArr[2].CopyPropertiesFromMaterial(matArr[1]); // NOTE: this is needed because the properties are not copied in the constructor
+                    matArr[1].SetFloat("_StencilComp", (int)CompareFunction.LessEqual);// SpriteMaskInteraction = VisibleInsideMask
+                    matArr[2].SetFloat("_StencilComp", (int)CompareFunction.Greater);// SpriteMaskInteraction = VisibleOutsideMask
+                    matArr[1].hideFlags = HideFlags.DontSave;
+                    matArr[2].hideFlags = HideFlags.DontSave;                    
+                    matArr[1].name += "_VisibleInsideMask";
+                    matArr[2].name += "_VisibleOutsideMask";
+                }
+                else
+                {
+                    matArr[1] = material;
+                    matArr[2] = material;
+                }
+                ////////////////////////
 
-        static Dictionary<Material, Material> s_dicMaterialCopyWithPixelSnap = new Dictionary<Material, Material>();
+                // Pixel Snap = true //
+                for (int i = 3, j = 0; i < 6; ++i, ++j)
+                {
+                    var matCopy = new Material(matArr[j]);
+                    matCopy.CopyPropertiesFromMaterial(matArr[j]);
+                    matArr[i] = matCopy;                    
+                    matCopy.name += "_pixelSnap";
+                    matCopy.hideFlags = HideFlags.DontSave;
+                    matCopy.EnableKeyword("PIXELSNAP_ON");
+                    matCopy.SetFloat("PixelSnap", 1f);
+                }
+                ///////////////////////
+
+                s_materialsLookup[material] = matArr;
+            }
+            return matArr;
+        };
+
+        private static System.Func<Material, int, Material> _FindMaterial =
+        delegate (Material material, int materialHash)
+        {
+            if (materialHash == 0)
+                return material;
+            Material[] materialArr = _FindSharedMaterialArray(material, materialHash);
+            //Debug.Log("Debug _FindMaterial " + materialArr[materialHash].name);
+            return materialArr[materialHash];
+        };
+
+        // Depending on some properties, find a copy of the material with support for thouse properties
+        int m_materialHash = 0; // all combinations with pixelSnap + MaskInteraction
+        Shader m_savedMaterialShader;
+        public void UpdateMeshMaterial()
+        {
+            int savedHash = m_materialHash;
+            m_materialHash = ParentTilemap.PixelSnap?
+                3 + (int)ParentTilemap.MaskInteraction
+                :
+                (int)ParentTilemap.MaskInteraction;
+
+
+            // for performance, only if it changed the hash is updated according to material support for each property
+            if(m_materialHash != savedHash)
+            {
+                if (m_materialHash >= 3 && !ParentTilemap.Material.HasProperty("PixelSnap"))
+                    m_materialHash -= 3; // disable pixel snap
+                if (
+                    (!ParentTilemap.Material.HasProperty("_StencilComp") || !ParentTilemap.Material.HasProperty("_Stencil")) &&
+                    //exception: these shaders will be switched to stencil equivalent in _FindMaterial
+                    (ParentTilemap.Material.shader.name != "Sprites/Default" && ParentTilemap.Material.shader.name != "Sprites/Diffuse"))
+                {
+                    m_materialHash = m_materialHash >= 3 ? 3 : 0; // disable sprite masking
+                }
+            }
+
+            if(!m_savedMaterialShader)
+                m_savedMaterialShader = ParentTilemap.Material.shader;
+            if (m_savedMaterialShader != ParentTilemap.Material.shader)
+            {
+                //Debug.LogFormat("Shader has changed from {0} to {1}", m_savedMaterialShader.name, ParentTilemap.Material.shader);                
+                m_savedMaterialShader = ParentTilemap.Material.shader;
+                //Debug.Log("Clear " + ParentTilemap.Material.name + " from cache");
+                s_materialsLookup.Remove(ParentTilemap.Material);
+                m_meshRenderer.sharedMaterial = _FindMaterial(ParentTilemap.Material, m_materialHash);
+            }
+
+            if (m_materialHash != savedHash || !m_meshRenderer.sharedMaterial)
+            {
+                m_meshRenderer.sharedMaterial = _FindMaterial(ParentTilemap.Material, m_materialHash);
+            }
+
+            //Fix: Unity Editor Shader Properties overridden
+            if( Application.isEditor && ParentTilemap.MaskInteraction != SpriteMaskInteraction.None)
+            {
+                int comp = ParentTilemap.MaskInteraction == SpriteMaskInteraction.VisibleInsideMask ?
+                    (int)CompareFunction.LessEqual
+                    :
+                    (int)CompareFunction.Greater;
+                m_meshRenderer.sharedMaterial.SetFloat("_StencilComp", comp);
+            }
+        }
+
         void OnWillRenderObject()
         {
+            if (!ParentTilemap && !transform.parent) //NOTE: it happens only once, but it could happen a chunk is left orphan
+            {
+                DestroyImmediate(gameObject);
+                return;
+            }
+
             if (!ParentTilemap.Tileset)
                 return;
 
-            //Fix strange case where two materials were being used, breaking lighting
-            if (m_meshRenderer.sharedMaterials.Length > 1)
-            {
-                Debug.LogWarning("Fixing TileChunk with multiple materials!");
-                m_meshRenderer.sharedMaterials = new Material[] { m_meshRenderer.sharedMaterials [0]};
-            }
-            //
-
-            if (ParentTilemap.PixelSnap && ParentTilemap.Material.HasProperty("PixelSnap"))
-            {
-                Material matCopyWithPixelSnap;
-                if(!s_dicMaterialCopyWithPixelSnap.TryGetValue(ParentTilemap.Material, out matCopyWithPixelSnap))
-                {
-                    matCopyWithPixelSnap = new Material(ParentTilemap.Material);
-                    matCopyWithPixelSnap.name += "_pixelSnapCopy";
-                    matCopyWithPixelSnap.hideFlags = HideFlags.DontSave;
-                    matCopyWithPixelSnap.EnableKeyword("PIXELSNAP_ON");
-                    matCopyWithPixelSnap.SetFloat("PixelSnap", 1f);
-                    s_dicMaterialCopyWithPixelSnap[ParentTilemap.Material] = matCopyWithPixelSnap;
-                }
-                m_meshRenderer.sharedMaterial = matCopyWithPixelSnap;
-            }
-            else
-            {
-                m_meshRenderer.sharedMaterial = ParentTilemap.Material;
-            }
-
+            UpdateMeshMaterial();
             UpdateMaterialPropertyBlock();
 
             if (m_animatedTiles.Count > 0) //TODO: add fps attribute to update animated tiles when necessary
@@ -166,7 +297,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 for (int i = 0; i < m_animatedTiles.Count; ++i)
                 {
                     AnimTileData animTileData = m_animatedTiles[i];
-                    Vector2[] uvs = animTileData.Brush.GetAnimUVWithFlags(InnerPadding);
+                    Vector2[] uvs = animTileData.Brush.GetAnimUVWithFlags(InnerPadding, i);
                     if (animTileData.SubTileIdx >= 0)
                     {
                         for (int j = 0; j < 4; ++j)
@@ -184,7 +315,8 @@ namespace CreativeSpore.SuperTilemapEditor
                         m_uv[animTileData.VertexIdx + 2] = uvs[2];
                         m_uv[animTileData.VertexIdx + 3] = uvs[3];
                     }
-                }
+                }                
+
                 if (m_meshFilter.sharedMesh) 
 #if UNITY_5_0 || UNITY_5_1
                     m_meshFilter.sharedMesh.uv = m_uv.ToArray();
@@ -204,6 +336,7 @@ namespace CreativeSpore.SuperTilemapEditor
 
         // This is needed to refresh tilechunks after undo / redo actions
         static bool s_isOnValidate = false; // fix issue when destroying unused resources from the invalidate call
+#if UNITY_EDITOR
         void OnValidate()
         {
             Event e = Event.current;
@@ -211,22 +344,36 @@ namespace CreativeSpore.SuperTilemapEditor
             {
                 _DoDuplicate();
             }
-#if UNITY_EDITOR
+
+            EditorApplication.update -= DoLateOnValidate;
+            EditorApplication.update += DoLateOnValidate;            
+        }
+
+        private void DoLateOnValidate()
+        {
+            EditorApplication.update -= DoLateOnValidate;
+
+            if (!this || !ParentTilemap)
+                return;
+            //Debug.Log("DoLateOnValidate " + ParentTilemap.name + "/" + name, gameObject);
+
             // fix prefab preview
-            if (UnityEditor.PrefabUtility.GetPrefabType(gameObject) == UnityEditor.PrefabType.Prefab)
+            if (EditorCompatibilityUtils.IsPrefab(gameObject) && !gameObject.scene.IsValid())
             {
+#if !UNITY_2018_3_OR_NEWER // disabled prefab preview for performance issue with new prefab workflow
                 m_needsRebuildMesh = true;
-                UpdateMesh();
+                UpdateMesh(true);
+#endif
             }
             else
-#endif
             {
                 m_needsRebuildMesh = true;
                 m_needsRebuildColliders = true;
-                if(ParentTilemap) //NOTE: this is null sometimes in Unity 2017.2.0b4. It happens when the brush is changed, so maybe it's related with the brush but transform.parent is null.
-                    ParentTilemap.UpdateMesh();
+                if (ParentTilemap) //NOTE: this is null sometimes in Unity 2017.2.0b4. It happens when the brush is changed, so maybe it's related with the brush but transform.parent is null.
+                    ParentTilemap.UpdateMeshImmediate();
             }
         }
+#endif
 
         private void _DoDuplicate()
         {
@@ -272,9 +419,17 @@ namespace CreativeSpore.SuperTilemapEditor
 #endif
             }
 #endif
-                m_meshRenderer = GetComponent<MeshRenderer>();
+            m_meshRenderer = GetComponent<MeshRenderer>();
             m_meshFilter = GetComponent<MeshFilter>();
             m_meshCollider = GetComponent<MeshCollider>();
+
+            //Fix strange case where two materials were being used, breaking lighting
+            if (m_meshRenderer.sharedMaterials.Length > 1)
+            {
+                Debug.LogWarning("Fixing TileChunk with multiple materials!");
+                m_meshRenderer.sharedMaterials = new Material[] { m_meshRenderer.sharedMaterials[0] };
+            }
+            //
 
             if (m_tileDataList == null || m_tileDataList.Count != m_width * m_height)
             {
@@ -310,13 +465,13 @@ namespace CreativeSpore.SuperTilemapEditor
                 EditorUtility.SetSelectedWireframeHidden(m_meshRenderer, true);
 #endif
             }
-#endif            
+#endif
             m_needsRebuildMesh = true;
             m_needsRebuildColliders = true;
         }
-        #endregion
+#endregion
 
-        #region Public Methods
+#region Public Methods
 
         /// <summary>
         /// This fix should be called on next update after updating the MeshCollider (sharedMesh, convex or isTrigger property). 
@@ -368,31 +523,42 @@ namespace CreativeSpore.SuperTilemapEditor
                         {
                             points = ((EdgeCollider2D)collider2D).points;
                             size = (points.Length - 1);
+                            _Draw2DCollider(points, size);
                         }
                         else if(collider2D is PolygonCollider2D)
                         {
-                            points = ((PolygonCollider2D)collider2D).points;
-                            size = points.Length;
-                        }
-                        for (int j = 0; j < size; ++j)
-                        {
-                            int nextIdx = j + 1;
-                            if (nextIdx == points.Length)
-                                nextIdx = 0;
-                            Gizmos.DrawLine(points[j], points[nextIdx]);
-                            //Draw normals
-                            if(ParentTilemap.ShowColliderNormals)
+                            for (int pathIdx = 0,
+                                pathCount = ((PolygonCollider2D)collider2D).pathCount; 
+                                pathIdx < pathCount; pathIdx++)
                             {
-                                Vector2 s0 = points[j];
-                                Vector2 s1 = points[nextIdx];
-                                Vector3 normPos = (s0 + s1) / 2f;
-                                Gizmos.DrawLine(normPos, normPos + Vector3.Cross(s1 - s0, -Vector3.forward).normalized * ParentTilemap.CellSize.y * 0.05f);
+                                points = ((PolygonCollider2D)collider2D).GetPath(pathIdx);
+                                size = points.Length;
+                                _Draw2DCollider(points, size);
                             }
-                        }
+                        }                        
                     }
                 }
                 Gizmos.matrix = Matrix4x4.identity;
                 Gizmos.color = Color.white;
+            }
+        }
+
+        private void _Draw2DCollider(Vector2[] points, int size)
+        {
+            for (int j = 0; j < size; ++j)
+            {
+                int nextIdx = j + 1;
+                if (nextIdx == points.Length)
+                    nextIdx = 0;
+                Gizmos.DrawLine(points[j], points[nextIdx]);
+                //Draw normals
+                if (ParentTilemap.ShowColliderNormals)
+                {
+                    Vector2 s0 = points[j];
+                    Vector2 s1 = points[nextIdx];
+                    Vector3 normPos = (s0 + s1) / 2f;
+                    Gizmos.DrawLine(normPos, normPos + Vector3.Cross(s1 - s0, -Vector3.forward).normalized * ParentTilemap.CellSize.y * 0.05f);
+                }
             }
         }
 
@@ -502,7 +668,9 @@ namespace CreativeSpore.SuperTilemapEditor
                     tileData = (tileData & ~Tileset.k_TileFlag_Updated);
                 }
 
-                m_needsRebuildMesh |= (m_tileDataList[tileIdx] != tileData) || (tileData & Tileset.k_TileDataMask_TileId) == Tileset.k_TileId_Empty;
+                m_needsRebuildMesh |= (m_tileDataList[tileIdx] != tileData) // OR there is a tile not empty and tileId is -1
+                    || (tileData != Tileset.k_TileData_Empty) &&  (tileData & Tileset.k_TileDataMask_TileId) == Tileset.k_TileId_Empty;
+
                 m_needsRebuildColliders |= m_needsRebuildMesh &&
                 (
                     (prevBrushId > 0) || (brushId > 0) // there is a brush (a brush could change the collider data later)

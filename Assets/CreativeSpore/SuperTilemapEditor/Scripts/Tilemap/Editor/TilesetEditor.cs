@@ -584,7 +584,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 }
                 if (s_GUIClip_Type != null)
                 {
-                    s_GUIClip_topmostRect_Property = s_GUIClip_Type.GetProperty("topmostRect", BindingFlags.Static | BindingFlags.Public );
+                    s_GUIClip_topmostRect_Property = s_GUIClip_Type.GetProperty("topmostRect", BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic );
                     s_GUIClip_Unclip_Method = s_GUIClip_Type.GetMethod("Unclip", new Type[] { typeof(Vector2) });
                     Debug.Assert(s_GUIClip_topmostRect_Property != null, "s_GUIClip_topmostRect_Property Null");
                     Debug.Assert(s_GUIClip_Unclip_Method != null, "s_GUIClip_Unclip_Method Null");

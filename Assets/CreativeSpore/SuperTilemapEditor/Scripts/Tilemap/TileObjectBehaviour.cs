@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -8,7 +8,11 @@ namespace CreativeSpore.SuperTilemapEditor
     /// Attached to a gameobject used as tile prefab, it will change the sprite renderer to display the tile that has instantiated the prefab
     /// </summary>
     [RequireComponent(typeof(SpriteRenderer))]
+#if UNITY_2018_3_OR_NEWER
+    [ExecuteAlways]
+#else
     [ExecuteInEditMode] //fix ShouldRunBehaviour warning when using OnTilePrefabCreation
+#endif
     public class TileObjectBehaviour : MonoBehaviour 
     {
         [Tooltip("If true, the sorting layer and sorting order won't be changed with the values of the tilemap.")]

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c1de61e39cb5d488fe0684e723aceb, type: 3}
+  m_Name: C_Carpet3
+  m_EditorClassIdentifier: 
+  Tileset: {fileID: 11400000, guid: f1059619046235c4297fe8e0ccf8a6bb, type: 2}
+  Params:
+    m_paramList: []
+  m_group: 0
+  m_autotilingMode: 1
+  m_showInPalette: 1
+  TileIds: 5d0000005d0000005d0000009c0000005d0000005d0000001c0000005c0000005d0000009e0000005d0000009d0000001e0000005e0000001d0000005d000000
+  InteriorCornerTileIds: 5a0000005b0000001a0000001b000000

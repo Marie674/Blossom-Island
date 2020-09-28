@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,7 +6,11 @@ namespace CreativeSpore.SuperTilemapEditor
 {
     [RequireComponent(typeof(MeshFilter))]
     [RequireComponent(typeof(MeshRenderer))]
+#if UNITY_2018_3_OR_NEWER
+    [ExecuteAlways]
+#else
     [ExecuteInEditMode] //fix ShouldRunBehaviour warning when using OnTilePrefabCreation
+#endif
     public class TileObjMesh : MonoBehaviour
     {
 

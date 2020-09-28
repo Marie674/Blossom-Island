@@ -66,13 +66,29 @@ namespace CreativeSpore.SuperTilemapEditor
 
     public static class TilemapUtils
     {
+        private static Material s_spritesDefaultMat = null;
         public static Material FindDefaultSpriteMaterial()
         {
-#if UNITY_EDITOR && (UNITY_5_4 || UNITY_5_5_OR_NEWER)
-            return UnityEditor.AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat"); //fix: Unity 5.4.0f3 is not finding the material using Resources
+#if UNITY_EDITOR && (UNITY_5_4 || UNITY_5_5_OR_NEWER)            
+            return s_spritesDefaultMat = s_spritesDefaultMat ?? UnityEditor.AssetDatabase.GetBuiltinExtraResource<Material>("Sprites-Default.mat"); //fix: Unity 5.4.0f3 is not finding the material using Resources
 #else
-            return Resources.GetBuiltinResource<Material>("Sprites-Default.mat");
+            return s_spritesDefaultMat = s_spritesDefaultMat 
+            ?? 
+            Resources.FindObjectsOfTypeAll<Material>().FirstOrDefault( mat => mat.name == "Sprites-Default")
+            ??
+            Resources.GetBuiltinResource<Material>("Sprites-Default.mat");
 #endif
+        }
+
+        //ref: https://stackoverflow.com/questions/263400/what-is-the-best-algorithm-for-overriding-gethashcode/263416#263416
+        public static int GetGridPosHashCode(int gx, int gy)
+        {
+            return new { gx, gy }.GetHashCode();
+        }
+
+        public static int GetGridPosHashCode(Vector2 position, Vector2 cellSize)
+        {
+            return GetGridPosHashCode(BrushUtil.GetGridX(position, cellSize), BrushUtil.GetGridY(position, cellSize));
         }
 
         /// <summary>
@@ -128,15 +144,9 @@ namespace CreativeSpore.SuperTilemapEditor
             return BrushUtil.GetGridX(locPosition, tilemap.CellSize);
         }
 
-        /// <summary>
-        /// Gets the grid X and Y position for a given tilemap and local tilemap position and return a vector2 with the result.
-        /// </summary>
-        /// <param name="tilemap"></param>
-        /// <param name="locPosition"></param>
-        /// <returns></returns>
-        static public Vector2 GetGridPosition(STETilemap tilemap, Vector2 locPosition)
+        static public int GetGridX(Vector2 locPosition, Vector2 cellSize)
         {
-            return new Vector2(GetGridX(tilemap, locPosition), GetGridY(tilemap, locPosition));
+            return BrushUtil.GetGridX(locPosition, cellSize);
         }
 
         /// <summary>
@@ -149,6 +159,32 @@ namespace CreativeSpore.SuperTilemapEditor
         static public int GetGridY(STETilemap tilemap, Vector2 locPosition)
         {
             return BrushUtil.GetGridY(locPosition, tilemap.CellSize);
+        }
+
+        static public int GetGridY(Vector2 locPosition, Vector2 cellSize)
+        {
+            return BrushUtil.GetGridY(locPosition, cellSize);
+        }
+
+        /// <summary>
+        /// Gets the grid X and Y position for a given tilemap and local tilemap position and return a vector2 with the result.
+        /// </summary>
+        /// <param name="tilemap"></param>
+        /// <param name="locPosition"></param>
+        /// <returns></returns>
+        static public Vector2 GetGridPosition(STETilemap tilemap, Vector2 locPosition)
+        {
+            return new Vector2(GetGridX(tilemap, locPosition), GetGridY(tilemap, locPosition));
+        }
+
+        static public Vector2Int GetGridPositionInt(STETilemap tilemap, Vector2 locPosition)
+        {
+            return new Vector2Int(GetGridX(tilemap, locPosition), GetGridY(tilemap, locPosition));
+        }
+
+        static public Vector2Int GetGridPositionInt(Vector2 locPosition, Vector2 cellSize)
+        {
+            return new Vector2Int(GetGridX(locPosition, cellSize), GetGridY(locPosition, cellSize));
         }
 
         /// <summary>
@@ -210,6 +246,69 @@ namespace CreativeSpore.SuperTilemapEditor
                 }
             }
             return null;
+        }
+
+        static public T GetTileParameter<T>(STETilemap tilemap, Vector2 locPosition, string paramName, T defaultValue = default(T))
+        {
+            return GetTileParameter<T>(tilemap.Tileset, tilemap.GetTileData(locPosition), paramName, defaultValue);
+        }
+
+        static public T GetTileParameter<T>(STETilemap tilemap, int gridX, int gridY, string paramName, T defaultValue = default(T))
+        {
+            return GetTileParameter<T>(tilemap.Tileset, tilemap.GetTileData(gridX, gridY), paramName, defaultValue);
+        }
+
+        /// <summary>
+        /// Return a tile parameter (bool, int, float, string or UnityEngine.Object) from a tiledata. 
+        /// It takes first the parameter from a brush, if possible, then from a tile.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="tileset"></param>
+        /// <param name="tileData"></param>
+        /// <param name="paramName"></param>
+        /// <param name="defaultValue"></param>
+        /// <returns></returns>
+        static public T GetTileParameter<T>(Tileset tileset, uint tileData, string paramName, T defaultValue = default(T))
+        {
+            Tile tile = tileset.GetTile(Tileset.GetTileIdFromTileData(tileData));
+            TilesetBrush brush = tileset.FindBrush(Tileset.GetBrushIdFromTileData(tileData));
+            T value = defaultValue;
+            if(brush)
+                value = brush.Params.GetParam<T>(paramName, defaultValue);
+            if (tile != null && EqualityComparer<T>.Default.Equals(value, defaultValue))
+                value = tile.paramContainer.GetParam<T>(paramName, defaultValue);
+            return value;
+        }
+
+        /// <summary>
+        /// Translates a screen position into a tilemap local 2D position.
+        /// </summary>
+        /// <param name="screenPos"></param>
+        /// <param name="tilemap"></param>
+        /// <param name="camera"></param>
+        /// <returns></returns>
+        public static Vector2 ScreenToLocalPosition(Vector2 screenPos, STETilemap tilemap, Camera camera)
+        {
+            Ray ray = camera.ScreenPointToRay(screenPos);
+            Plane plane = new Plane(-tilemap.transform.forward, tilemap.transform.position);
+            float dist;
+            plane.Raycast(ray, out dist);
+            return tilemap.transform.InverseTransformPoint(ray.GetPoint(dist));
+        }
+
+        /// <summary>
+        /// Translates a screen position into a world 2D position over the XY plane.
+        /// </summary>
+        /// <param name="screenPos"></param>
+        /// <param name="camera"></param>
+        /// <returns></returns>
+        public static Vector2 ScreenToWorldPosition(Vector2 screenPos, Camera camera)
+        {
+            Ray ray = camera.ScreenPointToRay(screenPos);
+            Plane plane = new Plane(-Vector3.forward, Vector3.zero);
+            float dist;
+            plane.Raycast(ray, out dist);
+            return ray.GetPoint(dist);
         }
 
         /// <summary>

@@ -1,9 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using CreativeSpore.SuperTilemapEditor;
 using CubesTeam.Boomlagoon.JSON;
 using AnimationImporter;
+
+using JSONArray = CubesTeam.Boomlagoon.JSON.JSONArray;
+using JSONObect = CubesTeam.Boomlagoon.JSON.JSONObject;
+using JSONValue = CubesTeam.Boomlagoon.JSON.JSONValue;
+using JSONValueType = CubesTeam.Boomlagoon.JSON.JSONValueType;
 
 namespace CubesTeam
 {

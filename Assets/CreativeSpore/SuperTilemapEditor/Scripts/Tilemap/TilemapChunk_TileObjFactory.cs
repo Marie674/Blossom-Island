@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace CreativeSpore.SuperTilemapEditor
 {
-    partial class TilemapChunk
+    public partial class TilemapChunk
     {
         const string k_OnTilePrefabCreation = "OnTilePrefabCreation";
 
@@ -24,12 +24,7 @@ namespace CreativeSpore.SuperTilemapEditor
             public int tilePos;
             public TilePrefabData tilePrefabData;
             public GameObject obj = null;
-        }        
-
-
-        [SerializeField, HideInInspector]
-        private List<TileObjData> m_tileObjList = new List<TileObjData>();
-        private List<GameObject> m_tileObjToBeRemoved = new List<GameObject>();
+        }                
 
         /// <summary>
         /// Update all tile objects if tile prefab data was changed and create tile objects for tiles with new prefab data.
@@ -95,9 +90,30 @@ namespace CreativeSpore.SuperTilemapEditor
                 int gx = tileIdx % m_width;
                 int gy = tileIdx / m_width;
                 if (tileObjData == null || tileObjData.tilePrefabData != tilePrefabData || tileObjData.obj == null)
-                {                    
+                {
 #if UNITY_EDITOR
-                    tileObj = (GameObject)UnityEditor.PrefabUtility.InstantiatePrefab(tilePrefabData.prefab);
+                    GameObject sourcePrefabInstance = null;
+                    if (BrushBehaviour.TileObjSourceTilemap)
+                    {
+                        // Use the brush instance to copy also the modified parameters
+                        Vector2Int copyLoc = new Vector2Int( GridPosX + gx + BrushBehaviour.TileObjSourceTilemapOffset.x, GridPosY + gy + BrushBehaviour.TileObjSourceTilemapOffset.y);
+                        sourcePrefabInstance = BrushBehaviour.TileObjSourceTilemap.GetTileObject(copyLoc.x, copyLoc.y);
+                    }
+                    if (sourcePrefabInstance && !EditorCompatibilityUtils.IsPrefab(sourcePrefabInstance))
+                    {
+                        tileObj = (GameObject)Instantiate(sourcePrefabInstance, Vector3.zero, transform.rotation);
+                        tileObj.name = tilePrefabData.prefab.name;
+                    }
+                    else
+                    {
+                        tileObj = (GameObject)UnityEditor.PrefabUtility.InstantiatePrefab(tilePrefabData.prefab);
+                        if (sourcePrefabInstance)
+                        {
+                            UnityEditor.PropertyModification[] modifications = UnityEditor.PrefabUtility.GetPropertyModifications(sourcePrefabInstance);
+                            UnityEditor.PrefabUtility.SetPropertyModifications(tileObj, modifications);
+                        }
+                    }
+
                     // allow destroy the object with undo operations
                     if (ParentTilemap.IsUndoEnabled)
                     {
@@ -127,7 +143,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 }
                 else if (tileObjData.obj != null)
                 {
-#if UNITY_EDITOR
+#if UNITY_EDITOR && !UNITY_2018_3_OR_NEWER
                     //+++ Break tilemap prefab and restore tile prefab link
                     GameObject parentPrefab = UnityEditor.PrefabUtility.FindRootGameObjectWithSameParentPrefab(tileObjData.obj);
                     if (parentPrefab != tileObjData.obj)
@@ -166,17 +182,17 @@ namespace CreativeSpore.SuperTilemapEditor
             Vector3 worldPos = transform.TransformPoint(chunkLocPos);
 
             tileObj.transform.position = worldPos;
-            tileObj.transform.rotation = transform.rotation;            
+            tileObj.transform.rotation = tilePrefabData.prefab.transform.rotation;
             tileObj.transform.parent = transform.parent;
-            tileObj.transform.localRotation = tilePrefabData.prefab.transform.localRotation;
+            tileObj.transform.localRotation = tilePrefabData.prefab.transform.localRotation * Quaternion.Euler(tilePrefabData.rotation);
             tileObj.transform.localScale = tilePrefabData.prefab.transform.localScale;
             //+++ Apply tile flags
             Vector3 localScale = tileObj.transform.localScale;
-            if((tileData & Tileset.k_TileFlag_Rot90) != 0)
-                tileObj.transform.localRotation *= Quaternion.Euler(0, 0, -90);
+            if ((tileData & Tileset.k_TileFlag_Rot90) != 0)
+                tileObj.transform.localRotation *= Quaternion.AngleAxis(-90, transform.forward);
             //For Rot180 and Rot270 avoid changing the scale
             if (((tileData & Tileset.k_TileFlag_FlipH) != 0) && ((tileData & Tileset.k_TileFlag_FlipV) != 0))
-                tileObj.transform.localRotation *= Quaternion.Euler(0, 0, -180);
+                tileObj.transform.localRotation *= Quaternion.AngleAxis(-180, transform.forward);
             else
             {
                 if ((tileData & Tileset.k_TileFlag_FlipH) != 0)

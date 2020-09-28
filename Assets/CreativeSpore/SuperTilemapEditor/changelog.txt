@@ -1,3 +1,63 @@
+--- v1.7.0 ---
++ ADDED indexing support to STETilemap
++ ADDED LoopFrameDelay to AnimBrush
++ ADDED Sprite Mask Interaction support to Tilemaps
++ ADDED Clipper Lib support for collider generation
++ ADDED GetTileParameter to TilemapUtils
++ ADDED GetChunkCount, GetChunk and FindChunk in STETilemap class
++ ADDED Support for Vector2Int in previous Unity versions
++ ADDED Collider2DOptimizationDisabled for Polygon Collider type to avoid connection issues in exchange of performance
++ IMPROVED CarpetBrush autotiling with more combinations
++ UPDATED Tile prefab instance modifications are now copied in the tilemap brush (but it doesn't work with flip/rotate or drawing operations)
++ UPDATED MapPathFinding raycast skips collisions with starting position, to avoid colliding with actor collider
++ UPDATED TileDataPropertyDrawer to allow selecting a tile or brush from the Tile Selection Window
++ UPDATED tile colliders removing the 3 vertices limitation and allowing 2 vertices to create a line collision
+* FIXED Sprites-Default material not found on builds error
+* FIXED: RandomBrush tile list not updates the tile when selecting it from the tile palette.
+* FIXED some issues using enclosed 2D polygon colliders (now Polygon 2D collider mode uses several paths in the same collider)
+* FIXED Tilemap polygon collider not closing the collision area properly
+* FIXED potential bug in STETilemap chunk key generation
+* FIXED tilemapGroup reordering when adding children gameobject with no STETilemap component.
++ FIXED issue editing tile colliders when Tile Property Window is wider than tall
+* FIXED MapPathFinding stack overflow in MaxIterations set
+* FIXED selecting the first visible tile holding Ctrl + Right Click will skip the not visible Tilemaps
+* FIXED fully recursive property setter in MapPathFinding.MaxIterations.
+* FIXED misalignment when adding Tilemaps to a TilemapGroup with a position displacement.
+
+--- v1.6.3 ---
+- ADDED ScreenToLocalPosition to TilemapUtils
+- ADDED ScreenToWorldPosition to TilemapUtils
+- FIXED Pathfinding crossing colliders
+- FIXED: Should not grab hot control with an active capture
+- FIXED autotiling bug
+
+--- v1.6.2 ---
+- ADDED SelectedTilemapIndex property to TilemapGroup
+- ADDED SkipOtherBrushes to Autotiling Modes
+- FIXED performance issues with Unity 2018.3
+- FIXED brush not visible in Prefab Mode
+
+--- v1.6.1 ---
+- ADDED collision message detection to STETilemap
+- FIXED some warning messages : SendMessage cannot be called during Awake, CheckConsistency, or OnValidate
+- FIXED Unity2018.3 warnings and compatibility issues
+- FIXED using Flood Fill and Erase tool when pressing Control key
+- FIXED performance issue in the Editor when updating a tilemap colliders
+
+
+--- v1.6.0 ---
+- ADDED rotation to the tile properties for the prefab data
+- FIXED some cases where Pixel Snap value is not saved
+- FIXED random serialization errors when making a build
+- FIXED exception when changing Group Autotiling Mask in Unity 2018.3.0b2
+- FIXED MapPathFinding to consider empty grid positions with no tiles as non passable
+- FIXED typo with method UpdateChunkRendererProperties
+- FIXED gc allocation in TilemapChunk.OnWillRenderObject
+- FIXED bug in PathfindingBehaviour when using Synchronous compute mode
+- FIXED bug making the tilemap transform position to change when the tilemap was a child of a parent gameObject with a rotation.
+- FIXED remove tiles when using a drawing tool different than pencil if the selection is empty
+- FIXED  rotation and flip flags when using 3D prefab tiles in an XZ tilemap
+
 --- v1.5.0 ---
 - ADDED ClearTiles button near ClearMap, to clear the tiles but keep the map bounds.
 - ADDED Merger Tile Parameters option in Tile Properties Window when multiple tiles are selected.

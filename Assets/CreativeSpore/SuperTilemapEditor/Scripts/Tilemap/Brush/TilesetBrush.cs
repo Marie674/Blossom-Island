@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -27,6 +27,10 @@ namespace CreativeSpore.SuperTilemapEditor
         /// Autotiles with cells placed out of the tilemap bounds
         /// </summary>
         TilemapBounds = 1 << 4,
+        /// <summary>
+        /// Avoid autotiling with other brushes
+        /// </summary>
+        SkipOtherBrushes = 1 << 5,
     }
 
     public class TilesetBrush : ScriptableObject, IBrush
@@ -75,13 +79,15 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public bool AutotileWith(Tileset tileset, int selfBrushId, uint otherTileData)
         {
+            int otherBrushId = (int)((uint)(otherTileData & Tileset.k_TileDataMask_BrushId) >> 16);
+            if (otherBrushId != Tileset.k_BrushId_Default && otherBrushId != selfBrushId && (AutotilingMode & eAutotilingMode.SkipOtherBrushes) != 0)
+                return false;
             if ((AutotilingMode & eAutotilingMode.EmptyCells) != 0 && otherTileData == Tileset.k_TileData_Empty) return true;
             if ((AutotilingMode & eAutotilingMode.Group) != 0)
             {
                 Tile tile = tileset.GetTile((int)(otherTileData & Tileset.k_TileDataMask_TileId));
                 if (tile != null && Tileset.GetGroupAutotiling(Group, tile.autilingGroup)) return true;
             }
-            int otherBrushId = (int)((uint)(otherTileData & Tileset.k_TileDataMask_BrushId) >> 16);
             return AutotileWith(selfBrushId, otherBrushId);
         }
 
@@ -171,9 +177,14 @@ namespace CreativeSpore.SuperTilemapEditor
             return 0;
         }
 
+        public virtual uint GetTileData(STETilemap tilemap, int gridX, int gridY, uint tileData)
+        {
+            return tileData;
+        }
+
         Vector2[] m_uvWithFlags = new Vector2[4];
         int m_lastFrameToken;
-        public virtual Vector2[] GetAnimUVWithFlags(float innerPadding = 0f)
+        public virtual Vector2[] GetAnimUVWithFlags(float innerPadding = 0f, int index = 0)
         {
             if (GetAnimFrameIdx() == m_lastFrameToken)
                 return m_uvWithFlags;
@@ -233,9 +244,9 @@ namespace CreativeSpore.SuperTilemapEditor
             return null;
         }
 
-        public virtual Vector2[] GetMergedSubtileColliderVertices(STETilemap tilemap, int gridX, int gridY, uint tileData)
+        public virtual void GetMergedSubtileColliderVertices(STETilemap tilemap, int gridX, int gridY, uint tileData, List<Vector2> results)
         {
-            return null;
+            results.Clear();
         }
 
         #endregion        

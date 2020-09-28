@@ -11,6 +11,7 @@ public class ToolbarSlotUI : MonoBehaviour
     public TextMeshProUGUI AmountText;
     private Image ItemIcon;
 
+    [SerializeField]
     public InventoryItemStack ReferencedItemStack = null;
     public bool IsActiveSlot = false;
     public GameObject ActiveFrame;

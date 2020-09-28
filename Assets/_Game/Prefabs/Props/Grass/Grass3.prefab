@@ -572,6 +572,9 @@ GameObject:
   - component: {fileID: 1649264216045458523}
   - component: {fileID: 7894696986225372865}
   - component: {fileID: 5604905819445387275}
+  - component: {fileID: -2261636855383689047}
+  - component: {fileID: -3673931815357329757}
+  - component: {fileID: 7264993694189064485}
   m_Layer: 12
   m_Name: Grass3
   m_TagString: Untagged
@@ -723,6 +726,51 @@ MonoBehaviour:
   - {fileID: 8262811140200183656}
   - {fileID: 5140982839011610072}
   - {fileID: 8926314493919281852}
+  AwakeChildren: 0
   GrowChance: 50
   SpreadChance: 30
   Pregrow: 1
+--- !u!114 &-2261636855383689047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285597665829426673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f84df12a971f2e48a1eb1830e5ab2b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3673931815357329757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285597665829426673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf72844540b7744b895a4c85c853e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 0
+  m_restoreStateOnStart: 0
+  m_mode: 1
+--- !u!114 &7264993694189064485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285597665829426673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaad4ebbb882ed54e9a0d279c8e464c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordOn: 0
+  variableName: 
+  spawnWhenDestroyed: {fileID: 0}

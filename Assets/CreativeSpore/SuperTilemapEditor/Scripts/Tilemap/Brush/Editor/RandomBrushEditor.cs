@@ -19,6 +19,7 @@ namespace CreativeSpore.SuperTilemapEditor
 
         RandomBrush m_brush;
         ReorderableList m_randTileList;
+        int randTileListControlId;
         bool m_randTileListHasFocus = false;
         Tileset m_prevTileset;
 
@@ -33,6 +34,10 @@ namespace CreativeSpore.SuperTilemapEditor
             }
 
             m_randTileList = new ReorderableList(serializedObject, serializedObject.FindProperty("RandomTileList"), true, true, true, true);
+            // Fix: Issue in Unity 2019.4.1f1
+            m_randTileList.GrabKeyboardFocus();
+            randTileListControlId = GUIUtility.keyboardControl;
+            //---
             m_randTileList.drawHeaderCallback += (Rect rect) =>
             {
                 EditorGUI.LabelField(rect, "Random Tiles", EditorStyles.boldLabel);
@@ -212,7 +217,7 @@ namespace CreativeSpore.SuperTilemapEditor
             m_randTileList.DoLayoutList();
             if (Event.current.type == EventType.Repaint)
             {
-                m_randTileListHasFocus = m_randTileList.HasKeyboardControl();
+                m_randTileListHasFocus = GUIUtility.keyboardControl == randTileListControlId;
             }
 
             TileSelection tileSelection = ((TilesetBrush)target).Tileset.TileSelection;

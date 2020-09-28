@@ -12,6 +12,8 @@ namespace CreativeSpore.SuperTilemapEditor
         public uint AnimFPS = 4;
         [Tooltip("Adds an incremental delay to each brush that is rendered during each camera render.")]
         public float AnimDelay = 0f;
+        [Tooltip("Delay between animation loops. The number of times, the last frame is repeated before the animation starts over.")]
+        public uint LoopFrameDelay = 0;
 
         [Serializable]
         public class TileAnimFrame
@@ -34,7 +36,7 @@ namespace CreativeSpore.SuperTilemapEditor
         {
             if (AnimFrames.Count > 0)
             {
-                int animIdx = (int)(Time.realtimeSinceStartup * AnimFPS) % AnimFrames.Count;
+                int animIdx = GetAnimFrameIdx();
                 return AnimFrames[animIdx].tileId;
             }
             return Tileset.k_TileId_Empty;
@@ -55,20 +57,13 @@ namespace CreativeSpore.SuperTilemapEditor
         }
 
         private int m_animTileIdx = 0;
-        private int m_currentFrame;
-        private int m_brushIdx;
         private float m_overrideTime;
-        private void UpdateAnimTime()
+        private void UpdateAnimTime(int index = 0)
         {
             float time = Time.realtimeSinceStartup;
             if (AnimDelay != 0f)
             {
-                if (m_currentFrame != Time.renderedFrameCount)
-                {
-                    m_currentFrame = Time.renderedFrameCount;
-                    m_brushIdx = 0;
-                }
-                time += AnimDelay * m_brushIdx++;
+                time += AnimDelay * index++;
             }
             m_overrideTime = time;
         }
@@ -81,7 +76,7 @@ namespace CreativeSpore.SuperTilemapEditor
         {
             if (AnimFrames.Count > 0)
             {                
-                int animIdx = (int)(GetTime() * AnimFPS) % AnimFrames.Count;            
+                int animIdx = GetAnimFrameIdx();            
                 TileAnimFrame animFrame = AnimFrames[animIdx];
                 uint tileData = animFrame.tileId;
                 int tileId = (int)(tileData & Tileset.k_TileDataMask_TileId);
@@ -94,23 +89,24 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public override int GetAnimFrameIdx()
         {
-            return (int)(GetTime() * AnimFPS) % AnimFrames.Count;
+            int animFrames = AnimFrames.Count + (int)LoopFrameDelay;
+            return Mathf.Clamp((int)(GetTime() * AnimFPS) % animFrames, 0, AnimFrames.Count - 1);
         }
 
         public override uint GetAnimTileData()
         {
             if (AnimFrames.Count > 0)
             {
-                int animIdx = (int)(GetTime() * AnimFPS) % AnimFrames.Count;
+                int animIdx = GetAnimFrameIdx();
                 TileAnimFrame animFrame = AnimFrames[animIdx];
                 return animFrame.tileId;
             }
             return Tileset.k_TileData_Empty;
         }
 
-        public override Vector2[] GetAnimUVWithFlags(float innerPadding = 0f)
+        public override Vector2[] GetAnimUVWithFlags(float innerPadding = 0f, int index = 0)
         {
-            UpdateAnimTime();
+            UpdateAnimTime(index);
             Vector2[] ret = base.GetAnimUVWithFlags();
             m_overrideTime = 0f; // restore to normal time
             return ret;

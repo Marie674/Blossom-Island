@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEditor;
 
@@ -9,6 +9,8 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public delegate uint GetTileData(int tileIdx);
         public delegate void SetTileData(int tileIdx, uint tileData);
+        public delegate void TileSelected(TileGridControl context, int tileIdx);
+        public TileSelected OnTileSelected;
 
         public bool ShowHelpBox = true;
         public bool AllowBrushSelection = true;
@@ -27,13 +29,13 @@ namespace CreativeSpore.SuperTilemapEditor
                 {
                     if (m_tileset != null)
                     {
-                        m_tileset.OnTileSelected -= OnTileSelected;
-                        m_tileset.OnBrushSelected -= OnBrushSelected;
+                        m_tileset.OnTileSelected -= HandleTilesetTileSelected;
+                        m_tileset.OnBrushSelected -= HandleTilesetBrushSelected;
                     }
                     if (value != null)
                     {
-                        value.OnTileSelected += OnTileSelected;
-                        value.OnBrushSelected += OnBrushSelected;
+                        value.OnTileSelected += HandleTilesetTileSelected;
+                        value.OnBrushSelected += HandleTilesetBrushSelected;
                     }
                     m_tileset = value;
                 }
@@ -69,7 +71,7 @@ namespace CreativeSpore.SuperTilemapEditor
         }
 
 
-        void OnTileSelected(Tileset source, int prevTileId, int newTileId)
+        void HandleTilesetTileSelected(Tileset source, int prevTileId, int newTileId)
         {
             if (m_selectedTileIdx >= 0 && m_hasFocus)
             {
@@ -95,7 +97,7 @@ namespace CreativeSpore.SuperTilemapEditor
             EditorUtility.SetDirty(m_target);
         }
 
-        void OnBrushSelected(Tileset source, int prevBrushId, int newBrushId)
+        void HandleTilesetBrushSelected(Tileset source, int prevBrushId, int newBrushId)
         {
             if (AllowBrushSelection)
             {
@@ -129,8 +131,8 @@ namespace CreativeSpore.SuperTilemapEditor
             GUI.changed |= m_hasChanged;
             m_hasChanged = false;
             Event e = Event.current;
-            bool isLeftMouseReleased = e.type == EventType.MouseUp && e.button == 0;
-            if (isLeftMouseReleased)
+            bool isMouseReleased = e.type == EventType.MouseUp;
+            if (isMouseReleased)
             {
                 m_hasFocus = m_tileSelectionRect.Contains(e.mousePosition);
             }
@@ -143,7 +145,7 @@ namespace CreativeSpore.SuperTilemapEditor
             {
                 // Draw Autotile Combination Control
                 GUI.backgroundColor = Tileset.BackgroundColor;
-                GUILayoutUtility.GetRect(visualTileSize.x * m_width, visualTileSize.y * m_height + 1f);
+                GUILayoutUtility.GetRect(0f, 0f, GUILayout.Width(visualTileSize.x * m_width + EditorGUIUtility.fieldWidth), GUILayout.Height(visualTileSize.y * m_height + 4f));
                 Rect rArea = GUILayoutUtility.GetLastRect();
                 {
                     if (m_backgroundTexture)
@@ -171,21 +173,19 @@ namespace CreativeSpore.SuperTilemapEditor
                         Color bgColor = new Color(1f - Tileset.BackgroundColor.r, 1f - Tileset.BackgroundColor.g, 1f - Tileset.BackgroundColor.b, Tileset.BackgroundColor.a);
                         HandlesEx.DrawRectWithOutline(rVisualTile, m_selectedTileIdx == tileIdx ? new Color(0f, 0f, 0f, 0.1f) : new Color(), m_selectedTileIdx == tileIdx ? cSelectedBorderColor : bgColor);
 
-                        if (isLeftMouseReleased && rVisualTile.Contains(e.mousePosition))
+                        if (isMouseReleased && rVisualTile.Contains(e.mousePosition))
                         {
-                            m_selectedTileIdx = tileIdx;
-                            EditorWindow wnd = EditorWindow.focusedWindow;
-                            TileSelectionWindow.Show(Tileset);
-                            TileSelectionWindow.Instance.Ping();
-                            wnd.Focus();
-                            GUI.FocusControl("");
+                            if (OnTileSelected != null)
+                                OnTileSelected(this, tileIdx);
+                            else
+                                DefaultBehaviours.DoSelectTile(this, tileIdx);
                         }
                     }
                 }
                 
                 uint brushTileData = m_selectedTileIdx >= 0 ? m_getTileDataFunc(m_selectedTileIdx) : Tileset.k_TileData_Empty;
-                brushTileData = DoTileDataPropertiesLayout(brushTileData, Tileset, AllowBrushSelection);
-                if (m_selectedTileIdx >= 0)
+                bool isChangedTiledata = brushTileData != (brushTileData = DoTileDataPropertiesLayout(brushTileData, Tileset, AllowBrushSelection));
+                if (isChangedTiledata && m_selectedTileIdx >= 0)
                 {
                     m_setTileDataFunc(m_selectedTileIdx, brushTileData);
                 }
@@ -223,14 +223,16 @@ namespace CreativeSpore.SuperTilemapEditor
                 m_tileIdOff = 0;
                 EditorUtility.SetDirty(m_target);
             }
-            if (Tileset.TileSelection != null && Tileset.TileSelection.selectionData.Count == m_width * m_height && Tileset.TileSelection.rowLength == m_width)
+            if (Tileset.TileSelection != null && Tileset.TileSelection.selectionData.Count == m_width * m_height)
             {
                 if (GUILayout.Button("Autocomplete from selection"))
                 {
                     Undo.RecordObject(m_target, "MultipleTileChanged");
+                    int selectionWidth = Tileset.TileSelection.rowLength;
+                    int selectionHeight = Tileset.TileSelection.columnLength;
                     for (int tileIdx = 0; tileIdx < size; ++tileIdx)
                     {
-                        int selectionIdx = (tileIdx % m_width) + (m_height - 1 - tileIdx / m_width) * m_width;
+                        int selectionIdx = (tileIdx % selectionWidth) + (selectionHeight - 1 - tileIdx / selectionWidth) * selectionWidth;
                         int brushTileId = (int)(Tileset.TileSelection.selectionData[selectionIdx] & Tileset.k_TileDataMask_TileId);
                         m_setTileDataFunc(tileIdx, (uint)(brushTileId & Tileset.k_TileDataMask_TileId));
                     }
@@ -247,25 +249,35 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public static uint DoTileDataPropertiesLayout(uint tileData, Tileset tileset, bool displayBrush = true)
         {
-            EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+            Rect position = GUILayoutUtility.GetRect(0f, 0f, GUILayout.ExpandWidth(true));            
+            return DoTileDataProperties(position, tileData, tileset, displayBrush);
+        }
+
+        public static uint DoTileDataProperties(Rect position, uint tileData, Tileset tileset, bool displayBrush = true)
+        {
+            position.height = 90f;
+            GUI.BeginGroup(position, EditorStyles.helpBox);
             {
                 GUI.enabled = tileData != Tileset.k_TileData_Empty;
                 EditorGUIUtility.labelWidth = 100;
 
+                Rect fieldRect = new Rect(2f, 2f, position.width - 4f, EditorGUIUtility.singleLineHeight);
                 EditorGUI.BeginChangeCheck();
-                EditorGUILayout.Toggle("Flip Horizontally", (tileData & Tileset.k_TileFlag_FlipH) != 0);
+                EditorGUI.Toggle(fieldRect, "Flip Horizontally", (tileData & Tileset.k_TileFlag_FlipH) != 0);
                 if (EditorGUI.EndChangeCheck())
                 {
                     tileData ^= Tileset.k_TileFlag_FlipH;
                 }
+                fieldRect.y += EditorGUIUtility.singleLineHeight;
                 EditorGUI.BeginChangeCheck();
-                EditorGUILayout.Toggle("Flip Vertically", (tileData & Tileset.k_TileFlag_FlipV) != 0);
+                EditorGUI.Toggle(fieldRect, "Flip Vertically", (tileData & Tileset.k_TileFlag_FlipV) != 0);
                 if (EditorGUI.EndChangeCheck())
                 {
                     tileData ^= Tileset.k_TileFlag_FlipV;
                 }
+                fieldRect.y += EditorGUIUtility.singleLineHeight;
                 EditorGUI.BeginChangeCheck();
-                EditorGUILayout.Toggle("Rotate 90º", (tileData & Tileset.k_TileFlag_Rot90) != 0);
+                EditorGUI.Toggle(fieldRect, "Rotate 90º", (tileData & Tileset.k_TileFlag_Rot90) != 0);
                 if (EditorGUI.EndChangeCheck())
                 {
                     tileData ^= Tileset.k_TileFlag_Rot90;
@@ -273,10 +285,11 @@ namespace CreativeSpore.SuperTilemapEditor
 
                 if (displayBrush)
                 {
+                    fieldRect.y += EditorGUIUtility.singleLineHeight;
                     EditorGUI.BeginChangeCheck();
                     int brushId = Tileset.GetBrushIdFromTileData(tileData);
                     TilesetBrush brush = tileset.FindBrush(brushId);
-                    brush = (TilesetBrush)EditorGUILayout.ObjectField("Brush", brush, typeof(TilesetBrush), false);
+                    brush = (TilesetBrush)EditorGUI.ObjectField(fieldRect, "Brush", brush, typeof(TilesetBrush), false);
                     if (EditorGUI.EndChangeCheck())
                     {
                         if (brush && brush.Tileset != tileset)
@@ -294,7 +307,9 @@ namespace CreativeSpore.SuperTilemapEditor
                     }
                 }
 
-                if (GUILayout.Button("Reset"))
+                fieldRect.y += EditorGUIUtility.singleLineHeight + 4f;
+                fieldRect.x += 2f; fieldRect.width -= 4f;
+                if (GUI.Button(fieldRect, "Reset"))
                 {
                     tileData = Tileset.k_TileData_Empty;
                 }
@@ -302,8 +317,21 @@ namespace CreativeSpore.SuperTilemapEditor
                 EditorGUIUtility.labelWidth = 0;
                 GUI.enabled = true;
             }
-            EditorGUILayout.EndVertical();
+            GUI.EndGroup();
             return tileData;
+        }
+
+        public static class DefaultBehaviours
+        {
+            public static void DoSelectTile(TileGridControl tileGridControl, int tileIdx)
+            {
+                tileGridControl.m_selectedTileIdx = tileIdx;
+                EditorWindow wnd = EditorWindow.focusedWindow;
+                TileSelectionWindow.Show(tileGridControl.Tileset);
+                TileSelectionWindow.Instance.Ping();
+                wnd.Focus();
+                GUI.FocusControl("");
+            }
         }
     }
 }

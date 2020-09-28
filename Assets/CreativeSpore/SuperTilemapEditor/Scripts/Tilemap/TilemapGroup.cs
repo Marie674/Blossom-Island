@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,13 +6,18 @@ namespace CreativeSpore.SuperTilemapEditor
 {
     [AddComponentMenu("SuperTilemapEditor/TilemapGroup", 10)]
     [DisallowMultipleComponent]
+#if UNITY_2018_3_OR_NEWER
+    [ExecuteAlways]
+#else
     [ExecuteInEditMode] // allow OnTransformChildrenChanged to be called
+#endif
     public class TilemapGroup : MonoBehaviour, ISerializationCallbackReceiver
     {
         public STETilemap SelectedTilemap {
             get { return m_selectedIndex >= 0 && m_selectedIndex < m_tilemaps.Count ? m_tilemaps[m_selectedIndex] : null; }
             set { m_selectedIndex = m_tilemaps != null ? m_tilemaps.IndexOf(value) : -1; }
         }
+        public int SelectedTilemapIndex { get { return m_selectedIndex; } }
         public List<STETilemap> Tilemaps { get { return m_tilemaps; } }
         public float UnselectedColorMultiplier { get { return m_unselectedColorMultiplier; } set { m_unselectedColorMultiplier = value; } }
         public bool DefaultTilemapWindowVisible { get { return m_defaultTilemapWindowVisible; } set { m_defaultTilemapWindowVisible = value; } }
@@ -33,7 +38,7 @@ namespace CreativeSpore.SuperTilemapEditor
 
         void OnValidate()
         {
-            if (Tilemaps.Count != transform.childCount)
+            if (Tilemaps.Count != GetComponentsInChildren<STETilemap>(true).Length)
             {
                 Refresh();
             }

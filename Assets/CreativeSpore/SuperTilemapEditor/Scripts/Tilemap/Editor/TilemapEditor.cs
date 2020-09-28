@@ -105,6 +105,7 @@ namespace CreativeSpore.SuperTilemapEditor
         private SerializedProperty m_ColliderDepth;
         private SerializedProperty m_physicMaterial;
         private SerializedProperty m_Collider2DType;
+        private SerializedProperty m_Collider2DOptimizationDisabled;
         private SerializedProperty m_ShowColliderNormals;
         private SerializedProperty m_physicMaterial2D;
         private SerializedProperty m_isTrigger;
@@ -122,6 +123,7 @@ namespace CreativeSpore.SuperTilemapEditor
         private SerializedProperty m_parallaxFactor;
         private SerializedProperty m_sortingLayer;
         private SerializedProperty m_orderInLayer;
+        private SerializedProperty m_maskInteraction;
         private SerializedProperty m_SortOrder;
         private SerializedProperty m_InnerPadding;
         private SerializedProperty m_chunkRendererProperties;
@@ -130,6 +132,7 @@ namespace CreativeSpore.SuperTilemapEditor
         private SerializedProperty m_useLightProbes;
         private SerializedProperty m_reflectionProbeUsage;
         private SerializedProperty m_anchorOverride;
+        private SerializedProperty m_colliderGenerationMethod;
 
         #region Tileset Events
 
@@ -202,6 +205,7 @@ namespace CreativeSpore.SuperTilemapEditor
             m_ColliderDepth = serializedObject.FindProperty("ColliderDepth");
             m_physicMaterial = serializedObject.FindProperty("m_physicMaterial");
             m_Collider2DType = serializedObject.FindProperty("Collider2DType");
+            m_Collider2DOptimizationDisabled = serializedObject.FindProperty("Collider2DOptimizationDisabled");
             m_ShowColliderNormals = serializedObject.FindProperty("ShowColliderNormals");
             m_physicMaterial2D = serializedObject.FindProperty("m_physicMaterial2D");
             m_isTrigger = serializedObject.FindProperty("m_isTrigger");
@@ -219,6 +223,7 @@ namespace CreativeSpore.SuperTilemapEditor
             m_parallaxFactor = serializedObject.FindProperty("m_parallaxFactor");
             m_sortingLayer = serializedObject.FindProperty("m_sortingLayer");
             m_orderInLayer = serializedObject.FindProperty("m_orderInLayer");
+            m_maskInteraction = serializedObject.FindProperty("m_maskInteraction");
             m_SortOrder = serializedObject.FindProperty("SortOrder");
             m_InnerPadding = serializedObject.FindProperty("InnerPadding");
             m_chunkRendererProperties = serializedObject.FindProperty("m_chunkRendererProperties");
@@ -227,6 +232,7 @@ namespace CreativeSpore.SuperTilemapEditor
             m_useLightProbes = m_chunkRendererProperties.FindPropertyRelative("useLightProbes");
             m_reflectionProbeUsage = m_chunkRendererProperties.FindPropertyRelative("reflectionProbeUsage");
             m_anchorOverride = m_chunkRendererProperties.FindPropertyRelative("anchorOverride");
+            m_colliderGenerationMethod = serializedObject.FindProperty("ColliderGenerationMethod");
         }
 
         void OnDisable()
@@ -345,8 +351,9 @@ namespace CreativeSpore.SuperTilemapEditor
                 return;
             }
 
-            Vector3 savedPos = m_tilemap.transform.position;
-            m_tilemap.transform.position += (Vector3)(Vector2.Scale(Camera.current.transform.position, (Vector2.one - m_tilemap.ParallaxFactor))); //apply parallax
+            //NOTE: tilemap.transform.position shouldn't be modified. When the parent has a rotation, it leads to float precision, changing slowly the position.
+            Vector3 savedPos = m_tilemap.transform.localPosition;
+            m_tilemap.transform.localPosition += (Vector3)(Vector2.Scale(Camera.current.transform.position, (Vector2.one - m_tilemap.ParallaxFactor))); //apply parallax
             m_brushVisible = s_editMode == eEditMode.Paint;
             if (s_editMode == eEditMode.Paint)
             {
@@ -377,7 +384,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 DoColliderSceneGUI();
             }
             BrushBehaviour.SetVisible(m_brushVisible);
-            m_tilemap.transform.position = savedPos; // restore position
+            m_tilemap.transform.localPosition = savedPos; // restore position
         }
 
         #endregion
@@ -386,11 +393,12 @@ namespace CreativeSpore.SuperTilemapEditor
 
         private void OnInspectorGUI_Collider()
         {
+
+            EditorGUIUtility.labelWidth = 220f;
             EditorGUI.BeginChangeCheck();
             {
                 //EditorGUILayout.PropertyField(serializedObject.FindProperty("ColliderType"));
                 EditorGUILayout.Space();
-
                 EditorGUILayout.BeginVertical(EditorStyles.helpBox);
                 EditorGUILayout.LabelField("Collider Type:", EditorStyles.boldLabel);
                 EditorGUI.indentLevel += 2;
@@ -402,6 +410,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 EditorGUILayout.EndVertical();
 
                 EditorGUILayout.Space();
+                EditorGUILayout.PropertyField(m_colliderGenerationMethod);
 
                 if (m_tilemap.ColliderType == eColliderType._3D)
                 {                    
@@ -425,9 +434,11 @@ namespace CreativeSpore.SuperTilemapEditor
                 }
                 else if (m_tilemap.ColliderType == eColliderType._2D && m_tilemap.Collider2DType == e2DColliderType.PolygonCollider2D)
                 {
-                    EditorGUILayout.HelpBox("Using Polygon colliders could generate wrong collider lines if not used properly. Use Show Tilechunks in Map section to display the real collider lines.", MessageType.Warning);
+                    EditorGUILayout.HelpBox("Using Polygon colliders could generate wrong collider lines if not used properly. Use Show Tilechunks in Map section to display the real collider lines. If performance is not a problem, disable the Collider 2D optimizations to avoid this issue.", MessageType.Warning);
+                    EditorGUILayout.PropertyField(m_Collider2DOptimizationDisabled);
                 }
             }
+            EditorGUIUtility.labelWidth = 0f;
             if (EditorGUI.EndChangeCheck())
             {
                 serializedObject.ApplyModifiedProperties();
@@ -620,6 +631,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 if (EditorGUI.EndChangeCheck())
                 {
                     m_tilemap.PixelSnap = isPixelSnapOn;
+                    serializedObject.ApplyModifiedProperties();
                 }
             }
 
@@ -627,6 +639,7 @@ namespace CreativeSpore.SuperTilemapEditor
             EditorGUI.BeginChangeCheck();
             EditorGUILayout.PropertyField(m_sortingLayer);
             EditorGUILayout.PropertyField(m_orderInLayer);
+            EditorGUILayout.PropertyField(m_maskInteraction);
             if (EditorGUI.EndChangeCheck())
             {
                 m_orderInLayer.intValue = (m_orderInLayer.intValue << 16) >> 16; // convert from int32 to int16 keeping sign
@@ -673,7 +686,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 if (EditorGUI.EndChangeCheck())
                 {
                     serializedObject.ApplyModifiedProperties();
-                    m_tilemap.UpdateChunkRenderereProperties();
+                    m_tilemap.UpdateChunkRendererProperties();
                 }
 
             }
@@ -712,7 +725,7 @@ namespace CreativeSpore.SuperTilemapEditor
             HandleUtility.AddDefaultControl(controlID);
             EventType currentEventType = Event.current.GetTypeForControl(controlID);
             bool skip = false;
-            int saveControl = GUIUtility.hotControl;
+            //int saveControl = GUIUtility.hotControl; //FIX: Should not grab hot control with an active capture
 
             try
             {
@@ -766,7 +779,7 @@ namespace CreativeSpore.SuperTilemapEditor
                     }
 
                     EditorGUIUtility.AddCursorRect(new Rect(0f, 0f, (float)Screen.width, (float)Screen.height), MouseCursor.Arrow);
-                    GUIUtility.hotControl = controlID;
+                    //GUIUtility.hotControl = controlID; //FIX: Should not grab hot control with an active capture
                     {
                         Plane chunkPlane = new Plane(m_tilemap.transform.forward, m_tilemap.transform.position);
                         Vector2 mousePos = Event.current.mousePosition; mousePos.y = Screen.height - mousePos.y;
@@ -796,6 +809,11 @@ namespace CreativeSpore.SuperTilemapEditor
                             Vector2 brushSnappedPos = BrushUtil.GetSnappedPosition(brush.Offset + m_localBrushPos, m_tilemap.CellSize);
                             brush.transform.rotation = m_tilemap.transform.rotation;
                             brush.transform.localScale = m_tilemap.transform.lossyScale;
+                            
+                            // FIX: not visible brush on Prefab Mode
+                            if (brush.gameObject.scene != m_tilemap.gameObject.scene)
+                                UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(brush.gameObject, m_tilemap.gameObject.scene);
+
                             if ( !BrushBehaviour.Instance.IsDragging)
                             {
                                 brush.transform.position = m_tilemap.transform.TransformPoint(new Vector3(brushSnappedPos.x, brushSnappedPos.y, -0.01f));
@@ -827,7 +845,7 @@ namespace CreativeSpore.SuperTilemapEditor
 
                             if (
                                 (EditorWindow.focusedWindow == EditorWindow.mouseOverWindow) && // fix painting tiles when closing another window popup over the SceneView like GameObject Selection window
-                                (e.type == EventType.MouseDown || e.type == EventType.MouseDrag && isMouseGridChanged || e.type == EventType.MouseUp || isModifiersChanged)
+                                (e.type == EventType.MouseDown || e.type == EventType.MouseDrag && isMouseGridChanged || e.type == EventType.MouseUp || isModifiersChanged & GetBrushMode() == eBrushMode.Paint)
                             )
                             {
                                 if (e.button == 0)
@@ -886,7 +904,9 @@ namespace CreativeSpore.SuperTilemapEditor
                                     m_isDragging = false;
                                     ResetBrushMode();
                                     // Copy one tile
-                                    if (selectionSize.x <= m_tilemap.CellSize.x && selectionSize.y <= m_tilemap.CellSize.y)
+                                    if (selectionSize.x <= m_tilemap.CellSize.x && selectionSize.y <= m_tilemap.CellSize.y 
+                                        && !m_tilemap.GetTileObject(m_localBrushPos) // allow copying tileObject properties (using copy rect)
+                                        )
                                     {
                                         uint tileData = m_tilemap.GetTileData(m_localBrushPos);
                                         //Select the first tile not null if any and select the tilemap
@@ -896,13 +916,16 @@ namespace CreativeSpore.SuperTilemapEditor
                                             for (int i = 0; i < m_tilemap.ParentTilemapGroup.Tilemaps.Count; ++i) // from top to bottom
                                             {
                                                 STETilemap tilemap = m_tilemap.ParentTilemapGroup.Tilemaps[i];
-                                                tileData = tilemap.GetTileData(m_localBrushPos);
-                                                if(tileData != Tileset.k_TileData_Empty)
+                                                if (tilemap.IsVisible)
                                                 {
-                                                    tilemap.ParentTilemapGroup.SelectedTilemap = tilemap;
-                                                    if (Selection.activeGameObject == m_tilemap.gameObject)
-                                                        Selection.activeGameObject = tilemap.gameObject;
-                                                    break;
+                                                    tileData = tilemap.GetTileData(m_localBrushPos);
+                                                    if (tileData != Tileset.k_TileData_Empty)
+                                                    {
+                                                        tilemap.ParentTilemapGroup.SelectedTilemap = tilemap;
+                                                        if (Selection.activeGameObject == m_tilemap.gameObject)
+                                                            Selection.activeGameObject = tilemap.gameObject;
+                                                        break;
+                                                    }
                                                 }
                                             }
                                         }
@@ -1007,7 +1030,7 @@ namespace CreativeSpore.SuperTilemapEditor
             }
 
             SceneView.RepaintAll();
-            GUIUtility.hotControl = saveControl;
+            //GUIUtility.hotControl = saveControl; //FIX: Should not grab hot control with an active capture
         }
 
         private void DoMapSceneGUI()
@@ -1143,7 +1166,7 @@ namespace CreativeSpore.SuperTilemapEditor
                     if (e.control && HandleUtility.nearestControl == EditorGUIUtility.hotControl && tile.collData.type != eTileCollider.None)
                     {
                         EditorGUIUtility.hotControl = 0;
-                        if (selectedIdx >= 0 && tile.collData.vertices.Length > 3)
+                        if (selectedIdx >= 0 && tile.collData.vertices.Length > 2)
                         {
                             updateColliders = true;
                             Undo.RecordObject(m_tilemap.Tileset, "Update Tile Collider");
@@ -1169,7 +1192,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 "<color=#FFD500FF>  - Hold " + ((Application.platform == RuntimePlatform.OSXEditor) ? "Option" : "Alt") + " + Click to enable/disable tile colliders" + "</color>\n" +
                 "<color=orange>"+
                 "  - Hold Shift + Click to add a new vertex" + "\n" +
-                "  - Hold " + ((Application.platform == RuntimePlatform.OSXEditor) ? "Command" : "Ctrl") + " + Click to remove a vertex. (should be more than 3)" + "\n" +
+                "  - Hold " + ((Application.platform == RuntimePlatform.OSXEditor) ? "Command" : "Ctrl") + " + Click to remove a vertex. (Should be at least 2 vertices)" + "\n" +
                 "  - Click and drag over a vertex to move it" + "\n" +
                 "</color>" +
                 "</b>";

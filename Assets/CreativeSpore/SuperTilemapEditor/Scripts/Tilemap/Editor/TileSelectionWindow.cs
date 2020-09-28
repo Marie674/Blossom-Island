@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEditor;
+using System;
 
 namespace CreativeSpore.SuperTilemapEditor
 {
@@ -24,10 +25,11 @@ namespace CreativeSpore.SuperTilemapEditor
             Show(null);
         }
 
-        public static void Show(Tileset tileset = null)
+        public static void Show(Tileset tileset = null, SerializedProperty property = null)
         {
             s_instance = (TileSelectionWindow)EditorWindow.GetWindow(typeof(TileSelectionWindow), false, "Tile Palette", true);
             s_instance.m_tilesetControl.Tileset = tileset;
+            s_instance.m_tileDataProperty = property;
             if (tileset == null)
             {
                 s_instance.OnSelectionChange();
@@ -63,10 +65,37 @@ namespace CreativeSpore.SuperTilemapEditor
 
         private int m_pingFramesLeft = 0;
         private static int s_pingFrameNb = 15;
+        private SerializedProperty m_tileDataProperty = null; // used by PropertyDrawers
 
         void OnEnable()
         {
-            s_instance = this;
+            s_instance = this;            
+            m_tilesetControl.OnTileSelected += HandleTileSelected;
+            m_tilesetControl.OnBrushSelected += HandleBrushSelected;
+        }
+
+        private void OnDisable()
+        {
+            m_tilesetControl.OnTileSelected -= HandleTileSelected;
+            m_tilesetControl.OnBrushSelected -= HandleBrushSelected;
+        }
+
+        private void HandleTileSelected(int id)
+        {
+            if (m_tileDataProperty != null)
+            {
+                m_tileDataProperty.intValue = id;
+                m_tileDataProperty.serializedObject.ApplyModifiedPropertiesWithoutUndo();
+            }
+        }
+
+        private void HandleBrushSelected(int id)
+        {
+            if (m_tileDataProperty != null)
+            {
+                m_tileDataProperty.intValue = id << 16;
+                m_tileDataProperty.serializedObject.ApplyModifiedPropertiesWithoutUndo();
+            }
         }
 
         void OnSelectionChange()

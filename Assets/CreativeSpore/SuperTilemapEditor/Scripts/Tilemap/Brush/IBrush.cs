@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -52,7 +52,7 @@ namespace CreativeSpore.SuperTilemapEditor
         /// Returns the tile UV for the current frame with flaps applied
         /// </summary>
         /// <returns></returns>
-        Vector2[] GetAnimUVWithFlags(float innerPadding = 0f);
+        Vector2[] GetAnimUVWithFlags(float innerPadding = 0f, int index = 0);
         /// <summary>
         /// Gets the current animation index
         /// </summary>
@@ -80,6 +80,12 @@ namespace CreativeSpore.SuperTilemapEditor
         /// <param name="gridY"></param>
         /// <param name="tileData"></param>
         /// <returns></returns>
-        Vector2[] GetMergedSubtileColliderVertices(STETilemap tilemap, int gridX, int gridY, uint tileData);
+        void GetMergedSubtileColliderVertices(STETilemap tilemap, int gridX, int gridY, uint tileData, List<Vector2> results);
+        /// <summary>
+        /// Process tiledata and returns the processed tiledata
+        /// </summary>
+        /// <param name="tileData"></param>
+        /// <returns></returns>
+        uint GetTileData(STETilemap tilemap, int gridX, int gridY, uint tileData);
     }
 }

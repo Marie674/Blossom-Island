@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEditor;
 
@@ -57,7 +57,7 @@ namespace CreativeSpore.SuperTilemapEditor
         void OnEnable()
         {
             s_instance = this;
-            minSize = new Vector2(200f, 200f);
+            minSize = new Vector2(200f, 300f);
         }
 
         void OnSelectionChange()

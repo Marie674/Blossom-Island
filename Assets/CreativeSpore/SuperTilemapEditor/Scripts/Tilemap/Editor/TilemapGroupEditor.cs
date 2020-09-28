@@ -210,7 +210,7 @@ namespace CreativeSpore.SuperTilemapEditor
             }
         }
 
-private void DoKeyboardChecks()
+        private void DoKeyboardChecks()
         {
             Event e = Event.current;
             // Cycle over tilemaps
@@ -351,7 +351,7 @@ private void DoKeyboardChecks()
                 GameObject obj = new GameObject();
                 Undo.RegisterCreatedObjectUndo(obj, "New Tilemap");
                 STETilemap newTilemap = obj.AddComponent<STETilemap>();
-                obj.transform.parent = targetObj.transform;
+                obj.transform.SetParent(targetObj.transform, false);
                 obj.name = GameObjectUtility.GetUniqueNameForSibling(obj.transform.parent, "New Tilemap");
 
                 STETilemap copiedTilemap = targetObj.SelectedTilemap;

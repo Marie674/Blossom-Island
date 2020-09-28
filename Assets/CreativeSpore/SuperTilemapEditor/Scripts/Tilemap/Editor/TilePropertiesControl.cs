@@ -122,9 +122,17 @@ namespace CreativeSpore.SuperTilemapEditor
                 EditorGUIUtility.labelWidth = 80;
                 prefabData.offset = EditorGUILayout.Vector3Field("Offset", prefabData.offset);
                 prefabData.offsetMode = (TilePrefabData.eOffsetMode)EditorGUILayout.EnumPopup("Offset Mode", prefabData.offsetMode);
+                prefabData.rotation = EditorGUILayout.Vector3Field("Rotation", prefabData.rotation);
                 EditorGUI.BeginChangeCheck();
+                GameObject prevPrefab = prefabData.prefab;
                 prefabData.prefab = (GameObject)EditorGUILayout.ObjectField("Prefab", prefabData.prefab, typeof(GameObject), false);
                 bool isPrefabChanged = EditorGUI.EndChangeCheck();
+                // Special case for 3D tiles where tilemap will be rotated over the plane XZ
+                if(isPrefabChanged && !prevPrefab && prefabData.rotation == Vector3.zero && prefabData.prefab && prefabData.prefab.GetComponentInChildren<MeshRenderer>())
+                {
+                    prefabData.rotation = new Vector3(-90, 0, 0);
+                    prefabData.showPrefabPreviewInTilePalette = true;                    
+                }
 
                 GUILayout.BeginHorizontal();
                 Texture2D prefabPreview = AssetPreview.GetAssetPreview(selectedTile.prefabData.prefab);                
@@ -369,13 +377,18 @@ namespace CreativeSpore.SuperTilemapEditor
             //Rect rCollArea = GUILayoutUtility.GetRect(1, 1, GUILayout.Width(EditorGUIUtility.currentViewWidth), GUILayout.Height(EditorGUIUtility.currentViewWidth / aspectRatio));
             Rect rCollArea = GUILayoutUtility.GetRect(1, 1, GUILayout.ExpandWidth(true), GUILayout.ExpandHeight(true));
             GUI.BeginGroup(rCollArea, Styles.Instance.colliderBgStyle);
+            rCollArea.position = Vector2.zero; // convert to group rect position
             if (e.type == EventType.Repaint)
             {
-                float pixelSize = rCollArea.width / (Tileset.TilePxSize.x + 2 * padding);
+                float pixelSize = rCollArea.width < rCollArea.height?
+                    rCollArea.width / (Tileset.TilePxSize.x + 2 * padding)
+                    :
+                    rCollArea.height / (Tileset.TilePxSize.y + 2 * padding);
                 m_mousePos = e.mousePosition;
                 m_rTile = new Rect(padding * pixelSize, padding * pixelSize, rCollArea.width - 2 * padding * pixelSize, (rCollArea.width / aspectRatio) - 2 * padding * pixelSize);
                 m_rTile.height = Mathf.Min(m_rTile.height, rCollArea.height - 2 * padding * pixelSize);
                 m_rTile.width = (m_rTile.height * aspectRatio);
+                m_rTile.center = rCollArea.center;
             }
             GUI.color = new Color(1f, 1f, 1f, 0.1f);
             GUI.DrawTexture(m_rTile, EditorGUIUtility.whiteTexture);
@@ -423,6 +436,8 @@ namespace CreativeSpore.SuperTilemapEditor
                 Vector3[] polyEdges = new Vector3[collVertices.Length + 1];
                 for (int i = 0; i < collVertices.Length; ++i)
                 {
+                    if (collVertices.Length <= 2 && i > 0)
+                        break;
                     Vector2 s0 = collVertices[i];
                     s0.x = m_rTile.x + m_rTile.width * s0.x; s0.y = m_rTile.yMax - m_rTile.height * s0.y;
                     Vector2 s1 = collVertices[(i + 1) % collVertices.Length];
@@ -447,7 +462,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 if (selectedTile.collData.type == eTileCollider.Polygon)
                 {
                     bool isAddingVertexOn = !m_isDragging && e.shift && m_activeVertexIdx == -1;
-                    bool isRemovingVertexOn = !m_isDragging && ((Application.platform == RuntimePlatform.OSXEditor)? e.command : e.control) && collVertices.Length > 3;
+                    bool isRemovingVertexOn = !m_isDragging && ((Application.platform == RuntimePlatform.OSXEditor)? e.command : e.control) && collVertices.Length > 2;
                     if (isRemovingVertexOn && m_activeVertexIdx != -1 && e.type == EventType.MouseUp)
                     {
                         selectedTile.collData.vertices = new Vector2[collVertices.Length - 1];
@@ -550,7 +565,7 @@ namespace CreativeSpore.SuperTilemapEditor
                     saveChanges = true;
                     //remove duplicated vertex
                     selectedTile.collData.vertices = selectedTile.collData.vertices.Distinct().ToArray();                    
-                    if(selectedTile.collData.vertices.Length <= 2)
+                    if(selectedTile.collData.vertices.Length <= 1)
                     {
                         selectedTile.collData.vertices = m_savedVertexData;
                     }
@@ -571,7 +586,7 @@ namespace CreativeSpore.SuperTilemapEditor
             string helpInfo =
                 "  - Click and drag over a vertex to move it" + "\n" +
                 "  - Hold Shift + Click for adding a new vertex" + "\n" +
-                "  - Hold "+((Application.platform == RuntimePlatform.OSXEditor)? "Command" : "Ctrl")+" + Click for removing a vertex. (should be more than 3)" + "\n" +
+                "  - Hold "+((Application.platform == RuntimePlatform.OSXEditor)? "Command" : "Ctrl")+ " + Click for removing a vertex. (Should be at least 2 vertices)" + "\n" +
                 "  - Check the normals for each edge. The normal is displayed in the collision side" + "\n" +
                 "";
             s_showHelp = EditorGUILayout.Foldout(s_showHelp, "Help");

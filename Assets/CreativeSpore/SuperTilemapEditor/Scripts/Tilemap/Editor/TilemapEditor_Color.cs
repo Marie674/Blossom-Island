@@ -98,10 +98,10 @@ namespace CreativeSpore.SuperTilemapEditor
             HandleUtility.AddDefaultControl(controlID);
             EventType currentEventType = Event.current.GetTypeForControl(controlID);
             bool skip = false;
-            int saveControl = GUIUtility.hotControl;
+            //int saveControl = GUIUtility.hotControl; //FIX: Should not grab hot control with an active capture
 
             //Shortcuts
-            if(e.type == EventType.ScrollWheel && e.control)
+            if (e.type == EventType.ScrollWheel && e.control)
             {
                 s_colorSettings.radius += e.delta.y * 0.1f;
                 e.Use();
@@ -120,7 +120,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 if (!skip)
                 {                    
                     EditorGUIUtility.AddCursorRect(new Rect(0f, 0f, (float)Screen.width, (float)Screen.height), MouseCursor.Arrow);
-                    GUIUtility.hotControl = controlID;
+                    //GUIUtility.hotControl = controlID; //FIX: Should not grab hot control with an active capture
                     {
                         Plane chunkPlane = new Plane(m_tilemap.transform.forward, m_tilemap.transform.position);
                         Vector2 mousePos = Event.current.mousePosition; mousePos.y = Screen.height - mousePos.y;
@@ -186,7 +186,7 @@ namespace CreativeSpore.SuperTilemapEditor
             }
 
             SceneView.RepaintAll();
-            GUIUtility.hotControl = saveControl;
+            //GUIUtility.hotControl = saveControl; //FIX: Should not grab hot control with an active capture
         }
 
         void RegisterTilemapUndo(STETilemap tilemap)

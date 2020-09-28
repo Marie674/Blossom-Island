@@ -40,6 +40,7 @@ namespace Game.NPCs.Blossoms
 
         void NewDay(int pCurrentDay)
         {
+            Data = GetComponent<BlossomData>();
             Data.PetToday = false;
             Data.TalkedToday = false;
             Data.FedToday = false;

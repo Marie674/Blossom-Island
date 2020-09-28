@@ -5,18 +5,17 @@ using System.Linq;
 
 namespace CreativeSpore.SuperTilemapEditor
 {
-    partial class TilemapChunk
+    public partial class TilemapChunk
     {
-        [SerializeField, HideInInspector]
-        private MeshFilter m_meshFilter;
-        [SerializeField, HideInInspector]
-        private MeshRenderer m_meshRenderer;
+        static Shader s_spritesDiffuseShader = null;
+        static Shader SpritesDiffuseShader { get { return s_spritesDiffuseShader ? s_spritesDiffuseShader : s_spritesDiffuseShader = Shader.Find("Sprites/Diffuse"); } }
 
         /// <summary>
         /// Next time UpdateMesh is called, the tile mesh will be rebuild
         /// </summary>
         public void InvalidateMesh()
         {
+            m_materialHash = 0;
             m_needsRebuildMesh = true;
         }
 
@@ -26,12 +25,6 @@ namespace CreativeSpore.SuperTilemapEditor
         public void InvalidateBrushes()
         {
             m_invalidateBrushes = true;
-        }
-
-        public void SetSharedMaterial(Material material)
-        {
-            m_meshRenderer.sharedMaterial = material;
-            m_needsRebuildMesh = true;
         }
 
         public void RemoveColorChannel()
@@ -110,14 +103,14 @@ namespace CreativeSpore.SuperTilemapEditor
         /// Update the mesh and return false if all tiles are empty
         /// </summary>
         /// <returns></returns>
-        public bool UpdateMesh()
+        public bool UpdateMesh(bool onlyPreview = false)
         {
             if (ParentTilemap == null)
             {
                 if (transform.parent == null) gameObject.hideFlags = HideFlags.None; //Unhide orphan tilechunks. This shouldn't happen
                 ParentTilemap = transform.parent.GetComponent<STETilemap>();
             }
-            if (gameObject.layer != ParentTilemap.gameObject.layer)
+            if(gameObject.layer != ParentTilemap.gameObject.layer)
                 gameObject.layer = ParentTilemap.gameObject.layer;
             if (!gameObject.CompareTag(ParentTilemap.gameObject.tag))
                 gameObject.tag = ParentTilemap.gameObject.tag;
@@ -133,7 +126,7 @@ namespace CreativeSpore.SuperTilemapEditor
             }
 #if UNITY_EDITOR
             // fix prefab preview, not compatible with MaterialPropertyBlock. I need to create a new material and change the main texture and color directly.
-            if (UnityEditor.PrefabUtility.GetPrefabType(gameObject) == UnityEditor.PrefabType.Prefab)
+            if ( EditorCompatibilityUtils.IsPrefab(gameObject) && !gameObject.scene.IsValid())
             {
                 gameObject.hideFlags |= HideFlags.HideInHierarchy;
                 if (m_meshRenderer.sharedMaterial == null || m_meshRenderer.sharedMaterial == ParentTilemap.Material)
@@ -149,12 +142,12 @@ namespace CreativeSpore.SuperTilemapEditor
 #endif
             //NOTE: else above
             {
-                m_meshRenderer.sharedMaterial = ParentTilemap.Material;
+                UpdateMeshMaterial();
             }
             m_meshRenderer.enabled = ParentTilemap.IsVisible;
             if (m_needsRebuildMesh)
             {
-                m_needsRebuildMesh = false;
+                m_needsRebuildMesh = false;                
                 if (FillMeshData())
                 {
                     m_invalidateBrushes = false;
@@ -180,15 +173,18 @@ namespace CreativeSpore.SuperTilemapEditor
                     else
                         mesh.SetColors((List<Color32>)null);
 #endif
-                    mesh.RecalculateNormals(); //NOTE: allow directional lights to work properly
-                    TangentSolver(mesh); //NOTE: allow bumped shaders to work with directional lights
+                    if (!onlyPreview && m_meshRenderer.sharedMaterial.shader == SpritesDiffuseShader)
+                    {
+                        mesh.RecalculateNormals(); //NOTE: allow directional lights to work properly
+                        TangentSolver(mesh); //NOTE: allow bumped shaders to work with directional lights
+                    }
                 }
                 else
                 {
                     return false;
                 }
             }
-            else if (m_needsRebuildMeshColor)
+            else if(m_needsRebuildMeshColor)
             {
                 UpdateMeshVertexColor();
 
@@ -199,10 +195,10 @@ namespace CreativeSpore.SuperTilemapEditor
                 else
                     mesh.colors32 = null;
 #else
-                if (s_colors32 != null && s_colors32.Count != 0)
-                    mesh.SetColors(s_colors32);
-                else
-                    mesh.SetColors((List<Color32>)null);
+                    if (s_colors32 != null && s_colors32.Count != 0)
+                        mesh.SetColors(s_colors32);
+                    else
+                        mesh.SetColors((List<Color32>)null);
 #endif
             }
             m_needsRebuildMeshColor = false;
@@ -212,7 +208,7 @@ namespace CreativeSpore.SuperTilemapEditor
         //NOTE: This is not working, only TopRight is working, because the size of s_triangles is not m_width * m_height
         private void UpdateSortOrder()
         {
-            if (ParentTilemap.SortOrder == STETilemap.eSortOrder.TopRight)
+            if(ParentTilemap.SortOrder == STETilemap.eSortOrder.TopRight)
             {
                 // Reverse the list in chunks of 6 elements (2 triangles = tile)
                 for (int i = 0, j = s_triangles.Count - 6; i < j; i += 6, j -= 6)
@@ -259,20 +255,20 @@ namespace CreativeSpore.SuperTilemapEditor
         //ref: https://github.com/danielbuechele/SumoVizUnity/blob/master/Assets/Helper/TangentSolver.cs
         // This script has been simplified to be used with tiles were the tangent is always (1, 0, 0, -1)
         private void TangentSolver(Mesh mesh)
-        {
-            int vertexCount = mesh.vertexCount;
-            Vector4[] tangents = new Vector4[vertexCount];
+	    {
+		    int vertexCount = mesh.vertexCount;
+		    Vector4[] tangents = new Vector4[vertexCount];
             //ref: https://github.com/danielbuechele/SumoVizUnity/blob/master/Assets/Helper/TangentSolver.cs
             //NOTE: fix issues when using a bumped shader
-            for (int i = 0; i < (vertexCount); i++)
-            {
-                tangents[i].x = 1f;
-                //tangents[i].y = 0f;
-                //tangents[i].z = 0f;
-                tangents[i].w = -1f;
-            }
-            mesh.tangents = tangents;
-        }
+		    for (int i = 0; i < (vertexCount); i++)
+		    {		
+			    tangents[i].x = 1f;
+			    //tangents[i].y = 0f;
+			    //tangents[i].z = 0f;
+			    tangents[i].w = -1f;
+		    }
+		    mesh.tangents = tangents;
+	    }
 
         private void DestroyMeshIfNeeded()
         {
@@ -353,7 +349,7 @@ namespace CreativeSpore.SuperTilemapEditor
                         int tileId = (int)(tileData & Tileset.k_TileDataMask_TileId);
                         Tile tile = Tileset.GetTile(tileId);
                         TilesetBrush tileBrush = null;
-                        if (tileId >= 0 && tile == null && brushId <= 0)
+                        if(tileId >= 0 && tile == null && brushId <= 0)
                         {
                             Debug.LogWarning(ParentTilemap.name + "\\" + name + ": TileId " + tileId + " not found! GridPos(" + (GridPosX + tx) + "," + (GridPosY + ty) + ") tilaData 0x" + tileData.ToString("X"));
                             m_tileDataList[tileIdx] = Tileset.k_TileData_Empty;
@@ -366,34 +362,43 @@ namespace CreativeSpore.SuperTilemapEditor
                                 Debug.LogWarning(ParentTilemap.name + "\\" + name + ": BrushId " + brushId + " not found! GridPos(" + (GridPosX + tx) + "," + (GridPosY + ty) + ") tilaData 0x" + tileData.ToString("X"));
                                 m_tileDataList[tileIdx] = tileData & ~Tileset.k_TileDataMask_BrushId;
                             }
-                            if (tileBrush != null && (m_invalidateBrushes || (tileData & Tileset.k_TileFlag_Updated) == 0))
+                            if (tileBrush != null)
                             {
-                                tileData = tileBrush.Refresh(ParentTilemap, GridPosX + tx, GridPosY + ty, tileData);
-                                //+++NOTE: this code add support for animated brushes inside a random brush
-                                // Collateral effects of supporting changing the brush id in Refresh:
-                                // - When the random brush select a tile data with another brush id, this tile won't be a random tile any more
-                                // - If the tilemap is refreshed several times, and at least a tile data contains another brush id, then all tiles will loose the brush id of the random brush
-                                if (BrushBehaviour.Instance.BrushTilemap == ParentTilemap) // avoid changing brushId when updating the BrushTilemap
+                                if (m_invalidateBrushes || (tileData & Tileset.k_TileFlag_Updated) == 0)
                                 {
-                                    tileData &= ~Tileset.k_TileDataMask_BrushId;
-                                    tileData |= (uint)(brushId << 16);
+                                    tileData = tileBrush.Refresh(ParentTilemap, GridPosX + tx, GridPosY + ty, tileData);
+                                    //+++NOTE: this code add support for animated brushes inside a random brush
+                                    // Collateral effects of supporting changing the brush id in Refresh:
+                                    // - When the random brush select a tile data with another brush id, this tile won't be a random tile any more
+                                    // - If the tilemap is refreshed several times, and at least a tile data contains another brush id, then all tiles will loose the brush id of the random brush
+                                    if (BrushBehaviour.Instance.BrushTilemap == ParentTilemap) // avoid changing brushId when updating the BrushTilemap
+                                    {
+                                        tileData &= ~Tileset.k_TileDataMask_BrushId;
+                                        tileData |= (uint)(brushId << 16);
+                                    }
+                                    int newBrushId = (int)((tileData & Tileset.k_TileDataMask_BrushId) >> 16);
+                                    if (brushId != newBrushId)
+                                    {
+                                        brushId = newBrushId;
+                                        tileBrush = Tileset.FindBrush(brushId);
+                                    }
+                                    //---
+                                    tileData |= Tileset.k_TileFlag_Updated;// set updated flag
+                                    m_tileDataList[tileIdx] = tileData; // update tileData                                
+                                    tileId = (int)(tileData & Tileset.k_TileDataMask_TileId);
+                                    tile = Tileset.GetTile(tileId);
+                                    // update created objects
+                                    if (tile != null && tile.prefabData.prefab != null)
+                                        CreateTileObject(tileIdx, tile.prefabData);
+                                    else
+                                        DestroyTileObject(tileIdx);
                                 }
-                                int newBrushId = (int)((tileData & Tileset.k_TileDataMask_BrushId) >> 16);
-                                if (brushId != newBrushId)
+
+                                if(tileData != (tileData = tileBrush.GetTileData(ParentTilemap, GridPosX + tx, GridPosY + ty, tileData)))
                                 {
-                                    brushId = newBrushId;
-                                    tileBrush = Tileset.FindBrush(brushId);
+                                    tileId = (int)(tileData & Tileset.k_TileDataMask_TileId);
+                                    tile = Tileset.GetTile(tileId);
                                 }
-                                //---
-                                tileData |= Tileset.k_TileFlag_Updated;// set updated flag
-                                m_tileDataList[tileIdx] = tileData; // update tileData                                
-                                tileId = (int)(tileData & Tileset.k_TileDataMask_TileId);
-                                tile = Tileset.GetTile(tileId);
-                                // update created objects
-                                if (tile != null && tile.prefabData.prefab != null)
-                                    CreateTileObject(tileIdx, tile.prefabData);
-                                else
-                                    DestroyTileObject(tileIdx);
                             }
                         }
 
@@ -403,7 +408,7 @@ namespace CreativeSpore.SuperTilemapEditor
                         {
                             m_animatedTiles.Add(new AnimTileData() { VertexIdx = s_vertices.Count, Brush = tileBrush, SubTileIdx = -1 });
                         }
-
+                        
                         s_currUVVertex = s_vertices.Count;
                         Rect tileUV;
                         uint[] subtileData = tileBrush != null ? tileBrush.GetSubtiles(ParentTilemap, GridPosX + tx, GridPosY + ty, tileData) : null;
@@ -477,7 +482,7 @@ namespace CreativeSpore.SuperTilemapEditor
                                                 s_colors32.Add(Color32.Lerp(tileColor32.c2, tileColor32.c3, .5f));
                                                 s_colors32.Add(tileColor32.c3);
                                             }
-                                        }
+                                        }                                        
                                     }
                                 }
                             }
@@ -510,8 +515,8 @@ namespace CreativeSpore.SuperTilemapEditor
             Tileset tileset = ParentTilemap.Tileset;
             Texture2D atlasTexture = tileset.AtlasTexture;
             int pixelW = Mathf.RoundToInt(tileUV.width * atlasTexture.width);
-            int pixelH = Mathf.RoundToInt(tileUV.height * atlasTexture.height);
-            if (pixelW != tileset.TilePxSize.x)
+            int pixelH = Mathf.RoundToInt(tileUV.height * atlasTexture.height);            
+            if(pixelW != tileset.TilePxSize.x)
             {
                 px1 = px0 + subtileOffset.x + subtileCellSize.x * pixelW / tileset.TilePxSize.x;
             }
@@ -610,7 +615,7 @@ namespace CreativeSpore.SuperTilemapEditor
                         TilesetBrush tileBrush = null;
                         if (brushId > 0)
                         {
-                            tileBrush = Tileset.FindBrush(brushId);
+                            tileBrush = Tileset.FindBrush(brushId);                            
                         }
 
                         uint[] subtileData = tileBrush != null ? tileBrush.GetSubtiles(ParentTilemap, GridPosX + tx, GridPosY + ty, tileData) : null;

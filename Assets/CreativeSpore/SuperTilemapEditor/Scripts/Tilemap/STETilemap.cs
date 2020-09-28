@@ -55,7 +55,11 @@ namespace CreativeSpore.SuperTilemapEditor
 
     [AddComponentMenu("SuperTilemapEditor/STETilemap", 10)]
     [DisallowMultipleComponent]
+#if UNITY_2018_3_OR_NEWER
+    [ExecuteAlways]
+#else
     [ExecuteInEditMode] //NOTE: this is needed so OnDestroy is called and there is no memory leaks
+#endif
     public class STETilemap : MonoBehaviour
     {
         /// <summary>
@@ -64,8 +68,8 @@ namespace CreativeSpore.SuperTilemapEditor
         /// Warning! changing this value will break the tilemaps made so far. Change this before creating them.
         /// For performance, you can use a value of 8 to enable dynamic batching (chunks will have less than 300 vertices allowing that)
         /// </summary>
-        public const int k_chunkSize = 60;
-        public const string k_UndoOpName = "Paint Op. ";
+        public const int k_chunkSize = 60; 
+        public const string k_UndoOpName = "Paint Op. ";        
 
         /// <summary>
         /// Disable the instantiation of prefabs attached to tiles. Usefull when creating procedural maps and you want
@@ -74,7 +78,7 @@ namespace CreativeSpore.SuperTilemapEditor
         /// </summary>
         public static bool DisableTilePrefabCreation = false;
 
-        #region Public Events
+#region Public Events
         public delegate void OnMeshUpdatedDelegate(STETilemap source);
         public OnMeshUpdatedDelegate OnMeshUpdated;
         public delegate void OnTileChangedDelegate(STETilemap tilemap, int gridX, int gridY, uint tileData);
@@ -82,6 +86,26 @@ namespace CreativeSpore.SuperTilemapEditor
         #endregion
 
         #region Public Properties
+
+        public uint this[int gridX, int gridY]
+        {
+            get { return GetTileData(gridX, gridY); }
+            set { SetTileData(gridX, gridY, value); }
+        }
+
+        public uint this[Vector2Int gridPosition]
+        {
+            get { return GetTileData(gridPosition); }
+            set { SetTileData(gridPosition, value); }
+        }
+
+        public uint this[Vector2 localPosition]
+        {
+            get { return GetTileData(localPosition); }
+            set { SetTileData(localPosition, value); }
+        }
+        
+
         public Tileset Tileset
         {
             get { return m_tileset; }
@@ -93,9 +117,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 {
                     if (Tileset != null && CellSize == default(Vector2))
                     {
-
                         CellSize = m_tileset.TilePxSize / m_tileset.PixelsPerUnit;
-                        UpdateMeshImmediate();
                     }
                 }
             }
@@ -126,16 +148,16 @@ namespace CreativeSpore.SuperTilemapEditor
         /// <summary>
         /// Color applied to the material before rendering
         /// </summary>
-        public Color TintColor
-        {
+        public Color TintColor 
+        { 
             get { return m_tintColor; }
-            set { m_tintColor = value; }
+            set { m_tintColor = value;} 
         }
 
         /// <summary>
         /// Show the tilemap grid
         /// </summary>
-        public bool ShowGrid = true;
+        public bool ShowGrid = true;        
 
         //NOTE: the inner padding fix the zoom imperfection, but as long as zoom is bigger, the bigger this value has to be        
         /// <summary>
@@ -154,6 +176,10 @@ namespace CreativeSpore.SuperTilemapEditor
         /// The type of collider used when ColliderType is eColliderType._2D
         /// </summary>
         public e2DColliderType Collider2DType = e2DColliderType.EdgeCollider2D;
+        /// <summary>
+        /// If true, a 2D collider will be created for each tile. It is used only for PolygonCollider2D Type
+        /// </summary>
+        public bool Collider2DOptimizationDisabled = false;
         /// <summary>
         /// Sets the isTrigger property of the collider. You need call Refresh to update the colliders after changing it.
         /// </summary>
@@ -185,7 +211,7 @@ namespace CreativeSpore.SuperTilemapEditor
         /// <summary>
         /// Enables auto trim, making the tilemap to shrink to the visible are when calling UpdateMesh
         /// </summary>
-        public bool AutoTrim { get { return m_autoShrink; } set { m_autoShrink = value; } }
+        public bool AutoTrim { get { return m_autoShrink; } set { m_autoShrink = value; } }        
         /// <summary>
         /// If true, undo will be registered when painting to be able to undo any change. But activating this would become a performance killer in big maps.
         /// For these cases, disabling the undo would be a good option to improve the performance while painting
@@ -242,6 +268,14 @@ namespace CreativeSpore.SuperTilemapEditor
         [Tooltip("Sort order for all tiles rendered by the Tilemap Chunk")]
         public eSortOrder SortOrder = eSortOrder.BottomLeft;
 
+        public enum eColliderGenerationMethod
+        {
+            Default,
+            Clipper,
+        }
+        [Tooltip("Default: is faster, but less precise with PolygonCollider2D. In general, use Clipper only if Default is not working for PolygonCollider2D.")]
+        public eColliderGenerationMethod ColliderGenerationMethod = eColliderGenerationMethod.Default;
+
         public int SortingLayerID
         {
             get { return m_sortingLayer; }
@@ -252,7 +286,7 @@ namespace CreativeSpore.SuperTilemapEditor
 #if UNITY_EDITOR
                 m_sortingLayerName = EditorUtils.GetSortingLayerNameById(m_sortingLayer);
 #endif
-                if (m_sortingLayer != prevValue)
+                if (m_sortingLayer != prevValue) 
                     RefreshChunksSortingAttributes();
             }
         }
@@ -264,11 +298,11 @@ namespace CreativeSpore.SuperTilemapEditor
             {
                 m_sortingLayerName = value;
 #if UNITY_EDITOR
-                m_sortingLayer = EditorUtils.GetSortingLayerIdByName(m_sortingLayerName);
+                m_sortingLayer = EditorUtils.GetSortingLayerIdByName(m_sortingLayerName);                
 #endif
                 RefreshChunksSortingAttributes();
             }
-        }
+        }        
 
         public int OrderInLayer
         {
@@ -284,10 +318,10 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public void RefreshChunksSortingAttributes()
         {
-            var valueIter = m_dicChunkCache.Values.GetEnumerator();
+            var valueIter = m_dicChunkCache.Values.GetEnumerator(); 
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     chunk.SortingLayerID = m_sortingLayer;
@@ -318,9 +352,11 @@ namespace CreativeSpore.SuperTilemapEditor
         /// </summary>
         public bool PixelSnap { get { return m_pixelSnap; } set { m_pixelSnap = value; } }
 
+        public SpriteMaskInteraction MaskInteraction { get { return m_maskInteraction; } set { m_maskInteraction = value; } }
+
         #endregion
 
-        #region Private Fields
+#region Private Fields
 
         [SerializeField, SortingLayer]
         private int m_sortingLayer = 0;
@@ -334,6 +370,8 @@ namespace CreativeSpore.SuperTilemapEditor
         private Color m_tintColor;
         [SerializeField]
         private bool m_pixelSnap;
+        [SerializeField]
+        private SpriteMaskInteraction m_maskInteraction;
         [SerializeField]
         private bool m_isVisible = true;
         [SerializeField]
@@ -366,7 +404,7 @@ namespace CreativeSpore.SuperTilemapEditor
         [SerializeField]
         private TilemapGroup m_parentTilemapGroup;
         [SerializeField]
-        private Vector2 m_parallaxFactor = Vector2.one;
+        private Vector2 m_parallaxFactor = Vector2.one;        
         [System.Serializable]
         public class ChunkRendererPropertiesData
         {
@@ -388,9 +426,9 @@ namespace CreativeSpore.SuperTilemapEditor
 #if UNITY_EDITOR
         private bool m_markSceneDirtyOnNextUpdateMesh = false;
 #endif
-        #endregion
+#endregion
 
-        #region Monobehaviour Methods
+#region Monobehaviour Methods
 
         void Awake()
         {
@@ -398,7 +436,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 chunk.gameObject.hideFlags |= HideFlags.HideInHierarchy;
             }
 
@@ -416,10 +454,10 @@ namespace CreativeSpore.SuperTilemapEditor
             if (Application.isPlaying && m_applyContactsEmptyFix)
             {
                 m_applyContactsEmptyFix = false;
-                var valueIter = m_dicChunkCache.Values.GetEnumerator();
+                var valueIter = m_dicChunkCache.Values.GetEnumerator(); 
                 while (valueIter.MoveNext())
                 {
-                    TilemapChunk chunk = valueIter.Current;
+                    TilemapChunk chunk = valueIter.Current as TilemapChunk;
                     if (chunk)
                     {
                         chunk.ApplyContactsEmptyFix();
@@ -456,15 +494,16 @@ namespace CreativeSpore.SuperTilemapEditor
             if (!m_preRenderPosSet)
             {
                 m_preRenderPosSet = true;
-                m_preRenderPos = transform.position;
+                m_preRenderPos = transform.localPosition;
             }
             //if(!cam.name.Equals("SceneCamera")) TODO: add an option to disable parallax in SceveView
-            transform.position = m_preRenderPos + (Vector3)(Vector2.Scale(cam.transform.position, (Vector2.one - m_parallaxFactor)));
+            //NOTE: tilemap.transform.position shouldn't be modified. When the parent has a rotation, it leads to float precision, changing slowly the position.
+            transform.localPosition = m_preRenderPos + (Vector3)(Vector2.Scale(cam.transform.position, (Vector2.one - m_parallaxFactor)));
         }
 
         private void _OnPostRender(Camera cam)
         {
-            transform.position = m_preRenderPos;
+            transform.localPosition = m_preRenderPos;
             m_preRenderPosSet = false;
         }
 
@@ -482,13 +521,13 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     DestroyImmediate(chunk.gameObject);
                 }
             }
-        }
+        }        
 
         void OnValidate()
         {
@@ -496,7 +535,7 @@ namespace CreativeSpore.SuperTilemapEditor
             m_parentTilemapGroup = GetComponentInParent<TilemapGroup>();
 #if UNITY_EDITOR
             // fix: for tilemaps created with version 1.3.5 or below
-            if (m_tintColor == default(Color))
+            if(m_tintColor == default(Color))
             {
                 Debug.Log("Fixing tilemap made with version below 1.3.5: " + name);
                 if (m_material)
@@ -550,12 +589,12 @@ namespace CreativeSpore.SuperTilemapEditor
 
         void DoDrawGizmos()
         {
-            Vector3 savedPos = transform.position;
-            transform.position += (Vector3)(Vector2.Scale(Camera.current.transform.position, (Vector2.one - m_parallaxFactor))); //apply parallax
+            Vector3 savedPos = transform.localPosition;
+            transform.localPosition += (Vector3)(Vector2.Scale(Camera.current.transform.position, (Vector2.one - m_parallaxFactor))); //apply parallax
             Rect rBound = new Rect(MapBounds.min, MapBounds.size);
             HandlesEx.DrawRectWithOutline(transform, rBound, new Color(0, 0, 0, 0), new Color(1, 1, 1, 0.5f));
 
-            if (ShowGrid)
+            if ( ShowGrid )
             {
                 Plane tilemapPlane = new Plane(this.transform.forward, this.transform.position);
                 float distCamToTilemap = 0f;
@@ -584,7 +623,7 @@ namespace CreativeSpore.SuperTilemapEditor
                             this.transform.TransformPoint(new Vector3(MapBounds.max.x, MapBounds.min.y + i * CellSize.y, 0))
                             );
                     }
-                }
+                }                
                 Gizmos.color = Color.white;
             }
 
@@ -592,7 +631,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     int chunkX = Mathf.RoundToInt(chunk.GridPosX / k_chunkSize);
@@ -603,12 +642,12 @@ namespace CreativeSpore.SuperTilemapEditor
                 }
             }
             //
-            transform.position = savedPos; // restore position
+            transform.localPosition = savedPos; // restore position
         }
 #endif
-        #endregion
+#endregion
 
-        #region Public Methods
+#region Public Methods
 
         /// <summary>
         /// Force an update of all tilechunks. This is called after changing sensitive data like CellSize, Collider depth, etc
@@ -621,7 +660,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     if (refreshMesh) chunk.InvalidateMesh();
@@ -636,12 +675,12 @@ namespace CreativeSpore.SuperTilemapEditor
         /// <summary>
         /// Call this methods after changing any render property to update all created tilechunks.
         /// </summary>
-        public void UpdateChunkRenderereProperties()
+        public void UpdateChunkRendererProperties()
         {
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     chunk.UpdateRendererProperties();
@@ -660,7 +699,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     Bounds tilechunkBounds = chunk.GetBounds();
@@ -680,7 +719,7 @@ namespace CreativeSpore.SuperTilemapEditor
         /// <summary>
         /// Clear the tilemap from all tilechunks and also remove all objects in the hierarchy
         /// </summary>
-        [ContextMenu("Clear Map")]
+        [ContextMenu("Clear Map")]        
         public void ClearMap(bool keepBounds = false)
         {
             if (!keepBounds)
@@ -713,7 +752,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     chunk.RemoveColorChannel();
@@ -729,7 +768,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     chunk.ClearColorChannel(clearColor);
@@ -933,7 +972,7 @@ namespace CreativeSpore.SuperTilemapEditor
         /// <param name="vLocalPos"></param>
         public void Erase(Vector2 vLocalPos)
         {
-            SetTileData(vLocalPos, Tileset.k_TileData_Empty);
+            SetTileData( vLocalPos, Tileset.k_TileData_Empty );
         }
 
         /// <summary>
@@ -979,6 +1018,11 @@ namespace CreativeSpore.SuperTilemapEditor
                 if (gridY < 0) chunkGridY = k_chunkSize - 1 - chunkGridY;
                 return chunk.GetTileData(chunkGridX, chunkGridY);
             }
+        }
+
+        public uint GetTileData(Vector2Int vGridPos)
+        {
+            return GetTileData(vGridPos.x, vGridPos.y);
         }
 
         /// <summary>
@@ -1119,7 +1163,7 @@ namespace CreativeSpore.SuperTilemapEditor
             var valueIter = m_dicChunkCache.Values.GetEnumerator();
             while (valueIter.MoveNext())
             {
-                TilemapChunk chunk = valueIter.Current;
+                TilemapChunk chunk = valueIter.Current as TilemapChunk;
                 if (chunk)
                 {
                     if (!chunk.UpdateMesh())
@@ -1184,7 +1228,7 @@ namespace CreativeSpore.SuperTilemapEditor
             m_minGridY = Mathf.Min(m_minGridY, 0);
             m_maxGridX = Mathf.Max(m_maxGridX, 0);
             m_maxGridY = Mathf.Max(m_maxGridY, 0);
-
+            
             Vector2 minTilePos = Vector2.Scale(new Vector2(m_minGridX, m_minGridY), CellSize);
             Vector2 maxTilePos = Vector2.Scale(new Vector2(m_maxGridX, m_maxGridY), CellSize);
             Vector3 savedSize = m_mapBounds.size;
@@ -1198,10 +1242,10 @@ namespace CreativeSpore.SuperTilemapEditor
                 var valueIter = m_dicChunkCache.Values.GetEnumerator();
                 while (valueIter.MoveNext())
                 {
-                    TilemapChunk chunk = valueIter.Current;
+                    TilemapChunk chunk = valueIter.Current as TilemapChunk;
                     if (chunk)
                     {
-                        chunk.InvalidateBrushes();
+                        chunk.InvalidateBrushes(); //TODO: this is very slow. Find a way to update only the tiles on the edges?
                     }
                 }
             }
@@ -1230,7 +1274,7 @@ namespace CreativeSpore.SuperTilemapEditor
                 {
                     uint flippedTileData = flippedList[idx];
                     if (
-                        changeFlags
+                        changeFlags 
                         && (flippedTileData != Tileset.k_TileData_Empty)
                         && (flippedTileData & Tileset.k_TileDataMask_BrushId) == 0 // don't activate flip flags on brushes
                         )
@@ -1329,11 +1373,22 @@ namespace CreativeSpore.SuperTilemapEditor
             return false;
         }
 
+        public int GetChunkCount() { return m_dicChunkCache.Count; }
+        public TilemapChunk GetChunk(int index) { return m_dicChunkCache[index] as TilemapChunk; }
+        public TilemapChunk FindChunk(int gridX, int gridY)
+        {
+            int chunkX = (gridX < 0 ? (gridX + 1 - k_chunkSize) : gridX) / k_chunkSize;
+            int chunkY = (gridY < 0 ? (gridY + 1 - k_chunkSize) : gridY) / k_chunkSize;
+
+            object key = new { chunkX, chunkY }.GetHashCode();
+            return m_dicChunkCache[key] as TilemapChunk;
+        }
+
         #endregion
 
-        #region Private Methods      
+#region Private Methods      
 
-        Dictionary<uint, TilemapChunk> m_dicChunkCache = new Dictionary<uint, TilemapChunk>();
+        System.Collections.Specialized.OrderedDictionary m_dicChunkCache = new System.Collections.Specialized.OrderedDictionary();        
         private TilemapChunk GetOrCreateTileChunk(int gridX, int gridY, bool createIfDoesntExist = false)
         {
             if (m_dicChunkCache.Count == 0 && transform.childCount > 0)
@@ -1342,10 +1397,9 @@ namespace CreativeSpore.SuperTilemapEditor
             int chunkX = (gridX < 0 ? (gridX + 1 - k_chunkSize) : gridX) / k_chunkSize;
             int chunkY = (gridY < 0 ? (gridY + 1 - k_chunkSize) : gridY) / k_chunkSize;
 
-            TilemapChunk tilemapChunk = null;
 
-            uint key = (uint)((chunkY << 16) | (chunkX & 0x0000FFFF));
-            m_dicChunkCache.TryGetValue(key, out tilemapChunk);
+            object key = new { chunkX, chunkY }.GetHashCode();
+            TilemapChunk tilemapChunk = m_dicChunkCache[key] as TilemapChunk;
 
             if (tilemapChunk == null && createIfDoesntExist)
             {
@@ -1372,7 +1426,8 @@ namespace CreativeSpore.SuperTilemapEditor
                 tilemapChunk.GridPosX = chunkX * k_chunkSize;
                 tilemapChunk.GridPosY = chunkY * k_chunkSize;
                 tilemapChunk.SetDimensions(k_chunkSize, k_chunkSize);
-                tilemapChunk.SetSharedMaterial(Material);
+                tilemapChunk.UpdateMeshMaterial();
+                tilemapChunk.InvalidateMesh();
                 tilemapChunk.SortingLayerID = m_sortingLayer;
                 tilemapChunk.OrderInLayer = m_orderInLayer;
                 tilemapChunk.UpdateRendererProperties();
@@ -1386,19 +1441,19 @@ namespace CreativeSpore.SuperTilemapEditor
         private void BuildTilechunkDictionary()
         {
             m_dicChunkCache.Clear();
-            for (int i = 0; i < transform.childCount; ++i)
+            for(int i = 0; i < transform.childCount; ++i)
             {
                 TilemapChunk chunk = transform.GetChild(i).GetComponent<TilemapChunk>();
                 if (chunk)
                 {
                     int chunkX = (chunk.GridPosX < 0 ? (chunk.GridPosX + 1 - k_chunkSize) : chunk.GridPosX) / k_chunkSize;
                     int chunkY = (chunk.GridPosY < 0 ? (chunk.GridPosY + 1 - k_chunkSize) : chunk.GridPosY) / k_chunkSize;
-                    uint key = (uint)((chunkY << 16) | (chunkX & 0x0000FFFF));
+                    object key = new { chunkX, chunkY }.GetHashCode();
                     m_dicChunkCache[key] = chunk;
                 }
             }
         }
 
-        #endregion
+#endregion
     }
 }

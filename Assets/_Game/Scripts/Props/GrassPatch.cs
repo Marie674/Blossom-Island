@@ -9,19 +9,20 @@ public class GrassPatch : MonoBehaviour
     public List<GameObject> GrassPatches;
     public List<GrassTuft> Children = new List<GrassTuft>();
     private List<GrassTuft> SleepingChildren = new List<GrassTuft>();
-    private int AwakeChildren = 0;
+    public int AwakeChildren = 0;
 
     public int GrowChance = 50;
 
     public int SpreadChance = 10;
 
     public bool Pregrow = false;
+
+    bool init = false;
     void OnEnable()
     {
 
         GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-        TimeManager.OnDayChanged += Grow;
-        TimeManager.OnDayChanged += Spread;
+        TimeManager.OnDayChanged += newDay;
         foreach (GrassTuft child in Children)
         {
             SleepingChildren.Add(child);
@@ -44,8 +45,7 @@ public class GrassPatch : MonoBehaviour
 
     void OnDisable()
     {
-        TimeManager.OnDayChanged -= Grow;
-        TimeManager.OnDayChanged -= Spread;
+        TimeManager.OnDayChanged -= newDay;
 
         Children = Children.Where(x => x != null).ToList();
         foreach (HarvestObject child in Children)
@@ -54,6 +54,18 @@ public class GrassPatch : MonoBehaviour
         }
     }
 
+    void newDay(int pDay)
+    {
+        if (init == false)
+        {
+            GetComponent<GrassPatchSaver>().OnRecordPersistentData();
+            GetComponent<GrassPatchSaver>().OnApplyPersistentData();
+            init = true;
+        }
+
+        Grow();
+        Spread();
+    }
     private void ChildDestroyed()
     {
         AwakeChildren -= 1;
@@ -63,7 +75,7 @@ public class GrassPatch : MonoBehaviour
         }
     }
 
-    public void Grow(int pDayIndex)
+    public void Grow()
     {
 
 
@@ -86,7 +98,7 @@ public class GrassPatch : MonoBehaviour
         }
     }
 
-    private void Spread(int pDayIndex)
+    private void Spread()
     {
         if (GameObject.FindWithTag("Occupied Tiles") == null)
         {
@@ -126,7 +138,7 @@ public class GrassPatch : MonoBehaviour
         Vector2 newGrassPos = emptyTiles[rand];
         rand = Random.Range(0, GrassPatches.Count);
         GrassPatch newPatch = GameObject.Instantiate(GrassPatches[rand], newGrassPos, transform.rotation).GetComponent<GrassPatch>();
-        newPatch.Grow(TimeManager.Instance.CurrentDay);
+        newPatch.Grow();
     }
 
 }

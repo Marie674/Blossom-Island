@@ -22,6 +22,7 @@ namespace CreativeSpore.SuperTilemapEditor
         /// </summary>
         public Vector2[] vertices;
         public eTileCollider type;
+
         public TileColliderData Clone()
         {
             if(this.vertices == null) this.vertices = new Vector2[0];
@@ -57,7 +58,7 @@ namespace CreativeSpore.SuperTilemapEditor
         }
 
         /// <summary>
-        /// Snap vertices positions according to the tileset tile size in pixels. This way, the tile colliders will be seamless avoiding precision erros.
+        /// Snap vertices positions according to the tileset tile size in pixels. This way, the tile colliders will be seamless avoiding precision errors.
         /// </summary>
         /// <param name="tileset"></param>
         public void SnapVertices(Tileset tileset)
@@ -120,6 +121,45 @@ namespace CreativeSpore.SuperTilemapEditor
                 vertices[i].y = tempX;
             }
         }
+
+        public void ApplyFlippingFlags(uint tileData, List<Vector2> vertices)
+        {
+            if ((tileData & Tileset.k_TileFlag_FlipH) != 0) FlipH(vertices);
+            if ((tileData & Tileset.k_TileFlag_FlipV) != 0) FlipV(vertices);
+            if ((tileData & Tileset.k_TileFlag_Rot90) != 0) Rot90(vertices);
+        }
+
+        public void FlipH(List<Vector2> vertices)
+        {
+            int i = 0;
+            foreach (var v in vertices)
+            {
+                vertices[i] = new Vector2(1f - v.x, v.y);
+                ++i;
+            }
+            vertices.Reverse();
+        }
+
+        public void FlipV(List<Vector2> vertices)
+        {
+            int i = 0;
+            foreach (var v in vertices)
+            {
+                vertices[i] = new Vector2(v.x, 1f - v.y);
+                ++i;
+            }
+            vertices.Reverse();
+        }
+
+        public void Rot90(List<Vector2> vertices)
+        {
+            int i = 0;
+            foreach (var v in vertices)
+            {
+                vertices[i] = new Vector2(v.y, 1f - v.x);
+                ++i;
+            }            
+        }
     }
 
     [Serializable]
@@ -133,6 +173,7 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public GameObject prefab;
         public Vector3 offset;
+        public Vector3 rotation;
         public eOffsetMode offsetMode;
         /// <summary>
         /// If the tile should be hidden or not if the prefab is attached

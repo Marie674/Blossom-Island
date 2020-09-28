@@ -3482,16 +3482,19 @@ MonoBehaviour:
   ColliderDepth: 0.1
   ColliderType: 0
   Collider2DType: 0
+  Collider2DOptimizationDisabled: 0
   ShowColliderNormals: 1
   ColliderDisplayMode: 0
   IsUndoEnabled: 0
   SortOrder: 0
+  ColliderGenerationMethod: 0
   m_sortingLayer: 0
   m_sortingLayerName: Default
   m_orderInLayer: 0
   m_material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_tintColor: {r: 1, g: 1, b: 1, a: 1}
   m_pixelSnap: 0
+  m_maskInteraction: 0
   m_isVisible: 1
   m_allowPaintingOutOfBounds: 1
   m_autoShrink: 0
@@ -3686,10 +3689,10 @@ RectTransform:
   m_Father: {fileID: 6725761482928768466}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 5, y: -32}
+  m_SizeDelta: {x: 0, y: 64}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &3651589102231392564
 RectTransform:

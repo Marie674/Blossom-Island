@@ -9,6 +9,7 @@ namespace CreativeSpore.SuperTilemapEditor
     public class ParameterContainer
     {
         private const string k_warning_msg_wrongName = "Parameter with name {0} of type {1} and value {2} already exists";
+        private const string k_warning_msg_wrongType = "Parameter with name {0} of type {1} is not supported. User type bool, int, float, string or UnityEngine.Object";
         private const string k_warning_msg_paramNotFound = "Parameter with name {0} not found!";
 
         public List<Parameter> ParameterList { get { return m_paramList; } }
@@ -98,7 +99,7 @@ namespace CreativeSpore.SuperTilemapEditor
             Parameter param = FindParam(name);
             if (param != null)
             {
-                string.Format(k_warning_msg_wrongName, param.name, param.GetParamType(), param.ToString());
+                Debug.LogWarningFormat(k_warning_msg_wrongName, param.name, param.GetParamType(), param.ToString());
             }
             else
             {
@@ -172,6 +173,43 @@ namespace CreativeSpore.SuperTilemapEditor
                 param.SetValue(value);
             else
                 AddParam<UnityEngine.Object>(name, value);
+        }
+
+        public T GetParam<T>(string name, T defaultValue)
+        {
+            Parameter param = FindParam(name);            
+            if (param == null)
+            {
+                return defaultValue;
+            }
+            else
+            {
+                if (typeof(T) == typeof(bool))
+                {
+                    return (T)Convert.ChangeType(param.GetAsBool(), typeof(T));
+                }
+                if (typeof(T) == typeof(int))
+                {
+                    return (T)Convert.ChangeType(param.GetAsInt(), typeof(T));
+                }
+                if (typeof(T) == typeof(float))
+                {
+                    return (T)Convert.ChangeType(param.GetAsFloat(), typeof(T));
+                }
+                if (typeof(T) == typeof(string))
+                {
+                    return (T)Convert.ChangeType(param.GetAsString(), typeof(T));
+                }
+                if (typeof(T).IsSubclassOf(typeof(UnityEngine.Object)))
+                {
+                    return (T)Convert.ChangeType(param.GetAsObject(), typeof(T));
+                }
+                else
+                {
+                    Debug.LogWarningFormat(k_warning_msg_wrongType, param.name, param.GetParamType());
+                    return defaultValue;
+                }
+            }
         }
 
         public int GetIntParam(string name, int defaultValue = 0)
