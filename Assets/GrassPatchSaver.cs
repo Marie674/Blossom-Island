@@ -34,14 +34,11 @@ public class GrassPatchSaver : MonoBehaviour
         {
             if (child.gameObject.activeSelf == true)
             {
-                print("child " + i + " awake");
                 DialogueLua.SetVariable(VariableName + "Tuft" + i, true);
                 awake += 1;
             }
             else
             {
-                print("child " + i + " NOT awake");
-
                 DialogueLua.SetVariable(VariableName + "Tuft" + i, false);
 
             }

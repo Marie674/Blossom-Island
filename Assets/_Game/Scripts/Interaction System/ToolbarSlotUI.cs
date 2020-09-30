@@ -35,7 +35,15 @@ public class ToolbarSlotUI : MonoBehaviour
     {
         ItemIcon = transform.Find("ItemIcon").GetComponent<Image>();
         ActiveFrame = transform.Find("ActiveFrame").gameObject;
-        ChangeItem(null);
+        if (ReferencedItemStack != null && ReferencedItemStack.ContainedItem != null)
+        {
+            ChangeItem(ReferencedItemStack);
+        }
+        else
+        {
+            ChangeItem(null);
+        }
+
         IsInit = true;
     }
 
