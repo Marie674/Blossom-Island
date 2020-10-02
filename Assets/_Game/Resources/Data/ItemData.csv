@@ -1,0 +1,3 @@
+ID,Name,Description,Value,Markup,Weight,Icon Name,Sellable
+0,Apple,yum,2.5,400,1,Apple,TRUE
+1,Bag,,,,,Bag,TRUE

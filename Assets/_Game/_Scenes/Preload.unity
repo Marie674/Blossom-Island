@@ -70509,7 +70509,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 234292313735754566}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99993265
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -81284,7 +81284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517576}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &234292313735750168
@@ -99671,7 +99671,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 7991
 --- !u!224 &1794060645963231086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -106406,6 +106406,7 @@ GameObject:
   - component: {fileID: 4601465351004107026}
   - component: {fileID: 4601465351004107025}
   - component: {fileID: 4601465351004107022}
+  - component: {fileID: 4601465351004107027}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -106420,7 +106421,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4601465351004107021}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce15367ff646a9f448ec0e0bce64c2c5, type: 3}
   m_Name: 
@@ -106569,6 +106570,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_prettyPrint: 0
+--- !u!114 &4601465351004107027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601465351004107021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6be5401816b0f46ba4641c1e124ca0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useSeparateFiles: 0
+  filename: save
 --- !u!114 &4601465351004107028
 MonoBehaviour:
   m_ObjectHideFlags: 0
