@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Crop_Wheat_Main
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 4939092984155601618, guid: 113e8649faba09941809e34bb783bb43, type: 3}
+  - Item: {fileID: 11400000, guid: ce5037c5c7160244c8218c1a792eaa63, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

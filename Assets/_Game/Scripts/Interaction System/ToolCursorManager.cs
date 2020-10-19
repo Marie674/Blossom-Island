@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CreativeSpore.SuperTilemapEditor;
-using ItemSystem;
+using Game.Items;
 public class ToolCursorManager : Singleton<ToolCursorManager>
 {
 
@@ -53,7 +53,7 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
         {
             CycleCursor();
         }
-        if (ShowSingleTile == true && CurrentTool.ToolController.ShowCursor)
+        if (ShowSingleTile == true && CurrentTool.Controller.ShowCursor)
         {
             TileUnderMouse.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (GetDistance() <= MaxMouseDistance)
@@ -190,7 +190,7 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
         {
             return;
         }
-        CursorIndex = ((CursorIndex + 1) % (CurrentTool.Cursors.Length));
+        CursorIndex = ((CursorIndex + 1) % (CurrentTool.Cursors.Count));
         SetCursor();
     }
 
@@ -215,7 +215,7 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
             {
                 HideCursor();
                 ShowSingleTile = true;
-                if (CurrentTool.ToolController.ShowCursor)
+                if (CurrentTool.Controller.ShowCursor)
                 {
                     TileUnderMouse.GetComponent<SpriteRenderer>().color = Color.white;
 

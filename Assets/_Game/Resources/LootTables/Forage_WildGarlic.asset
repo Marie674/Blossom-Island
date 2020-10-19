@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Forage_WildGarlic
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 3761928221949519779, guid: c36663338c05ac84a8455c8971a09e10, type: 3}
+  - Item: {fileID: 11400000, guid: 075571bef1814d548aa5faae4ed950ba, type: 2}
     Chance: 100
   MinDraws: 1
   MaxDraws: 2

@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using TMPro;
 
 [System.Serializable]
 public struct StoreItem
 {
-    public ItemContainer ItemContainer;
+    public ItemBase ContainedItem;
     public int Probability;
     public int CurrentAmount;
     public int MaxAmount;
@@ -17,7 +17,7 @@ public struct StoreItem
 public class StoreItemSlot : MonoBehaviour
 {
     public Sprite SoldOutSprite;
-    public ItemContainer CurrentItem;
+    public ItemBase CurrentItem;
     public int CurrentAmount = 0;
     public int MaxAmount = 99;
     public SpriteRenderer Sprite;
@@ -64,7 +64,7 @@ public class StoreItemSlot : MonoBehaviour
 
         BuyUI ui = FindObjectOfType<BuyUI>();
 
-        float maxAmount = FindObjectOfType<PlayerInventory>().Gold / CurrentItem.item.value;
+        float maxAmount = FindObjectOfType<PlayerInventory>().Gold / CurrentItem.Value;
         maxAmount = Mathf.Floor(maxAmount);
 
         if (maxAmount > CurrentAmount)
@@ -86,9 +86,9 @@ public class StoreItemSlot : MonoBehaviour
 
     public void Buy(int pAmount)
     {
-        ItemSpawner.Instance.SpawnItems(CurrentItem.item, GameManager.Instance.Player.transform.position, (uint)pAmount);
+        ItemSpawner.Instance.SpawnItems(CurrentItem, GameManager.Instance.Player.transform.position, (uint)pAmount);
         CurrentAmount -= pAmount;
-        FindObjectOfType<PlayerInventory>().ChangeGold(-(int)(CurrentItem.item.value * pAmount));
+        FindObjectOfType<PlayerInventory>().ChangeGold(-(int)(CurrentItem.Value * pAmount));
         if (CurrentAmount == 0)
         {
             SoldOut();
@@ -160,7 +160,7 @@ public class StoreItemSlot : MonoBehaviour
         {
 
             StoreItem storeItem = WeightedRandomizer.From(weights).TakeOne();
-            CurrentItem.item = ItemSystemUtility.GetItemCopy(storeItem.ItemContainer.item.itemID, storeItem.ItemContainer.item.itemType);
+            CurrentItem = ItemSystem.Instance.GetItemClone(storeItem.ContainedItem.ID);
             MaxAmount = storeItem.MaxAmount;
             CurrentAmount = storeItem.MaxAmount;
             CanInteract = true;
@@ -177,7 +177,7 @@ public class StoreItemSlot : MonoBehaviour
             if (Sprite != null)
             {
                 Sprite.color = Color.white;
-                Sprite.sprite = CurrentItem.item.itemIcon;
+                Sprite.sprite = CurrentItem.Icon;
             }
             if (AmountText != null)
             {

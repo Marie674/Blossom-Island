@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 [System.Serializable]
 public struct StoreShippedItemUnlockCondition
 {
-    public ItemContainer Item;
+    public ItemBase Item;
     public int Amount;
 }
 
@@ -26,7 +26,7 @@ public class StoreItemModule : ScriptableObject
     {
         foreach (StoreShippedItemUnlockCondition condition in ShippedItemConditions)
         {
-            if (GameManager.Instance.GetShippedItemAmount(condition.Item.item) < condition.Amount)
+            if (GameManager.Instance.GetShippedItemAmount(condition.Item) < condition.Amount)
             {
                 return false;
             }

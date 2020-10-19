@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using System.Linq;
 using PixelCrushers.QuestMachine;
+using Sirenix.OdinInspector;
 [System.Serializable]
 public struct CraftingIngredient
 {
-    public ItemContainer Item;
+    public ItemBase ContainedItem;
+    [Min(1)]
     public int Amount;
     public bool Used;
 }
@@ -15,8 +17,11 @@ public struct CraftingIngredient
 [System.Serializable]
 public struct ItemOutput
 {
-    public ItemContainer Item;
+    public ItemBase ContainedItem;
+
+    [Min(1)]
     public int Amount;
+    [Range(0, 100)]
     public int Chance;
     public bool ByProduct;
 }
@@ -97,7 +102,7 @@ public class CraftingManager : Singleton<CraftingManager>, PixelCrushers.IMessag
                 foreach (CraftingIngredient inputIngredient in pIngredients)
                 {
 
-                    if (inputIngredient.Item.item.itemID == recipeIngredient.Item.item.itemID)
+                    if (inputIngredient.ContainedItem.ID == recipeIngredient.ContainedItem.ID)
                     {
                         foundIngredient = true;
                         if (inputIngredient.Amount % recipeIngredient.Amount != 0)
@@ -133,7 +138,7 @@ public class CraftingManager : Singleton<CraftingManager>, PixelCrushers.IMessag
                 bool wrongIngredient = true;
                 foreach (CraftingIngredient recipeIngredient in recipe.Recipe.Ingredients)
                 {
-                    if (inputIngredient.Item.item.itemID == recipeIngredient.Item.item.itemID)
+                    if (inputIngredient.ContainedItem.ID == recipeIngredient.ContainedItem.ID)
                     {
                         wrongIngredient = false;
                         break;
@@ -198,8 +203,8 @@ public class CraftingManager : Singleton<CraftingManager>, PixelCrushers.IMessag
 
     public ItemBase CraftItem(ItemBase pItem, List<CraftingIngredient> pIngredients)
     {
-        ItemBase item = ItemSystemUtility.GetItemCopy(pItem.itemName, pItem.itemType);
-        item.Ingredients = pIngredients;
+        ItemBase item = pItem.Clone(pItem);
+        // item.Ingredients = pIngredients;
         return item;
     }
 
@@ -243,7 +248,7 @@ public class CraftingManager : Singleton<CraftingManager>, PixelCrushers.IMessag
         if (!KnownRecipes.Contains(pRecipe))
         {
             KnownRecipes.Add(pRecipe);
-            string itemName = pRecipe.Recipe.Outputs[0].Item.item.itemName;
+            string itemName = pRecipe.Recipe.Outputs[0].ContainedItem.Name;
             PixelCrushers.DialogueSystem.DialogueManager.ShowAlert("Learned new recipe: " + itemName);
             PixelCrushers.DialogueSystem.DialogueLua.SetVariable("CraftingManager Recipe" + KnownRecipes.Count, itemName);
             PixelCrushers.DialogueSystem.DialogueLua.SetVariable("CraftingManager RecipeAmount", KnownRecipes.Count);

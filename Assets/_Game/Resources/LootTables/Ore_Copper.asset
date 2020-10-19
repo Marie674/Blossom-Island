@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Copper
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 5772175199875804193, guid: 2029c3e2489d4be469140a448bc0bd4d, type: 3}
+  - Item: {fileID: 11400000, guid: 29fdf79af2e9f224c82bb79bb3acf39b, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

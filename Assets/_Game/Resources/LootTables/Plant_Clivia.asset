@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Plant_Clivia
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 1714232140758116239, guid: 78a5bd970ed9bba4d9da4c769173886b, type: 3}
+  - Item: {fileID: 11400000, guid: c7998dcda1d269941b4e96b4e32c3b85, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 1

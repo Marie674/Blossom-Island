@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using ItemSystem;
+using Game.Items;
 using System;
 public class CraftingRecipesUI : MonoBehaviour
 {
@@ -12,13 +12,13 @@ public class CraftingRecipesUI : MonoBehaviour
     CraftingStation CurrentStation;
 
     CraftingRecipe CurrentRecipe;
-    ItemSystem.ItemType CurrentType;
+    ItemSystem.ItemTypes CurrentType;
 
     List<CraftingStation> ValidStations = new List<CraftingStation>();
 
     List<RecipeContainer> ValidRecipes = new List<RecipeContainer>();
 
-    List<ItemType> ValidTypes = new List<ItemType>();
+    List<ItemSystem.ItemTypes> ValidTypes = new List<ItemSystem.ItemTypes>();
 
     public Transform RecipeContainer;
     public RecipeNamePrefab RecipeUIPrefab;
@@ -73,12 +73,11 @@ public class CraftingRecipesUI : MonoBehaviour
         {
             return;
         }
-
         foreach (RecipeContainer recipe in CurrentStation.StationRecipes)
         {
             if (CraftingManager.Instance.KnownRecipes.Contains(recipe))
             {
-                ItemType type = recipe.Recipe.Outputs[0].Item.item.itemType;
+                ItemSystem.ItemTypes type = recipe.Recipe.Outputs[0].ContainedItem.Type;
                 if (!ValidTypes.Contains(type))
                 {
                     ValidTypes.Add(type);
@@ -100,7 +99,7 @@ public class CraftingRecipesUI : MonoBehaviour
         {
             if (CraftingManager.Instance.KnownRecipes.Contains(recipe))
             {
-                ItemType type = recipe.Recipe.Outputs[0].Item.item.itemType;
+                ItemSystem.ItemTypes type = recipe.Recipe.Outputs[0].ContainedItem.Type;
                 if (CurrentType == type)
                 {
                     if (!ValidRecipes.Contains(recipe))
@@ -148,7 +147,7 @@ public class CraftingRecipesUI : MonoBehaviour
             return;
         }
         List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
-        foreach (ItemType type in ValidTypes)
+        foreach (ItemSystem.ItemTypes type in ValidTypes)
         {
             TMP_Dropdown.OptionData data = new TMP_Dropdown.OptionData();
             data.text = type.ToString();
@@ -183,7 +182,7 @@ public class CraftingRecipesUI : MonoBehaviour
         foreach (RecipeContainer recipe in ValidRecipes)
         {
             RecipeNamePrefab newRecipe = Instantiate(RecipeUIPrefab, RecipeContainer);
-            newRecipe.NameText.text = recipe.Recipe.Outputs[0].Item.item.itemName;
+            newRecipe.NameText.text = recipe.Recipe.Outputs[0].ContainedItem.Name;
             newRecipe.Button.onClick.AddListener(delegate ()
             {
                 SelectRecipe(recipe);
@@ -227,9 +226,9 @@ public class CraftingRecipesUI : MonoBehaviour
         {
             return;
         }
-        RecipeIcon.sprite = CurrentRecipe.Outputs[0].Item.item.itemIcon;
+        RecipeIcon.sprite = CurrentRecipe.Outputs[0].ContainedItem.Icon;
         RecipeAmountText.text = "x" + CurrentRecipe.Outputs[0].Amount.ToString();
-        RecipeNameText.text = CurrentRecipe.Outputs[0].Item.item.itemName;
+        RecipeNameText.text = CurrentRecipe.Outputs[0].ContainedItem.Name;
 
         PlayerInventory playerInventory = GameManager.Instance.Player.GetComponent<PlayerInventory>();
 
@@ -241,16 +240,16 @@ public class CraftingRecipesUI : MonoBehaviour
                 byProducts.Add(output);
                 CraftingByProductUI productUI = Instantiate(ByProductUIPrefab, ByProductsContainer);
                 productUI.ItemAmountText.text = "x" + output.Amount.ToString();
-                productUI.ItemIcon.sprite = output.Item.item.itemIcon;
+                productUI.ItemIcon.sprite = output.ContainedItem.Icon;
             }
         }
 
         foreach (CraftingIngredient ingredient in CurrentRecipe.Ingredients)
         {
             CraftingIngredientUI ingredientUI = Instantiate(IngredientUIPrefab, IngredientContainer);
-            ingredientUI.ItemIcon.sprite = ingredient.Item.item.itemIcon;
-            ingredientUI.ItemNameText.text = ingredient.Item.item.itemName;
-            int playerAmt = playerInventory.GetItemAmount(ingredient.Item.item);
+            ingredientUI.ItemIcon.sprite = ingredient.ContainedItem.Icon;
+            ingredientUI.ItemNameText.text = ingredient.ContainedItem.Name;
+            int playerAmt = playerInventory.GetItemAmount(ingredient.ContainedItem);
             string amt = playerAmt.ToString() + "/" + ingredient.Amount.ToString();
             if (playerAmt >= ingredient.Amount)
             {
@@ -297,17 +296,17 @@ public class CraftingRecipesUI : MonoBehaviour
 
         string val = ItemTypeDropDown.options[ItemTypeDropDown.value].text;
 
-        ItemType type = (ItemType)Enum.Parse(typeof(ItemType), val);
+        ItemSystem.ItemTypes type = (ItemSystem.ItemTypes)Enum.Parse(typeof(ItemSystem.ItemTypes), val);
 
         bool foundType = false;
-        foreach (ItemType validType in ValidTypes)
+        foreach (ItemSystem.ItemTypes validType in ValidTypes)
         {
             if (type == validType)
             {
                 foundType = true;
             }
         }
-        ItemType newType = ValidTypes.Find(x => x == type);
+        ItemSystem.ItemTypes newType = ValidTypes.Find(x => x == type);
         if (foundType)
         {
             CurrentType = newType;

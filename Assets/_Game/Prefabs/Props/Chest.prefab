@@ -366,13 +366,9 @@ MonoBehaviour:
   MaxStackAmount: 1000
   MaxStacks: 50
   IsSellChest: 0
-  StartingItems:
-  - Item: {fileID: 1892514560809651189, guid: 6c5a5c8b4ac90bc448d98bac80264114, type: 3}
-    Amount: 1
-  - Item: {fileID: 5351598440502809262, guid: e88ea2dded67dd24898fd3f5a3293320, type: 3}
-    Amount: 1
-  - Item: {fileID: 114069672799241684, guid: a77d72e9f2bae7d4fa55bd6bb2dd487a, type: 3}
-    Amount: 3
+  CoinItem: {fileID: 11400000, guid: e66ba1a651bc42148bee2febd5364d94, type: 2}
+  HalfCoinItem: {fileID: 11400000, guid: a79672c5fcb86b346ae49840c4a91dba, type: 2}
+  StartingItems: []
   Level: 
   Init: 0
 --- !u!114 &114503599206726350
@@ -486,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 563578954483874488, guid: d86f29584f424de43ac288f659869b87, type: 3}
+  Item: {fileID: 11400000, guid: 2b749ba41f631724d86365b2834a75bc, type: 2}
   Storage: 1
 --- !u!114 &-956984821737626447
 MonoBehaviour:

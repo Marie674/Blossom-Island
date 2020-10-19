@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bush_Leaves
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 114155358331233234, guid: 7839aebffe82b904885b789d23c83392, type: 3}
+  - Item: {fileID: 11400000, guid: 1d0faa41353c79b41a3499c62a47dd4a, type: 2}
     Chance: 50
   MinDraws: 2
   MaxDraws: 4

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class ItemUseManager : Singleton<ItemUseManager>
 {
@@ -24,7 +24,7 @@ public class ItemUseManager : Singleton<ItemUseManager>
         {
             return;
         }
-        PixelCrushers.MessageSystem.SendMessage(GameManager.Instance.Player, "UseItem", pStack.ContainedItem.itemName);
+        PixelCrushers.MessageSystem.SendMessage(GameManager.Instance.Player, "UseItem", pStack.ContainedItem.Name);
         if (pStack.ContainedItem is ItemBottle)
         {
             UseBottle(pStack.ContainedItem as ItemBottle, pStack);
@@ -46,26 +46,25 @@ public class ItemUseManager : Singleton<ItemUseManager>
             return;
         }
         //remove liquid
-        pItem.currentCharge--;
+        pItem.CurrentCharge--;
         //use liquid
         UseFood(pItem.HeldLiquid, pStack);
 
-        if (pItem.currentCharge == 0)
+        if (pItem.CurrentCharge == 0)
         {
             PlayerInventory.RemoveFromStack(Toolbar.Instance.SelectedSlot.ReferencedItemStack, 1);
-            ItemContainer container = new ItemContainer();
-            container.item = ItemSystemUtility.GetItemCopy("Empty Bottle", ItemType.Bottle);
-            ItemSpawner.Instance.SpawnItems(container.item, Player.transform.position, 1);
+            ItemBottle newBottle = ItemSystem.Instance.GetItemClone("Empty Bottle") as ItemBottle;
+            ItemSpawner.Instance.SpawnItems(newBottle, Player.transform.position, 1);
         }
     }
 
     private void UseFood(ItemFood pItem, InventoryItemStack pStack)
     {
-        PixelCrushers.MessageSystem.SendMessage(GameManager.Instance.Player, "EatItem", pStack.ContainedItem.itemName);
+        PixelCrushers.MessageSystem.SendMessage(GameManager.Instance.Player, "EatItem", pStack.ContainedItem.Name);
 
-        PlayerNeedManager.Instance.GetNeed("Energy").Change(pItem.energyRegen);
+        PlayerNeedManager.Instance.GetNeed("Energy").Change(pItem.EnergyRegen);
 
-        if (pItem.consumable == true)
+        if (pItem.Consumable == true)
         {
             PlayerInventory.RemoveFromStack(pStack, 1);
         }
@@ -75,7 +74,7 @@ public class ItemUseManager : Singleton<ItemUseManager>
     {
         if (CraftingManager.Instance.TeachRecipe(pItem.Recipe.UniqueName))
         {
-            if (pItem.consumable == true)
+            if (pItem.Consumable == true)
             {
                 PlayerInventory.RemoveFromStack(pStack, 1);
             }

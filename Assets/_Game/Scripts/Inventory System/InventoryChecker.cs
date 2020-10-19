@@ -49,7 +49,7 @@ public class InventoryChecker : MonoBehaviour
         {
             foreach (ContainedItem wantedTtem in WantedItems)
             {
-                InventoryItemStack stack = pInventory.FindItemStack(wantedTtem.Item.item);
+                InventoryItemStack stack = pInventory.FindItemStack(wantedTtem.Item);
                 if (stack == null)
                 {
                     return;

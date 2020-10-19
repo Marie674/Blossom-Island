@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TreePalm_Shake
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 680927530247469183, guid: 662a191a335c4e9428a7aee210400b41, type: 3}
+  - Item: {fileID: 11400000, guid: 2d5bea21f4959c841a054aae5da15144, type: 2}
     Chance: 30
   MinDraws: 1
   MaxDraws: 1

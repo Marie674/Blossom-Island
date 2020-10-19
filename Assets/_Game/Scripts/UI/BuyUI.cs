@@ -21,13 +21,13 @@ public class BuyUI : MonoBehaviour
     public void Open(StoreItemSlot pSlot, int pBuyableAmount)
     {
         Slot = pSlot;
-        Title.text = "Buy " + Slot.CurrentItem.item.itemName + "?";
-        ItemIcon.sprite = Slot.CurrentItem.item.itemIcon;
-        Description.text = Slot.CurrentItem.item.itemDescription;
-        Description.text += "\n \n" + "Price: " + Slot.CurrentItem.item.value + " each.";
+        Title.text = "Buy " + Slot.CurrentItem.Name + "?";
+        ItemIcon.sprite = Slot.CurrentItem.Icon;
+        Description.text = Slot.CurrentItem.Description;
+        Description.text += "\n \n" + "Price: " + Slot.CurrentItem.Value + " each.";
         Min = 0;
         Max = pBuyableAmount;
-        if (GameManager.Instance.Player.GetComponent<PlayerInventory>().Gold < Slot.CurrentItem.item.value)
+        if (GameManager.Instance.Player.GetComponent<PlayerInventory>().Gold < Slot.CurrentItem.Value)
         {
             ConfirmButton.interactable = false;
         }

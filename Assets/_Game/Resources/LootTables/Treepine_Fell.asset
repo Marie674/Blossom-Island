@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Treepine_Fell
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 114794672590353198, guid: 1514e8f8cf83fc24daf29f3433fd8b5a, type: 3}
+  - Item: {fileID: 11400000, guid: e065237c658387d4a92114f856351879, type: 2}
     Chance: 25
-  - Item: {fileID: 609274215636231847, guid: a5fe5eb72afcff54ea52b577082207bf, type: 3}
+  - Item: {fileID: 11400000, guid: 633e9bbe389f484458f1a661ba478c60, type: 2}
     Chance: 3
   MinDraws: 4
   MaxDraws: 8

@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
-
+using Game.Items;
 
 public class KnowledgeManager : Singleton<KnowledgeManager>
 {
@@ -18,11 +17,11 @@ public class KnowledgeManager : Singleton<KnowledgeManager>
 
     public void LearnItem(ItemBase pItem)
     {
-        if (KnownItems.Contains(pItem.itemID))
+        if (KnownItems.Contains(pItem.ID))
         {
             return;
         }
-        KnownItems.Add(pItem.itemID);
+        KnownItems.Add(pItem.ID);
         //	ItemUI.Open(pItem);
     }
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class Campfire : MonoBehaviour
 {
@@ -76,14 +76,14 @@ public class Campfire : MonoBehaviour
         ItemBase heldItem = currentSlot.ReferencedItemStack.ContainedItem;
 
 
-        if (IsOn == false && heldItem.ItemTags.Contains(CraftingManager.ItemTags.FireStarter))
+        if (IsOn == false && heldItem.Tags.Contains(ItemSystem.ItemTags.FireStarter))
         {
             UseFireStarter(heldItem);
             return;
         }
-        else if (heldItem.itemType == ItemType.Material)
+        else if (heldItem.Type == ItemSystem.ItemTypes.Material)
         {
-            if ((heldItem as ItemMaterial).burnTime > 0)
+            if ((heldItem as ItemMaterial).BurnTime > 0)
             {
                 AddFuel(currentSlot.ReferencedItemStack);
                 return;
@@ -104,7 +104,7 @@ public class Campfire : MonoBehaviour
     public void AddFuel(InventoryItemStack pItemStack)
     {
         ItemMaterial item = pItemStack.ContainedItem as ItemMaterial;
-        MinutesLeft = Mathf.Clamp(MinutesLeft += item.burnTime, 0, 10000f);
+        MinutesLeft = Mathf.Clamp(MinutesLeft += item.BurnTime, 0, 10000f);
         FindObjectOfType<PlayerInventory>().RemoveFromStack(pItemStack, 1);
 
         if (WoodSprite != null)

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using PixelCrushers.DialogueSystem;
 using UnityEngine.SceneManagement;
 public class StoreItemSlotSaver : MonoBehaviour
@@ -27,8 +27,8 @@ public class StoreItemSlotSaver : MonoBehaviour
         TargetSlot = GetComponent<StoreItemSlot>();
         VariableName = SceneManager.GetActiveScene().name + "StoreSlot" + transform.position.x + transform.position.y;
 
-        DialogueLua.SetVariable(VariableName + "CurrentItemName", TargetSlot.CurrentItem.item.itemName);
-        DialogueLua.SetVariable(VariableName + "CurrentItemType", TargetSlot.CurrentItem.item.itemType);
+        DialogueLua.SetVariable(VariableName + "CurrentItemName", TargetSlot.CurrentItem.Name);
+        DialogueLua.SetVariable(VariableName + "CurrentItemType", TargetSlot.CurrentItem.Type);
         DialogueLua.SetVariable(VariableName + "CurrentItemAmount", TargetSlot.CurrentAmount);
         DialogueLua.SetVariable(VariableName + "MaxItemAmount", TargetSlot.MaxAmount);
 
@@ -42,10 +42,10 @@ public class StoreItemSlotSaver : MonoBehaviour
         {
             string itemID = DialogueLua.GetVariable(VariableName + "CurrentItemName").AsString;
             string itemType = DialogueLua.GetVariable(VariableName + "CurrentItemType").AsString;
-            ItemSystem.ItemType type = (ItemSystem.ItemType)System.Enum.Parse(typeof(ItemSystem.ItemType), itemType);
-            ItemBase item = ItemSystemUtility.GetItemCopy(itemID, type);
-            print("got item: " + item.itemName);
-            TargetSlot.CurrentItem.item = item;
+            ItemSystem.ItemTypes type = (ItemSystem.ItemTypes)System.Enum.Parse(typeof(ItemSystem.ItemTypes), itemType);
+            ItemBase item = ItemSystem.Instance.GetItemClone(itemID);
+            print("got item: " + item.Name);
+            TargetSlot.CurrentItem = item;
             TargetSlot.CurrentAmount = DialogueLua.GetVariable(VariableName + "CurrentItemAmount").AsInt;
             TargetSlot.MaxAmount = DialogueLua.GetVariable(VariableName + "MaxItemAmount").AsInt;
             TargetSlot.UpdateVisuals();

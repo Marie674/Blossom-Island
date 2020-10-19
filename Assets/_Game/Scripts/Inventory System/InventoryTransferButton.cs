@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 public class InventoryTransferButton : MonoBehaviour
 {
 
@@ -11,11 +11,11 @@ public class InventoryTransferButton : MonoBehaviour
 
     public void DoTransfer()
     {
-        if (From.SelectedItem == null || From.SelectedItem.itemID == 0)
+        if (From.SelectedItem == null || From.SelectedItem.ID == 0)
         {
             return;
         }
-        ItemBase item = ItemSystemUtility.GetItemCopy(From.SelectedItem.itemID, From.SelectedItem.itemType);
+        ItemBase item = ItemSystem.Instance.GetItemClone(From.SelectedItem.ID);
         InventoryItemStack selectedStack = From.SelectedStack;
 
 

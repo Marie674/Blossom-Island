@@ -60,7 +60,7 @@ public class CraftingStationContextualHUD : ContextualHUD
             return;
         }
         CraftingRecipe recipe = TargetStation.CurrentRecipe.Recipe;
-        ProgressHandle.sprite = recipe.Outputs[0].Item.item.itemIcon;
+        ProgressHandle.sprite = recipe.Outputs[0].ContainedItem.Icon;
         RecipeProgress();
         ProgressBar.gameObject.SetActive(true);
         PromptText.text = "Craft: Hold E - Reset: Press E";

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Forage_Cranberries
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 7822151001990760758, guid: bf1f6e1b081eaa0459e182b984a9d851, type: 3}
+  - Item: {fileID: 11400000, guid: b922080846f7106408b9ae1dc3d03d3c, type: 2}
     Chance: 100
   MinDraws: 2
   MaxDraws: 4

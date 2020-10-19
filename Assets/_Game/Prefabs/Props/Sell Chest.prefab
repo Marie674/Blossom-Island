@@ -342,12 +342,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UniqueID: 
-  Name: Chest
+  Name: Shipping Chest
   CurrentWeight: 0
   MaxWeight: 100
   MaxStackAmount: 1000
   MaxStacks: 100
   IsSellChest: 1
+  CoinItem: {fileID: 11400000, guid: e66ba1a651bc42148bee2febd5364d94, type: 2}
+  HalfCoinItem: {fileID: 11400000, guid: a79672c5fcb86b346ae49840c4a91dba, type: 2}
   StartingItems: []
   Level: 
   Init: 0
@@ -419,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 4717388077891439654, guid: 305e24de1eb76e44cbc46ff305791726, type: 3}
+  Item: {fileID: 11400000, guid: f17ad83d1d892174abba04f8007ffd3e, type: 2}
   Storage: 1
 --- !u!114 &6588984911094749805
 MonoBehaviour:

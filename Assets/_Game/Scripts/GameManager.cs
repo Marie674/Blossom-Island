@@ -7,7 +7,7 @@ using PixelCrushers;
 using UnityEngine.SceneManagement;
 using Cinemachine;
 using UnityEngine.Experimental.Rendering.Universal;
-using ItemSystem;
+using Game.Items;
 using DG.Tweening;
 using UnityEngine.UI;
 using Game.NPCs;
@@ -18,7 +18,7 @@ using UnityEngine.Events;
 [System.Serializable]
 public struct ShippedItem
 {
-    public ItemBase Item;
+    public ItemBase ContainedItem;
     public int Amount;
 }
 
@@ -221,7 +221,7 @@ public class GameManager : Singleton<GameManager>
         //        print("Native tree id: " + NativeTreeID);
         NativeTree = PossibleNativeTrees[NativeTreeID];
         //        print(NativeTree.gameObject.name);
-        NativeFruit = NativeTree.ProduceOutputs.Items[0].Item.item;
+        NativeFruit = NativeTree.ProduceOutputs.Items[0].Item;
         PixelCrushers.DialogueSystem.DialogueLua.SetVariable(name + "NativeTreeID", NativeTreeID);
         //UnPauseGame();
         GameStarted = true;
@@ -313,7 +313,7 @@ public class GameManager : Singleton<GameManager>
 
         foreach (ShippedItem item in ShippedItems)
         {
-            if (item.Item.itemID == pItem.itemID)
+            if (item.ContainedItem.ID == pItem.ID)
             {
                 existingItem = item;
                 match = true;
@@ -328,7 +328,7 @@ public class GameManager : Singleton<GameManager>
         else
         {
             ShippedItem newItem = new ShippedItem();
-            newItem.Item = pItem;
+            newItem.ContainedItem = pItem;
             newItem.Amount = pAmount;
             ShippedItems.Add(newItem);
 
@@ -343,7 +343,7 @@ public class GameManager : Singleton<GameManager>
         bool match = false;
         foreach (ShippedItem item in ShippedItems)
         {
-            if (item.Item.itemID == pItem.itemID)
+            if (item.ContainedItem.ID == pItem.ID)
             {
                 existingItem = item;
                 match = true;

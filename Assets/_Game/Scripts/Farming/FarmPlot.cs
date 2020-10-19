@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using PixelCrushers;
 
 public class FarmPlot : MonoBehaviour
@@ -40,7 +40,7 @@ public class FarmPlot : MonoBehaviour
             return false;
         }
 
-        string cropName = pTool.cropName;
+        string cropName = pTool.CropName;
 
         CropController CropPrefab = FarmingManager.Instance.GetCrop(cropName);
         if (CropPrefab == null)

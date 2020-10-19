@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Game.Items;
 public class PropPickup : MonoBehaviour
 {
 
-    public ItemContainer Item;
+    public ItemBase Item;
     public bool Storage = false;
     public void Hit(string pMessage)
     {
@@ -26,7 +26,7 @@ public class PropPickup : MonoBehaviour
                 return;
             }
 
-            ItemSpawner.Instance.SpawnItems(Item.item, transform.position, 1);
+            ItemSpawner.Instance.SpawnItems(Item, transform.position, 1);
             Destroy(gameObject);
         }
 

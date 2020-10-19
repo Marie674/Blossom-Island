@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using UnityEngine.UI;
 using TMPro;
 
@@ -156,11 +156,12 @@ public class InventoryUI : MonoBehaviour
 
         foreach (InventoryItemStack itemStack in StorageStacks)
         {
+
             if (SelectedTab.Types.Count > 0)
             {
-                foreach (ItemType type in SelectedTab.Types)
+                foreach (ItemSystem.ItemTypes type in SelectedTab.Types)
                 {
-                    if (type.ToString() == itemStack.ContainedItem.itemType.ToString())
+                    if (type.ToString() == itemStack.ContainedItem.Type.ToString())
                     {
                         TabItems.Add(itemStack);
                     }
@@ -184,7 +185,7 @@ public class InventoryUI : MonoBehaviour
             ItemUIPrefab.GetComponent<Button>().interactable = true;
             ItemUIPrefab.ItemIcon.color = Color.white;
 
-            ItemUIPrefab.ItemIcon.sprite = pStack.ContainedItem.itemIcon;
+            ItemUIPrefab.ItemIcon.sprite = pStack.ContainedItem.Icon;
             ItemUIPrefab.ItemAmount.text = pStack.Amount.ToString();
         }
         else
@@ -312,7 +313,7 @@ public class InventoryUI : MonoBehaviour
         //check if stack still exists, set it to that one if so.
         foreach (InventoryItemStack stack in TabItems)
         {
-            if (stack.ContainedItem.itemID == SelectedItem.itemID)
+            if (stack.ContainedItem.ID == SelectedItem.ID)
             {
                 SetSelectedItem(stack);
                 return;
@@ -348,11 +349,11 @@ public class InventoryUI : MonoBehaviour
             SelectedStack = null;
         }
 
-        if (SelectedItem.itemID != 0)
+        if (SelectedItem.ID != -1)
         {
             foreach (ItemStackUI itemUI in DrawnItems)
             {
-                if (itemUI.ItemStack == null || itemUI.ItemStack.ContainedItem.itemID != SelectedItem.itemID)
+                if (itemUI.ItemStack == null || itemUI.ItemStack.ContainedItem.ID != SelectedItem.ID)
                 {
                     itemUI.FrameImage.enabled = false;
                 }
@@ -371,7 +372,7 @@ public class InventoryUI : MonoBehaviour
 
     private void DrawSelectedItemInfo()
     {
-        if (SelectedItem == null || SelectedItem.itemID == 0)
+        if (SelectedItem == null || SelectedItem.ID == -1 || SelectedStack == null)
         {
             if (ItemNameText != null)
             {
@@ -392,22 +393,21 @@ public class InventoryUI : MonoBehaviour
         }
         else
         {
-
             if (ItemNameText != null)
             {
-                ItemNameText.text = SelectedItem.itemName;
+                ItemNameText.text = SelectedItem.Name;
             }
             if (ItemDescriptionText != null)
             {
-                ItemDescriptionText.text = SelectedItem.itemDescription;
+                ItemDescriptionText.text = SelectedItem.Description;
             }
             if (ItemWeightText != null)
             {
-                ItemWeightText.text = SelectedItem.weight + " (" + (SelectedItem.weight * SelectedStack.Amount) + ")";
+                ItemWeightText.text = SelectedItem.Weight + " (" + (SelectedItem.Weight * SelectedStack.Amount) + ")";
             }
             if (ItemValueText != null)
             {
-                ItemValueText.text = SelectedItem.value + " (" + (SelectedItem.value * SelectedStack.Amount) + ")";
+                ItemValueText.text = SelectedItem.Value + " (" + (SelectedItem.Value * SelectedStack.Amount) + ")";
             }
 
         }

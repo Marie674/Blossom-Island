@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 [System.Serializable]
 public class StationItem
 
 {
     [SerializeField]
-    public ItemBase Item;
+    public ItemBase ContainedItem;
     [SerializeField]
     public int Amount;
 }
@@ -122,7 +122,7 @@ public class CraftingStation : MonoBehaviour
     {
         if (CurrentRecipe != null)
         {
-            RecipeSprite.sprite = CurrentRecipe.Recipe.Outputs[0].Item.item.itemIcon;
+            RecipeSprite.sprite = CurrentRecipe.Recipe.Outputs[0].ContainedItem.Icon;
             Color newcolor = Color.white;
             newcolor.a = MapRangeExtension.MapRange(CurrentProgress, 0f, TargetProgress, 0.1f, 1f);
             RecipeSprite.color = newcolor;
@@ -140,7 +140,7 @@ public class CraftingStation : MonoBehaviour
             int amt = 1;
             foreach (CraftingIngredient ingredient in ChosenRecipe.Recipe.Ingredients)
             {
-                if (item.Item.itemID == ingredient.Item.item.itemID)
+                if (item.ContainedItem.ID == ingredient.ContainedItem.ID)
                 {
                     amt = ingredient.Amount;
                 }
@@ -158,7 +158,7 @@ public class CraftingStation : MonoBehaviour
             int amt = 1;
             foreach (CraftingIngredient ingredient in ChosenRecipe.Recipe.Ingredients)
             {
-                if (item.Item.itemID == ingredient.Item.item.itemID)
+                if (item.ContainedItem.ID == ingredient.ContainedItem.ID)
                 {
                     amt = ingredient.Amount;
                 }
@@ -179,7 +179,7 @@ public class CraftingStation : MonoBehaviour
 
         foreach (CraftingIngredient ingredient in ChosenRecipe.Recipe.Ingredients)
         {
-            if (inventory.GetItemAmount(ingredient.Item.item) < ingredient.Amount * amt)
+            if (inventory.GetItemAmount(ingredient.ContainedItem) < ingredient.Amount * amt)
             {
                 return;
             }
@@ -206,7 +206,7 @@ public class CraftingStation : MonoBehaviour
             int amt = 1;
             foreach (CraftingIngredient ingredient in ChosenRecipe.Recipe.Ingredients)
             {
-                if (item.Item.itemID == ingredient.Item.item.itemID)
+                if (item.ContainedItem.ID == ingredient.ContainedItem.ID)
                 {
                     amt = ingredient.Amount;
                 }
@@ -225,7 +225,7 @@ public class CraftingStation : MonoBehaviour
             int amt = 1;
             foreach (CraftingIngredient ingredient in ChosenRecipe.Recipe.Ingredients)
             {
-                if (item.Item.itemID == ingredient.Item.item.itemID)
+                if (item.ContainedItem.ID == ingredient.ContainedItem.ID)
                 {
                     amt = ingredient.Amount;
                 }
@@ -235,7 +235,7 @@ public class CraftingStation : MonoBehaviour
                 item.Amount -= 1;
                 if (item.Amount < 1)
                 {
-                    RemoveItem(item.Item);
+                    RemoveItem(item.ContainedItem);
                 }
             }
 
@@ -256,11 +256,9 @@ public class CraftingStation : MonoBehaviour
         foreach (StationItem stack in ChosenItems)
         {
             CraftingIngredient ingredient = new CraftingIngredient();
-            ItemContainer container = new ItemContainer();
-            container.item = ItemSystemUtility.GetItemCopy(stack.Item.itemID, stack.Item.itemType);
-            ingredient.Item = container;
+            ingredient.ContainedItem = stack.ContainedItem.Clone(stack.ContainedItem);
             ingredient.Amount = stack.Amount;
-            if (ingredient.Item.item.itemID != 0)
+            if (ingredient.ContainedItem.ID != 0)
             {
                 ingredientList.Add(ingredient);
             }
@@ -354,7 +352,7 @@ public class CraftingStation : MonoBehaviour
             Queue.Add(ChosenRecipe);
             foreach (CraftingIngredient ingredient in ChosenRecipe.Recipe.Ingredients)
             {
-                inventory.RemoveItem(ingredient.Item.item, (uint)ingredient.Amount);
+                inventory.RemoveItem(ingredient.ContainedItem, (uint)ingredient.Amount);
             }
         }
         ChosenItems.Clear();
@@ -373,7 +371,7 @@ public class CraftingStation : MonoBehaviour
         {
             foreach (CraftingIngredient ingredient in pRecipe.Recipe.Ingredients)
             {
-                inventory.Add(ingredient.Item.item, (uint)ingredient.Amount, true);
+                inventory.Add(ingredient.ContainedItem, (uint)ingredient.Amount, true);
             }
         }
 
@@ -384,7 +382,7 @@ public class CraftingStation : MonoBehaviour
     void StartRecipe()
     {
         CurrentRecipe = Queue[0];
-        RecipeSprite.sprite = CurrentRecipe.Recipe.Outputs[0].Item.item.itemIcon;
+        RecipeSprite.sprite = CurrentRecipe.Recipe.Outputs[0].ContainedItem.Icon;
         Color newcolor = Color.white;
         newcolor.a = 0.1f;
         RecipeSprite.color = newcolor;
@@ -436,7 +434,7 @@ public class CraftingStation : MonoBehaviour
     {
         foreach (ItemOutput output in CurrentRecipe.Recipe.Outputs)
         {
-            ItemSpawner.Instance.SpawnItems(output.Item.item, SpawnPoint.transform.position, (uint)output.Amount);
+            ItemSpawner.Instance.SpawnItems(output.ContainedItem, SpawnPoint.transform.position, (uint)output.Amount);
 
         }
         Queue.Remove(CurrentRecipe);
@@ -469,7 +467,7 @@ public class CraftingStation : MonoBehaviour
     {
         foreach (StationItem item in ChosenItems)
         {
-            if (pItem.itemID == item.Item.itemID)
+            if (pItem.ID == item.ContainedItem.ID)
             {
                 return true;
             }
@@ -488,7 +486,7 @@ public class CraftingStation : MonoBehaviour
             return false;
         }
         StationItem newItem = new StationItem();
-        newItem.Item = pItem;
+        newItem.ContainedItem = pItem;
         newItem.Amount = 1;
         ChosenItems.Add(newItem);
         IngredientsChanged();
@@ -500,7 +498,7 @@ public class CraftingStation : MonoBehaviour
     {
         foreach (StationItem item in ChosenItems)
         {
-            if (pItem.itemID == item.Item.itemID)
+            if (pItem.ID == item.ContainedItem.ID)
             {
                 ChosenItems.Remove(item);
                 IngredientsChanged();
@@ -518,7 +516,7 @@ public class CraftingStation : MonoBehaviour
         {
             return false;
         }
-        InventoryItemStack stack = GameManager.Instance.Player.GetComponent<PlayerInventory>().FindItemStack(pItem.Item);
+        InventoryItemStack stack = GameManager.Instance.Player.GetComponent<PlayerInventory>().FindItemStack(pItem.ContainedItem);
         if (stack == null)
         {
             return false;
@@ -539,7 +537,7 @@ public class CraftingStation : MonoBehaviour
         {
             return false;
         }
-        InventoryItemStack stack = GameManager.Instance.Player.GetComponent<PlayerInventory>().FindItemStack(pItem.Item);
+        InventoryItemStack stack = GameManager.Instance.Player.GetComponent<PlayerInventory>().FindItemStack(pItem.ContainedItem);
         if (stack == null)
         {
             return false;
@@ -563,7 +561,7 @@ public class CraftingStation : MonoBehaviour
 
             if (pItem.Amount <= 0)
             {
-                RemoveItem(pItem.Item);
+                RemoveItem(pItem.ContainedItem);
             }
             IngredientsChanged();
 
@@ -588,7 +586,7 @@ public class CraftingStation : MonoBehaviour
     {
         foreach (StationItem item in ChosenItems)
         {
-            if (item.Item.itemID == pItem.itemID)
+            if (item.ContainedItem.ID == pItem.ID)
             {
                 return item;
             }
@@ -603,12 +601,12 @@ public class CraftingStation : MonoBehaviour
         foreach (StationItem item in ChosenItems)
         {
             StorageObject Inventory = GameManager.Instance.Player.GetComponent<PlayerInventory>();
-            InventoryItemStack stack = Inventory.FindItemStack(item.Item);
-            int itemAmount = Inventory.GetItemAmount(item.Item);
+            InventoryItemStack stack = Inventory.FindItemStack(item.ContainedItem);
+            int itemAmount = Inventory.GetItemAmount(item.ContainedItem);
 
             if (itemAmount < 1)
             {
-                RemoveItem(item.Item);
+                RemoveItem(item.ContainedItem);
                 return;
             }
             if (item.Amount > itemAmount)

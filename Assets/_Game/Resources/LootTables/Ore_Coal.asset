@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Coal
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 4408754552991709269, guid: 131ad858984aa324da9916bfd40730f1, type: 3}
+  - Item: {fileID: 11400000, guid: 65faeb4853882034483171877671e8a9, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

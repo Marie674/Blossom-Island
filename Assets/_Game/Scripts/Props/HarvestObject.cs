@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class HarvestObject : MonoBehaviour
 {
@@ -60,7 +60,7 @@ public class HarvestObject : MonoBehaviour
     {
         ItemTool tool = ToolManager.Instance.CurrentTool;
 
-        if (RequiredToolLevel > tool.level)
+        if (RequiredToolLevel > tool.Level)
         {
             return false;
         }
@@ -68,7 +68,7 @@ public class HarvestObject : MonoBehaviour
         position.z -= 0.0001f;
         ParticleSpawner.Instance.SpawnOneShot(Particle, position);
 
-        CurrentHealth = Mathf.Clamp(CurrentHealth - tool.power, 0, MaxHealth);
+        CurrentHealth = Mathf.Clamp(CurrentHealth - tool.Power, 0, MaxHealth);
 
         if (CurrentHealth == 0)
         {

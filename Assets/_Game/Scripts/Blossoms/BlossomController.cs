@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using PixelCrushers.DialogueSystem;
 using BehaviorDesigner.Runtime;
 namespace Game.NPCs.Blossoms
@@ -263,7 +263,7 @@ namespace Game.NPCs.Blossoms
             if (heldItem != null)
             {
 
-                if (heldItem.itemType == ItemType.Food && (heldItem as ItemFood).BlossomFeed == true)
+                if (heldItem.Type == ItemSystem.ItemTypes.Food && (heldItem as ItemFood).BlossomFeed == true)
                 {
                     if (Data.Hungry == true)
                     {

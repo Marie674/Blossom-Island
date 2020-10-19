@@ -70,7 +70,6 @@ public class ES3Spreadsheet
             rows = (row + 1);
     }
 
-
     // Don't create non-generic version of this. Generic parameter is necessary as no type data is stored in the CSV file.
     public T GetCell<T>(int col, int row)
     {

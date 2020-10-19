@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using CreativeSpore.SuperTilemapEditor;
 public class ToolControllerHoe : ToolControllerTileBased
 {
@@ -11,10 +11,10 @@ public class ToolControllerHoe : ToolControllerTileBased
     protected override IEnumerator UseCountdown()
     {
         Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
+        GameManager.Instance.Player.DoAction(CurrentTool.PlayerTrigger, CurrentTool.UseInterval, pos, 0, CurrentTool.ToolTrigger, true);
         List<Vector2> tiles = ToolCursorManager.Instance.GetTiles();
 
-        yield return new WaitForSeconds(CurrentTool.useInterval);
+        yield return new WaitForSeconds(CurrentTool.UseInterval);
         ProceedUse(tiles);
     }
     protected override void ProceedUse(List<Vector2> pTiles)
@@ -22,7 +22,7 @@ public class ToolControllerHoe : ToolControllerTileBased
 
         //Spend player energy
         NeedBase energyNeed = PlayerNeedManager.Instance.GetNeed("Energy");
-        energyNeed.Change(-CurrentTool.energyCost * (ToolCursorManager.Instance.CursorIndex + 1));
+        energyNeed.Change(-CurrentTool.EnergyCost * (ToolCursorManager.Instance.CursorIndex + 1));
 
         List<Vector2> tiles = pTiles;
 
@@ -51,7 +51,7 @@ public class ToolControllerHoe : ToolControllerTileBased
                         int rand = Random.Range(0, 100);
                         if (rand <= layer.Output.Chance)
                         {
-                            ItemSpawner.Instance.SpawnItems(layer.Output.Item.item, tile, (uint)layer.Output.Amount);
+                            ItemSpawner.Instance.SpawnItems(layer.Output.ContainedItem, tile, (uint)layer.Output.Amount);
                         }
                     }
                 }

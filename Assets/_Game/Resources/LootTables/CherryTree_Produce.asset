@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CherryTree_Produce
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 8507867947327751520, guid: 3fac1a4884c0e91479daf28f134578f9, type: 3}
+  - Item: {fileID: 11400000, guid: cb5197eacd52f1946b5498b3c073fd0a, type: 2}
     Chance: 50
   MinDraws: 3
   MaxDraws: 5

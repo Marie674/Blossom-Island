@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using ItemSystem;
+using Game.Items;
 using System;
 public class CraftingStationRecipesUI : MonoBehaviour
 {
     public TextMeshProUGUI TitleText;
     CraftingStation CurrentStation;
-    ItemType CurrentType;
+    ItemSystem.ItemTypes CurrentType;
     List<RecipeContainer> ValidRecipes = new List<RecipeContainer>();
-    List<ItemType> ValidTypes = new List<ItemType>();
+    List<ItemSystem.ItemTypes> ValidTypes = new List<ItemSystem.ItemTypes>();
 
     public RecipeNamePrefab RecipeUIPrefab;
     public Transform RecipeContainer;
@@ -37,7 +37,7 @@ public class CraftingStationRecipesUI : MonoBehaviour
         {
             if (CanCraft(recipe))
             {
-                ItemType type = recipe.Recipe.Outputs[0].Item.item.itemType;
+                ItemSystem.ItemTypes type = recipe.Recipe.Outputs[0].ContainedItem.Type;
                 if (!ValidTypes.Contains(type))
                 {
                     ValidTypes.Add(type);
@@ -70,9 +70,9 @@ public class CraftingStationRecipesUI : MonoBehaviour
     {
         ItemIcon.color = Color.white;
         ItemOutput output = CurrentRecipe.Recipe.Outputs[0];
-        ItemIcon.sprite = output.Item.item.itemSprite;
+        ItemIcon.sprite = output.ContainedItem.Icon;
         ItemAmountText.text = "x" + (output.Amount * CurrentRecipe.Amount).ToString();
-        ItemNameText.text = output.Item.item.itemName;
+        ItemNameText.text = output.ContainedItem.Name;
         CraftingAmountText.text = "x" + CurrentRecipe.Amount.ToString();
     }
     public void Confirm()
@@ -92,7 +92,7 @@ public class CraftingStationRecipesUI : MonoBehaviour
             return;
         }
         List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
-        foreach (ItemType type in ValidTypes)
+        foreach (ItemSystem.ItemTypes type in ValidTypes)
         {
             TMP_Dropdown.OptionData data = new TMP_Dropdown.OptionData();
             data.text = type.ToString();
@@ -129,18 +129,18 @@ public class CraftingStationRecipesUI : MonoBehaviour
     {
         string val = ItemTypeDropDown.options[ItemTypeDropDown.value].text;
 
-        ItemType type = (ItemType)Enum.Parse(typeof(ItemType), val);
+        ItemSystem.ItemTypes type = (ItemSystem.ItemTypes)Enum.Parse(typeof(ItemSystem.ItemTypes), val);
 
         bool foundType = false;
 
-        foreach (ItemType validType in ValidTypes)
+        foreach (ItemSystem.ItemTypes validType in ValidTypes)
         {
             if (type == validType)
             {
                 foundType = true;
             }
         }
-        ItemType newType = ValidTypes.Find(x => x == type);
+        ItemSystem.ItemTypes newType = ValidTypes.Find(x => x == type);
         if (foundType)
         {
             CraftingButtons.SetActive(true);
@@ -163,7 +163,7 @@ public class CraftingStationRecipesUI : MonoBehaviour
         {
             if (CanCraft(recipe))
             {
-                ItemType type = recipe.Recipe.Outputs[0].Item.item.itemType;
+                ItemSystem.ItemTypes type = recipe.Recipe.Outputs[0].ContainedItem.Type;
                 if (CurrentType == type)
                 {
                     ValidRecipes.Add(recipe);
@@ -185,7 +185,7 @@ public class CraftingStationRecipesUI : MonoBehaviour
         foreach (RecipeContainer recipe in ValidRecipes)
         {
             RecipeNamePrefab newRecipe = Instantiate(RecipeUIPrefab, RecipeContainer);
-            newRecipe.NameText.text = recipe.Recipe.Outputs[0].Item.item.itemName;
+            newRecipe.NameText.text = recipe.Recipe.Outputs[0].ContainedItem.Name;
             newRecipe.Button.onClick.AddListener(delegate ()
             {
                 SelectRecipe(recipe);
@@ -212,7 +212,7 @@ public class CraftingStationRecipesUI : MonoBehaviour
         }
         foreach (CraftingIngredient ingredient in pRecipe.Recipe.Ingredients)
         {
-            if (Inventory.GetItemAmount(ingredient.Item.item) < ingredient.Amount)
+            if (Inventory.GetItemAmount(ingredient.ContainedItem) < ingredient.Amount)
             {
                 return false;
             }

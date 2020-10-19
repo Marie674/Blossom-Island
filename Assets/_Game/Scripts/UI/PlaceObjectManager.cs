@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using CreativeSpore.SuperTilemapEditor;
 using PixelCrushers.DialogueSystem;
 using Game.NPCs.Blossoms;
 public class PlaceObjectManager : Singleton<PlaceObjectManager>
 {
 
-    public ItemPlaceable CurrentItem;
+    public ItemProp CurrentItem;
     GameObject ReferencedObject;
 
     public float TimeBeforeHold = 0.15f;
@@ -46,13 +46,13 @@ public class PlaceObjectManager : Singleton<PlaceObjectManager>
 
             ItemBase selectedItem = Toolbar.Instance.SelectedSlot.ReferencedItemStack.ContainedItem;
 
-            if (selectedItem as ItemPlaceable == null)
+            if (selectedItem as ItemProp == null)
             {
                 CurrentItem = null;
             }
             else
             {
-                CurrentItem = ItemSystemUtility.GetItemCopy(selectedItem.itemID, ItemType.PlaceableItem) as ItemPlaceable;
+                CurrentItem = ItemSystem.Instance.GetItemClone(selectedItem.ID) as ItemProp;
             }
 
         }
@@ -64,7 +64,7 @@ public class PlaceObjectManager : Singleton<PlaceObjectManager>
 
         if (CurrentItem != null)
         {
-            ReferencedObject = CurrentItem.ObjectPrefabs[0];
+            ReferencedObject = CurrentItem.Props[0];
             ObjectIndex = 0;
             Cursor.gameObject.SetActive(true);
             Cursor.Set(CurrentItem);
@@ -131,13 +131,13 @@ public class PlaceObjectManager : Singleton<PlaceObjectManager>
         {
             return;
         }
-        if (CurrentItem.itemType != ItemType.PlaceableItem)
+        if (CurrentItem.Type != ItemSystem.ItemTypes.Prop)
         {
             return;
         }
-        ObjectIndex = ((ObjectIndex + 1) % (CurrentItem.ObjectPrefabs.Length));
+        ObjectIndex = ((ObjectIndex + 1) % (CurrentItem.Props.Count));
         print(ObjectIndex);
-        ReferencedObject = CurrentItem.ObjectPrefabs[ObjectIndex];
+        ReferencedObject = CurrentItem.Props[ObjectIndex];
         Cursor.Set(CurrentItem);
     }
 
@@ -159,7 +159,7 @@ public class PlaceObjectManager : Singleton<PlaceObjectManager>
         {
             return;
         }
-        PixelCrushers.MessageSystem.SendMessage(this, "PropPlaced", CurrentItem.itemName);
+        PixelCrushers.MessageSystem.SendMessage(this, "PropPlaced", CurrentItem.Name);
 
         GameObject spawnObj = Instantiate(ReferencedObject, Cursor.transform.position, Cursor.transform.rotation);
         spawnObj.transform.position = Cursor.transform.position;

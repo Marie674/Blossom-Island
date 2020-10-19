@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 15474634802155538}
   - component: {fileID: 95103441921890031}
   - component: {fileID: 218598291593743188}
+  - component: {fileID: 2103757835721232381}
   m_Layer: 12
   m_Name: Bed
   m_TagString: Prop
@@ -228,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 2265124149400730360, guid: c87c30c457136e74b9a2bdc7153f9ca9, type: 3}
+  Item: {fileID: 11400000, guid: 1eecb5776db055040a20b5ad37fa2d6b, type: 2}
   Storage: 0
 --- !u!114 &95103441921890031
 MonoBehaviour:
@@ -271,6 +272,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 3.2148905}
   m_EdgeRadius: 0
+--- !u!114 &2103757835721232381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895335178606706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 0}
+  Storage: 0
 --- !u!1 &89554810742645417
 GameObject:
   m_ObjectHideFlags: 0

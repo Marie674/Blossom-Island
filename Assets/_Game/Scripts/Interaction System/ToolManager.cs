@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using PixelCrushers.DialogueSystem;
 using CreativeSpore.SuperTilemapEditor;
 
@@ -95,8 +95,8 @@ public class ToolManager : Singleton<ToolManager>
             }
             else
             {
-                CurrentTool = ItemSystemUtility.GetItemCopy(selectedItem.itemID, ItemType.Tool) as ItemTool;
-                TimeBeforeHold = CurrentTool.useInterval / 4;
+                CurrentTool = ItemSystem.Instance.GetItemClone(selectedItem.ID) as ItemTool;
+                TimeBeforeHold = CurrentTool.UseInterval / 4;
             }
         }
         else
@@ -106,7 +106,7 @@ public class ToolManager : Singleton<ToolManager>
 
         if (CurrentTool != null)
         {
-            CurrentToolController = Instantiate(CurrentTool.ToolController.gameObject, this.transform).GetComponent<ToolControllerBase>();
+            CurrentToolController = Instantiate(CurrentTool.Controller.gameObject, this.transform).GetComponent<ToolControllerBase>();
         }
 
         if (OnSelectedToolChanged != null)

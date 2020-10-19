@@ -1,87 +1,74 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
-
-[RequireComponent(typeof(Collider2D))]
-[RequireComponent(typeof(ItemContainer))]
-public class WorldItem : MonoBehaviour
+namespace Game.Items
 {
-
-
-    public uint Amount = 1;
-    public Sprite DefaultItemSprite;
-    public ItemContainer Container;
-
-
-    void Start()
+    [RequireComponent(typeof(Collider2D))]
+    public class WorldItem : MonoBehaviour
     {
-        Container = GetComponent<ItemContainer>();
-        UpdateItem();
-    }
 
-    void Reset()
-    {
-        UpdateItem();
-    }
 
-    public void SetItem(ItemBase pItem, uint pAmount = 1)
-    {
-        if (Container == null)
+        public uint Amount = 1;
+        public Sprite DefaultItemSprite;
+        public ItemBase ContainedItem;
+
+        void Start()
         {
-            Container = GetComponent<ItemContainer>();
-        }
-        if (Container == null)
-        {
-            Debug.LogError("WorldItem needs Container component");
+            UpdateItem();
         }
 
-        Container.item = ItemSystemUtility.GetItemCopy(pItem.itemName, pItem.itemType);
-        Amount = pAmount;
-
-        UpdateItem();
-    }
-
-    public void UpdateItem()
-    {
-        if (Container == null)
+        void Reset()
         {
-            Container = GetComponent<ItemContainer>();
+            UpdateItem();
         }
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
 
-        if (Container.item.itemIcon != null)
+        public void SetItem(ItemBase pItem, uint pAmount = 1)
         {
-            sprite.sprite = Container.item.itemIcon;
-        }
-        else
-        {
-            sprite.sprite = DefaultItemSprite;
-        }
-        gameObject.name = "Item: " + Container.item.itemName;
-    }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
+            ContainedItem = pItem.Clone(pItem);
+            Amount = pAmount;
+
+            UpdateItem();
+        }
+
+        public void UpdateItem()
         {
-            int amountAdded = other.GetComponent<PlayerInventory>().Add(Container.item, Amount);
-            int amountLeft = (int)Amount - amountAdded;
-            Amount = (uint)amountLeft;
-            if (Amount > 0)
+
+            SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+
+            if (ContainedItem.Icon != null)
             {
-                //inventory full
+                sprite.sprite = ContainedItem.Icon;
             }
             else
             {
-                Destroy(this.gameObject);
+                sprite.sprite = DefaultItemSprite;
             }
-
+            gameObject.name = "Item: " + ContainedItem.Name;
         }
-    }
 
-    void OnDestroy()
-    {
-        gameObject.SetActive(false);
+        void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.tag == "Player")
+            {
+                int amountAdded = other.GetComponent<PlayerInventory>().Add(ContainedItem, Amount);
+                int amountLeft = (int)Amount - amountAdded;
+                Amount = (uint)amountLeft;
+                if (Amount > 0)
+                {
+                    //inventory full
+                }
+                else
+                {
+                    Destroy(this.gameObject);
+                }
+
+            }
+        }
+
+        void OnDestroy()
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

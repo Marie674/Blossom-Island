@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using ItemSystem;
+using Game.Items;
 using TMPro;
 
 public class ToolbarSlotUI : MonoBehaviour
@@ -19,7 +19,7 @@ public class ToolbarSlotUI : MonoBehaviour
 
     private bool IsQuitting;
 
-    public List<ItemType> AcceptedTypes;
+    public List<ItemSystem.ItemTypes> AcceptedTypes;
 
     public KeyCode key = KeyCode.None;
 
@@ -79,7 +79,7 @@ public class ToolbarSlotUI : MonoBehaviour
         //	print (pItemStack);
         //If an item stack is specified
 
-        if (pItemStack != null && !AcceptedTypes.Contains(pItemStack.ContainedItem.itemType))
+        if (pItemStack != null && !AcceptedTypes.Contains(pItemStack.ContainedItem.Type))
         {
             return;
         }
@@ -142,7 +142,7 @@ public class ToolbarSlotUI : MonoBehaviour
         if (ReferencedItemStack != null)
         {
             ItemIcon.color = Color.white;
-            ItemIcon.sprite = ReferencedItemStack.ContainedItem.itemIcon;
+            ItemIcon.sprite = ReferencedItemStack.ContainedItem.Icon;
             if (ReferencedItemStack.Amount > 1)
             {
                 AmountText.text = ReferencedItemStack.Amount.ToString();

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class ContentSeller : MonoBehaviour
 {
@@ -25,16 +25,17 @@ public class ContentSeller : MonoBehaviour
     void SellContents(int pDayIndex)
     {
         float coins = 0;
-        ItemBase coinItem = (ItemBase)ItemSystemUtility.GetItemCopy(GenericItems.Coin.ToString(), ItemType.Generic);
-        ItemBase halfCoinItem = (ItemBase)ItemSystemUtility.GetItemCopy(GenericItems.HalfCoin.ToString(), ItemType.Generic);
+        ItemBase coinItem = ItemSystem.Instance.GetItemClone("Coin");
+        print(coinItem);
+        ItemBase halfCoinItem = ItemSystem.Instance.GetItemClone("Halfcoin");
 
         foreach (InventoryItemStack stack in Storage.ContainedStacks)
         {
-            if (stack.ContainedItem.itemID != coinItem.itemID && stack.ContainedItem.itemID != halfCoinItem.itemID)
+            if (stack.ContainedItem.ID != coinItem.ID && stack.ContainedItem.ID != halfCoinItem.ID)
             {
-                coins += stack.ContainedItem.value * stack.Amount;
+                coins += stack.ContainedItem.Value * stack.Amount;
                 GameManager.Instance.AddShippedItem(stack.ContainedItem, stack.Amount);
-                PixelCrushers.MessageSystem.SendMessage(this, "SellItem", stack.ContainedItem.itemName, stack.Amount);
+                PixelCrushers.MessageSystem.SendMessage(this, "SellItem", stack.ContainedItem.Name, stack.Amount);
             }
 
         }
@@ -52,14 +53,14 @@ public class ContentSeller : MonoBehaviour
         int amountLeft = coinItems - amountAdded;
         if (amountLeft > 0)
         {
-            Debug.LogWarning("Could not add " + amountLeft + " " + coinItem.itemName + " to storage: " + Storage.Name);
+            Debug.LogWarning("Could not add " + amountLeft + " " + coinItem.Name + " to storage: " + Storage.Name);
         }
 
         amountAdded = Storage.Add(halfCoinItem, (uint)halfCoinItems);
         amountLeft = halfCoinItems - amountAdded;
         if (amountLeft > 0)
         {
-            Debug.LogWarning("Could not add " + amountLeft + " " + coinItem.itemName + " to storage: " + Storage.Name);
+            Debug.LogWarning("Could not add " + amountLeft + " " + coinItem.Name + " to storage: " + Storage.Name);
         }
 
     }

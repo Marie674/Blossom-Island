@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class WaterPoint : MonoBehaviour
 {
 
-    public ItemContainer WaterBottle;
+    public ItemBottle WaterBottle;
 
     private Vector3 Center;
     void Start()
@@ -23,16 +23,16 @@ public class WaterPoint : MonoBehaviour
         }
         ItemBase item = Toolbar.Instance.SelectedSlot.ReferencedItemStack.ContainedItem;
 
-        if (item.itemType == ItemType.Bottle)
+        if (item.Type == ItemSystem.ItemTypes.Bottle)
         {
-            UseBottle(item as ItemBottle);
+            RefillBottle(item as ItemBottle);
         }
         if (ToolManager.Instance.CurrentToolController.GetComponent<ToolControllerWateringCan>() != null)
         {
             RefillWateringCan();
         }
         ParticleSpawner.Instance.SpawnOneShot(ParticleSpawner.ParticleTypes.Water, Center);
-        AkSoundEngine.PostEvent("Play_SFX_Water_Well",gameObject);
+        AkSoundEngine.PostEvent("Play_SFX_Water_Well", gameObject);
     }
 
     void RefillWateringCan()
@@ -40,21 +40,21 @@ public class WaterPoint : MonoBehaviour
         ToolManager.Instance.CurrentToolController.GetComponent<ToolControllerWateringCan>().Refill();
     }
 
-    void UseBottle(ItemBottle pBottle)
+    void RefillBottle(ItemBottle pBottle)
     {
 
-        if (pBottle.itemName != "Empty Bottle" && pBottle.itemName != "Water Bottle")
+        if (pBottle.Name != "Empty Bottle" && pBottle.Name != "Water Bottle")
         {
             return;
         }
 
-        if (pBottle.itemName == "Empty Bottle")
+        if (pBottle.Name == "Empty Bottle")
         {
             FindObjectOfType<PlayerInventory>().RemoveFromStack(Toolbar.Instance.SelectedSlot.ReferencedItemStack, 1);
-            ItemSpawner.Instance.SpawnItems(WaterBottle.item, this.transform.position, 1);
+            ItemSpawner.Instance.SpawnItems(WaterBottle, this.transform.position, 1);
         }
 
-        pBottle.currentCharge = pBottle.maxCharge;
+        pBottle.CurrentCharge = pBottle.MaxCharge;
     }
 
 }

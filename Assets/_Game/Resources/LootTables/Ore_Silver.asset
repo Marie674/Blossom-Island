@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Silver
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 329897080713444600, guid: 13547dbd2ac397e46812ce2a976a879f, type: 3}
+  - Item: {fileID: 11400000, guid: 8b131ce75bd2fc4428e5680a40a43151, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

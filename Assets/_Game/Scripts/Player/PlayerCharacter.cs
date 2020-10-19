@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CreativeSpore.RpgMapEditor;
-
+using Game.Items;
 public class PlayerCharacter : MonoBehaviour
 {
 
@@ -63,7 +63,7 @@ public class PlayerCharacter : MonoBehaviour
         IsCarrying = false;
         if (Toolbar.Instance.SelectedSlot.ReferencedItemStack != null)
         {
-            if (Toolbar.Instance.SelectedSlot.ReferencedItemStack.ContainedItem.itemType != ItemSystem.ItemType.Tool)
+            if (Toolbar.Instance.SelectedSlot.ReferencedItemStack.ContainedItem.Type != ItemSystem.ItemTypes.Tool)
             {
                 IsCarrying = true;
             }

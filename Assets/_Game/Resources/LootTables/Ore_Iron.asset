@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Iron
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 5427836932945880891, guid: 1871d701a3361eb42b2ed3f6aed2c0a8, type: 3}
+  - Item: {fileID: 11400000, guid: 89d59ca006a4adc448257b6bb13d3eda, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

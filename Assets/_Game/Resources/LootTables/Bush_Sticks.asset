@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Bush_Sticks
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 5786469319123668187, guid: c0386505ff314d24a86106fe832db286, type: 3}
+  - Item: {fileID: 11400000, guid: ab16d036575beea428669a5766ae659b, type: 2}
     Chance: 50
-  MinTries: 0
-  MaxTries: 1
+  MinDraws: 1
+  MaxDraws: 1
   MinSpawn: -1

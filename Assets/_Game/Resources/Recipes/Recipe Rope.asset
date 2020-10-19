@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00825cd2f1a6010469120f6826a54e92, type: 3}
+  m_Name: Recipe Rope
+  m_EditorClassIdentifier: 
+  Recipe:
+    Ingredients:
+    - ContainedItem: {fileID: 11400000, guid: 2d5bea21f4959c841a054aae5da15144, type: 2}
+      Amount: 1
+      Used: 1
+    Outputs:
+    - ContainedItem: {fileID: 11400000, guid: 930b6cf00a956fa48adb369cf54264c7, type: 2}
+      Amount: 1
+      Chance: 100
+      ByProduct: 0
+    CraftingTime: 3
+    NeedsToBeLearned: 0
+  Amount: 1
+  UniqueName: RRope

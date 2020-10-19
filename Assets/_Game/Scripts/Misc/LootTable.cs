@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 
 [System.Serializable]
 public struct LootItem
 {
-    public ItemContainer Item;
+    public ItemBase Item;
     [Tooltip("Max. 3 Decimals")]
     public float Chance;
 }
@@ -49,7 +49,7 @@ public class LootTable : ScriptableObject
             int lootChance = Mathf.RoundToInt(loot.Chance * 100);
             totalChance += lootChance;
 
-            ItemBase lootItem = loot.Item.item;
+            ItemBase lootItem = loot.Item;
             itemPool.Add(lootItem, lootChance);
         }
         if (totalChance > 10000)
@@ -57,7 +57,7 @@ public class LootTable : ScriptableObject
             totalChance = 10000;
         }
 
-        ItemBase nullItem = ItemSystemUtility.GetItemCopy((int)GenericItems.NULL, ItemType.Generic);
+        ItemBase nullItem = ItemSystem.Instance.GetItemClone(-1);
         int remainingChance = 10000 - totalChance;
         itemPool.Add(nullItem, remainingChance);
 
@@ -67,7 +67,7 @@ public class LootTable : ScriptableObject
         for (int i = 0; i < rand; i++)
         {
             ItemBase draw = WeightedRandomizer.From(itemPool).TakeOne();
-            if (draw.itemID == nullItem.itemID)
+            if (draw.ID == nullItem.ID)
             {
                 itemList.Add(nullItem);
                 Debug.Log(name + " drew: nothing");
@@ -77,15 +77,15 @@ public class LootTable : ScriptableObject
             {
                 spawned += 1;
                 itemList.Add(draw);
-                Debug.Log(name + " drew: " + draw.itemName);
+                Debug.Log(name + " drew: " + draw.Name);
 
             }
         }
         while (spawned < MinSpawn)
         {
-            Debug.Log(name + " adding: " + Items[0].Item.item.itemName);
+            Debug.Log(name + " adding: " + Items[0].Item.Name);
 
-            itemList.Add(Items[0].Item.item);
+            itemList.Add(Items[0].Item);
             spawned += 1;
         }
 

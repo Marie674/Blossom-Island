@@ -47,71 +47,39 @@ MonoBehaviour:
   AffectsObjects: 0
   AffectsTilemap: 1
   AllowedTags: []
-  CurrentTool:
-    itemName: 
-    itemDescription: 
-    itemID: 0
-    consumable: 0
-    sellable: 1
-    value: 0
-    shopMarkupPercentage: 400
-    weight: 1
-    itemSprite: {fileID: 0}
-    itemIcon: {fileID: 0}
-    UsableFromToolbar: 0
-    itemType: 0
-    ItemTags: 
-    Ingredients: []
-    Traits: []
-    power: 1
-    level: 1
-    useInterval: 0.1
-    maxDistance: 1
-    energyCost: 1
-    MaxCharge: 25
-    CurrentCharge: 25
-    ToolController: {fileID: 0}
-    ItemsUsed: []
-    Cursors: []
-    CursorColor: {r: 1, g: 1, b: 1, a: 1}
-    AffectsObjects: 0
-    AffectsTiles: 0
-    cropName: 
-    trigger: 
-    toolTrigger: 
+  CurrentTool: {fileID: 0}
   AffectedLayerNames:
   - Name: TallGrass
     Output:
-      Item: {fileID: 114905788785053326, guid: b31bd3685db854b49afdb0f65dd3b812, type: 3}
+      ContainedItem: {fileID: 11400000, guid: afbfdd2e1fb38084992d063bd8a0d9c6, type: 2}
       Amount: 1
       Chance: 80
       ByProduct: 0
     Input: {fileID: 6369227739873283540, guid: f532eed374749a24b8a9b65843ed4a5d, type: 3}
   - Name: Grass
     Output:
-      Item: {fileID: 6369227739873283540, guid: f532eed374749a24b8a9b65843ed4a5d,
-        type: 3}
+      ContainedItem: {fileID: 11400000, guid: afbfdd2e1fb38084992d063bd8a0d9c6, type: 2}
       Amount: 1
       Chance: 70
       ByProduct: 0
     Input: {fileID: 0}
   - Name: Dark Sand
     Output:
-      Item: {fileID: 114293296045674366, guid: 07179f60b42e8954e980a395d12fa735, type: 3}
+      ContainedItem: {fileID: 0}
       Amount: 1
       Chance: 70
       ByProduct: 0
     Input: {fileID: 0}
   - Name: Sand
     Output:
-      Item: {fileID: 114293296045674366, guid: 07179f60b42e8954e980a395d12fa735, type: 3}
+      ContainedItem: {fileID: 11400000, guid: c3edbf085bd1b24478cc14278b7f5a30, type: 2}
       Amount: 1
       Chance: 70
       ByProduct: 0
     Input: {fileID: 0}
   - Name: Dirt
     Output:
-      Item: {fileID: 718943545685295372, guid: d81e0ebec21b94f448ef41ad57c07384, type: 3}
+      ContainedItem: {fileID: 11400000, guid: 1528846af529898429b4727cae9172e9, type: 2}
       Amount: 1
       Chance: 70
       ByProduct: 0

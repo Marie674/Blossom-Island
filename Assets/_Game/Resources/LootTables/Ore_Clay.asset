@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Clay
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 2993783889355277084, guid: a5fc3f6c7c3b44c42b79e3f7546092f8, type: 3}
+  - Item: {fileID: 11400000, guid: a04c2db4514fd0b4d848ffaa587ade5e, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

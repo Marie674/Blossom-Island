@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using UnityEngine.UI;
 
 
@@ -18,7 +18,7 @@ public class StoreUI : InventoryUI
             return;
         }
 
-        if (inventory.Gold >= storageSelection.value)
+        if (inventory.Gold >= storageSelection.Value)
         {
             if (inventory.Add(storageSelection, 1) > 0)
             {

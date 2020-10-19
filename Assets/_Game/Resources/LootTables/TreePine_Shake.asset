@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: TreePine_Shake
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 5786469319123668187, guid: c0386505ff314d24a86106fe832db286, type: 3}
+  - Item: {fileID: 11400000, guid: ab16d036575beea428669a5766ae659b, type: 2}
     Chance: 15
-  - Item: {fileID: 609274215636231847, guid: a5fe5eb72afcff54ea52b577082207bf, type: 3}
+  - Item: {fileID: 11400000, guid: 633e9bbe389f484458f1a661ba478c60, type: 2}
     Chance: 15
   MinDraws: 1
   MaxDraws: 1

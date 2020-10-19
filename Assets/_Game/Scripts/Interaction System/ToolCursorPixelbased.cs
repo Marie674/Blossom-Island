@@ -70,7 +70,7 @@ public class ToolCursorPixelbased : ToolCursorBase
 
             if (harvestObject != null)
             {
-                if (harvestObject.RequiredToolLevel <= CurrentToolController.CurrentTool.level)
+                if (harvestObject.RequiredToolLevel <= CurrentToolController.CurrentTool.Level)
                 {
                     validCount += 1;
                 }

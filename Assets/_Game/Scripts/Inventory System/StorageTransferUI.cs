@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class StorageTransferUI : MonoBehaviour
 {
@@ -43,11 +43,11 @@ public class StorageTransferUI : MonoBehaviour
             amount = pStack.Amount;
         }
 
-        if (from.SelectedItem == null || from.SelectedItem.itemID == 0)
+        if (from.SelectedItem == null || from.SelectedItem.ID == 0)
         {
             return;
         }
-        ItemBase item = ItemSystemUtility.GetItemCopy(pStack.ContainedItem.itemID, pStack.ContainedItem.itemType);
+        ItemBase item = ItemSystem.Instance.GetItemClone(pStack.ContainedItem.ID);
         InventoryItemStack selectedStack = pStack;
 
 

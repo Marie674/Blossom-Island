@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 public class CropController : MonoBehaviour
 {
 
@@ -248,7 +248,6 @@ public class CropController : MonoBehaviour
     }
     protected void Output()
     {
-
 
         foreach (LootTable list in Template.Outputs)
         {

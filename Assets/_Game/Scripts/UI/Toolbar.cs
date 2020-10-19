@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 
 public class Toolbar : Singleton<Toolbar>
 {
@@ -68,9 +68,9 @@ public class Toolbar : Singleton<Toolbar>
         SelectedSlot.OnSlotItemChanged += ItemChanged;
         //Call the item changed event
         ItemChanged();
-        if (Inventory.IsOpen && Inventory.SelectedItem.itemName != "")
+        if (Inventory.IsOpen && Inventory.SelectedItem.Name != "")
         {
-            SelectedSlot.ChangeItem(PlayerInventory.FindItemStack(Inventory.SelectedItem.itemID));
+            SelectedSlot.ChangeItem(PlayerInventory.FindItemStack(Inventory.SelectedItem.ID));
         }
 
 

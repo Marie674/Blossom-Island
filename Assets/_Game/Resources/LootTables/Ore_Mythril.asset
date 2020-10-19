@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Mythril
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 2419349147426889172, guid: 6701c188ee706054292fb2ac32526f13, type: 3}
+  - Item: {fileID: 11400000, guid: 0b10e6db98e6b81449973811e570b5ca, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

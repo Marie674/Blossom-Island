@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 public class TreeBase : HarvestObject
 {
 
@@ -122,18 +122,18 @@ public class TreeBase : HarvestObject
     public override bool Hit()
     {
         ItemTool tool = ToolManager.Instance.CurrentTool;
-        if (RequiredToolLevel > tool.level)
+        if (RequiredToolLevel > tool.Level)
         {
             return false;
         }
         ParticleSpawner.Instance.SpawnOneShot(ParticleSpawner.ParticleTypes.Wood, transform.position);
         Shake();
-        if (RequiredToolLevel > tool.level)
+        if (RequiredToolLevel > tool.Level)
         {
             return false;
         }
 
-        CurrentHealth = Mathf.Clamp(CurrentHealth - tool.power, 0, MaxHealth);
+        CurrentHealth = Mathf.Clamp(CurrentHealth - tool.Power, 0, MaxHealth);
         if (CurrentHealth == 0)
         {
             FellTree();
@@ -176,7 +176,7 @@ public class TreeBase : HarvestObject
                 List<ItemBase> items = ShakeOutputs.Output();
                 foreach (ItemBase item in items)
                 {
-                    if (item.itemName != "NULL")
+                    if (item.Name != "NULL")
                     {
                         ItemSpawner.Instance.SpawnItems(item, new Vector3(this.transform.position.x, this.transform.position.y - 1f, this.transform.position.z));
                         DroppedItems += 1;

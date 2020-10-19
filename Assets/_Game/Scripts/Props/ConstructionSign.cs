@@ -2,41 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers;
-using ItemSystem;
 using PixelCrushers.DialogueSystem;
 
-public class ConstructionSign : MonoBehaviour {
+public class ConstructionSign : MonoBehaviour
+{
 
-	public ConstructionSite Site;
-	// Use this for initialization
-	private SupplyBoxUI SuppliesUI;
+    public ConstructionSite Site;
+    // Use this for initialization
+    private SupplyBoxUI SuppliesUI;
 
-	void Start(){
-		Site = GetComponentInParent<ConstructionSite> ();
-	}
+    void Start()
+    {
+        Site = GetComponentInParent<ConstructionSite>();
+    }
 
-	public void Interact () {
-		
-		if (Site == null) {
-			return;
-		}
+    public void Interact()
+    {
 
-		if (Site.ReadyForContractor == false) {
-			ShowSuppliesUI ();
-			return;
-		}
+        if (Site == null)
+        {
+            return;
+        }
 
-		else if (Site.ConstructionStarted == false) {
-			DialogueManager.StartConversation ("Get Carpenter");
-			return;
-		}
-	}
+        if (Site.ReadyForContractor == false)
+        {
+            ShowSuppliesUI();
+            return;
+        }
 
-	void ShowSuppliesUI(){
-		SuppliesUI = GameObject.FindObjectOfType<SupplyBoxUI>();
-		SuppliesUI.TitleText.text = Site.name + " construction";
-		SuppliesUI.Setup (Site.Building.Materials,Site);
+        else if (Site.ConstructionStarted == false)
+        {
+            DialogueManager.StartConversation("Get Carpenter");
+            return;
+        }
+    }
 
-	}
+    void ShowSuppliesUI()
+    {
+        SuppliesUI = GameObject.FindObjectOfType<SupplyBoxUI>();
+        SuppliesUI.TitleText.text = Site.name + " construction";
+        SuppliesUI.Setup(Site.Building.Materials, Site);
+
+    }
 
 }

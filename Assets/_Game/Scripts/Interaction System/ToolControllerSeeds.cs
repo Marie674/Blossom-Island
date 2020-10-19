@@ -1,24 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+
 public class ToolControllerSeeds : ToolControllerTileBased
 {
     // Start is called before the first frame update
     protected override IEnumerator UseCountdown()
     {
         Vector2 pos = ToolCursorManager.Instance.CurrentCursor.transform.position;
-        GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
+        GameManager.Instance.Player.DoAction(CurrentTool.PlayerTrigger, CurrentTool.UseInterval, pos, 0, CurrentTool.ToolTrigger, true);
         List<Vector2> tiles = ToolCursorManager.Instance.GetTiles();
 
-        yield return new WaitForSeconds(CurrentTool.useInterval);
+        yield return new WaitForSeconds(CurrentTool.UseInterval);
         ProceedUse(tiles);
     }
     protected override void ProceedUse(List<Vector2> pTiles)
     {
 
         NeedBase energyNeed = PlayerNeedManager.Instance.GetNeed("Energy");
-        energyNeed.Change(-CurrentTool.energyCost * (ToolCursorManager.Instance.CursorIndex + 1));
+        energyNeed.Change(-CurrentTool.EnergyCost * (ToolCursorManager.Instance.CursorIndex + 1));
 
         List<Vector2> tiles = pTiles;
 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b61cef930a31a48899c7c696c066e3, type: 3}
+  m_Name: Wooden Watering Can
+  m_EditorClassIdentifier: 
+  ID: 11
+  Name: Wooden Watering Can
+  Description: A tool used to water crops. This one is heavy and leaky.
+  Icon: {fileID: 21300000, guid: 8a267c606fa630b4584c1380bc5b7bcd, type: 3}
+  Type: 2
+  Value: 40
+  Markup: 400
+  Weight: 2.5
+  Sellable: 1
+  Consumable: 0
+  UsableFromToolbar: 0
+  Tags: 
+  Power: 1
+  Level: 1
+  UseInterval: 0.7
+  MaxDistance: 0
+  EnergyCost: 0.75
+  MaxCharge: 25
+  CurrentCharge: 25
+  PlayerTrigger: Water
+  ToolTrigger: Water
+  CropName: 
+  UsedItems: []
+  Cursors:
+  - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
+  Controller: {fileID: 8681930519667108972, guid: f27683db4fc459e4cab3cc361aea0598,
+    type: 3}

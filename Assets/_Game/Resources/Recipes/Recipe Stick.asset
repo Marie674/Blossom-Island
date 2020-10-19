@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00825cd2f1a6010469120f6826a54e92, type: 3}
+  m_Name: Recipe Stick
+  m_EditorClassIdentifier: 
+  Recipe:
+    Ingredients:
+    - ContainedItem: {fileID: 11400000, guid: 7c1c9d656e723c44c86771d97ebfc073, type: 2}
+      Amount: 1
+      Used: 1
+    Outputs:
+    - ContainedItem: {fileID: 11400000, guid: ab16d036575beea428669a5766ae659b, type: 2}
+      Amount: 6
+      Chance: 100
+      ByProduct: 0
+    CraftingTime: 3
+    NeedsToBeLearned: 0
+  Amount: 1
+  UniqueName: RStick

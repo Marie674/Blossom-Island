@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b61cef930a31a48899c7c696c066e3, type: 3}
+  m_Name: Stone Pickaxe
+  m_EditorClassIdentifier: 
+  ID: 9
+  Name: Stone Pickaxe
+  Description: Tool used to break rocks and stones. This one barely works.
+  Icon: {fileID: 21300000, guid: be8ef6d9613c3dc47a947a77fe19d4da, type: 3}
+  Type: 2
+  Value: 40
+  Markup: 400
+  Weight: 2.5
+  Sellable: 1
+  Consumable: 0
+  UsableFromToolbar: 0
+  Tags: 
+  Power: 1
+  Level: 1
+  UseInterval: 0.5
+  MaxDistance: 0
+  EnergyCost: 3
+  MaxCharge: 0
+  CurrentCharge: 0
+  PlayerTrigger: Hit
+  ToolTrigger: Pickaxe
+  CropName: 
+  UsedItems: []
+  Cursors:
+  - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
+  Controller: {fileID: 1837165271866734200, guid: 7292dc649bce8364c901e00e9289a623,
+    type: 3}

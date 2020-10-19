@@ -790,8 +790,8 @@ MonoBehaviour:
   Name: Chopping Block
   Queue: []
   StationRecipes:
-  - {fileID: 5079801893039723175, guid: b361ac696cec75f48a857ab3cbc23dc2, type: 3}
-  - {fileID: 35140214368935523, guid: 4c5b0ea8a7cf50a43886d6e36bab9b51, type: 3}
+  - {fileID: 11400000, guid: d8168d88bba7b664db7f74ae0d9ef158, type: 2}
+  - {fileID: 11400000, guid: 2295eecf27184a846902ffd22351028b, type: 2}
   AutomaticProgression: 0
   RecipeSprite: {fileID: 1036911435488141898}
   RecipeIndex: 0
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 6114254411193453216, guid: 22cde795df3814941b6a5fe7d78c967a, type: 3}
+  Item: {fileID: 11400000, guid: a3278644694a93742a7b26b9ee242011, type: 2}
   Storage: 0
 --- !u!114 &-455621306188978978
 MonoBehaviour:

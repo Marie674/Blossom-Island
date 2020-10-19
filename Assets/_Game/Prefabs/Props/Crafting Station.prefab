@@ -207,19 +207,20 @@ MonoBehaviour:
   Name: Crafting Station
   Queue: []
   StationRecipes:
-  - {fileID: 5079801893039723175, guid: a9d285dbeac0da64baf3de3813d96011, type: 3}
-  - {fileID: 5079801893039723175, guid: 7035cd2eb5fb69941b055e4e475b8ed5, type: 3}
-  - {fileID: 5079801893039723175, guid: f7ce1cb2b2cb5f042a3b3b9020d61f4a, type: 3}
-  - {fileID: 5079801893039723175, guid: 8f8420398d9e79541bad6718f1077292, type: 3}
-  - {fileID: 5079801893039723175, guid: f258e4abf0136524595d2676ed06b4ff, type: 3}
-  - {fileID: 5079801893039723175, guid: f11d81912bc58c4458d784642aa58d18, type: 3}
-  - {fileID: 5079801893039723175, guid: 5844a1d919e0464438d888a19c6f0ac2, type: 3}
-  - {fileID: 5079801893039723175, guid: 07928f19944be7747ab9d30224ade219, type: 3}
-  - {fileID: 114782817160631648, guid: 8f128a7eb5b965649ab313a7e5627bb1, type: 3}
-  - {fileID: 114513981917268586, guid: a1f3d8bf76d031143a0c9fa17d31ecf3, type: 3}
-  - {fileID: 5079801893039723175, guid: 01c50e2a570622049b018e34cc4d27a7, type: 3}
-  - {fileID: 5079801893039723175, guid: 01c50e2a570622049b018e34cc4d27a7, type: 3}
-  - {fileID: 35140214368935523, guid: ee7ce6c055eaf464f8782024f9d384a9, type: 3}
+  - {fileID: 11400000, guid: 3acced3750bf0294aae3b911154777eb, type: 2}
+  - {fileID: 11400000, guid: bcaf6bafa86ca80439a913b59c4b8f36, type: 2}
+  - {fileID: 11400000, guid: f7776496a430a0f43b35b9335c5b537d, type: 2}
+  - {fileID: 11400000, guid: 9f22474aff02543418c4ebdf837f438b, type: 2}
+  - {fileID: 11400000, guid: c1e438685b1f4594db67dc6a593b545e, type: 2}
+  - {fileID: 11400000, guid: 30ab2c5e8af1ec14fb6c3ef31fc93848, type: 2}
+  - {fileID: 11400000, guid: 2394c6404a62a4043bbba8f39a5d9c8a, type: 2}
+  - {fileID: 11400000, guid: 31b28c14476eea34ea0deef81cd4207e, type: 2}
+  - {fileID: 11400000, guid: 027d5f6408ddc684aa15af5cf0434651, type: 2}
+  - {fileID: 11400000, guid: 26db2ac2a72ace04a99b13d46a5ebf45, type: 2}
+  - {fileID: 11400000, guid: b5dc163c7ddbdce42b95736880639d29, type: 2}
+  - {fileID: 11400000, guid: 360d5f9fdb33ffe4ba4de89918c2ca8b, type: 2}
+  - {fileID: 11400000, guid: 4c767cd22b4d120438324bc41c1102e2, type: 2}
+  - {fileID: 11400000, guid: 3d6cf308922aa30459467c37883b3654, type: 2}
   AutomaticProgression: 0
   RecipeSprite: {fileID: 385533445005524993}
   RecipeIndex: 0
@@ -333,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 6114254411193453216, guid: 22cde795df3814941b6a5fe7d78c967a, type: 3}
+  Item: {fileID: 11400000, guid: 2b2fc76a1dc0c524b9ff86da54e46476, type: 2}
   Storage: 0
 --- !u!114 &5451265873981261133
 MonoBehaviour:

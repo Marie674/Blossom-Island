@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773a803cb51e9a649a84c9afa2712e9b, type: 3}
+  m_Name: Fire Pit
+  m_EditorClassIdentifier: 
+  ID: 63
+  Name: Fire Pit
+  Description: A fire pit that will stay in place after burning out. Just add fuel
+    and light with a fire starter.
+  Icon: {fileID: 0}
+  Type: 5
+  Value: 0
+  Markup: 400
+  Weight: 10
+  Sellable: 1
+  Consumable: 1
+  UsableFromToolbar: 1
+  Tags: 
+  PropSprite: {fileID: 0}
+  Props:
+  - {fileID: 1889617365300968, guid: 8580e74965bcb4d41a7f5d45e4ec2e6a, type: 3}

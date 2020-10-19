@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using PixelCrushers.DialogueSystem;
 using UnityEngine.SceneManagement;
 [System.Serializable]
-public struct ContainedItem
+public class ContainedItem
 {
-    public ItemContainer Item;
+    public ItemBase Item;
     public int Amount;
 }
 public class StorageObject : MonoBehaviour
@@ -22,6 +22,8 @@ public class StorageObject : MonoBehaviour
     public int MaxStacks;
     public bool IsSellChest = false;
 
+    public ItemBase CoinItem;
+    public ItemBase HalfCoinItem;
 
     public List<InventoryItemStack> ContainedStacks = new List<InventoryItemStack>();
 
@@ -51,8 +53,7 @@ public class StorageObject : MonoBehaviour
     {
         foreach (ContainedItem item in StartingItems)
         {
-
-            int amountAdded = Add(item.Item.item, (uint)item.Amount);
+            int amountAdded = Add(item.Item, (uint)item.Amount);
             int amountLeft = item.Amount - amountAdded;
             if (amountLeft > 0)
             {
@@ -80,10 +81,9 @@ public class StorageObject : MonoBehaviour
     public delegate void AddItem(StorageObject pObj);
     public static event AddItem OnAddItem;
 
-    public virtual int Add(ItemBase item, uint pAmount, bool pDropLeftOvers = false)
+    public virtual int Add(ItemBase pItem, uint pAmount, bool pDropLeftOvers = false)
     {
-
-        if (IsSellChest == false && item.itemName == "Coin")
+        if (IsSellChest == false && pItem.Name == "Coin")
         {
             return 0;
         }
@@ -91,9 +91,9 @@ public class StorageObject : MonoBehaviour
 
         //don't add more than weight allows
 
-        if (item.weight > 0)
+        if (pItem.Weight > 0)
         {
-            amountToAdd = Mathf.FloorToInt((MaxWeight - CurrentWeight) / item.weight);
+            amountToAdd = Mathf.FloorToInt((MaxWeight - CurrentWeight) / pItem.Weight);
         }
 
         //don't add more than requested
@@ -110,7 +110,7 @@ public class StorageObject : MonoBehaviour
         int amountAdded = 0;
 
         //Check for an existing stack
-        InventoryItemStack existingStack = FindItemStack(item.itemID);
+        InventoryItemStack existingStack = FindItemStack(pItem.ID);
 
 
         //if there exists a stack, add as much to it as possible
@@ -142,7 +142,7 @@ public class StorageObject : MonoBehaviour
             for (int i = 0; i < requiredStacks; i++)
             {
                 InventoryItemStack newItemStack = new InventoryItemStack();
-                newItemStack.ContainedItem = ItemSystemUtility.GetItemCopy(item.itemID, item.itemType);
+                newItemStack.ContainedItem = pItem.Clone(pItem);
                 int newAmt = Mathf.Clamp(amountLeft, 0, MaxStackAmount);
                 newItemStack.Amount = newAmt;
                 amountAdded += newAmt;
@@ -159,11 +159,11 @@ public class StorageObject : MonoBehaviour
         {
             OnAddItem(this);
         }
-        CurrentWeight += item.weight * amountAdded;
+        CurrentWeight += pItem.Weight * amountAdded;
 
         if (pDropLeftOvers)
         {
-            DropLeftOvers(item, amountLeft);
+            DropLeftOvers(pItem, amountLeft);
         }
         return amountAdded;
     }
@@ -190,7 +190,7 @@ public class StorageObject : MonoBehaviour
     }
     public bool CheckAdd(ItemBase pItem, int pAmount)
     {
-        float WeightToAdd = pItem.weight * pAmount;
+        float WeightToAdd = pItem.Weight * pAmount;
 
         if (CurrentWeight + WeightToAdd > MaxWeight)
         {
@@ -212,7 +212,7 @@ public class StorageObject : MonoBehaviour
         List<InventoryItemStack> stacks = new List<InventoryItemStack>();
         foreach (InventoryItemStack stack in ContainedStacks)
         {
-            if (pItem.itemID == stack.ContainedItem.itemID)
+            if (pItem.ID == stack.ContainedItem.ID)
             {
                 stacks.Add(stack);
             }
@@ -231,7 +231,7 @@ public class StorageObject : MonoBehaviour
         for (i = 0; i < amount; i++)
         {
             itemStack.Remove(1);
-            CurrentWeight -= itemStack.ContainedItem.weight;
+            CurrentWeight -= itemStack.ContainedItem.Weight;
             if (itemStack.Amount <= 0)
             {
 
@@ -247,7 +247,7 @@ public class StorageObject : MonoBehaviour
         }
         for (i = 0; i < amount; i++)
         {
-            PixelCrushers.MessageSystem.SendMessage(gameObject, "LoseItem", itemStack.ContainedItem.itemName);
+            PixelCrushers.MessageSystem.SendMessage(gameObject, "LoseItem", itemStack.ContainedItem.Name);
 
         }
         return i;
@@ -255,7 +255,7 @@ public class StorageObject : MonoBehaviour
 
     public void RemoveItem(ItemBase pItem, uint pAmount = 1)
     {
-        RemoveFromStack(FindItemStack(pItem.itemID), pAmount);
+        RemoveFromStack(FindItemStack(pItem.ID), pAmount);
     }
 
 
@@ -271,7 +271,7 @@ public class StorageObject : MonoBehaviour
     {
         foreach (InventoryItemStack itemStack in ContainedStacks)
         {
-            if (pItem.itemID == itemStack.ContainedItem.itemID)
+            if (pItem.ID == itemStack.ContainedItem.ID)
             {
                 return itemStack;
             }
@@ -282,7 +282,7 @@ public class StorageObject : MonoBehaviour
     {
         foreach (InventoryItemStack itemStack in ContainedStacks)
         {
-            if (pItemID == itemStack.ContainedItem.itemID)
+            if (pItemID == itemStack.ContainedItem.ID)
             {
                 return itemStack;
             }
@@ -293,13 +293,17 @@ public class StorageObject : MonoBehaviour
     public void ClearStorage()
     {
         List<InventoryItemStack> coinStacks = new List<InventoryItemStack>();
-        foreach (InventoryItemStack item in ContainedStacks)
+        if (CoinItem != null && HalfCoinItem != null)
         {
-            if (item.ContainedItem.itemID == (int)GenericItems.Coin || item.ContainedItem.itemID == (int)GenericItems.HalfCoin)
+            foreach (InventoryItemStack item in ContainedStacks)
             {
-                coinStacks.Add(item);
+                if (item.ContainedItem.ID == CoinItem.ID || item.ContainedItem.ID == HalfCoinItem.ID)
+                {
+                    coinStacks.Add(item);
+                }
             }
         }
+
         ContainedStacks.Clear();
         ContainedStacks = coinStacks;
         CurrentWeight = 0;

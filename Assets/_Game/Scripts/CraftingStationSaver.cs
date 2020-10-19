@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
+using Game.Items;
 public class CraftingStationSaver : MonoBehaviour
 {
     CraftingStation TargetStation;
@@ -41,8 +42,8 @@ public class CraftingStationSaver : MonoBehaviour
 
         for (int i = 0; i < TargetStation.ChosenItems.Count; i++)
         {
-            DialogueLua.SetVariable(VariableName + "ChosenID" + i, TargetStation.ChosenItems[i].Item.itemID);
-            DialogueLua.SetVariable(VariableName + "ChosenType", TargetStation.ChosenItems[i].Item.itemType.ToString());
+            DialogueLua.SetVariable(VariableName + "ChosenID" + i, TargetStation.ChosenItems[i].ContainedItem.ID);
+            DialogueLua.SetVariable(VariableName + "ChosenType", TargetStation.ChosenItems[i].ContainedItem.Type.ToString());
             DialogueLua.SetVariable(VariableName + "ChosenAmount" + i, TargetStation.ChosenItems[i].Amount);
 
         }
@@ -108,13 +109,13 @@ public class CraftingStationSaver : MonoBehaviour
 
         for (int i = 0; i < chosenAmt; i++)
         {
-            string chosenID = DialogueLua.GetVariable(VariableName + "ChosenID" + i).AsString;
+            int chosenID = DialogueLua.GetVariable(VariableName + "ChosenID" + i).asInt;
             string typeName = DialogueLua.GetVariable(VariableName + "ChosenType" + i).AsString;
-            ItemSystem.ItemType type = (ItemSystem.ItemType)System.Enum.Parse(typeof(ItemSystem.ItemType), typeName);
+            ItemSystem.ItemTypes type = (ItemSystem.ItemTypes)System.Enum.Parse(typeof(ItemSystem.ItemTypes), typeName);
             int chosenmAmount = DialogueLua.GetVariable(VariableName + "ChosenAmount" + i).AsInt;
 
             StationItem newItem = new StationItem();
-            newItem.Item = ItemSystem.ItemSystemUtility.GetItemCopy(chosenID, type);
+            newItem.ContainedItem = ItemSystem.Instance.GetItemClone(chosenID);
             newItem.Amount = chosenmAmount;
 
             TargetStation.ChosenItems.Add(newItem);

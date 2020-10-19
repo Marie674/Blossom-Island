@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b61cef930a31a48899c7c696c066e3, type: 3}
+  m_Name: Steel Sickle
+  m_EditorClassIdentifier: 
+  ID: 25
+  Name: Steel Sickle
+  Description: Tool used to cut long grass and harvest some crops. Sharp and durable.
+  Icon: {fileID: 21300000, guid: 39761abe222a9e841889ada5134d2872, type: 3}
+  Type: 2
+  Value: 2000
+  Markup: 400
+  Weight: 1.5
+  Sellable: 1
+  Consumable: 0
+  UsableFromToolbar: 0
+  Tags: 
+  Power: 1
+  Level: 4
+  UseInterval: 0.5
+  MaxDistance: 0
+  EnergyCost: 0.1
+  MaxCharge: 0
+  CurrentCharge: 0
+  PlayerTrigger: Sickle
+  ToolTrigger: Sickle
+  CropName: 
+  UsedItems: []
+  Cursors:
+  - {fileID: 8062456437375452386, guid: 35245962e3b0ed34b9d06f77d92a3a58, type: 3}
+  Controller: {fileID: 3146847659644748530, guid: 14cc68abaeecbf941bd46ecf173f1c99,
+    type: 3}

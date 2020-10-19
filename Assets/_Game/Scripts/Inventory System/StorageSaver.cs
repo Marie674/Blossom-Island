@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using PixelCrushers.DialogueSystem;
 using System.Collections;
-using ItemSystem;
+using Game.Items;
 public class StorageSaver : PixelCrushers.SpawnedObject
 {
     StorageObject TargetStorage;
@@ -56,8 +56,8 @@ public class StorageSaver : PixelCrushers.SpawnedObject
         for (int i = 0; i < TargetStorage.ContainedStacks.Count; i++)
         {
             DialogueLua.SetVariable(VariableName + "StackAmount" + i, TargetStorage.ContainedStacks[i].Amount);
-            DialogueLua.SetVariable(VariableName + "StackItem" + i, TargetStorage.ContainedStacks[i].ContainedItem.itemName);
-            DialogueLua.SetVariable(VariableName + "StackItemType" + i, TargetStorage.ContainedStacks[i].ContainedItem.itemType.ToString());
+            DialogueLua.SetVariable(VariableName + "StackItem" + i, TargetStorage.ContainedStacks[i].ContainedItem.Name);
+            DialogueLua.SetVariable(VariableName + "StackItemType" + i, TargetStorage.ContainedStacks[i].ContainedItem.Type.ToString());
         }
 
     }
@@ -86,9 +86,9 @@ public class StorageSaver : PixelCrushers.SpawnedObject
             int itemAmount = DialogueLua.GetVariable(VariableName + "StackAmount" + i).asInt;
             string itemName = DialogueLua.GetVariable(VariableName + "StackItem" + i).asString;
             string itemType = DialogueLua.GetVariable(VariableName + "StackItemType" + i).asString;
-            ItemType type = (ItemType)System.Enum.Parse(typeof(ItemType), itemType);
+            ItemSystem.ItemTypes type = (ItemSystem.ItemTypes)System.Enum.Parse(typeof(ItemSystem.ItemTypes), itemType);
 
-            ItemBase item = ItemSystemUtility.GetItemCopy(itemName, type);
+            ItemBase item = ItemSystem.Instance.GetItemClone(itemName);
             int amountAdded = TargetStorage.Add(item, (uint)itemAmount);
             int amountLeft = itemAmount - amountAdded;
             if (amountLeft > 0)

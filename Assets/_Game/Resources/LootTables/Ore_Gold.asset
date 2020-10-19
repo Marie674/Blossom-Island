@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ore_Gold
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 1945465707441948013, guid: 9336f52f69679bd4e9960b4bf16a6cea, type: 3}
+  - Item: {fileID: 11400000, guid: aec4af40f76716545956009c8c3052a6, type: 2}
     Chance: 50
   MinDraws: 1
   MaxDraws: 2

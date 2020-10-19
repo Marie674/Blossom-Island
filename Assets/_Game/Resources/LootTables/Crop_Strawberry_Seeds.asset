@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Crop_Strawberry_Seeds
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 114141587419182978, guid: 407848f7fd099814cb89083c64654ee5, type: 3}
+  - Item: {fileID: 11400000, guid: b7fafcc6866e5914d965fd8b3766c6ce, type: 2}
     Chance: 15
   MinDraws: 1
   MaxDraws: 2

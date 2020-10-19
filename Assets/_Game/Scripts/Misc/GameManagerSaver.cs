@@ -2,7 +2,7 @@
 using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
-using ItemSystem;
+using Game.Items;
 public class GameManagerSaver : MonoBehaviour
 {
     GameManager TargetManager;
@@ -35,8 +35,8 @@ public class GameManagerSaver : MonoBehaviour
         int i = 0;
         foreach (ShippedItem item in TargetManager.ShippedItems)
         {
-            DialogueLua.SetVariable(VariableName + "ShippedItemName" + i, item.Item.itemName);
-            DialogueLua.SetVariable(VariableName + "ShippedItemType" + i, item.Item.itemType);
+            DialogueLua.SetVariable(VariableName + "ShippedItemName" + i, item.ContainedItem.Name);
+            DialogueLua.SetVariable(VariableName + "ShippedItemType" + i, item.ContainedItem.Type);
             DialogueLua.SetVariable(VariableName + "ShippedItemAmount" + i, item.Amount);
 
             i++;
@@ -51,7 +51,7 @@ public class GameManagerSaver : MonoBehaviour
         if (DialogueLua.DoesVariableExist(VariableName + "NativeTreeID"))
         {
             TargetManager.NativeTree = TargetManager.PossibleNativeTrees[DialogueLua.GetVariable(VariableName + "NativeTreeID").asInt];
-            TargetManager.NativeFruit = TargetManager.NativeTree.ProduceOutputs.Items[0].Item.item;
+            TargetManager.NativeFruit = TargetManager.NativeTree.ProduceOutputs.Items[0].Item;
         }
         int shippedItemsAmt = DialogueLua.GetVariable(VariableName + "ShippedItemsAmount").AsInt;
         TargetManager.ShippedItems.Clear();
@@ -59,16 +59,15 @@ public class GameManagerSaver : MonoBehaviour
         {
             string itemID = DialogueLua.GetVariable(VariableName + "ShippedItemName" + i).AsString;
             string itemType = DialogueLua.GetVariable(VariableName + "ShippedItemType" + i).AsString;
-            ItemSystem.ItemType type = (ItemSystem.ItemType)System.Enum.Parse(typeof(ItemSystem.ItemType), itemType);
-            ItemBase item = ItemSystemUtility.GetItemCopy(itemID, type);
-            print("got item: " + item.itemName);
+            ItemSystem.ItemTypes type = (ItemSystem.ItemTypes)System.Enum.Parse(typeof(ItemSystem.ItemTypes), itemType);
+            ItemBase item = ItemSystem.Instance.GetItemClone(itemID);
+            print("got item: " + item.Name);
             ShippedItem newShippedItem = new ShippedItem();
-            newShippedItem.Item = item;
+            newShippedItem.ContainedItem = item;
             int amount = DialogueLua.GetVariable(VariableName + "ShippedItemAmount" + i).AsInt;
             TargetManager.AddShippedItem(item, amount);
         }
 
     }
-
 
 }

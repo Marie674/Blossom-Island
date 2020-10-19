@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BigStone
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 114302268368332418, guid: 10eaaabd01137d045af21298a2bd7108, type: 3}
+  - Item: {fileID: 11400000, guid: 8d9bedc440428f848910372c832a20a5, type: 2}
     Chance: 20
   MinDraws: 6
   MaxDraws: 12

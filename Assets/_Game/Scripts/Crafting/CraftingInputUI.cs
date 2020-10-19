@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using UnityEngine.UI;
 using TMPro;
 public class CraftingInputUI : MonoBehaviour
@@ -43,7 +43,6 @@ public class CraftingInputUI : MonoBehaviour
 
 
     }
-
 
     public void Open(CraftingStation pStation)
     {
@@ -113,7 +112,7 @@ public class CraftingInputUI : MonoBehaviour
 
         itemUI.Button.onClick.AddListener(delegate
         {
-            Station.RemoveItem(pItem.Item);
+            Station.RemoveItem(pItem.ContainedItem);
         });
 
         itemUI.IncreaseButton.onClick.AddListener(delegate
@@ -139,14 +138,14 @@ public class CraftingInputUI : MonoBehaviour
             }
 
             itemUI.ItemIcon.color = Color.white;
-            itemUI.ItemIcon.sprite = pItem.Item.itemIcon;
+            itemUI.ItemIcon.sprite = pItem.ContainedItem.Icon;
 
             itemUI.ItemAmount.text = "x" + pItem.Amount.ToString();
 
 
             if (itemUI.ItemNameText != null)
             {
-                itemUI.ItemNameText.text = pItem.Item.itemName;
+                itemUI.ItemNameText.text = pItem.ContainedItem.Name;
             }
         }
         else
@@ -176,12 +175,12 @@ public class CraftingInputUI : MonoBehaviour
 
 
             OutputUI.ItemIcon.color = Color.white;
-            OutputUI.ItemIcon.sprite = pOutput.Recipe.Outputs[0].Item.item.itemIcon;
+            OutputUI.ItemIcon.sprite = pOutput.Recipe.Outputs[0].ContainedItem.Icon;
 
             OutputUI.ItemAmount.text = "x" + amount;
             if (OutputUI.ItemNameText != null)
             {
-                OutputUI.ItemNameText.text = pOutput.Recipe.Outputs[0].Item.item.itemName;
+                OutputUI.ItemNameText.text = pOutput.Recipe.Outputs[0].ContainedItem.Name;
             }
         }
         else

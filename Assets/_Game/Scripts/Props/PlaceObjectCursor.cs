@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using UnityEngine.SceneManagement;
 using Game.NPCs.Blossoms;
 public class PlaceObjectCursor : MonoBehaviour
 {
     protected SpriteRenderer Sprite;
-    protected ItemPlaceable Item;
+    protected ItemProp Item;
     public float MaxDistance;
 
     public float Units = 1f;
@@ -17,10 +17,10 @@ public class PlaceObjectCursor : MonoBehaviour
         Sprite = GetComponent<SpriteRenderer>();
     }
 
-    public void Set(ItemPlaceable pItem)
+    public void Set(ItemProp pItem)
     {
         Item = pItem;
-        Sprite.sprite = pItem.ObjectPrefabs[PlaceObjectManager.Instance.ObjectIndex].GetComponent<SpriteRenderer>().sprite;
+        Sprite.sprite = pItem.Props[PlaceObjectManager.Instance.ObjectIndex].GetComponent<SpriteRenderer>().sprite;
     }
 
     protected virtual void LateUpdate()
@@ -55,14 +55,14 @@ public class PlaceObjectCursor : MonoBehaviour
         {
             return false;
         }
-        if (Item.itemType != ItemType.PlaceableItem)
+        if (Item.Type != ItemSystem.ItemTypes.Prop)
         {
             return false;
         }
 
         Vector3 spriteTopLeft = new Vector3(Sprite.bounds.min.x, Sprite.bounds.max.y, 0);
 
-        GameObject referencedObject = Item.ObjectPrefabs[PlaceObjectManager.Instance.ObjectIndex];
+        GameObject referencedObject = Item.Props[PlaceObjectManager.Instance.ObjectIndex];
         bool validPlacement = true;
 
         //Check if collisions are clear
@@ -70,10 +70,10 @@ public class PlaceObjectCursor : MonoBehaviour
         {
             validPlacement = false;
         }
-        if (Item.ValidLevels.Count > 0 && !Item.ValidLevels.Contains(SceneManager.GetActiveScene().name))
-        {
-            validPlacement = false;
-        }
+        // if (Item.ValidLevels.Count > 0 && !Item.ValidLevels.Contains(SceneManager.GetActiveScene().name))
+        // {
+        //     validPlacement = false;
+        // }
         if (referencedObject.GetComponent<Hut>() != null)
         {
             if (BlossomManager.Instance.HutAmount >= BlossomManager.Instance.MaxHuts)

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using ItemSystem;
+using Game.Items;
 
 namespace Game.NPCs.Blossoms
 {
@@ -38,7 +38,7 @@ namespace Game.NPCs.Blossoms
             if (stack != null)
             {
                 ItemBase item = stack.ContainedItem;
-                if (item.itemType == ItemType.Food && (item as ItemFood).BlossomFeed == true)
+                if (item.Type == ItemSystem.ItemTypes.Food && (item as ItemFood).BlossomFeed == true)
                 {
 
                     FillBowl(item as ItemFood);

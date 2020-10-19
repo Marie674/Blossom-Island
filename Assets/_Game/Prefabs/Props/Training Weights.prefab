@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Item: {fileID: 2808892319908643224, guid: 9144eff9fbee6aa46941470e0022b360, type: 3}
+  Item: {fileID: 11400000, guid: 566016dfa82b4784bbc92fb59e78f95c, type: 2}
   Storage: 0
 --- !u!70 &245551661849666195
 CapsuleCollider2D:

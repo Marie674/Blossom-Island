@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AppleTree_Produce
   m_EditorClassIdentifier: 
   Items:
-  - Item: {fileID: 6590237529001195000, guid: cfc6e1ad4b8758741bcd0347ab78e794, type: 3}
+  - Item: {fileID: 11400000, guid: 46bf76a0f9ff71b4f9f4c8110ddcf1ff, type: 2}
     Chance: 50
   MinDraws: 3
   MaxDraws: 5

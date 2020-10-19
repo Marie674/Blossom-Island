@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b61cef930a31a48899c7c696c066e3, type: 3}
+  m_Name: Stone Axe
+  m_EditorClassIdentifier: 
+  ID: 7
+  Name: Stone Axe
+  Description: Tool used to cut trees, stumps and branches. This one has seen a few
+    battles.
+  Icon: {fileID: 21300000, guid: 53eaffa733b02c54e8224cb27f5605bf, type: 3}
+  Type: 2
+  Value: 40
+  Markup: 400
+  Weight: 2.5
+  Sellable: 1
+  Consumable: 0
+  UsableFromToolbar: 0
+  Tags: 
+  Power: 1
+  Level: 1
+  UseInterval: 0.5
+  MaxDistance: 0
+  EnergyCost: 3
+  MaxCharge: 0
+  CurrentCharge: 0
+  PlayerTrigger: Hit
+  ToolTrigger: Axe
+  CropName: 
+  UsedItems: []
+  Cursors:
+  - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
+  Controller: {fileID: 3307476332300911140, guid: a6c1d5fa3a82fd340acf2dc327aceb3e,
+    type: 3}

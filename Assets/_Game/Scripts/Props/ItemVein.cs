@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using PixelCrushers.DialogueSystem;
 [System.Serializable]
 public struct VeinItem
 {
-    public ItemContainer Item;
+    public ItemBase ContainedItem;
     public int Probability;
 }
 public class ItemVein : MonoBehaviour
@@ -44,7 +44,7 @@ public class ItemVein : MonoBehaviour
         }
         ItemTool tool = ToolManager.Instance.CurrentTool;
 
-        if (RequiredToolLevel > tool.level)
+        if (RequiredToolLevel > tool.Level)
         {
             DialogueManager.ShowAlert("My tool needs to be stronger");
 
@@ -55,18 +55,18 @@ public class ItemVein : MonoBehaviour
         ParticleSpawner.Instance.SpawnOneShot(Particle, position);
 
         TriesToday += 1;
-        var weights = new Dictionary<ItemContainer, int>();
+        var weights = new Dictionary<ItemBase, int>();
 
 
         foreach (VeinItem item in ItemOutputs)
         {
-            weights.Add(item.Item, item.Probability);
+            weights.Add(item.ContainedItem, item.Probability);
         }
 
-        ItemContainer pickedItem = WeightedRandomizer.From(weights).TakeOne();
+        ItemBase pickedItem = WeightedRandomizer.From(weights).TakeOne();
         if (pickedItem != null)
         {
-            ItemSpawner.Instance.SpawnItems(pickedItem.item, SpawnPoint.position);
+            ItemSpawner.Instance.SpawnItems(pickedItem, SpawnPoint.position);
 
         }
 

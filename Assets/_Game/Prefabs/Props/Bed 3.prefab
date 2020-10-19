@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 6227020281298404782}
   - component: {fileID: 8835537263099585483}
   - component: {fileID: 7950287546120567598}
+  - component: {fileID: -4738672919940605079}
   m_Layer: 12
   m_Name: Bed 3
   m_TagString: Prop
@@ -357,3 +358,17 @@ MonoBehaviour:
   m_saveAcrossSceneChanges: 0
   m_restoreStateOnStart: 0
   m_mode: 1
+--- !u!114 &-4738672919940605079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754866403408347053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7249b0659af5bcc4994e5589df7db6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Item: {fileID: 11400000, guid: 1eecb5776db055040a20b5ad37fa2d6b, type: 2}
+  Storage: 0

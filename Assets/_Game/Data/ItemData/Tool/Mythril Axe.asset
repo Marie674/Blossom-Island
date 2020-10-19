@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8b61cef930a31a48899c7c696c066e3, type: 3}
+  m_Name: Mythril Axe
+  m_EditorClassIdentifier: 
+  ID: 27
+  Name: Mythril Axe
+  Description: Tool used to cut trees, stumps and branches. Can't get better than
+    this one.
+  Icon: {fileID: 21300000, guid: 17d0c237c3030874b8b1b5ec3ce322d4, type: 3}
+  Type: 2
+  Value: 5000
+  Markup: 400
+  Weight: 1
+  Sellable: 1
+  Consumable: 0
+  UsableFromToolbar: 0
+  Tags: 
+  Power: 5
+  Level: 5
+  UseInterval: 0.5
+  MaxDistance: 0
+  EnergyCost: 0
+  MaxCharge: 0
+  CurrentCharge: 0
+  PlayerTrigger: Hit
+  ToolTrigger: Axe
+  CropName: 
+  UsedItems: []
+  Cursors:
+  - {fileID: 2773442042457823709, guid: 977047fbf1a300c4c95f7e81524a5851, type: 3}
+  - {fileID: 8475898944109948264, guid: ac6a5f72b5410434a90b02653229fa8b, type: 3}
+  - {fileID: 8475898944109948264, guid: 3f411f7bd6ec0b644adf0d6c70110de6, type: 3}
+  - {fileID: 8475898944109948264, guid: c9483847a55abea4c95c2b35746ccd53, type: 3}
+  Controller: {fileID: 3307476332300911140, guid: a6c1d5fa3a82fd340acf2dc327aceb3e,
+    type: 3}

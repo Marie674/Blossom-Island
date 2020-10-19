@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using ItemSystem;
+using Game.Items;
 using CreativeSpore.SuperTilemapEditor;
 
 [System.Serializable]
@@ -9,7 +9,7 @@ public struct AffectedLayer
 {
     public string Name;
     public ItemOutput Output;
-    public ItemContainer Input;
+    public ItemBase Input;
 }
 public class ToolControllerBase : MonoBehaviour
 {
@@ -47,15 +47,15 @@ public class ToolControllerBase : MonoBehaviour
         {
             return;
         }
-        StartCoroutine("UseCountdown", CurrentTool.useInterval);
+        StartCoroutine("UseCountdown", CurrentTool.UseInterval);
     }
 
     protected virtual IEnumerator UseCountdown()
     {
         Vector2 pos = ToolCursorManager.Instance.CurrentCursor.transform.position;
 
-        GameManager.Instance.Player.DoAction(CurrentTool.trigger, CurrentTool.useInterval, pos, 0, CurrentTool.toolTrigger, true);
-        yield return new WaitForSeconds(CurrentTool.useInterval);
+        GameManager.Instance.Player.DoAction(CurrentTool.PlayerTrigger, CurrentTool.UseInterval, pos, 0, CurrentTool.ToolTrigger, true);
+        yield return new WaitForSeconds(CurrentTool.UseInterval);
         ProceedUse();
     }
     protected virtual void ProceedUse()
@@ -115,7 +115,7 @@ public class ToolControllerBase : MonoBehaviour
             return false;
         }
 
-        float energyNeeded = CurrentTool.energyCost * (ToolCursorManager.Instance.CursorIndex + 1);
+        float energyNeeded = CurrentTool.EnergyCost * (ToolCursorManager.Instance.CursorIndex + 1);
         NeedBase energyNeed = PlayerNeedManager.Instance.GetNeed("Energy");
         if (energyNeed.CurrentValue < energyNeeded)
         {
