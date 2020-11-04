@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: 4
   Name: Wild Garlic
   Description: Grows in the springtime on Blossom Island.
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: bfa7a7d6fa8f32f48b998f52505c10e3, type: 3}
   Type: 1
   Value: 2
   Markup: 150

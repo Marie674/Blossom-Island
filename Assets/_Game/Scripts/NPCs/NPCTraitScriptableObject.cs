@@ -6,7 +6,7 @@ namespace Game.NPCs
 {
     [System.Serializable]
 
-    [CreateAssetMenu(fileName = "ScriptableObject/NPCTrait")]
+    [CreateAssetMenu(fileName = "Data/NPCTrait")]
     public class NPCTraitScriptableObject : ScriptableObject
     {
         public string Name;

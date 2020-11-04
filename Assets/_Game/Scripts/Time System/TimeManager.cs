@@ -393,4 +393,14 @@ public class TimeManager : Singleton<TimeManager>
         return false;
     }
 
+
+    public bool CheckWithinDaySpan(int pStartDay, int pEndDay)
+    {
+        if (pStartDay >= CurrentDay && pEndDay <= CurrentDay)
+        {
+            return true;
+        }
+        return false;
+    }
+
 }

@@ -83,7 +83,7 @@ public class InventoryUI : MonoBehaviour
 
     public void Open()
     {
-        print(CurrentStorage.gameObject.name);
+        //        print(CurrentStorage.gameObject.name);
         TransferUI = GameObject.FindObjectOfType<StorageTransferUI>();
         CraftingInputUI = GameObject.FindObjectOfType<CraftingInputUI>();
 

@@ -20,28 +20,39 @@ namespace Game.NPCs
     public class NPCManager : Singleton<NPCManager>
     {
 
-        NPCData[] NPCs = new NPCData[0];
+        public NPC[] NPCs = new NPC[0];
 
-        NPCData[] NPCDummies = new NPCData[0];
+        public NPCData[] NPCDummies = new NPCData[0];
 
         public List<NPCData> SpawnedNPCs = new List<NPCData>();
 
         public List<NPCData> SpawnedDummyNPCs = new List<NPCData>();
         void OnEnable()
         {
-            NPCs = Resources.LoadAll<NPCData>("NPCs/NPCs");
-            NPCDummies = Resources.LoadAll<NPCData>("NPCs/Dummies");
+
             GameManager.OnSceneChanged += SpawnLevelNPCs;
             TimeManager.OnHourChanged += SpawnLevelNPCs;
+            TimeManager.OnDayChanged += SetupDailyData;
         }
 
         void OnDisable()
         {
             GameManager.OnSceneChanged -= SpawnLevelNPCs;
             TimeManager.OnHourChanged -= SpawnLevelNPCs;
+            TimeManager.OnDayChanged -= SetupDailyData;
 
         }
 
+        void SetupDailyData(int pCurrentDay)
+        {
+            foreach (NPC npc in NPCs)
+            {
+                if (npc.ConversationData != null && npc.Data != null)
+                {
+                    npc.ConversationData.DailyConversationLocations = npc.ConversationData.ConversationDailyFilter(npc.Data);
+                }
+            }
+        }
         void SpawnLevelNPCs()
         {
 
@@ -60,14 +71,18 @@ namespace Game.NPCs
 
             SpawnedNPCs = SpawnedNPCs.Where(x => x != null).ToList();
 
-            foreach (NPCData NPC in NPCs)
+            foreach (NPC NPC in NPCs)
             {
                 //                print(NPC.NPCID);
-                NPC.GetCurrentPosition();
-
-                if (SceneManager.GetActiveScene().name == NPC.CurrentLevel)
+                if (NPC.Data == null)
                 {
-                    SpawnNPCInLevel(NPC.NPCID, NPC.CurrentPosition, NPC.CurrentFacing.ToString(), true);
+                    continue;
+                }
+                NPC.Data.GetCurrentPosition();
+
+                if (SceneManager.GetActiveScene().name == NPC.Data.CurrentLevel)
+                {
+                    SpawnNPCInLevel(NPC.Data.NPCID, NPC.Data.CurrentPosition, NPC.Data.CurrentFacing.ToString(), true);
                 }
             }
         }
@@ -105,11 +120,11 @@ namespace Game.NPCs
         }
         NPCData GetNPC(string pNPCID)
         {
-            foreach (NPCData NPC in NPCs)
+            foreach (NPC NPC in NPCs)
             {
-                if (NPC.NPCID == pNPCID)
+                if (NPC.Data != null && NPC.Data.NPCID == pNPCID)
                 {
-                    return NPC;
+                    return NPC.Data;
                 }
             }
             return null;
@@ -207,7 +222,6 @@ namespace Game.NPCs
 
         public void SpawnDummyNPC(string pNPCID, Vector2 pPosition, string pFacing)
         {
-            NPCDummies = Resources.LoadAll<NPCData>("NPCs/Dummies");
             NPCData NPC = GetNPCDummy(pNPCID);
             print(NPC.NPCID);
             NPCData newNPC = Instantiate<NPCData>(NPC, pPosition, transform.rotation);

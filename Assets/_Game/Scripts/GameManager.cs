@@ -67,6 +67,16 @@ public class GameManager : Singleton<GameManager>
 
     }
 
+    public enum GameLocations
+    {
+        All,
+        Home,
+        Road1,
+        BlossomStore,
+        GeneralStore,
+        Restaurant,
+        Farmhouse
+    }
     void OnEnable()
     {
         UnityEngine.SceneManagement.SceneManager.sceneUnloaded += delegate

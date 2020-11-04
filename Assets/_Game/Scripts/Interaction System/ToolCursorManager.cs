@@ -152,7 +152,6 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
             {
                 if (hit.collider != null)
                 {
-                    print(hit.transform.name);
                     if (hit.collider.isTrigger == false)
                     {
                         continue;
@@ -234,8 +233,6 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
         CursorTile[] tiles = CurrentCursor.GetComponentsInChildren<CursorTile>();
         foreach (CursorTile tile in tiles)
         {
-            print("show tile" + tile.gameObject.name);
-
             SpriteRenderer sprite = tile.transform.GetComponent<SpriteRenderer>();
             sprite.color = new Color(1, 1, 1, 1);
         }
@@ -247,7 +244,6 @@ public class ToolCursorManager : Singleton<ToolCursorManager>
         CursorTile[] tiles = CurrentCursor.GetComponentsInChildren<CursorTile>();
         foreach (CursorTile tile in tiles)
         {
-            print("hide tile" + tile.gameObject.name);
             SpriteRenderer sprite = tile.transform.GetComponent<SpriteRenderer>();
             sprite.color = new Color(1, 1, 1, 0);
         }

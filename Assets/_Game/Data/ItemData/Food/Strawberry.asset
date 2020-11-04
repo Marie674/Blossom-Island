@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: 6
   Name: Strawberry
   Description: Sweet berries, can be eaten or cooked in nice desserts.
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: aea178fc755561347a681aa45e79dd88, type: 3}
   Type: 1
   Value: 6
   Markup: 50

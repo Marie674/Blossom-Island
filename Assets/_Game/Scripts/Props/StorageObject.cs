@@ -99,6 +99,7 @@ public class StorageObject : MonoBehaviour
         //don't add more than requested
         amountToAdd = (int)Mathf.Clamp(amountToAdd, 0f, pAmount);
 
+
         //        print("Can add amount if stacks allow: " + amountToAdd);
         // If weight cannot be added, return false
         if (amountToAdd < 1)

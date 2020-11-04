@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: 3
   Name: Cranberries
   Description: Tart berries that grow in the springtime on Blossom Island.
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 6a6750452e5b8f34fa64146c7d4f9594, type: 3}
   Type: 1
   Value: 1
   Markup: 150

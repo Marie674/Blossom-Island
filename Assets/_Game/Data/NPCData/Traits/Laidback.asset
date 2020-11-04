@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Laidback
   Compatibilities:
-  - Trait: {fileID: 11400000, guid: 95aa8bbabdd13294bbb2e58c82febaaf, type: 2}
-    Modifier: 1
   - Trait: {fileID: 11400000, guid: 7e80bcc73e080894a9a15dc06ecfaf59, type: 2}
-    Modifier: 0
+    Modifier: 1

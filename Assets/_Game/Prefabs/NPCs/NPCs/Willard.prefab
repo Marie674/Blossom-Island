@@ -187,8 +187,10 @@ MonoBehaviour:
   MaxAcquaintance: 1000
   minCompatibility: 0
   maxCompatibility: 3
+  Data: {fileID: 9112762157037514099}
+  ConversationData: {fileID: 11400000, guid: e7a1d17caf27b8249abdea195621365a, type: 2}
   Traits:
-  - {fileID: 11400000, guid: 7a471766d3eb65c4188d704dc714d099, type: 2}
+  - {fileID: 11400000, guid: 2942e06a5c86c6c478cd472e89e64731, type: 2}
 --- !u!114 &114359222721098880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,34 +251,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCID: Willard
-  CurrentLevel: Restaurant
-  CurrentPosition: {x: 16, y: 14}
+  CurrentLevel: GeneralStore
+  CurrentPosition: {x: 24, y: 10}
   CurrentFacing: 0
   Met: 0
   GreetedToday: 0
   CurrentAffection: 0
   CurrentAcquaintance: 0
+  DailyEligibleConversations: []
+  CurrentEligibleConversations: []
+  SaidToday: []
   Schedules:
   - {fileID: 11400000, guid: 4ce3409d63b9a6d4cb4acf80ebde0f85, type: 2}
   - {fileID: 11400000, guid: ba4429a32693d4d46bb74d353aa28951, type: 2}
   CurrentSlot:
-    Hour: 18
-    Minute: 0
-    Level: Restaurant
-    Position: {x: 16, y: 14}
-    Facing: 0
-  PreviousSlot:
     Hour: 8
     Minute: 0
     Level: GeneralStore
     Position: {x: 24, y: 10}
     Facing: 0
-  NextSlot:
-    Hour: 21
+  PreviousSlot:
+    Hour: 6
     Minute: 0
-    Level: None
-    Position: {x: 0, y: 0}
+    Level: Road1
+    Position: {x: 45, y: 22}
     Facing: 0
+  NextSlot:
+    Hour: 18
+    Minute: 0
+    Level: Restaurant
+    Position: {x: 38, y: 26}
+    Facing: 3
   SlotChanged: 0
 --- !u!114 &2486565102003658331
 MonoBehaviour:

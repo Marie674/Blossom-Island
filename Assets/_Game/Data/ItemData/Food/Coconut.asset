@@ -15,7 +15,7 @@ MonoBehaviour:
   ID: 2
   Name: Coconut
   Description: Hard to open, but worth it.
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a95e04c28ba9d6046ab228e3a034590a, type: 3}
   Type: 1
   Value: 2.5
   Markup: 150

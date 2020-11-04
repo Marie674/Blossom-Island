@@ -30,7 +30,7 @@ MonoBehaviour:
   MaxDistance: 0
   EnergyCost: 0.75
   MaxCharge: 25
-  CurrentCharge: 25
+  CurrentCharge: 5
   PlayerTrigger: Water
   ToolTrigger: Water
   CropName: 

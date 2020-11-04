@@ -65,7 +65,7 @@ MonoBehaviour:
     Input: {fileID: 0}
   - Name: Dark Sand
     Output:
-      ContainedItem: {fileID: 0}
+      ContainedItem: {fileID: 11400000, guid: c3edbf085bd1b24478cc14278b7f5a30, type: 2}
       Amount: 1
       Chance: 70
       ByProduct: 0

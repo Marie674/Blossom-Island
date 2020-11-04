@@ -63,27 +63,27 @@ public class LootTable : ScriptableObject
 
         rand = Random.Range(MinDraws, MaxDraws + 1);
 
-        Debug.Log(name + " drawing " + rand + " times");
+        //       Debug.Log(name + " drawing " + rand + " times");
         for (int i = 0; i < rand; i++)
         {
             ItemBase draw = WeightedRandomizer.From(itemPool).TakeOne();
             if (draw.ID == nullItem.ID)
             {
                 itemList.Add(nullItem);
-                Debug.Log(name + " drew: nothing");
+                //               Debug.Log(name + " drew: nothing");
 
             }
             else
             {
                 spawned += 1;
                 itemList.Add(draw);
-                Debug.Log(name + " drew: " + draw.Name);
+                //                Debug.Log(name + " drew: " + draw.Name);
 
             }
         }
         while (spawned < MinSpawn)
         {
-            Debug.Log(name + " adding: " + Items[0].Item.Name);
+            //           Debug.Log(name + " adding: " + Items[0].Item.Name);
 
             itemList.Add(Items[0].Item);
             spawned += 1;

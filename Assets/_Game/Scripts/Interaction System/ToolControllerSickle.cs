@@ -26,7 +26,14 @@ public class ToolControllerSickle : ToolControllerBase
 
         foreach (GameObject obj in objects)
         {
-            obj.SendMessage("Hit", "Sickle", SendMessageOptions.DontRequireReceiver);
+            if (obj.transform.parent != null)
+            {
+                obj.SendMessageUpwards("Hit", "Sickle", SendMessageOptions.DontRequireReceiver);
+            }
+            else
+            {
+                obj.SendMessage("Hit", "Sickle", SendMessageOptions.DontRequireReceiver);
+            }
         }
 
     }

@@ -52,6 +52,7 @@ public class PlaceObjectManager : Singleton<PlaceObjectManager>
             }
             else
             {
+                print("ID: " + selectedItem.ID);
                 CurrentItem = ItemSystem.Instance.GetItemClone(selectedItem.ID) as ItemProp;
             }
 

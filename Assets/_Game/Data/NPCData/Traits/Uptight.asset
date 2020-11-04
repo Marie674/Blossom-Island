@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa19ddb89c914f419f8d6d2845a866e, type: 3}
+  m_Name: Uptight
+  m_EditorClassIdentifier: 
+  Name: Uptight
+  Compatibilities:
+  - Trait: {fileID: 11400000, guid: 7e80bcc73e080894a9a15dc06ecfaf59, type: 2}
+    Modifier: -1

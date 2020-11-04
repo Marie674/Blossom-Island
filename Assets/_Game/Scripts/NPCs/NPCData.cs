@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 namespace Game.NPCs
 {
-
-
     public class NPCData : MonoBehaviour
     {
         public string NPCID;
@@ -17,6 +16,9 @@ namespace Game.NPCs
         public float CurrentAffection;
         public float CurrentAcquaintance;
 
+        public List<LocationConversationData> DailyEligibleConversations = new List<LocationConversationData>();
+        public List<Conversation> CurrentEligibleConversations = new List<Conversation>();
+        public List<Conversation> SaidToday = new List<Conversation>();
         public List<NPCSchedule> Schedules = new List<NPCSchedule>();
         NPCSchedule CurrentSchedule;
 
@@ -29,6 +31,8 @@ namespace Game.NPCs
         ScheduleSlot PastSlot;
 
         public bool SlotChanged = false;
+
+
 
         void Start()
         {

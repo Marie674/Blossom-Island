@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: Leaf
   Description: A bunch of leaves, can be used in crafting or thrown in a fire for
     quick fuel.
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: dea66b364764b314d9d21bef91949ab1, type: 3}
   Type: 4
   Value: 0
   Markup: 400
